@@ -14,7 +14,7 @@ export default function Page(){
     {/* <ExperienceLoading progress={ 16 } /> */}
 
     <main>
-      {/* <ExperienceBackground /> */}
+      <ExperienceBackground />
       {/* <ExperienceModel /> */}
 
       <div className="mb-40">
