@@ -1,57 +1,49 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Title1 from "./components/text/Title1"
+import ExperienceBackground from "./components/ExperienceBackground"
+// import ExperienceModel from "./components/ExperienceModel"
+// import ExperienceLoading from "./components/ExperienceLoading"
+import HomeMission from "./components/HomeMission"
+import HomeServices from "./components/HomeServices"
+import HomeWorks from "./components/HomeWorks"
+import ContactForm from "./components/ContactForm"
+import BlogPreview from "./components/BlogPreview"
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
+export default function Page(){
+  return <>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+    {/* <ExperienceLoading progress={ 16 } /> */}
 
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
+    <main>
+      {/* <ExperienceBackground /> */}
+      {/* <ExperienceModel /> */}
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
+      <div className="mb-40">
+        <Title1 id="home-title" text={ ['Pegaso', 'Digital', 'Studio'] } center />
+      </div>
 
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
-      </main>
+      <HomeMission 
+        id="1" 
+        text="We empower brands and creators by mastering the latest digital technologies, helping them to reach people and create value for the world." 
+        subtitle="La missione"
+      />
+      <HomeMission 
+        id="2" 
+        text="We embody our mission by living up to our brand values, with an everlasting devotion to digital craftmanship and meaningful aesthetics." 
+        subtitle="Come lavoriamo"
+      />
+      <HomeMission 
+        id="3" 
+        text="We serve our clients by producing quality websites, ecommerce, marketing strategies and taking care of their social media comunity." 
+        subtitle="Cosa facciamo"
+      />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
-  )
+      <HomeServices />
+
+      <HomeWorks />
+
+      <ContactForm />
+
+      <BlogPreview />
+    </main>
+  </>
 }
