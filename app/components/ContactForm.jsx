@@ -2,16 +2,17 @@
 
 import { useEffect, useRef, useState } from "react"
 import { gsap, ScrollTrigger } from 'gsap/all'
+import { usePathname } from 'next/navigation';
 import Text1 from "./text/Text1"
 
 export default function ContactForm(){
 
+    const pathname = usePathname();
+
     /**
      * Animations
      */
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
+    function setAnimations(){
         gsap.set('#title2-contact', {
             opacity: 0,
             y: '80px',
@@ -25,88 +26,227 @@ export default function ContactForm(){
             opacity: 0,
             y: '80px',
         })
+    }
 
-        gsap.to('#title2-contact', {
-            scrollTrigger: {
-                trigger: "#contact-wrapper",
-                start: 'top 200',
-            },
-            y: 0,
-            opacity: 1,
-            // rotate: 0,
-            duration: 1,
-            ease: "circ.out",
-            delay: 0.2,  
-        })
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to('#text1-contact', {
-            scrollTrigger: {
-                trigger: "#contact-wrapper",
-                start: 'top 200',
-            },
-            y: 0,
-            opacity: 0.6,
-            duration: 1,
-            ease: "circ.out",
-            delay: 0.6,
-        })
+        setAnimations()
 
-        gsap.to('#contact-form', {
-            scrollTrigger: {
-                trigger: "#contact-wrapper",
-                start: 'top 200',
-            },
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            ease: "circ.out",
-            delay: 1,
-        })
+        if(pathname != '/contatti'){
+            gsap.to('#title2-contact', {
+                scrollTrigger: {
+                    trigger: "#contact-wrapper",
+                    start: 'top 200',
+                },
+                y: 0,
+                opacity: 1,
+                // rotate: 0,
+                duration: 1,
+                ease: "circ.out",
+                delay: 0.2,  
+            })
+    
+            gsap.to('#text1-contact', {
+                scrollTrigger: {
+                    trigger: "#contact-wrapper",
+                    start: 'top 200',
+                },
+                y: 0,
+                opacity: 0.6,
+                duration: 1,
+                ease: "circ.out",
+                delay: 0.6,
+            })
+    
+            gsap.to('#contact-form', {
+                scrollTrigger: {
+                    trigger: "#contact-wrapper",
+                    start: 'top 200',
+                },
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "circ.out",
+                delay: 1,
+            })
+        }
+        else{
+            gsap.to('#title2-contact', {
+                y: 0,
+                opacity: 1,
+                // rotate: 0,
+                duration: 1,
+                ease: "circ.out",
+                delay: 0.2,  
+            })
+    
+            gsap.to('#text1-contact', {
+                y: 0,
+                opacity: 0.6,
+                duration: 1,
+                ease: "circ.out",
+                delay: 0.6,
+            })
+    
+            gsap.to('#contact-form', {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "circ.out",
+                delay: 1,
+            })
+        }
     }, [])
 
     /**
      * Handling the activation of the button in the form
      */
-    const [interest, setInterest] = useState(null)
-    const [budget, setBudget] = useState(null)
-    const name = useRef()
-    const email = useRef()
-    const project = useRef()
+    const [interests] = useState(['Sito web', 'Ecommerce', 'Branding', 'Marketing', 'Social Media'])
+    const [budgets, setBudgets] = useState(['2k - 5k', '5k - 10k', '10k - 20k', '> 20k', 'Non specificato'])
+    const [activeInterest, setActiveInterest] = useState(null)
+    const [activeBudget, setActiveBudget] = useState(null)
+    const activeName = useRef()
+    const activeEmail = useRef()
+    const activePhone = useRef()
+
+    // Social Media
+    const [socialMedia] = useState(['Facebook', 'Instagram', 'TikTok', 'Youtube', 'Twitter', 'Linkedin', 'Pinterest'])
+    const [activeSocialMediaList, setActiveSocialMediaList] = useState([false, false, false, false, false, false, false])
+    const activeSocialMediaQuestion1 = useRef()
+    const activeSocialMediaQuestion2 = useRef()
+    const activeSocialMediaQuestion3 = useRef()
+
+    // Marketing
+    const activeMarketingQuestion1 = useRef()
+    const activeMarketingQuestion2 = useRef()
+    const activeMarketingQuestion3 = useRef()
+
+    // Siti web - Ecommerce - Branding
+    const activeProject = useRef()
     const [buttonActive, setButtonActive] = useState(false)
 
+    const updateSocialMediaListTrue = (index) => {
+        const newItems = [...activeSocialMediaList]
+        newItems[index] = true
+        setActiveSocialMediaList(newItems);
+    }
+    const updateSocialMediaListFalse = (index) => {
+        const newItems = [...activeSocialMediaList]
+        newItems[index] = false
+        setActiveSocialMediaList(newItems);
+    }      
+
     const checkActiveButton = () => {
-        if(
-            interest != null &&
-            budget != null &&
-            name.current.value.trim() != '' &&
-            email.current.value.trim() != '' &&
-            project.current.value.trim() != ''
-        )
-            setButtonActive(true)
-        else
-            setButtonActive(false)
+        // Siti Web - Ecommerce - Branding
+        if(activeInterest == 0 || activeInterest == 1 || activeInterest == 2){
+            if(
+                activeInterest != null &&
+                activeName.current.value.trim() != '' &&
+                activeEmail.current.value.trim() != '' &&
+                activePhone.current.value.trim() != '' &&
+                activeProject.current.value.trim() != '' &&
+                activeBudget != null
+            )
+                setButtonActive(true)
+            else
+                setButtonActive(false)
+            
+            return
+        }
+
+        // Marketing
+        if(activeInterest == 3){
+            if(
+                activeInterest != null &&
+                activeName.current.value.trim() != '' &&
+                activeEmail.current.value.trim() != '' &&
+                activePhone.current.value.trim() != '' &&
+                activeMarketingQuestion1.current.value.trim() != '' &&
+                activeMarketingQuestion2.current.value.trim() != '' &&
+                activeMarketingQuestion3.current.value.trim() != ''
+            )
+                setButtonActive(true)
+            else
+                setButtonActive(false)   
+            
+            return
+        }
+        
+        // Social Media
+        if(activeInterest == 4){
+            if(
+                activeInterest != null &&
+                activeName.current.value.trim() != '' &&
+                activeEmail.current.value.trim() != '' &&
+                activePhone.current.value.trim() != '' &&
+                checkActiveSocialMedia() &&
+                activeSocialMediaQuestion1.current.value.trim() != '' &&
+                activeSocialMediaQuestion2.current.value.trim() != '' &&
+                activeSocialMediaQuestion3.current.value.trim() != ''
+            )
+                setButtonActive(true)
+            else
+                setButtonActive(false)   
+            
+            return
+        }
+    }
+
+    const checkActiveSocialMedia = () => {
+        return activeSocialMediaList.some((el) => el == true)
     }
 
     useEffect(() => {
         checkActiveButton()
-    }, [interest, budget])
+    }, [
+        activeInterest, activeBudget, activeName, activeEmail, activePhone, activeSocialMediaList, activeSocialMediaQuestion1, activeSocialMediaQuestion2, activeSocialMediaQuestion3, activeMarketingQuestion1, activeMarketingQuestion2, activeMarketingQuestion3
+    ])
+
+    useEffect(() => {
+        const budgetSitoWeb = ['2k - 5k', '5k - 10k', '10k - 15k', 'Non specificato']
+        const budgetEcommerce = ['3k - 5k', '5k - 10k', '10k - 20k', 'Non specificato']
+        const budgetBranding = ['1k - 3k', '3k - 5k', '5k - 10k', 'Non specificato']
+        const budgetMarketing = []
+        const budgetSocialmedia = []
+
+        setActiveBudget(null)
+
+        // changing the array of the budget based of the interest
+        if(activeInterest == 0)
+            setBudgets(budgetSitoWeb)
+        else if(activeInterest == 1)
+            setBudgets(budgetEcommerce)
+        else if(activeInterest == 2)
+            setBudgets(budgetBranding)
+        else if(activeInterest == 3)
+            setBudgets(budgetMarketing)
+        else if(activeInterest == 4)
+            setBudgets(budgetSocialmedia)
+    }, [activeInterest])
 
     return (
-        <div id="contact-wrapper" className="w-full bg-slate-900 py-48">
+        <div id="contact-wrapper" className="w-full">
 
             {/* Title */}
             <div className="mx-auto max-w-5xl text-center">
-                <h5 id="title2-contact" className="text-white font-semibold text-9xl leading-[120%] tracking-tighter">
+                <h1 
+                    id="title2-contact" 
+                    className={`
+                        px-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30
+                        font-semibold lg:text-9xl md:text-8xl text-5xl leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tighter
+                    `}
+                >
                     Hai un progetto da realizzare?
-                </h5>
+                </h1>
             </div>
 
             {/* Subtitle */}
-            <div className="mt-16 text-center">
-                <div className="max-w-[550px] mx-auto">
+            <div className="mt-12 md:mt-16 text-center">
+                <div className="px-16 md:px-0 max-w-[550px] mx-auto">
                     <Text1 
                         id="text1-contact"
-                        text="Compila i campi con le tue necessità, ti ricontatteremo al più presto." 
+                        text="Compila il form con le necessità del tuo progetto – ti ricontatteremo appena possibile." 
                         opacity={60}
                         color="white"
                     />
@@ -114,115 +254,177 @@ export default function ContactForm(){
             </div>
 
             {/* Form */}
-            <div id="contact-form" className="mx-auto max-w-7xl px-16 grid grid-cols-12 gap-x-6 mt-24">
-                <div className="col-span-2"></div>
-                <div className="col-span-8">
+            <div id="contact-form" className="mx-auto max-w-7xl px-8 md:px-0 lg:px-16 grid grid-cols-12 gap-x-6 mt-16 md:mt-24">
+                <div className="col-span-0 md:col-span-2"></div>
+                <div className="col-span-12 md:col-span-8">
                     {/* form */}
-                    <div className="w-full bg-white flex flex-col gap-y-12 p-12">
+                    <div className="w-full bg-white flex flex-col gap-y-12 p-8 md:p-12">
 
                         {/* Input interest */}
                         <div className="flex flex-col gap-y-6">
-                            <p className="text-2xl text-slate-900 tracking-tight"> Sono interessato a: </p>
+                            <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> Sono interessato a: </p>
 
                             <div className="flex flex-wrap items-center gap-x-4 gap-y-4">
-                                <button 
-                                    onClick={ () => interest != 0 ? setInterest(0) : setInterest(null) }
-                                    className={`${interest == 0 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
-                                >
-                                    Sito web
-                                </button>
-                                <button 
-                                    onClick={ () => interest != 1 ? setInterest(1) : setInterest(null) }
-                                    className={`${interest == 1 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
-                                >
-                                    Ecommerce
-                                </button>
-                                <button 
-                                    onClick={ () => interest != 2 ? setInterest(2) : setInterest(null) }
-                                    className={`${interest == 2 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
-                                >
-                                    Branding
-                                </button>
-                                <button 
-                                    onClick={ () => interest != 3 ? setInterest(3) : setInterest(null) }
-                                    className={`${interest == 3 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
-                                >
-                                    Marketing
-                                </button>
-                                <button 
-                                    onClick={ () => interest != 4 ? setInterest(4) : setInterest(null) }
-                                    className={`${interest == 4 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
-                                >
-                                    Social Media
-                                </button>
+                                {interests.map((value, index) => (
+                                    <button 
+                                        key={index}
+                                        onClick={ () => activeInterest != index ? setActiveInterest(index) : setActiveInterest(null) }
+                                        className={`${activeInterest == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
+                                    >
+                                        { value }
+                                    </button>
+                                ))}
                             </div>
                         </div>
+
+                        {/* MARKETING */}
+                        { activeInterest == 3 && (
+                            <textarea 
+                                name="description"
+                                ref={ activeMarketingQuestion1 }
+                                onChange={() => checkActiveButton() }
+                                placeholder="?"
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                            />
+                        )}
+
+                        { activeInterest == 3 && (
+                            <textarea 
+                                name="description"
+                                ref={ activeMarketingQuestion2 }
+                                onChange={() => checkActiveButton() }
+                                placeholder="?"
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                            />
+                        )}
+
+                        { activeInterest == 3 && (
+                            <textarea 
+                                name="description"
+                                ref={ activeMarketingQuestion3 }
+                                onChange={() => checkActiveButton() }
+                                placeholder="?"
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                            />
+                        )}
+
+                        {/* SOCIAL MEDIA */}
+                        { activeInterest == 4 && (
+                            <div className="flex flex-col gap-y-6">
+                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> A che Social Media sei interessato? </p>
+
+                                <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
+                                    {socialMedia.map((value, index) => (
+                                        <div className="flex items-center gap-x-2 text-lg text-slate-900 tracking-tight cursor-pointer">
+                                            <div className="relative flex justify-center items-center">
+                                                <input 
+                                                    type="checkbox" 
+                                                    id={`social-media-${index}`} 
+                                                    className="w-5 h-5 appearance-none rounded-full border border-slate-900 checked:border-none checked:bg-slate-900" 
+                                                    onChange={ (e) => e.target.checked ? updateSocialMediaListTrue(index) : updateSocialMediaListFalse(index) }
+                                                />
+                                                <div className="absolute w-2 h-2 bg-white rounded-full"></div>
+                                            </div>
+                                            <label htmlFor={`social-media-${index}`}>
+                                                { value }
+                                            </label>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ) }
+
+                        { activeInterest == 4 && (
+                            <textarea 
+                                name="description"
+                                ref={ activeSocialMediaQuestion1 }
+                                onChange={() => checkActiveButton() }
+                                placeholder="Hai già un profilo su queste piattaforme? Se si, scrivi il tuo nome utente."
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                            />
+                        )}
+
+                        { activeInterest == 4 && (
+                            <textarea 
+                                name="description"
+                                ref={ activeSocialMediaQuestion2 }
+                                onChange={() => checkActiveButton() }
+                                placeholder="Hai mai collaborato con qualcuno a riguardo? Se si, perchè avete concluso la collaborazione?"
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                            />
+                        )}
+
+                        { activeInterest == 4 && (
+                            <textarea 
+                                name="description"
+                                ref={ activeSocialMediaQuestion3 }
+                                onChange={() => checkActiveButton() }
+                                placeholder="Che risultati vorresti ottenere lavorando con noi?"
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                            />
+                        )}
                         
                         {/* Input name */}
                         <input 
-                            ref={ name }
+                            ref={ activeName }
                             onChange={() => checkActiveButton() }
                             type="text"
                             name="name"
                             placeholder="Il tuo nome"
-                            className="py-4 text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
+                            className="py-4 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
                         />
 
                         {/* Input email */}
                         <input 
-                            ref={ email }
+                            ref={ activeEmail }
                             onChange={() => checkActiveButton() }
                             type="email"
                             name="email"
                             placeholder="La tua email"
-                            className="py-4 text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
+                            className="py-4 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
                         />
+
+                        {/* Input telefono */}
+                        <input 
+                            ref={ activePhone }
+                            onChange={() => checkActiveButton() }
+                            type="tel"
+                            name="phone"
+                            placeholder="Il tuo telefono"
+                            className="py-4 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
+                        />
+
+                        {/* SITI WEB - ECOMMERCE - BRANDING */}
 
                         {/* Textarea message */}
-                        <textarea 
-                            ref={ project }
-                            onChange={() => checkActiveButton() }
-                            placeholder="Parlaci del tuo progetto"
-                            className="py-4 text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
-                        />
+                        { (activeInterest == null || activeInterest == 0 || activeInterest == 1 || activeInterest == 2) && (
+                            <textarea 
+                                name="description"
+                                ref={ activeProject }
+                                onChange={() => checkActiveButton() }
+                                placeholder="Parlaci del tuo progetto"
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                            />
+                        )}
 
                         {/* Input budget */}
-                        <div className="flex flex-col gap-y-6">
-                            <p className="text-2xl text-slate-900 tracking-tight"> Budget del progetto: </p>
+                        { budgets.length > 0 && (
+                            <div className="flex flex-col gap-y-6">
+                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> Budget del progetto: </p>
 
-                            <div className="flex flex-wrap items-center gap-x-4 gap-y-4">
-                                <button 
-                                    onClick={ () => budget != 0 ? setBudget(0) : setBudget(null) }
-                                    className={`${budget == 0 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
-                                >
-                                    2k - 5k
-                                </button>
-                                <button 
-                                    onClick={ () => budget != 1 ? setBudget(1) : setBudget(null) }
-                                    className={`${budget == 1 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`} 
-                                >
-                                    5k - 10k
-                                </button>
-                                <button 
-                                    onClick={ () => budget != 2 ? setBudget(2) : setBudget(null) }
-                                    className={`${budget == 2 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`} 
-                                >
-                                    10k - 20k
-                                </button>
-                                <button 
-                                    onClick={ () => budget != 3 ? setBudget(3) : setBudget(null) }
-                                    className={`${budget == 3 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`} 
-                                >
-                                    {'> 20k'}
-                                </button>
-                                <button 
-                                    onClick={ () => budget != 4 ? setBudget(4) : setBudget(null) }
-                                    className={`${budget == 4 ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`} 
-                                >
-                                    Non specificato
-                                </button>
+                                <div className="flex flex-wrap items-center gap-x-4 gap-y-4">
+                                    {budgets.map((value, index) => (
+                                        <button 
+                                            key={index}
+                                            onClick={ () => activeBudget != index ? setActiveBudget(index) : setActiveBudget(null) }
+                                            className={`${activeBudget == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
+                                        >
+                                            { value }
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
+                        )}
 
                         {/* Cta */}
                         <div className="mt-6 flex flex-col gap-y-5 text-center">
@@ -241,16 +443,16 @@ export default function ContactForm(){
 
                     </div>
                 </div>
-                <div className="col-span-2"></div>
+                <div className="col-span-0 md:col-span-2"></div>
             </div>
 
             {/* Sub text */}
-            <div className="px-16 grid grid-cols-12 gap-x-6 mt-32">
+            <div className="px-8 lg:px-16 grid grid-cols-12 gap-x-6 mt-24 md:mt-32">
                 <p className="col-span-12 text-center text-lg font-semibold text-white">
                     Cosa aspettarsi lavorando con noi:
                 </p>
 
-                <div className="col-span-12 flex justify-center gap-x-32 mt-24">
+                <div className="col-span-12 flex justify-center gap-x-16 md:gap-x-32 mt-24">
                     <div className="flex flex-col gap-y-6 text-white max-w-[250px]">
                         <p className="text-lg font-semibold">Project scopes</p>
                         <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
@@ -262,7 +464,7 @@ export default function ContactForm(){
                     </div>
                 </div>
 
-                <div className="col-span-12 flex justify-center gap-x-32 mt-24">
+                <div className="col-span-12 flex justify-center gap-x-16 md:gap-x-32 mt-24">
                     <div className="flex flex-col gap-y-6 text-white max-w-[250px]">
                         <p className="text-lg font-semibold">Partner preferencest</p>
                         <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>

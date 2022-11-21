@@ -39,7 +39,7 @@ export default function UtilityCustomCursor(){
 
     return (
         <div 
-            className="custom-cursor hidden md:flex items-center justify-center h-28 w-28 bg-slate-900/20 backdrop-blur text-white font-medium rounded-full z-50"
+            className="custom-cursor hidden md:flex items-center justify-center h-28 w-28 bg-slate-900/20 backdrop-blur text-white rounded-full z-50"
             style={{ opacity: '0', scale: 0 }}
         >
             Vedi

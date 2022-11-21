@@ -18,7 +18,7 @@ export default function Title1({ id = '', text = [], color, opacity, center }){
             id={id}
             style={{ transform: 'translateY(-60px)', opacity: 0 }}
             className={`
-                ${color ? ('text-'+color) : 'text-transparent bg-clip-text bg-gradient-to-b from-white via-sky-50/70 to-sky-100/50'} 
+                ${color ? ('text-'+color) : 'text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30'} 
                 ${opacity ? ('opacity-'+opacity) : ''} 
                 ${center ? 'text-center' : ''}
                 title-1 mt-6

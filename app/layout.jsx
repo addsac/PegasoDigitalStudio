@@ -1,7 +1,8 @@
 import './globals.css'
 import { Inter } from '@next/font/google';
-import UtilityCustomCursor from './components/utility/UtilityCustomCursor';
 import Header from './components/Header'
+import UtilityCustomCursor from './components/utility/UtilityCustomCursor';
+import ExperienceBackground from "./components/ExperienceBackground"
 import Footer from "./components/Footer"
 
 const inter = Inter({
@@ -19,6 +20,9 @@ export default function RootLayout({ children }) {
 
         {/* Utility */}
         <UtilityCustomCursor />
+
+        {/* Background */}
+        {/* <ExperienceBackground /> */}
 
         <Header />
         

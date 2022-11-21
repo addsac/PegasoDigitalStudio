@@ -20,13 +20,13 @@
     @apply lg:text-[220px] font-medium lg:leading-[260px] tracking-tighter;
 }
 .title-2{
-    @apply text-[141px] font-semibold leading-[110%] tracking-tighter;
+    @apply text-7xl md:text-8xl lg:text-[141px] font-semibold leading-[110%] tracking-tighter;
 }
 .title-3{
     @apply text-8xl font-semibold leading-[100%] tracking-tight;
 }
 .text-1{
-    @apply text-2xl font-medium leading-[150%] tracking-tight;
+    @apply md:text-2xl text-lg font-medium leading-[150%] tracking-tight;
 }
 .text-2{
     @apply text-[32px] font-medium leading-[44px] tracking-tight;

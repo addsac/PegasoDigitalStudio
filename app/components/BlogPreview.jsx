@@ -13,7 +13,7 @@ async function getPosts() {
 }
 
 export default async function BlogPreview() {
-    const posts = await getPosts();
+    // const posts = await getPosts();
 
     return (
         <>
@@ -27,7 +27,7 @@ export default async function BlogPreview() {
                 <div className="mx-auto text-center max-w-[900px]">
                     <Title2
                         id="title2-blog-preview"
-                        text={[`Non ancora pronto? ${posts.length}`]}
+                        text={[`Non ancora pronto?`]}
                         color="slate-900"
                     />
                     <div className="mx-auto max-w-[550px] mt-16">

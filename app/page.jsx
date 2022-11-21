@@ -1,5 +1,4 @@
 import Title1 from "./components/text/Title1"
-import ExperienceBackground from "./components/ExperienceBackground"
 // import ExperienceModel from "./components/ExperienceModel"
 // import ExperienceLoading from "./components/ExperienceLoading"
 import HomeMission from "./components/HomeMission"
@@ -14,7 +13,6 @@ export default function Page(){
     {/* <ExperienceLoading progress={ 16 } /> */}
 
     <main>
-      <ExperienceBackground />
       {/* <ExperienceModel /> */}
 
       <div className="mb-40">
@@ -41,7 +39,9 @@ export default function Page(){
 
       <HomeWorks />
 
-      <ContactForm />
+      <div className="py-48 bg-slate-900">
+        <ContactForm />
+      </div>
 
       <BlogPreview />
     </main>

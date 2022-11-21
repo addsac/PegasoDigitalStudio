@@ -6,7 +6,7 @@
 export default function Head({ params }) {
     return (
         <>
-            <title> Conttati | Pegaso Digital Studio </title>
+            <title> Contatti | Pegaso Digital Studio </title>
         </>
     )
 }

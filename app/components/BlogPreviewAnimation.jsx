@@ -58,7 +58,7 @@ export default function BlogPreviewAnimation() {
             opacity: 1,
             duration: 1,
             ease: 'circ.out',
-            delay: 1,
+            delay: 0.6,
         })
 
         /**

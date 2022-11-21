@@ -72,7 +72,7 @@ export default function HomeWorks() {
                                 <div className="mb-16">
                                     <IconDivider color="slate-900" />
                                 </div>
-                                <p className="text-2xl leading-[34px] tracking-tight">
+                                <p className="max-w-[312px] text-xl leading-[28px] font-semibold tracking-tight">
                                     {/* Highlights of cases that we passionately built with forward-thinking clients and friends over <nobr>the years.</nobr> */}
                                     Alcuni dei lavori che abbiamo progettato per i nostri più ambiziosi clienti in questi <nobr>anni di attività.</nobr>
                                 </p>

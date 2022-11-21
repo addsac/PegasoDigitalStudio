@@ -59,7 +59,7 @@ export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 1
 export function PrimarySm({ styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
     return (
         <Link href={href}>
-            <button className="font-semibold px-5 py-1 bg-white text-slate-900 rounded-full">
+            <button className="font-semibold px-5 py-1 bg-white hover:bg-white/60 text-slate-900 rounded-full transition duration-200">
                 {/* title of the component */}
                 {text}
 
