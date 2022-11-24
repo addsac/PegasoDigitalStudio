@@ -1,11 +1,15 @@
 'use client'
 
 import "swiper/swiper.min.css"
+import Link from "next/link"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode } from "swiper"
+import { usePathname } from "next/navigation"
 
 export default function BlogSwiper(){
     const arrayToLoop = [1, 2, 3, 4, 5, 6]
+
+    const pathname = usePathname()
 
     return <div>
         <Swiper
@@ -16,24 +20,28 @@ export default function BlogSwiper(){
             className="mySwiper cursor-grab"
         >
             {/* White margin */}
-            <SwiperSlide style={{ width: 'auto' }}>
-                <div className="w-16 h-full"></div>
-            </SwiperSlide>
+            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/')) && (
+                <SwiperSlide style={{ width: 'auto' }}>
+                    <div className="md:w-16 h-full"></div>
+                </SwiperSlide>
+            )}
 
             { arrayToLoop.map((index) => (
                 <SwiperSlide style={{ width: 'auto' }} key={ index }>
-                    <div className="group w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer">
-                        <img src="./blog-temporary-bg.jpg" alt="" className="link-for-mouse-animation text-cursor-trascina w-full h-[460px] object-cover animation duration-200 group-hover:scale-105" />
+                    <Link href="/blog/1">
+                        <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer">
+                            <img src="/blog-temporary-bg.jpg" alt="" className="link-for-mouse-animation text-cursor-trascina w-full h-[380px] md:h-[460px] object-cover animation duration-200 group-hover:scale-105" />
 
-                        {/* Date */}
-                        <p className="absolute top-6 left-6 px-3 py-2 rounded-full bg-white/60 backdrop-blur-md text-slate-900 text-xs"> 16 Novembre 2022 </p>
-                        
-                        {/* overlay and text */}
-                        <div className="w-full bg-white z-10 flex flex-col justify-end py-6">
-                            {/* Text */}
-                            <p className="text-slate-900 text-2xl tracking-tight leading-[130%] group-hover:underline"> Le Sezioni più Importanti di un Ecommerce per Vendere di più </p>
+                            {/* Date */}
+                            <p className="absolute top-6 left-6 px-3 py-2 rounded-full bg-white/60 backdrop-blur-md text-slate-900 text-xs"> 16 Novembre 2022 </p>
+                            
+                            {/* overlay and text */}
+                            <div className="w-full bg-white z-10 flex flex-col justify-end pt-6">
+                                {/* Text */}
+                                <p className="text-slate-900 text-xl md:text-2xl tracking-tight leading-[130%] group-hover:underline"> Le Sezioni più Importanti di un Ecommerce per Vendere di più </p>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </SwiperSlide>
             ))}
 
@@ -54,9 +62,11 @@ export default function BlogSwiper(){
             </SwiperSlide> */}
             
             {/* White margin */}
-            <SwiperSlide style={{ width: 'auto' }}>
-                <div className="w-16 h-full"></div>
-            </SwiperSlide>
+            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/')) && (
+                <SwiperSlide style={{ width: 'auto' }}>
+                    <div className="md:w-16 h-full"></div>
+                </SwiperSlide>
+            )}
         </Swiper>
     </div>
 }

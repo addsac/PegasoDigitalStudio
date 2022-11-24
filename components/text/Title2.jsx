@@ -1,10 +1,11 @@
-export default function Title2({ id, text = [], color }){
+export default function Title2({ id, text = [], color, gradient = false }){
     return (
         <h2 
             id={id}
             className={`
-                ${color ? ('text-' + color) : 'text-white'} 
                 title-2 
+                ${color ? ('text-' + color) : 'text-white'} 
+                ${gradient ? 'text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30' : ''}
             `}
         >
             { text.map((word, index) => (

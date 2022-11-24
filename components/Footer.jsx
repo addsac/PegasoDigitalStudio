@@ -1,6 +1,6 @@
+import Link from "next/link"
 import Title2 from "./text/Title2"
 import IconDivider from "./icon/IconDivider"
-import Link from "next/link"
 import FooterAnimation from './FooterAnimation'
 
 export default function Footer(){
@@ -9,11 +9,14 @@ export default function Footer(){
         <>
             <FooterAnimation />
 
-            <footer id="footer-wrapper" className="h-screen w-full px-8 lg:px-16 pt-24">
+            <footer id="footer-wrapper" className="w-full px-8 lg:px-16 pt-24">
                 {/* Mission link */}
                 <div className="w-full px-0 md:px-8 lg:px-16 pb-16 md:pb-24 lgd:pb-32">
                     <div className="flex flex-col items-start gap-y-8 md:gap-y-10 lg:gap-y-14 w-full md:w-1/2">
-                        <Title2 text={ [ 'Our', ' Mission' ] } />
+                        <Title2
+                            text={ [ 'Our', ' Mission' ] } 
+                            gradient={ true }
+                        />
                         <p
                             className="text-white/50 text-[20px] md:text-[24px] font-regular tracking-tight"
                         >
@@ -87,7 +90,7 @@ export default function Footer(){
                         </div>
                     </div>
                     <div className="flex justify-between items-start gap-x-6">
-                        <p className="w-2/3 opacity-60 text-white text-xs lg:text-base">
+                        <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-xs lg:text-base">
                             Copyright © Pegaso S.a.s. | VAT, tax code, and number of registration in Italy, description of the legal details, description of the legal details, capitale sociale di  €10.000 interamente versato.
                         </p>
                         <img src="./btc_logo.svg" alt="" className="w-[80px] md:w-[120px]" />

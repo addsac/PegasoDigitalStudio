@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 import Text1 from "./text/Text1"
 
 export default function ContactForm(){
-
     const pathname = usePathname();
 
     /**
@@ -118,9 +117,29 @@ export default function ContactForm(){
     const activeSocialMediaQuestion3 = useRef()
 
     // Marketing
-    const activeMarketingQuestion1 = useRef()
-    const activeMarketingQuestion2 = useRef()
-    const activeMarketingQuestion3 = useRef()
+    const [marketingQuestion1] = useState([
+        'Si, attualmente sto investendo in campagne pubblivitarie online.', 
+        'Si, ho già investito in campagne pubblicitarie online ma ora non ne ho di attive.', 
+        'No, non ho mai investito in campagne pubblicitarie online.', 
+        'Altro'
+    ])
+    const [activeMarketingQuestion1, setActiveMarketingQuestion1] = useState(null)
+    const [marketingQuestion2] = useState([
+        'Meno di 100.000€',
+        'Da 100.000€ a 500.000€',
+        'Da 500.000€ a 1 milione €',
+        'Da 1 a 5 Milioni €',
+        'Più di 5 Milioni €',
+    ])
+    const [activeMarketingQuestion2, setActiveMarketingQuestion2] = useState(null)
+    const [marketingQuestion3] = useState([
+        'Meno di 10.000€',
+        'Da 10.000€ a 50.000€',
+        'Da 50.000€ a 100.000€',
+        'Da 100.000€ a 500.000€',
+        'Più di 500.000€',
+    ])
+    const [activeMarketingQuestion3, setActiveMarketingQuestion3] = useState(null)
 
     // Siti web - Ecommerce - Branding
     const activeProject = useRef()
@@ -135,7 +154,7 @@ export default function ContactForm(){
         const newItems = [...activeSocialMediaList]
         newItems[index] = false
         setActiveSocialMediaList(newItems);
-    }      
+    }
 
     const checkActiveButton = () => {
         // Siti Web - Ecommerce - Branding
@@ -162,9 +181,9 @@ export default function ContactForm(){
                 activeName.current.value.trim() != '' &&
                 activeEmail.current.value.trim() != '' &&
                 activePhone.current.value.trim() != '' &&
-                activeMarketingQuestion1.current.value.trim() != '' &&
-                activeMarketingQuestion2.current.value.trim() != '' &&
-                activeMarketingQuestion3.current.value.trim() != ''
+                activeMarketingQuestion1 != null &&
+                activeMarketingQuestion2 != null &&
+                activeMarketingQuestion3 != null 
             )
                 setButtonActive(true)
             else
@@ -233,7 +252,7 @@ export default function ContactForm(){
                 <h1 
                     id="title2-contact" 
                     className={`
-                        px-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30
+                        px-8 md:px-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30
                         font-semibold lg:text-9xl md:text-8xl text-5xl leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tighter
                     `}
                 >
@@ -254,7 +273,7 @@ export default function ContactForm(){
             </div>
 
             {/* Form */}
-            <div id="contact-form" className="mx-auto max-w-7xl px-8 md:px-0 lg:px-16 grid grid-cols-12 gap-x-6 mt-16 md:mt-24">
+            <div id="contact-form" className="mx-auto max-w-7xl px-8 md:px-0 lg:px-16 grid grid-cols-12 gap-x-6 mt-20 md:mt-24">
                 <div className="col-span-0 md:col-span-2"></div>
                 <div className="col-span-12 md:col-span-8">
                     {/* form */}
@@ -279,16 +298,129 @@ export default function ContactForm(){
 
                         {/* MARKETING */}
                         { activeInterest == 3 && (
-                            <textarea 
-                                name="description"
-                                ref={ activeMarketingQuestion1 }
-                                onChange={() => checkActiveButton() }
-                                placeholder="?"
-                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
-                            />
+                            <div className="flex flex-col gap-y-6">
+                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
+                                    Hai attualmente attive altre campagne pubblicitarie online, o hai già provato a investire in pubblicità online in passato?
+                                </p>
+
+                                <div className="grid grid-cols-12 gap-4 md:gap-6">
+                                    {marketingQuestion1.map((value, index) => (
+                                        <div
+                                            onClick={() => {
+                                                const check = document.getElementById(`marketing-1-${index}`).checked
+                                                if(check) {
+                                                    document.getElementById(`marketing-1-${index}`).checked = false
+                                                    setActiveMarketingQuestion1(null)
+                                                }
+                                                else {
+                                                    document.getElementById(`marketing-1-${index}`).checked = true
+                                                    setActiveMarketingQuestion1(index)
+                                                }
+                                            }}
+                                            className="col-span-12 md:col-span-6 border border-slate-900 p-4 md:p-6 flex items-start gap-x-3 text-lg text-slate-900 tracking-tight cursor-pointer"
+                                        >
+                                            <div className="relative flex justify-center items-center">
+                                                <input 
+                                                    type="radio" 
+                                                    name="marketingQuestion1"
+                                                    id={`marketing-1-${index}`} 
+                                                    onChange={() => setActiveMarketingQuestion1(index)}
+                                                    className="w-5 h-5 appearance-none rounded-full border border-slate-900 checked:border-none checked:bg-slate-900" 
+                                                />
+                                                <div className="absolute w-2 h-2 bg-white rounded-full"></div>
+                                            </div>
+                                            <label className="text-base cursor-pointer -mt-[2px]">
+                                                { value }
+                                            </label>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         )}
 
                         { activeInterest == 3 && (
+                            <div className="flex flex-col gap-y-6">
+                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
+                                    Qual è il fatturato annuo della tua azienda?
+                                </p>
+
+                                <div className="grid grid-cols-12 gap-4 md:gap-6">
+                                    {marketingQuestion2.map((value, index) => (
+                                        <div
+                                            onClick={() => {
+                                                const check = document.getElementById(`marketing-2-${index}`).checked
+                                                if(check) {
+                                                    document.getElementById(`marketing-2-${index}`).checked = false
+                                                    setActiveMarketingQuestion2(null)
+                                                }
+                                                else {
+                                                    document.getElementById(`marketing-2-${index}`).checked = true
+                                                    setActiveMarketingQuestion2(index)
+                                                }
+                                            }}
+                                            className="col-span-12 md:col-span-6 flex items-start gap-x-3 text-lg text-slate-900 tracking-tight cursor-pointer"
+                                        >
+                                            <div className="relative flex justify-center items-center">
+                                                <input 
+                                                    type="radio" 
+                                                    name="marketingQuestion2"
+                                                    id={`marketing-2-${index}`} 
+                                                    onChange={() => setActiveMarketingQuestion2(index)}
+                                                    className="w-5 h-5 appearance-none rounded-full border border-slate-900 checked:border-none checked:bg-slate-900" 
+                                                />
+                                                <div className="absolute w-2 h-2 bg-white rounded-full"></div>
+                                            </div>
+                                            <label className="text-base cursor-pointer -mt-[2px]">
+                                                { value }
+                                            </label>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        { activeInterest == 3 && (
+                            <div className="flex flex-col gap-y-6">
+                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
+                                    Hai un idea di budget mensile (comprensivo della nostra consulenza) da investire?
+                                </p>
+
+                                <div className="grid grid-cols-12 gap-4 md:gap-6">
+                                    {marketingQuestion3.map((value, index) => (
+                                        <div
+                                            onClick={() => {
+                                                const check = document.getElementById(`marketing-3-${index}`).checked
+                                                if(check) {
+                                                    document.getElementById(`marketing-3-${index}`).checked = false
+                                                    setActiveMarketingQuestion3(null)
+                                                }
+                                                else {
+                                                    document.getElementById(`marketing-3-${index}`).checked = true
+                                                    setActiveMarketingQuestion3(index)
+                                                }
+                                            }}
+                                            className="col-span-12 md:col-span-6 flex items-start gap-x-3 text-lg text-slate-900 tracking-tight cursor-pointer"
+                                        >
+                                            <div className="relative flex justify-center items-center">
+                                                <input 
+                                                    type="radio" 
+                                                    name="marketingQuestion3"
+                                                    id={`marketing-3-${index}`} 
+                                                    onChange={() => setActiveMarketingQuestion3(index)}
+                                                    className="w-5 h-5 appearance-none rounded-full border border-slate-900 checked:border-none checked:bg-slate-900" 
+                                                />
+                                                <div className="absolute w-2 h-2 bg-white rounded-full"></div>
+                                            </div>
+                                            <label className="text-base cursor-pointer -mt-[2px]">
+                                                { value }
+                                            </label>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        {/* { activeInterest == 3 && (
                             <textarea 
                                 name="description"
                                 ref={ activeMarketingQuestion2 }
@@ -296,9 +428,9 @@ export default function ContactForm(){
                                 placeholder="?"
                                 className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
                             />
-                        )}
+                        )} */}
 
-                        { activeInterest == 3 && (
+                        {/* { activeInterest == 3 && (
                             <textarea 
                                 name="description"
                                 ref={ activeMarketingQuestion3 }
@@ -306,7 +438,7 @@ export default function ContactForm(){
                                 placeholder="?"
                                 className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
                             />
-                        )}
+                        )} */}
 
                         {/* SOCIAL MEDIA */}
                         { activeInterest == 4 && (
@@ -464,7 +596,10 @@ export default function ContactForm(){
                     </div>
                 </div>
 
-                <div className="col-span-12 flex justify-center gap-x-16 md:gap-x-32 mt-24">
+                <div
+                    id={pathname === '/contatti' ? 'blog-preview-wrapper' : ''}
+                    className="col-span-12 flex justify-center gap-x-16 md:gap-x-32 mt-24"
+                >
                     <div className="flex flex-col gap-y-6 text-white max-w-[250px]">
                         <p className="text-lg font-semibold">Partner preferencest</p>
                         <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>

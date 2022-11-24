@@ -1,11 +1,11 @@
-import Title1 from "./components/text/Title1"
-// import ExperienceModel from "./components/ExperienceModel"
-// import ExperienceLoading from "./components/ExperienceLoading"
-import HomeMission from "./components/HomeMission"
-import HomeServices from "./components/HomeServices"
-import HomeWorks from "./components/HomeWorks"
-import ContactForm from "./components/ContactForm"
-import BlogPreview from "./components/BlogPreview"
+import Title1 from "../components/text/Title1"
+// import ExperienceModel from "../components/ExperienceModel"
+// import ExperienceLoading from "../components/ExperienceLoading"
+import HomeMission from "../components/HomeMission"
+import HomeServices from "../components/HomeServices"
+import HomeWorks from "../components/HomeWorks"
+import ContactForm from "../components/ContactForm"
+import BlogPreview from "../components/BlogPreview"
 
 export default function Page(){
   return <>
@@ -15,7 +15,7 @@ export default function Page(){
     <main>
       {/* <ExperienceModel /> */}
 
-      <div className="mb-40">
+      <div className="md:mb-24 lg:mb-40">
         <Title1 id="home-title" text={ ['Pegaso', 'Digital', 'Studio'] } center />
       </div>
 
@@ -39,11 +39,14 @@ export default function Page(){
 
       <HomeWorks />
 
-      <div className="py-48 bg-slate-900">
+      <div className="py-28 md:py-32 lg:py-48 bg-slate-900">
         <ContactForm />
       </div>
 
-      <BlogPreview />
+      <BlogPreview 
+        title={['Non ancora pronto?']}
+        description="Take a look on our latest articles to find some  inspiration for your project and more."
+      />
     </main>
   </>
 }

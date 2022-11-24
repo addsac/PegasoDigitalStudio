@@ -1,9 +1,10 @@
 import './globals.css'
-import { Inter } from '@next/font/google';
-import Header from './components/Header'
-import UtilityCustomCursor from './components/utility/UtilityCustomCursor';
-import ExperienceBackground from "./components/ExperienceBackground"
-import Footer from "./components/Footer"
+import { Inter } from '@next/font/google'
+import HandleColorBackground from '../components/HandleColorBackground'
+import HeaderWrapper from '../components/HeaderWrapper'
+import UtilityCustomCursor from '../components/utility/UtilityCustomCursor'
+import ExperienceBackground from "../components/ExperienceBackground"
+import Footer from "../components/Footer"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,15 +17,16 @@ export default function RootLayout({ children }) {
 
       <head />
       
-      <body className='bg-slate-900'>
+      <body className="bg-slate-900">
 
         {/* Utility */}
+        {/* <HandleColorBackground /> */}
         <UtilityCustomCursor />
 
         {/* Background */}
         {/* <ExperienceBackground /> */}
 
-        <Header />
+        <HeaderWrapper />
         
         { children }
 

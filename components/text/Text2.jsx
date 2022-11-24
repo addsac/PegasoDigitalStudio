@@ -1,4 +1,4 @@
-export default function Text2({ id, text, color, opacity }){
+export default function Text2({ id = '', text, color, opacity = '' }){
     return (
         <h5 
             id={id && id}

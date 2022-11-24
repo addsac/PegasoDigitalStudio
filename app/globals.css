@@ -17,17 +17,17 @@
  * Text
  */
 .title-1 {
-    @apply lg:text-[220px] font-medium lg:leading-[260px] tracking-tighter;
+    @apply text-[73px] md:text-[141px] lg:text-[220px] font-medium leading-[130%] md:leading-[125%] lg:leading-[118%] tracking-tighter;
 }
 .title-2{
     @apply text-7xl md:text-8xl lg:text-[141px] font-semibold leading-[110%] tracking-tighter;
 }
 .title-3{
-    @apply text-8xl font-semibold leading-[100%] tracking-tight;
+    @apply text-5xl md:text-7xl lg:text-8xl font-semibold leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tighter;
 }
 .text-1{
-    @apply md:text-2xl text-lg font-medium leading-[150%] tracking-tight;
+    @apply text-lg md:text-2xl font-medium leading-[150%] md:leading-[150%] tracking-tight;
 }
 .text-2{
-    @apply text-[32px] font-medium leading-[44px] tracking-tight;
+    @apply text-[24px] md:text-[28px] lg:text-[32px] font-medium leading-[44px] tracking-tight;
 }
