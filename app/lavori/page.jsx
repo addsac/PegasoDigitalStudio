@@ -1,5 +1,6 @@
 import WorkTitles from "../../components/WorkTitles"
 import WorkSection from "../../components/WorkSection"
+import ContactForm from "../../components/ContactForm"
 import BlogPreview from "../../components/BlogPreview"
 
 export default function Page(){
@@ -27,6 +28,10 @@ export default function Page(){
                 <WorkSection
                     text='Social media'
                 />
+            </div>
+
+            <div className="py-28 md:py-32 lg:py-48 bg-slate-900">
+                <ContactForm />
             </div>
 
             <BlogPreview 

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <UtilityCustomCursor />
 
         {/* Background */}
-        {/* <ExperienceBackground /> */}
+        <ExperienceBackground />
 
         <HeaderWrapper />
         

@@ -95,8 +95,10 @@ export default function Footer(){
                         </p>
                         <img src="./btc_logo.svg" alt="" className="w-[80px] md:w-[120px]" />
                     </div>
-                    <div className="mx-auto">
-                        <IconDivider color="white" />
+                    <div className="mx-auto ">
+                        <Link href="/">
+                            <IconDivider color="white" className="hover:scale-120 transition duration-300" />
+                        </Link>
                     </div>
                     <div className="h-4 md:h-6 w-full"></div>
                 </div>

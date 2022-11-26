@@ -3,22 +3,22 @@
 import { useEffect } from 'react'
 import { gsap, ScrollTrigger } from 'gsap/all'
 
-export default function WorkTitleAnimations() {
+export default function a(){
     gsap.registerPlugin(ScrollTrigger)
 
     /**
      * Animations
      */
     function setAnimations() {
-        gsap.set('#title2-work', {
+        gsap.set('#title3-work-detail', {
             opacity: 0,
             y: '100px',
         })
-        gsap.set('#text1-work', {
+        gsap.set('#text1-work-detail', {
             opacity: 0,
             y: '80px',
         })
-        gsap.set('#filters-work', {
+        gsap.set('#statistics-work-detail', {
             opacity: 0,
             y: '80px',
         })
@@ -27,21 +27,21 @@ export default function WorkTitleAnimations() {
     useEffect(() => {
         setAnimations()
 
-        gsap.to('#title2-work', {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            ease: 'circ.out',
-            delay: 0.2,
-        })
-        gsap.to('#text1-work', {
+        gsap.to('#text1-work-detail', {
             y: 0,
             opacity: 0.6,
             duration: 1,
             ease: 'circ.out',
+            delay: 0.2,
+        })
+        gsap.to('#title3-work-detail', {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: 'circ.out',
             delay: 0.6,
         })
-        gsap.to('#filters-work', {
+        gsap.to('#statistics-work-detail', {
             y: 0,
             opacity: 1,
             duration: 1,
@@ -49,6 +49,6 @@ export default function WorkTitleAnimations() {
             delay: 1,
         })
     }, [])
-
+    
     return null
 }

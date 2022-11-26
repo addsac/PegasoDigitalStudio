@@ -90,8 +90,8 @@ export function PrimarySmWhite({ styleName = '', text = '', icon = false, opacit
     return (
         <Link href={href}>
             <button className={`
-                font-semibold bg-white hover:bg-white/60 text-slate-900 rounded-full transition duration-200
-                ${size == 'lg' ? 'px-5 py-2' : 'px-5 py-1'}
+              bg-white hover:bg-white/60 text-slate-900 rounded-full transition duration-200
+                ${size == 'lg' ? 'font-medium tracking-tight px-5 py-2' : 'font-semibold px-5 py-1'}
             `}>
                 <div className="flex items-center">
                     {/* title of the component */}

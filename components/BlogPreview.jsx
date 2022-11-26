@@ -12,7 +12,7 @@ async function getPosts() {
     return posts ? posts : null;
 }
 
-export default async function BlogPreview({ title = '', description = '' }) {
+export default async function BlogPreview({ title = '', description = '', type = 'articles' }) {
     // const posts = await getPosts();
 
     return (
@@ -50,7 +50,7 @@ export default async function BlogPreview({ title = '', description = '' }) {
                     className="py-24 md:py-28 lg:py-40 relative px-2 md:px-0"
                 >
                     {/* swiper */}
-                    <BlogSwiper />
+                    <BlogSwiper type={type} />
                 </div>
 
                 <div
@@ -62,7 +62,7 @@ export default async function BlogPreview({ title = '', description = '' }) {
                             id="blog-preview-wrapper"
                             styleName="primary-lg"
                             href="/blog"
-                            text="Vedi tutti gli articoli"
+                            text={ type == 'articles' ? 'Vedi tutti gli articoli' : type == 'works' ? 'Vedi tutti i lavori' : ''}
                         />
                     </div>
                 </div>

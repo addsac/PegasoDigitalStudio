@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Text2 from './text/Text2'
 import Button from './button/Button'
 
@@ -22,14 +23,16 @@ export default function WorkSection({ text }){
                     <div className="grid grid-cols-12 gap-y-16 gap-x-6 mt-12">
                         {[1, 2, 3, 4].map((value) => (
                             <div className="group col-span-12 md:col-span-6 cursor-pointer" key={value}>
-                                <div className="w-full h-[467px] bg-white overflow-clip">
-                                    <img src="/blog-temporary-bg.jpg" className="link-for-mouse-animation text-cursor-vedi w-full h-full object-cover animation duration-200 group-hover:scale-105" />
-                                </div>
+                                <Link href="/lavori/1">
+                                    <div className="w-full h-[467px] bg-white overflow-clip">
+                                        <img src="/blog-temporary-bg.jpg" className="link-for-mouse-animation text-cursor-vedi w-full h-full object-cover animation duration-200 group-hover:scale-105" />
+                                    </div>
 
-                                <div className="mt-6 text-center text-white font-semibold">
-                                    <p> Luxurious design experience </p>
-                                    <p className="text-sm opacity-60 mt-[6px]"> Aebele Interiors </p>
-                                </div>
+                                    <div className="mt-6 text-center text-white font-semibold">
+                                        <p> Luxurious design experience </p>
+                                        <p className="text-sm opacity-60 mt-[6px]"> Aebele Interiors </p>
+                                    </div>
+                                </Link>
                             </div>
                         ))}
                         <div className="col-span-12 mx-auto mt-8">

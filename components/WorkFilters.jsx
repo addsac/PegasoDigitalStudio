@@ -21,7 +21,7 @@ export default function WorkFilters() {
         const id = '#work-section-' + value.toLowerCase().replace(' ', '')
 
         gsap.to(window, {
-            duration: 0.8,
+            duration: 1.4,
             scrollTo: {
                 y: id,
                 offsetY: 64,

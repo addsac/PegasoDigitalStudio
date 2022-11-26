@@ -1,7 +1,7 @@
 export default function Title2({ id, text = [], color, gradient = false }){
     return (
         <h2 
-            id={id}
+            id={id ? id : ''}
             className={`
                 title-2 
                 ${color ? ('text-' + color) : 'text-white'} 

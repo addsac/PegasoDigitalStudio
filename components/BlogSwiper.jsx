@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode } from "swiper"
 import { usePathname } from "next/navigation"
 
-export default function BlogSwiper(){
+export default function BlogSwiper({ type }){
     const arrayToLoop = [1, 2, 3, 4, 5, 6]
 
     const pathname = usePathname()
@@ -20,7 +20,7 @@ export default function BlogSwiper(){
             className="mySwiper cursor-grab"
         >
             {/* White margin */}
-            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/')) && (
+            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/')) && (
                 <SwiperSlide style={{ width: 'auto' }}>
                     <div className="md:w-16 h-full"></div>
                 </SwiperSlide>
@@ -33,7 +33,9 @@ export default function BlogSwiper(){
                             <img src="/blog-temporary-bg.jpg" alt="" className="link-for-mouse-animation text-cursor-trascina w-full h-[380px] md:h-[460px] object-cover animation duration-200 group-hover:scale-105" />
 
                             {/* Date */}
-                            <p className="absolute top-6 left-6 px-3 py-2 rounded-full bg-white/60 backdrop-blur-md text-slate-900 text-xs"> 16 Novembre 2022 </p>
+                            { type == 'articles' && (
+                                <p className="absolute top-6 left-6 px-3 py-2 rounded-full bg-white/60 backdrop-blur-md text-slate-900 text-xs"> 16 Novembre 2022 </p>
+                            )}
                             
                             {/* overlay and text */}
                             <div className="w-full bg-white z-10 flex flex-col justify-end pt-6">
@@ -62,7 +64,7 @@ export default function BlogSwiper(){
             </SwiperSlide> */}
             
             {/* White margin */}
-            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/')) && (
+            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/')) && (
                 <SwiperSlide style={{ width: 'auto' }}>
                     <div className="md:w-16 h-full"></div>
                 </SwiperSlide>

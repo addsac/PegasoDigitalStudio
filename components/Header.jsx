@@ -192,7 +192,7 @@ export default function Header({ color }) {
                             />
                             <Button 
                                 styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                text="Mission" 
+                                text="Missione" 
                                 href="/missione"
                                 onMouseEnter={ () => closeSubHeader() }
                             />
@@ -280,7 +280,7 @@ export default function Header({ color }) {
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight"
-                                    > Mission </p>
+                                    > Missione </p>
                                 </Link>
                             </div>
                             <div className="block overflow-hidden mt-2">

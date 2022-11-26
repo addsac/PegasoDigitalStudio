@@ -57,10 +57,12 @@ export default function HomeWorks() {
                             {/* work 1 */}
                             <div className="col-span-12 lg:col-span-5 2xl:col-span-4">
                                 <div
-                                    className="h-[400px] lg:h-[650px] bg-slate-900 cursor-pointer link-for-mouse-animation text-cursor-vedi"
+                                    className="h-[400px] lg:h-[650px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(1) }
                                     onMouseLeave={ () => animatePhotoLeave(1) }
-                                />
+                                >
+                                    <img src="blog-temporary-bg.jpg" alt="" className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" />
+                                </div>
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title1-photo" className="font-semibold hidden md:block">
@@ -77,7 +79,7 @@ export default function HomeWorks() {
                                 <div className="mb-16">
                                     <IconDivider color="slate-900" />
                                 </div>
-                                <p className="max-w-[312px] text-xl leading-[28px] font-semibold tracking-tight">
+                                <p className="max-w-[312px] text-xl leading-[28px] font-medium tracking-tight">
                                     {/* Highlights of cases that we passionately built with forward-thinking clients and friends over <nobr>the years.</nobr> */}
                                     Alcuni dei lavori che abbiamo progettato per i nostri più ambiziosi clienti in questi <nobr>anni di attività.</nobr>
                                 </p>
@@ -87,10 +89,12 @@ export default function HomeWorks() {
                             <div className="hidden lg:block col-span-7"></div>
                             <div className="col-span-12 lg:col-span-4 2xl:col-span-3 lg:-mt-40">
                                 <div
-                                    className="h-[350px] lg:h-[550px] bg-slate-900 cursor-pointer link-for-mouse-animation text-cursor-vedi"
+                                    className="h-[350px] lg:h-[550px] bg-slate-900 cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(2) }
                                     onMouseLeave={ () => animatePhotoLeave(2) }
-                                />
+                                >
+                                    <img src="blog-temporary-bg.jpg" alt="" className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" />
+                                </div>
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title2-photo" className="font-semibold hidden md:block">
@@ -107,10 +111,12 @@ export default function HomeWorks() {
                             <div className="hidden lg:block col-span-3"></div>
                             <div className="col-span-12 lg:col-span-5 2xl:col-span-4 lg:mt-32">
                                 <div
-                                    className="h-[400px] lg:h-[650px] bg-slate-900 cursor-pointer link-for-mouse-animation text-cursor-vedi"
+                                    className="h-[400px] lg:h-[650px] bg-slate-900 cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(3) }
                                     onMouseLeave={ () => animatePhotoLeave(3) }
-                                />
+                                >
+                                    <img src="blog-temporary-bg.jpg" alt="" className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" />
+                                </div>
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title3-photo" className="font-semibold hidden md:block">
@@ -127,10 +133,12 @@ export default function HomeWorks() {
                             {/* work 4 */}
                             <div className="col-span-12 lg:col-span-4 2xl:col-span-3 lg:mt-32">
                                 <div
-                                    className="h-[350px] lg:h-[550px] bg-slate-900 cursor-pointer link-for-mouse-animation text-cursor-vedi"
+                                    className="h-[350px] lg:h-[550px] bg-slate-900 cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(4) }
                                     onMouseLeave={ () => animatePhotoLeave(4) }
-                                />
+                                >
+                                    <img src="blog-temporary-bg.jpg" alt="" className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" />
+                                </div>
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title4-photo" className="font-semibold hidden md:block">

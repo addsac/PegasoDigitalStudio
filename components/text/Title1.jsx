@@ -15,7 +15,7 @@ export default function Title1({ id = '', text = [], color, opacity, center }){
 
     return (
         <h1 
-            id={id}
+            id={id ? id : ''}
             style={{ transform: 'translateY(-60px)', opacity: 0 }}
             className={`
                 ${color ? ('text-'+color) : 'text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30'} 
