@@ -2,6 +2,7 @@
 
 import { gsap } from 'gsap'
 import Link from 'next/link'
+import Image from "next/image"
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 import Button from './button/Button'
@@ -62,14 +63,14 @@ export default function Header({ color }) {
             })
     
             // background animation
-            gsap.set('.sub-header', {
+            /* gsap.set('.sub-header', {
                 backgroundColor: '#1e293b'
             })
             gsap.to('.sub-header', {
                 backgroundColor: '#0f172a00',
                 duration: 0.5,
                 delay: 0.2,
-            })
+            }) */
         }
     }
 
@@ -127,109 +128,190 @@ export default function Header({ color }) {
         gsap.set('#menu-mobile', {
             autoAlpha: 0
         })
-    })
+
+        const body = document.body
+        let lastScroll = 0
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll <= 0) {
+                body.classList.remove("scroll-up");
+
+                return;
+            }
+
+            if (currentScroll > lastScroll) {
+                body.classList.remove("scroll-up");
+                body.classList.add("scroll-down");
+
+                gsap.to(document.querySelector('header'), {
+                    y: '-200px',
+                    duration: 0.3,
+                    ease: 'none',
+                    delay: 0.2,
+                })
+            } 
+            else if (currentScroll < lastScroll) {
+                body.classList.remove("scroll-down");
+                body.classList.add("scroll-up");
+
+                gsap.to(document.querySelector('header'), {
+                    y: 0,
+                    duration: 0.3,
+                    ease: 'none',
+                    delay: 0.2,
+                })
+            }
+
+            lastScroll = currentScroll;
+        })
+    }, [])
 
     return (
         <>
             <header 
-                onMouseLeave={ () => closeSubHeader() } 
+                className="z-10"
                 // style={{ transform: 'translateY(-100%)' }}
             >
-                <div className="flex justify-between tracking-[-1%] p-8 md:p-12 lg:p-16 pb-12 md:pb-8">
-                    {/* Main Header */}
-                    {/* Logo */}
-                    <Link href="/">
-                        <img 
-                            src={color == 'dark' ? '/logo_light.svg' : '/logo_dark.svg'}
-                            id="header-logo" 
-                            className="md:h-12 h-8 hover:scale-110 transition duration-300"
-                            alt=""
-                        />
-                    </Link>
-
-                    {/* Cta open menu for mobile */}
+                <div
+                    onMouseLeave={ () => closeSubHeader() } 
+                    className="w-screen fixed"
+                >
                     <div 
-                        onClick={ () => openMenuMobile() } 
-                        className="group flex md:hidden items-center gap-x-3 cursor-pointer"
+                        className={`
+                            flex justify-between items-center tracking-[-1%] 
+                            px-8 md:px-12 lg:px-16 py-4 md:py-6 lg:py-8
+                            backdrop-blur-[12px]
+                            ${color == 'dark' ? 'bg-slate-900/90' : 'bg-white/90'}
+                        `}
+                        /* border-b border-slate-800 border-b border-slate-100 */
                     >
-                        <button 
-                            className={`text-sm font-semibold group-hover:opacity-50 
-                            ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
-                        > Menu </button>
-                        <img 
-                            src={color == 'dark' ? '/menu_light.svg' : '/menu_dark.svg'}
-                            alt="" 
-                            className={`w-5 h-auto group-hover:opacity-50
-                            ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
-                        />
-                    </div>
+                        {/* Main Header */}
+                        {/* Logo */}
+                        <Link href="/">
+                            {color == 'dark' ? 
+                                (
+                                    <Image 
+                                        src="/logo_light.svg"
+                                        id="header-logo" 
+                                        width={40}
+                                        height={40}
+                                        className="h-12 md:h-16 hover:scale-110 transition duration-300"
+                                        alt=""
+                                    />
+                                ) : 
+                                (
+                                    <Image 
+                                        src="/logo_dark.svg"
+                                        id="header-logo" 
+                                        width={40}
+                                        height={40}
+                                        className="h-12 md:h-16 hover:scale-110 transition duration-300"
+                                        alt=""
+                                    />
+                                )
+                            }
+                        </Link>
 
-                    {/* Locazione */}
-                    <span className="hidden lg:block opacity-60">
-                        <Button 
-                            styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                            text="Cittadella - 45°38′55″N 11°47′01″E" 
-                            onClick={ () => goToMaps() }
-                            onMouseEnter={ () => closeSubHeader() }
-                        />
-                    </span>
+                        {/* Cta open menu for mobile */}
+                        <div 
+                            onClick={ () => openMenuMobile() } 
+                            className="group flex md:hidden items-center gap-x-3 cursor-pointer"
+                        >
+                            <button 
+                                className={`text-sm font-semibold group-hover:opacity-50 
+                                ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
+                            > Menu </button>
+                            <Image 
+                                src={color == 'dark' ? '/menu_light.svg' : '/menu_dark.svg'}
+                                alt="" 
+                                width={20}
+                                height={20}
+                                className={`w-5 h-auto group-hover:opacity-50
+                                ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
+                            />
+                        </div>
 
-                    {/* Links */}
-                    <div className="hidden md:flex items-start gap-x-3">
-                        <div className="flex">
+                        {/* Locazione */}
+                        <span className="hidden lg:block opacity-60">
                             <Button 
                                 styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                text="Lavori" 
-                                href="/lavori"
+                                text="Cittadella - 45°38′55″N 11°47′01″E" 
+                                onClick={ () => goToMaps() }
                                 onMouseEnter={ () => closeSubHeader() }
+                                size={'sm'}
+                                weight='light'
                             />
+                        </span>
+
+                        {/* Links */}
+                        <div className="hidden md:flex items-start gap-x-3">
+                            <div className="flex">
+                                <Button 
+                                    styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                    text="Lavori" 
+                                    href="/lavori"
+                                    onMouseEnter={ () => closeSubHeader() }
+                                />
+                                <Button 
+                                    styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                    text="Servizi" 
+                                    icon="dropdown" 
+                                    onMouseEnter={ () => openSubHeader() } 
+                                />
+                                <Button 
+                                    styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                    text="Missione" 
+                                    href="/missione"
+                                    onMouseEnter={ () => closeSubHeader() }
+                                />
+                            </div>
                             <Button 
-                                styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                text="Servizi" 
-                                href="/servizi"
-                                icon="dropdown" 
-                                onMouseEnter={ () => openSubHeader() } 
-                            />
-                            <Button 
-                                styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                text="Missione" 
-                                href="/missione"
+                                styleName={color == 'dark' ? 'primary-sm-white' : 'primary-sm-dark'} 
+                                text="Contatti" 
+                                href="/contatti" 
                                 onMouseEnter={ () => closeSubHeader() }
                             />
                         </div>
-                        <Button 
-                            styleName={color == 'dark' ? 'primary-sm-white' : 'primary-sm-dark'} 
-                            text="Contatti" 
-                            href="/contatti" 
-                            onMouseEnter={ () => closeSubHeader() }
-                        />
                     </div>
-                </div>
 
-                {/* Sub Header */}
-                <div 
-                    className={
-                        `sub-header hidden md:flex justify-center items-center py-1 border-y 
-                        ${color == 'dark' ? 'border-white/20' : 'border-slate-900/20'}`
-                    } 
-                    style={{ opacity: 0, height: '64px', transform: 'translateY(-16px)' }}
-                >
-                    <div className="sub-header-items flex gap-x-3 lg:gap-x-5" style={{ transform: 'translateY(-6px)' }}>
-                        <Button 
-                            styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                            text="Siti corporate" />
-                        <Button 
-                            styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                            text="Ecommerce" />
-                        <Button 
-                            styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                            text="Branding" />
-                        <Button 
-                            styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                            text="Digital Marketing" />
-                        <Button 
-                            styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                            text="Social media" />
+                    {/* Sub Header */}
+                    <div 
+                        className={
+                            `sub-header hidden md:flex justify-center items-center py-1 border-y 
+                            backdrop-blur-lg
+                            ${color == 'dark' ? 'bg-slate-900/90 border-slate-800' : 'bg-white/90 border-slate-100'}`
+                        } 
+                        style={{ opacity: 0, height: '64px', transform: 'translateY(-16px)' }}
+                    >
+                        <div className="sub-header-items flex gap-x-3 lg:gap-x-5" style={{ transform: 'translateY(-6px)' }}>
+                            <Button 
+                                styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                text="Siti web" 
+                                href="/servizi/siti-web"
+                            />
+                            <Button 
+                                styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                text="Ecommerce" 
+                                href="/servizi/ecommerce"
+                            />
+                            <Button 
+                                styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                text="Branding" 
+                                href="/servizi/branding"
+                            />
+                            <Button 
+                                styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                text="Digital Marketing" 
+                                href="/servizi/marketing"
+                            />
+                            <Button 
+                                styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                text="Social media" 
+                                href="/servizi/social-media"
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -298,9 +380,9 @@ export default function Header({ color }) {
                                 className="link-menu-mobile-contatti flex justify-between text-white text-sm mt-16"
                             >
                                 <div className="flex flex-col gap-y-3">
-                                    <a href="https://instagram.com" target="_blank" rel="nofollow"> Instagram </a>
-                                    <a href="https://linkedin.com" target="_blank" rel="nofollow"> Linkedin </a>
-                                    <a href="https://behance.com" target="_blank" rel="nofollow"> Behance </a>
+                                    <a href="https://instagram.com" target="_blank" rel="noreferrer"> Instagram </a>
+                                    <a href="https://linkedin.com" target="_blank" rel="noreferrer"> Linkedin </a>
+                                    <a href="https://behance.com" target="_blank" rel="noreferrer"> Behance </a>
                                 </div>
                                 <div className="flex flex-col gap-y-3">
                                     <a href="mailto:info@pegasodisgitalstudio.com"> info@pegasodisgitalstudio.com </a>

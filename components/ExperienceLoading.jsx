@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from "react"
+import Image from "next/image"
 import { gsap } from 'gsap/all'
 
 export default function ExperienceLoading({ progress }){    
@@ -44,11 +45,13 @@ export default function ExperienceLoading({ progress }){
         <div id="loading-wrapper" className="fixed inset-0 bg-slate-900 !z-50 flex flex-col justify-between">
             <div className="h-full flex flex-col justify-center items-center">
                 <div className="relative overflow-hidden">
-                    <img
+                    <Image
                         id="loading-logo" 
-                        src="./logo_light.svg" 
+                        src="/logo_light.svg" 
                         alt="" 
-                        className="h-12" 
+                        width={48}
+                        height={48}
+                        className="h-12"
                         // style={{ transform: 'translateY(100%)' }}
                     />
                 </div>

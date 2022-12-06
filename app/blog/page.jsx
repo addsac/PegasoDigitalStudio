@@ -2,8 +2,8 @@ import BlogTitles from "../../components/BlogTitle"
 import BlogArticlesSection from "../../components/BlogArticlesSection"
 
 export default function Page(){
-    return <>
-        <main id="blog-wrapper" className="bg-white py-8 pb-24 md:pb-32 lg:pb-48">
+    return <div className="pt-[140px] md:pt-[240px] bg-white">
+        <main id="blog-wrapper" className="py-8 pb-24 md:pb-32 lg:pb-48">
 
             <BlogTitles />
 
@@ -28,5 +28,5 @@ export default function Page(){
             <div id="footer-animation-trigger" className="absolute"></div>
 
         </main>
-    </>
+    </div>
 }

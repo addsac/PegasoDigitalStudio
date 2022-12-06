@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import Title2 from "./text/Title2"
 import IconDivider from "./icon/IconDivider"
 import FooterAnimation from './FooterAnimation'
@@ -22,9 +23,11 @@ export default function Footer(){
                         >
                             The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr>
                         </p>
-                        <button className="text-lg md:text-xl font-semibold text-white underline hover:opacity-60 transition duration-300">
-                            See our mission
-                        </button>
+                        <Link href="/missione">
+                            <button className="text-lg md:text-xl font-semibold text-white underline hover:opacity-60 transition duration-300">
+                                See our mission
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -32,7 +35,7 @@ export default function Footer(){
                     <div className="border-b border-white/60 w-full"></div>
                 </div>
 
-                <div className="mt-16 md:mt-20 lg:mt-24 flex flex-col gap-y-16 px-0 md:px-8 lg:px-16">
+                <div className="mt-16 md:mt-20 lg:mt-24 flex flex-col gap-y-20 px-0 md:px-8 lg:px-16">
                     <div className="w-full grid grid-cols-12 gap-y-12 lg:gap-y-0 lg:flex justify-between items-start">
                         <div className="col-span-12 text-sm md:text-base font-semibold text-white">
                             <Link href="https://www.google.it/maps/place/Via+Borgo+Treviso,+56,+35013+Cittadella+PD/@45.6476664,11.778956,15z/data=!4m5!3m4!1s0x4778d44c5140a623:0x6a249f25dda05e59!8m2!3d45.6493508!4d11.7884809">
@@ -90,10 +93,16 @@ export default function Footer(){
                         </div>
                     </div>
                     <div className="flex justify-between items-start gap-x-6">
-                        <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-xs lg:text-base">
+                        <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-xs">
                             Copyright © Pegaso S.a.s. | VAT, tax code, and number of registration in Italy, description of the legal details, description of the legal details, capitale sociale di  €10.000 interamente versato.
                         </p>
-                        <img src="./btc_logo.svg" alt="" className="w-[80px] md:w-[120px]" />
+                        <Image
+                            src="/btc_logo.svg" 
+                            alt="" 
+                            width={120}
+                            height={120}
+                            className="w-[80px] md:w-[120px]"
+                        />
                     </div>
                     <div className="mx-auto ">
                         <Link href="/">

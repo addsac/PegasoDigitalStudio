@@ -4,19 +4,19 @@ import Link from "next/link"
 import { useEffect, useRef } from "react"
 import gsap from "gsap/all"
 
-export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', onMouseEnter, size }) {
+export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', onMouseEnter, size = '', weight = '' }) {
     // switch of the classes base on the props "style"
     if (styleName == 'link-white') {
         return (
             <div onMouseEnter={onMouseEnter}>
-                <LinkWhite styleName={styleName} text={text} icon={icon} href={href} />
+                <LinkWhite styleName={styleName} text={text} icon={icon} href={href} size={size} weight={weight} />
             </div>
         )
     } 
     else if (styleName == 'link-black') {
         return (
             <div onMouseEnter={onMouseEnter}>
-                <LinkBlack styleName={styleName} text={text} icon={icon} href={href} />
+                <LinkBlack styleName={styleName} text={text} icon={icon} href={href} size={size} weight={weight} />
             </div>
         )
     } 
@@ -33,18 +33,21 @@ export default function Button({ id = '', styleName = '', text = '', icon = fals
     else if (styleName == 'primary-lg') {
         return <PrimaryLg id={id} styleName={styleName} text={text} icon={icon} href={href} />
     } 
+    else if (styleName == 'primary-lg-white') {
+        return <PrimaryLgWhite id={id} styleName={styleName} text={text} icon={icon} href={href} />
+    } 
 }
 
-export function LinkWhite({ styleName = '', text = '', icon = false, href = '/' }) {
+export function LinkWhite({ styleName = '', text = '', icon = false, href = '/', size, weight }) {
     return (
         <Link href={href}>
-            <button className={`text-sm lg:text-base font-semibold flex items-center gap-x-2 px-5 text-white hover:opacity-50 transition-all duration-200`}>
+            <button className={`text-sm lg:text-base ${weight == 'light' ? 'font-normal' : 'font-semibold'} flex items-center gap-x-2 px-5 text-white hover:opacity-50 transition-all duration-200`}>
                 {/* title of the component */}
                 {text}
 
                 {/* icon of the component */}
                 {icon && (
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 opacity-60">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>              
                 )}
@@ -52,16 +55,16 @@ export function LinkWhite({ styleName = '', text = '', icon = false, href = '/' 
         </Link>
     )
 }
-export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
+export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 100, href = '/', size, weight }) {
     return (
         <Link href={href}>
-            <button className={`text-sm lg:text-base font-semibold flex items-center gap-x-2 px-5 text-slate-900 hover:opacity-50 transition-all duration-200`}>
+            <button className={`text-sm lg:text-base ${weight == 'light' ? 'font-normal' : 'font-semibold'} flex items-center gap-x-2 px-5 text-slate-900 hover:opacity-50 transition-all duration-200`}>
                 {/* title of the component */}
                 {text}
 
                 {/* icon of the component */}
                 {icon && (
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 opacity-60">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>              
                 )}
@@ -118,7 +121,7 @@ export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, op
         gsap.set('#' + id + '-ball', {
             y: '-240px'
         })
-    }, [])
+    }, [id])
 
     const ballAnimationEnter = () => {
         gsap.set('#' + id + '-ball', {
@@ -154,6 +157,30 @@ export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, op
                     onMouseOver={ () => ballAnimationEnter() } 
                     onMouseLeave={ () => ballAnimationLeave() } 
                     className="text-slate-900 tracking-[-1%] group-hover:text-white z-[2] px-8 py-5 transition duration-600"
+                >
+                    {/* title of the component */}
+                    {text}
+
+                    {/* icon of the component */}
+                    {icon && (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>              
+                    )}
+                </button>
+            </div>
+        </Link>
+    )
+}
+export function PrimaryLgWhite({ id = '', styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
+    return (
+        <Link href={ href }>
+            <div
+                className="group relative flex justify-center bg-white hover:bg-white/60 text-slate-900 rounded-full z-[2] overflow-hidden transition duration-600"
+            >
+                {/* ball */}
+                <button
+                    className="text-lg font-medium tracking-tight z-[2] px-8 py-5 transition duration-600"
                 >
                     {/* title of the component */}
                     {text}

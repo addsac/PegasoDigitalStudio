@@ -3,6 +3,8 @@ import Title3 from '../../../components/text/Title3'
 import BlogPreview from '../../../components/BlogPreview'
 import WorkDetailTitleAnimation from '../../../components/WorkDetailTitleAnimation'
 import WorkImageFull from '../../../components/work/WorkImageFull'
+import WorkDescription from '../../../components/work/WorkDescription'
+import WorkCitation from '../../../components/work/WorkCitation'
 import WorkImageFullSwiper from '../../../components/work/WorkImageFullSwiper'
 import WorkImageMargin from '../../../components/work/WorkImageMargin'
 import WorkImageGrid3 from '../../../components/work/WorkImageGrid3'
@@ -16,7 +18,7 @@ import WorkMobile4 from '../../../components/work/WorkMobile4'
 
 export default function Page({ params }) {
     return (
-        <>
+        <div className="pt-[140px] md:pt-[240px]">
             <WorkDetailTitleAnimation />
 
             <div className="w-full">
@@ -35,7 +37,11 @@ export default function Page({ params }) {
                             />
 
                             <div className="mt-8 md:mt-10">
-                                <Title3 id="title3-work-detail" text="The Unfiltered History Tour" color="white" />
+                                <Title3
+                                    id="title3-work-detail" 
+                                    text="The Unfiltered History Tour" 
+                                    gradient={true} 
+                                />
                             </div>
                         </div>
                     </div>
@@ -44,7 +50,7 @@ export default function Page({ params }) {
                 </div>
 
                 {/* Description */}
-                <div id="statistics-work-detail" className="w-full grid grid-cols-12 px-8 md:px-12 lg:px-16 mt-24 lg:mt-32">
+                <div id="statistics-work-detail" className="w-full grid grid-cols-12 px-8 md:px-12 lg:px-16 mt-24">
                     <div className="hidden lg:block col-span-2"></div> {/* margin */}
 
                     <div className="col-span-12 lg:col-span-8">
@@ -79,9 +85,25 @@ export default function Page({ params }) {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col gap-y-48 min-h-screen w-screen py-48">
+                <div className="flex flex-col gap-y-48 min-h-screen max-w-screen w-screen py-48">
                     {/* Various components that describe the work */}
                     <WorkImageFull />
+                    <WorkDescription 
+                        title="Studs is an experiential retail and e-commerce brand that has reimagined the ear piercing experience. Studs believes pierced ears are the key to unlocking reinvention."
+                        description={[
+                            'Studs has coined the term Earscape®, through providing their customers a new way to self-express with healthy and safe ear piercings and on-trend earrings in a retail environment and online at Studs.com. ',
+                            'Studs customers are highly engaged brand loyalists that love to create and share their one-of-a-kind earscape styles. Studs.com makes shopping a 250+ assortment filled with glittering huggies, hoops, cuffs, and studs easy and fun. The site supports bundles and add-ons, to ensure the customer is able to create a unique and personalized look.',
+                            'Since coming on board two years ago as their tech team, PACT has helped STUDS build an omnichannel retail experience that powers a holistic customer journey built on personalization and performance.'
+                        ]}
+                        ctaLink="Apri il progetto live"
+                    />
+                    <WorkImageMargin />
+                    <WorkCitation 
+                        text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."
+                        author="YUJIN YONG"
+                        authorTitle="VP OF DIGITAL PRODUCT"
+                    />
+                    <WorkImageMargin />
                     <WorkTextDetail />
                     <WorkImageFullSwiper />
                     <WorkTextCentral />
@@ -102,6 +124,6 @@ export default function Page({ params }) {
                 />
 
             </div>
-        </>
+        </div>
     )
 }

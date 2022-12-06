@@ -14,7 +14,6 @@ export default function WorkTitles() {
                 <Title2
                     id="title2-work"
                     text={['Our work.', 'quello per cui esistiamo']}
-                    color="white"
                     gradient={true}
                 />
                 <div className="mx-auto max-w-[550px] mt-12 lg:mt-16">

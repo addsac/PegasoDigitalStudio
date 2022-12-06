@@ -1,10 +1,10 @@
 'use client'
 
 import { useEffect } from 'react'
-import { gsap, ScrollTrigger } from 'gsap/all'
+import { gsap, /* ScrollTrigger */ } from 'gsap/all'
 
 export default function WorkTitleAnimations() {
-    gsap.registerPlugin(ScrollTrigger)
+    /* gsap.registerPlugin(ScrollTrigger) */
 
     /**
      * Animations

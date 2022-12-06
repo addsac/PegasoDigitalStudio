@@ -11,7 +11,7 @@ export default function ContactForm(){
     /**
      * Animations
      */
-    function setAnimations(){
+    const setAnimations = () => {
         gsap.set('#title2-contact', {
             opacity: 0,
             y: '80px',
@@ -96,7 +96,7 @@ export default function ContactForm(){
                 delay: 1,
             })
         }
-    }, [])
+    }, [pathname])
 
     /**
      * Handling the activation of the button in the form
@@ -219,7 +219,7 @@ export default function ContactForm(){
     useEffect(() => {
         checkActiveButton()
     }, [
-        activeInterest, activeBudget, activeName, activeEmail, activePhone, activeSocialMediaList, activeSocialMediaQuestion1, activeSocialMediaQuestion2, activeSocialMediaQuestion3, activeMarketingQuestion1, activeMarketingQuestion2, activeMarketingQuestion3
+        checkActiveButton, activeInterest, activeBudget, activeName, activeEmail, activePhone, activeSocialMediaList, activeSocialMediaQuestion1, activeSocialMediaQuestion2, activeSocialMediaQuestion3, activeMarketingQuestion1, activeMarketingQuestion2, activeMarketingQuestion3
     ])
 
     useEffect(() => {
@@ -252,7 +252,7 @@ export default function ContactForm(){
                 <h1 
                     id="title2-contact" 
                     className={`
-                        px-8 md:px-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30
+                        px-8 md:px-16 bg-gradient-radial-text
                         font-semibold lg:text-9xl md:text-8xl text-5xl leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tighter
                     `}
                 >
@@ -286,7 +286,7 @@ export default function ContactForm(){
                             <div className="flex flex-wrap items-center gap-x-4 gap-y-4">
                                 {interests.map((value, index) => (
                                     <button 
-                                        key={index}
+                                        key={'interest-' + index}
                                         onClick={ () => activeInterest != index ? setActiveInterest(index) : setActiveInterest(null) }
                                         className={`${activeInterest == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
                                     >
@@ -306,6 +306,7 @@ export default function ContactForm(){
                                 <div className="grid grid-cols-12 gap-4 md:gap-6">
                                     {marketingQuestion1.map((value, index) => (
                                         <div
+                                            key={'marketing-question-1' + index}
                                             onClick={() => {
                                                 const check = document.getElementById(`marketing-1-${index}`).checked
                                                 if(check) {
@@ -347,6 +348,7 @@ export default function ContactForm(){
                                 <div className="grid grid-cols-12 gap-4 md:gap-6">
                                     {marketingQuestion2.map((value, index) => (
                                         <div
+                                            key={'marketing-question-2-' + index}
                                             onClick={() => {
                                                 const check = document.getElementById(`marketing-2-${index}`).checked
                                                 if(check) {
@@ -388,6 +390,7 @@ export default function ContactForm(){
                                 <div className="grid grid-cols-12 gap-4 md:gap-6">
                                     {marketingQuestion3.map((value, index) => (
                                         <div
+                                            key={'marketing-question-3' + index}
                                             onClick={() => {
                                                 const check = document.getElementById(`marketing-3-${index}`).checked
                                                 if(check) {
@@ -447,7 +450,10 @@ export default function ContactForm(){
 
                                 <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
                                     {socialMedia.map((value, index) => (
-                                        <div className="flex items-center gap-x-2 text-lg text-slate-900 tracking-tight cursor-pointer">
+                                        <div
+                                            key={'social-media-' + index}
+                                            className="flex items-center gap-x-2 text-lg text-slate-900 tracking-tight cursor-pointer"
+                                        >
                                             <div className="relative flex justify-center items-center">
                                                 <input 
                                                     type="checkbox" 
@@ -547,7 +553,7 @@ export default function ContactForm(){
                                 <div className="flex flex-wrap items-center gap-x-4 gap-y-4">
                                     {budgets.map((value, index) => (
                                         <button 
-                                            key={index}
+                                            key={'budget-' + index}
                                             onClick={ () => activeBudget != index ? setActiveBudget(index) : setActiveBudget(null) }
                                             className={`${activeBudget == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
                                         >

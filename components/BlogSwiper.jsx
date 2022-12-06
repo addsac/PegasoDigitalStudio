@@ -2,6 +2,7 @@
 
 import "swiper/swiper.min.css"
 import Link from "next/link"
+import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode } from "swiper"
 import { usePathname } from "next/navigation"
@@ -20,7 +21,7 @@ export default function BlogSwiper({ type }){
             className="mySwiper cursor-grab"
         >
             {/* White margin */}
-            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/')) && (
+            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/') || pathname.includes('/servizi/')) && (
                 <SwiperSlide style={{ width: 'auto' }}>
                     <div className="md:w-16 h-full"></div>
                 </SwiperSlide>
@@ -30,7 +31,13 @@ export default function BlogSwiper({ type }){
                 <SwiperSlide style={{ width: 'auto' }} key={ index }>
                     <Link href="/blog/1">
                         <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer">
-                            <img src="/blog-temporary-bg.jpg" alt="" className="link-for-mouse-animation text-cursor-trascina w-full h-[380px] md:h-[460px] object-cover animation duration-200 group-hover:scale-105" />
+                            <Image
+                                src="/blog-temporary-bg.jpg"
+                                alt=""
+                                width={500}
+                                height={500}
+                                className="link-for-mouse-animation text-cursor-trascina w-full h-[380px] md:h-[460px] object-cover animation duration-200 group-hover:scale-105" 
+                            />
 
                             {/* Date */}
                             { type == 'articles' && (
@@ -64,7 +71,7 @@ export default function BlogSwiper({ type }){
             </SwiperSlide> */}
             
             {/* White margin */}
-            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/')) && (
+            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/') || pathname.includes('/servizi/')) && (
                 <SwiperSlide style={{ width: 'auto' }}>
                     <div className="md:w-16 h-full"></div>
                 </SwiperSlide>

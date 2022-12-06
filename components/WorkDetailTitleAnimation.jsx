@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { gsap, ScrollTrigger } from 'gsap/all'
 
-export default function a(){
+export default function WorkDetailTitleAnimation(){
     gsap.registerPlugin(ScrollTrigger)
 
     /**

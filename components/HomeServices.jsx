@@ -16,6 +16,7 @@ export default function HomeServices(){
                         <Title2 
                             id="title2-services"
                             text={ [ 'Servizi' ] }
+                            color="white"
                         />
                     </div>
 

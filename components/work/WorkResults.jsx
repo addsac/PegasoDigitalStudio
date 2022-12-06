@@ -7,25 +7,25 @@ export default function WorkResults(){
                     <div className="col-span-4 md:col-span-2">
                         <div className="h-[172px] flex flex-col gap-y-3">
                             <p className="text-4xl md:text-5xl font-semibold text-white"> 18M </p>
-                            <p className="text-base font-semibold text-white/60"> Impressions </p>
+                            <p className="text-base font-regular  text-white/60"> Impressions </p>
                         </div>
                     </div>
                     <div className="col-span-4 md:col-span-2">
                         <div className="h-[172px] flex flex-col gap-y-3">
                             <p className="text-4xl md:text-5xl font-semibold text-white"> 100K+ </p>
-                            <p className="text-base font-semibold text-white/60"> Tours unfiltered </p>
+                            <p className="text-base font-regular text-white/60"> Tours unfiltered </p>
                         </div>
                     </div>
                     <div className="col-span-4 md:col-span-2">
                         <div className="h-[172px] flex flex-col gap-y-3">
                             <p className="text-4xl md:text-5xl font-semibold text-white"> 990K </p>
-                            <p className="text-base font-semibold text-white/60"> Sq. ft of the British Museum unfiltered </p>
+                            <p className="text-base font-regular text-white/60"> Sq. ft of the British Museum unfiltered </p>
                         </div>
                     </div>
                     <div className="col-span-4 md:col-span-2">
                         <div className="h-[172px] flex flex-col gap-y-3">
                             <p className="text-4xl md:text-5xl font-semibold text-white"> 40% </p>
-                            <p className="text-base font-semibold text-white/60"> Rise in Tik Tok followers </p>
+                            <p className="text-base font-regular text-white/60"> Rise in Tik Tok followers </p>
                         </div>
                     </div>
                 </div>
@@ -36,13 +36,13 @@ export default function WorkResults(){
                     <div className="col-span-4 md:col-span-3">
                         <div className="h-[172px] flex flex-col gap-y-3">
                             <p className="text-4xl md:text-5xl font-semibold text-white"> 49% </p>
-                            <p className="text-base font-semibold text-white/60"> Increase in total impressions on Instagram </p>
+                            <p className="text-base font-regular text-white/60"> Increase in total impressions on Instagram </p>
                         </div>
                     </div>
                     <div className="col-span-4 md:col-span-3">
                         <div className="h-[172px] flex flex-col gap-y-3">
                             <p className="text-4xl md:text-5xl font-semibold text-white"> 2M </p>
-                            <p className="text-base font-semibold text-white/60"> Earned video views on Tik Tok </p>
+                            <p className="text-base font-regular text-white/60"> Earned video views on Tik Tok </p>
                         </div>
                     </div>
                     

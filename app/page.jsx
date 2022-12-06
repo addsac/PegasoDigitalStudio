@@ -12,10 +12,16 @@ export default function Page(){
 
     {/* <ExperienceLoading progress={ 16 } /> */}
 
-    <main>
+    <main className="pt-[140px] md:pt-[240px]">
       {/* <ExperienceModel /> */}
 
       <div className="md:mb-24 lg:mb-40">
+       {/*  <div className="flex justify-center items-center flex-nowrap gap-x-16 px-8 md:px-12 lg:px-16 leading-loose text-slate-500">
+          <p> Design </p>
+          <p> Tecnologia </p>
+          <p> Arte </p>
+          <p> Umanità </p>
+        </div> */}
         <Title1 id="home-title" text={ ['Pegaso', 'Digital', 'Studio'] } center />
       </div>
 

@@ -11,14 +11,14 @@ export default function Title1({ id = '', text = [], color, opacity, center }){
             duration: 0.8,
             delay: 1,
         })
-    }, [])
+    }, [id])
 
     return (
         <h1 
             id={id ? id : ''}
             style={{ transform: 'translateY(-60px)', opacity: 0 }}
             className={`
-                ${color ? ('text-'+color) : 'text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30'} 
+                ${color ? ('text-'+color) : 'bg-gradient-radial-text'}
                 ${opacity ? ('opacity-'+opacity) : ''} 
                 ${center ? 'text-center' : ''}
                 title-1 mt-6

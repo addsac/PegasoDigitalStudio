@@ -4,7 +4,7 @@ import ContactForm from "../../components/ContactForm"
 import BlogPreview from "../../components/BlogPreview"
 
 export default function Page(){
-    return <>
+    return <div className="pt-[140px] md:pt-[240px]">
         <main className="py-8 pb-24 md:pb-32 lg:pb-48">
             <WorkTitles />
 
@@ -39,5 +39,5 @@ export default function Page(){
                 description="Take a look on our latest articles to find some  inspiration for your project and more."
             />
         </main>
-    </>
+    </div>
 }

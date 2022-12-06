@@ -1,44 +1,59 @@
 import Text3 from '../../components/text/Text3'
-import HomeMission from '../../components/HomeMission'
+import MissionAnimation from '../../components/mission/MissionAnimation'
+import MissionPhrases from '../../components/mission/MissionPhrases'
 import MissionSwiper from '../../components/mission/MissionSwiper'
+import MissionStory from '../../components/mission/MissionStory'
+import MissionPhotoGradient from '../../components/mission/MissionPhotoGradient'
+import MissionValues from '../../components/mission/MissionValues'
+import WorkImageMargin from '../../components/work/WorkImageMargin'
 
 export default function Page() {
     return (
-        <div className="py-8 pb-24 md:pb-32 lg:pb-48">
+        <div className="pt-[140px] md:pt-[240px]">
+            <MissionAnimation />
             
-            <div className="text-center mb-16">
-                <Text3 
-                    text="La nostra missione" 
-                    color="white"
-                />
+            <div className="py-8 pb-24 md:pb-32 lg:pb-48">
+                
+                <div id="text3-mission" className="text-center mb-24">
+                    <Text3 
+                        text="Alle persone che dedicano la propria vita"
+                        color="white"
+                        opacity={60}
+                    />                
+                    <Text3 
+                        text="a rendere realtà i propri ideali"
+                        color="white"
+                        opacity={60}
+                    /> 
+                </div>
+
+                <div id="title1-mission" className="text-center mb-24 md:mb-48">
+                    <h1 className='title-1 !leading-[105%] text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/50'>
+                        Aiutiamo <br /> le persone <br /> a portare <br /> valore <br /> nel mondo
+                    </h1>
+                </div>
+
+                <div className="my-32 md:my-48 lg:my-64 flex flex-col gap-y-32 md:gap-y-48 lg:gap-y-56">
+                    <MissionPhrases />
+                </div>
+
+                <div className="my-32 md:my-48 lg:my-64">
+                    <MissionSwiper />
+                </div>
+
+                <MissionStory />
+
+                <div className="my-32 md:my-48 lg:my-64">
+                    <WorkImageMargin />
+                </div>
+
+                <MissionValues />
+
+                <div className="mt-32 md:mt-32 lg:mt-64">
+                    <MissionPhotoGradient />
+                </div>
+
             </div>
-
-            <div className="text-center md:mb-24 lg:mb-">
-                <h1 className='title-1 text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/30'>
-                    Aiutiamo <br /> le persone <br /> a portare <br /> valore nel mondo.
-                </h1>
-            </div>
-
-            <HomeMission 
-                id="1" 
-                text="We empower brands and creators by mastering the latest digital technologies, helping them to reach people and create value for the world." 
-                subtitle="La missione"
-            />
-            <HomeMission 
-                id="2" 
-                text="We embody our mission by living up to our brand values, with an everlasting devotion to digital craftmanship and meaningful aesthetics." 
-                subtitle="Come lavoriamo"
-            />
-            <HomeMission 
-                id="3" 
-                text="We serve our clients by producing quality websites, ecommerce, marketing strategies and taking care of their social media comunity." 
-                subtitle="Cosa facciamo"
-            />
-
-            <div className="my-28 md:my-32 lg:my-48">
-                <MissionSwiper />
-            </div>
-
         </div>
     )
 }

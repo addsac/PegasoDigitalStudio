@@ -36,7 +36,7 @@ export default function HomeMissionAnimation({ id }) {
             duration: 0.8,
             delay: 0.2,
         })
-    }, [])
+    }, [id])
 
     return null
 }

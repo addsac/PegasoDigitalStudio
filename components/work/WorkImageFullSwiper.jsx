@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import "swiper/swiper.min.css"
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
@@ -16,7 +17,7 @@ export default function WorkImageFullSwiper(){
     const pagination = {
         clickable: true,
         renderBullet: function (index, className) {
-            return `<span class="${className}"></span>`;
+            return `<span className="${className}"></span>`;
         },
     };
     
@@ -33,17 +34,35 @@ export default function WorkImageFullSwiper(){
             >
                 <SwiperSlide>
                     <div className="w-full h-[400px] lg:h-[623px] object-clip">
-                        <img src="/blog-temporary-bg.jpg" alt="" className='w-full h-full object-cover' />
+                        <Image 
+                            src="/blog-temporary-bg.jpg" 
+                            alt="" 
+                            width={500}
+                            height={500}
+                            className='w-full h-full object-cover' 
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="w-full h-[400px] lg:h-[623px] object-clip">
-                        <img src="/blog-temporary-bg.jpg" alt="" className='w-full h-full object-cover' />
+                        <Image 
+                            src="/blog-temporary-bg.jpg" 
+                            alt="" 
+                            width={500}
+                            height={500}
+                            className='w-full h-full object-cover' 
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="w-full h-[400px] lg:h-[623px] object-clip">
-                        <img src="/blog-temporary-bg.jpg" alt="" className='w-full h-full object-cover' />
+                        <Image 
+                            src="/blog-temporary-bg.jpg" 
+                            alt="" 
+                            width={500}
+                            height={500}
+                            className='w-full h-full object-cover' 
+                        />
                     </div>
                 </SwiperSlide>
             </Swiper>

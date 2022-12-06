@@ -3,13 +3,13 @@
 import { useEffect } from 'react'
 import { gsap, ScrollTrigger } from 'gsap/all'
 
-export default function a(){
+export default function BlogDetailTitleAnimation(){
     gsap.registerPlugin(ScrollTrigger)
 
     /**
      * Animations
      */
-    function setAnimations() {
+    const setAnimations = () => {
         gsap.set('#title3-blog-detail', {
             opacity: 0,
             y: '100px',

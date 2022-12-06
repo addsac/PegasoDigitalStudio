@@ -1,6 +1,6 @@
 export default function Text3({ id = '', text, color, opacity = '' }){
     return (
-        <h5 
+        <p 
             id={id && id}
             className={`
                 ${color ? ('text-'+color) : ''} 
@@ -9,6 +9,6 @@ export default function Text3({ id = '', text, color, opacity = '' }){
             `}
         >
             { text }
-        </h5>
+        </p>
     )
 }

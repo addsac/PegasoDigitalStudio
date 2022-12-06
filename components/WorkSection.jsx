@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from 'next/link'
 import Text2 from './text/Text2'
 import Button from './button/Button'
@@ -25,12 +26,18 @@ export default function WorkSection({ text }){
                             <div className="group col-span-12 md:col-span-6 cursor-pointer" key={value}>
                                 <Link href="/lavori/1">
                                     <div className="w-full h-[467px] bg-white overflow-clip">
-                                        <img src="/blog-temporary-bg.jpg" className="link-for-mouse-animation text-cursor-vedi w-full h-full object-cover animation duration-200 group-hover:scale-105" />
+                                        <Image 
+                                            src="/blog-temporary-bg.jpg" 
+                                            alt=""
+                                            width={500}
+                                            height={500}
+                                            className="link-for-mouse-animation text-cursor-vedi w-full h-full object-cover animation duration-200 group-hover:scale-105" 
+                                        />
                                     </div>
 
                                     <div className="mt-6 text-center text-white font-semibold">
                                         <p> Luxurious design experience </p>
-                                        <p className="text-sm opacity-60 mt-[6px]"> Aebele Interiors </p>
+                                        <p className="font-regular text-sm opacity-60 mt-[6px]"> Aebele Interiors </p>
                                     </div>
                                 </Link>
                             </div>
