@@ -19,7 +19,9 @@ export default function HeaderWrapper(){
 
     return (
         <>
-            <div className={color == 'dark' ? (pathname.includes('/blog/') ? 'bg-slate-900' : '') : 'bg-white'}>
+            <div
+                /* className={color == 'dark' ? (pathname.includes('/blog/') ? 'bg-slate-900' : '') : 'bg-white'} */
+            >
                 <Header color={ color } />
             </div>
         </>    

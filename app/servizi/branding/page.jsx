@@ -25,12 +25,14 @@ export default function Page(){
 
                     <ServiceTitles
                         title={[ 'Branding' ]} 
-                        description={ 'Progettiamo e sviluppiamo brand moderni basati su design, psicologia e storytelling per creare un legame con le persone e farsi ricordare.' } 
+                        description={[
+                            'Progettiamo e sviluppiamo brand moderni basati su design, psicologia e storytelling per creare un legame con le persone e farsi ricordare.'
+                        ]} 
                     />
                 </div>
 
                 {/* Content of the Service */}
-                <div className="w-full flex flex-col gap-y-56 py-40">
+                <div className="w-full flex flex-col gap-y-28 lg:gap-y-56 py-32 lg:py-40">
                     
                     <div id="wrapper-what" className="flex flex-col gap-y-32">
                         <ServiceTitlesDetail
@@ -46,7 +48,9 @@ export default function Page(){
                         <ServiceImage4 id="what" />
                     </div>
 
-                    <ServiceImageFull />
+                    <ServiceImageFull
+                        path="/img/services/branding/branding-photo.png" 
+                    />
 
                     <div id="wrapper-why" className="flex flex-col gap-y-32">
                         <ServiceTitlesDetail
@@ -62,13 +66,9 @@ export default function Page(){
                         <ServiceImage3 id="why" />
                     </div>
 
-                    {/* <ServiceImageFull /> */}
-
-                    <></> {/* process component */}
                     <ServiceProcess 
                         text={[
-                            'A Sharp Turn in the.',
-                            'Opposite Direction'
+                            'A Sharp Turn in the Opposite Direction'
                         ]}
                         description='In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'
                         cipsText="Il Processo"

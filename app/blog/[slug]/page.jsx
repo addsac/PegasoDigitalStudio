@@ -94,12 +94,12 @@ export default function Page({ params }) {
                             5. What kind of deliverables you should provide as a separate services?
                         </p>
 
-                        <div className="cursor-default text-center gap-y-4 mx-auto max-w-[600px] rounded-xl bg-white/5 text-white p-8 py-14 w-full mt-32">
-                            <p className="text-3xl font-medium tracking-tight"> Hai un nuovo progetto in mente? </p>
-                            <p className="opacity-60 tracking-tight mt-4 mb-8"> Puoi contattarci qui, ti aiuteremo a capire come renderlo realtà. </p>
+                        <div className="cursor-default text-center gap-y-4 mx-auto max-w-[600px] rounded-xl border border-slate-700 bg-[#ffffff04] text-white p-6 py-10 w-full mt-32">
+                            <p className="text-xl font-medium tracking-tight"> Vuoi iniziare un nuovo progtto? </p>
+                            <p className="opacity-50 tracking-tight mt-4 mb-6"> Puoi contattarci qui, ti aiuteremo a capire come renderlo realtà. </p>
                             <Link href="/contatti">
-                                <button className="bg-white rounded px-8 py-3 text-slate-900 font-medium tracking-tight">
-                                    Inizia un progetto
+                                <button className="bg-white rounded-full px-8 py-3 text-slate-900 font-semibold tracking-tight hover:bg-white/60 transition duration-200">
+                                    Contattaci
                                 </button>
                             </Link>
                         </div>

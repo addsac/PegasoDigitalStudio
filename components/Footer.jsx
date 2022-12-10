@@ -82,6 +82,11 @@ export default function Footer(){
                                     Linkedin
                                 </button>
                             </Link>
+                            <Link href="/">
+                                <button className="hover:opacity-60 transition duration-300">
+                                    Twitter
+                                </button>
+                            </Link>
                         </div>
                         <div className="col-span-12 flex flex-col gap-y-2 text-sm md:text-base font-semibold text-white">
                             <a href="mailto:info@pegasodisgitalstudio.com" className="hover:opacity-60 transition duration-300">

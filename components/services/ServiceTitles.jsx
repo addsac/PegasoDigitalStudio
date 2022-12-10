@@ -1,7 +1,7 @@
 import Title2 from '../text/Title2'
 import Text1 from '../text/Text1'
 
-export default function ServiceTitles({ title = '', description = '' }) {
+export default function ServiceTitles({ title = '', description = [] }) {
     return (
         <>        
             <div
@@ -9,7 +9,7 @@ export default function ServiceTitles({ title = '', description = '' }) {
                 className="mx-auto w-full"
             >
                 {/* Title and description */}
-                <div className="mx-auto text-center max-w-[900px] px-8">
+                <div className="mx-auto text-center max-w-[1000px] px-8">
                     { title.length > 0 && (
                         <Title2
                             id="title2-service-title"
@@ -19,15 +19,21 @@ export default function ServiceTitles({ title = '', description = '' }) {
                         />
                     )}
 
-                    { description != '' && (
-                        <div className="mx-auto max-w-[800px] mt-8 md:mt-12 lg:mt-16">
-                            <Text1
-                                id="text1-service-title"
-                                text={ description }
-                                opacity={60}
-                                color="white"
-                                shadow={true}
-                            />
+                    { description.length > 0 && (
+                        <div id="text1-service-title" className="mx-auto mt-8 md:mt-12 lg:mt-16">
+                            {description.map((text, index) => (
+                                <div key={index + '-subtitle'}>
+                                    <Text1
+                                        text={ text }
+                                        opacity={80}
+                                        color="white"
+                                        shadow={true}
+                                    />
+                                    {index != text.length - 1 && (
+                                        <br />
+                                    )}
+                                </div>
+                            ))}
                         </div>
                     )}
                 </div>

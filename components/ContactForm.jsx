@@ -223,9 +223,9 @@ export default function ContactForm(){
     ])
 
     useEffect(() => {
-        const budgetSitoWeb = ['2k - 5k', '5k - 10k', '10k - 15k', 'Non specificato']
-        const budgetEcommerce = ['3k - 5k', '5k - 10k', '10k - 20k', 'Non specificato']
-        const budgetBranding = ['1k - 3k', '3k - 5k', '5k - 10k', 'Non specificato']
+        const budgetSitoWeb = ['3k - 5k', '5k - 10k', '10k - 25k', 'Non specificato']
+        const budgetEcommerce = ['3k - 5k', '5k - 10k', '10k - 30k', 'Non specificato']
+        const budgetBranding = ['3k - 5k', '5k - 10k', '10k - 20k', 'Non specificato']
         const budgetMarketing = []
         const budgetSocialmedia = []
 
@@ -248,7 +248,9 @@ export default function ContactForm(){
         <div id="contact-wrapper" className="w-full">
 
             {/* Title */}
-            <div className="mx-auto max-w-5xl text-center">
+            <div className="mx-auto max-w-5xl text-center relative">
+                <div className="absolute opacity-80 bottom-0 left-1/2 -ml-[50px] -mb-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
+
                 <h1 
                     id="title2-contact" 
                     className={`

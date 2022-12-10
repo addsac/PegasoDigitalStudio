@@ -136,7 +136,9 @@ export default function Header({ color }) {
             const currentScroll = window.pageYOffset;
 
             if (currentScroll <= 0) {
-                body.classList.remove("scroll-up");
+                body.classList.remove("scroll-up")
+                
+                document.getElementById('header-decoration').classList.remove("backdrop-blur-[12px]")
 
                 return;
             }
@@ -153,8 +155,10 @@ export default function Header({ color }) {
                 })
             } 
             else if (currentScroll < lastScroll) {
-                body.classList.remove("scroll-down");
-                body.classList.add("scroll-up");
+                body.classList.remove("scroll-down")
+                body.classList.add("scroll-up")
+                
+                document.getElementById('header-decoration').classList.add("backdrop-blur-[12px]")
 
                 gsap.to(document.querySelector('header'), {
                     y: 0,
@@ -179,11 +183,10 @@ export default function Header({ color }) {
                     className="w-screen fixed"
                 >
                     <div 
+                        id="header-decoration"
                         className={`
                             flex justify-between items-center tracking-[-1%] 
-                            px-8 md:px-12 lg:px-16 py-4 md:py-6 lg:py-8
-                            backdrop-blur-[12px]
-                            ${color == 'dark' ? 'bg-slate-900/90' : 'bg-white/90'}
+                            px-8 md:px-12 lg:px-16 py-6 md:py-8 lg:py-12
                         `}
                         /* border-b border-slate-800 border-b border-slate-100 */
                     >
@@ -197,7 +200,7 @@ export default function Header({ color }) {
                                         id="header-logo" 
                                         width={40}
                                         height={40}
-                                        className="h-12 md:h-16 hover:scale-110 transition duration-300"
+                                        className="w-auto h-8 md:h-10 hover:scale-110 transition duration-300"
                                         alt=""
                                     />
                                 ) : 
@@ -207,7 +210,7 @@ export default function Header({ color }) {
                                         id="header-logo" 
                                         width={40}
                                         height={40}
-                                        className="h-12 md:h-16 hover:scale-110 transition duration-300"
+                                        className="w-auto h-8 md:h-10 hover:scale-110 transition duration-300"
                                         alt=""
                                     />
                                 )
@@ -246,7 +249,7 @@ export default function Header({ color }) {
                         </span>
 
                         {/* Links */}
-                        <div className="hidden md:flex items-start gap-x-3">
+                        <div className="hidden md:flex items-center gap-x-3">
                             <div className="flex">
                                 <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
@@ -308,7 +311,7 @@ export default function Header({ color }) {
                             />
                             <Button 
                                 styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                text="Social media" 
+                                text="Social Media" 
                                 href="/servizi/social-media"
                             />
                         </div>

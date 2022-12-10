@@ -5,7 +5,7 @@ import "swiper/swiper.min.css"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode } from "swiper"
 
-export default function BlogSwiper({ type }){
+export default function WorkImageGridSwiper({ type }){
     const arrayToLoop = [800, 400, 700, 300]
 
     return <div>

@@ -1,26 +1,27 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect } from 'react'
-import { gsap, ScrollTrigger } from 'gsap/all'
+/* import { useEffect } from 'react'
+import { gsap, ScrollTrigger } from 'gsap/all' */
 
-export default function ServiceImageFull() {
-    gsap.registerPlugin(ScrollTrigger)
+export default function ServiceImageFull({ path = '' }) {
+    /* useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
 
-    useEffect(() => {
         gsap.to(`#service-image-full`, {
             scrollTrigger: {
                 trigger: '#service-wrapper-image-full',
-                start: 'top 0',
-                end: '+=100vh',
+                start: 'top top',
+                end: '+=100%',
+                scrub: 1,
                 pin: true,
-                scrub: true,
-                markers: true,
+                pinSpacing: false,
+                // markers: true,
             },
             opacity: 0,
             scale: 1.1,
         })
-    }, [])
+    }, []) */
 
     return (
         <div
@@ -28,9 +29,9 @@ export default function ServiceImageFull() {
             className="h-screen w-screen"
         >
             <Image
-                src="/blog-temporary-bg.jpg"
-                alt=""
+                src={path == '' ? '/blog-temporary-bg.jpg' : path}
                 id="service-image-full"
+                alt=""
                 className="w-full h-full object-cover"
                 width={1000}
                 height={1000}
