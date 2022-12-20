@@ -29,7 +29,7 @@
     @apply text-[73px] md:text-[141px] lg:text-[220px] font-medium leading-[130%] md:leading-[125%] lg:leading-[118%] tracking-tighter;
 }
 .title-2{
-    @apply text-7xl md:text-8xl lg:text-[141px] font-semibold leading-[110%] tracking-tighter;
+    @apply text-7xl md:text-8xl lg:text-[170px] font-semibold leading-[110%] tracking-tighter;
 }
 .title-3{
     @apply text-5xl md:text-7xl lg:text-8xl font-semibold leading-[120%] md:leading-[120%] lg:leading-[110%] tracking-tight lg:tracking-tighter;
@@ -38,7 +38,7 @@
     @apply text-4xl md:text-5xl lg:text-6xl font-medium leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tighter;
 }
 .text-1{
-    @apply text-lg md:text-2xl leading-[150%] md:leading-[150%] font-medium tracking-tight;
+    @apply text-lg md:text-[22px] leading-[150%] md:leading-[150%] font-medium tracking-tight;
 }
 .text-2{
     @apply text-[24px] md:text-[28px] lg:text-[32px] font-medium leading-[140%] tracking-tight;
@@ -51,7 +51,7 @@
     @apply bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-50 via-slate-400 to-slate-900;
 }
 .bg-gradient-radial-text-left{
-    @apply bg-clip-text text-transparent bg-gradient-to-l from-slate-50 via-slate-400 to-slate-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-50 to-slate-400 to-slate-700;
 }
 
 /**

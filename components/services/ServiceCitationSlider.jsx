@@ -3,7 +3,7 @@ import Cips from '../utility/Cips'
 
 export default function ServiceCitationSlider() {
   return (
-    <div className="mx-auto w-full max-w-[1920px] grid grid-cols-12 px-8">
+    <div className="mx-auto w-full max-w-[1440px] grid grid-cols-12 px-8">
         {/*
          * Title
          */}

@@ -4,7 +4,7 @@ export default function ServiceImage4({ id }) {
   return (
     <div 
         id={'photo-' + id} 
-        className="w-full max-w-[1440px] grid grid-cols-12 md:gap-x-16 px-8 md:px-12 lg:px-16 relative"
+        className="mx-auto w-full max-w-[1440px] grid grid-cols-12 md:gap-x-16 px-8 md:px-12 lg:px-16 relative"
     >
         <div className="col-span-12 md:col-span-6 lg:col-span-3 flex flex-col mb-12 lg:mb-0">
             <div className="w-full h-[250px] overflow-hidden relative">

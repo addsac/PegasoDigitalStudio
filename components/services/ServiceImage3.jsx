@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function ServiceImage3({ id }) {
   return (
-    <div id={'photo-' + id} className="w-full mx-auto max-w-[1300px] grid grid-cols-12 md:gap-x-16 px-8 md:px-16 lg:px-20 xl:px-32 relative">
+    <div id={'photo-' + id} className="w-full mx-auto max-w-[1300px] grid grid-cols-12 md:gap-x-12 px-8 md:px-16 lg:px-20 xl:px-32 relative">
 
-        <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0 p-8 rounded-2xl border border-slate-700 bg-[#ffffff04]">
+        <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0 p-8 rounded-2xl border border-slate-700 bg-[#ffffff04]">
             {/* <div className="w-full h-[270px] overflow-hidden relative">
                 <div className="absolute h-full w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-900/80 to-slate-900"></div>
                 <Image 
@@ -24,7 +24,7 @@ export default function ServiceImage3({ id }) {
             <p className="text-white/50 text-sm leading-[160%]"> In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said after the Tour was launched. </p>
         </div>
         
-        <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0 p-8 rounded-2xl border border-slate-700 bg-[#ffffff04]">
+        <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0 p-8 rounded-2xl border border-slate-700 bg-[#ffffff04]">
             {/* <div className="w-full h-[270px] overflow-hidden relative">
                 <div className="absolute h-full w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-900/80 to-slate-900"></div>
                 <Image 
@@ -44,7 +44,7 @@ export default function ServiceImage3({ id }) {
             <p className="text-white/50 text-sm leading-[160%]"> In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said after the Tour was launched. </p>
         </div>
 
-        <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0 p-8 rounded-2xl border border-slate-700 bg-[#ffffff04]">
+        <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0 p-8 rounded-2xl border border-slate-700 bg-[#ffffff04]">
             {/* <div className="w-full h-[270px] overflow-hidden relative">
                 <div className="absolute h-full w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-900/80 to-slate-900"></div>
                 <Image 

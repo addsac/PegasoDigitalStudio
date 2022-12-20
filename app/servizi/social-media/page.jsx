@@ -4,6 +4,7 @@ import ServiceTextAndImage from '../../../components/services/ServiceTextAndImag
 import ServiceDescriptionReview from '../../../components/services/ServiceDescriptionReview'
 import ServiceTitlesDetail from '../../../components/services/ServiceTitlesDetail'
 import ServiceGridClients from '../../../components/services/ServiceGridClients'
+import ServiceClientsSlider from '../../../components/services/ServiceClientsSlider'
 import WorkCitation from '../../../components/work/WorkCitation'
 import BlogPreview from '../../../components/BlogPreview'
 import ContactForm from '../../../components/ContactForm'
@@ -77,7 +78,7 @@ export default function Page(){
                         id="description-with-review"
                     />
 
-                    <div id="wrapper-clients" className="flex flex-col gap-y-24 md:gap-y-32">
+                    <div id="wrapper-clients" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
                                 'Non solo il logo.',
@@ -88,7 +89,8 @@ export default function Page(){
                             cipsText="I nostri Clienti"
                             id="clients"
                         />
-                        <ServiceGridClients id="clients" />
+                        {/* <ServiceGridClients id="clients" /> */}
+                        <ServiceClientsSlider id="clients" />
                     </div>
 
                     <WorkCitation 

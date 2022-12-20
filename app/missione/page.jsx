@@ -1,4 +1,3 @@
-import Text3 from '../../components/text/Text3'
 import MissionAnimation from '../../components/mission/MissionAnimation'
 import MissionPhrases from '../../components/mission/MissionPhrases'
 import MissionSwiper from '../../components/mission/MissionSwiper'
@@ -6,35 +5,46 @@ import MissionStory from '../../components/mission/MissionStory'
 import MissionPhotoGradient from '../../components/mission/MissionPhotoGradient'
 import MissionValues from '../../components/mission/MissionValues'
 import WorkImageMargin from '../../components/work/WorkImageMargin'
+import Cips from '../../components/utility/Cips'
 
 export default function Page() {
     return (
-        <div className="pt-[140px] md:pt-[240px]">
+        <div
+            style={{ zIndex: 1000 }}
+            className="pt-[140px] md:pt-[240px]"
+        >
             <MissionAnimation />
             
             <div className="py-8 pb-24 md:pb-32 lg:pb-48">
                 
-                <div id="text3-mission" className="text-center mb-24">
-                    <Text3 
-                        text="Alle persone che dedicano la propria vita"
+                <div id="text3-mission" className="text-center mb-16 md:mb-20">
+                    <Cips 
+                        text="Magia Digitale fusa nella Praticità"
                         color="white"
                         opacity={60}
-                    />                
-                    <Text3 
-                        text="a rendere realtà i propri ideali"
-                        color="white"
-                        opacity={60}
-                    /> 
+                    />
                 </div>
 
-                <div id="title1-mission" className="text-center mb-24 md:mb-48">
-                    <h1 className='title-1 !leading-[105%] text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/50'>
-                        Aiutiamo <br /> le persone <br /> a portare <br /> valore <br /> nel mondo
+                <div id="title1-mission" className="mx-auto max-w-[1400px] text-center mb-24 md:mb-48 px-8 md:px-16 lg:px-24">
+                    <h1 className='title-2 !leading-[105%] text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/50'>
+                        {/* Aiutiamo <br /> le persone <br /> a portare <br /> valore <br /> nel mondo */}
+                        {/* Help people to share value to the world through crafting digital products always linked to a functional startpoint. */}
+                        Aiutiamo le persone a portare valore nel mondo creando prodotti digitali, partendo dalla funzione <span className='whitespace-nowrap'>prima di tutto.</span>
                     </h1>
                 </div>
 
                 <div className="my-32 md:my-48 lg:my-64 flex flex-col gap-y-32 md:gap-y-48 lg:gap-y-56">
                     <MissionPhrases />
+                </div>
+
+                <div className="my-32 md:my-48 lg:my-64">
+                    <MissionSwiper />
+                </div>
+
+                <div className="my-32 md:my-48 lg:my-64 px-8 md:px-12 lg:px-16">
+                    <div className="w-full h-screen bg-white flex items-center justify-center">
+                        <p> 3D Model + Logo specifics </p>
+                    </div>
                 </div>
 
                 <div className="my-32 md:my-48 lg:my-64">

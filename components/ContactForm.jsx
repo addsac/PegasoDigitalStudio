@@ -1,9 +1,12 @@
 'use client'
 
+import axios from 'axios'
 import { useEffect, useRef, useState } from "react"
 import { gsap, ScrollTrigger } from 'gsap/all'
-import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation'
 import Text1 from "./text/Text1"
+
+const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 export default function ContactForm(){
     const pathname = usePathname();
@@ -243,6 +246,40 @@ export default function ContactForm(){
         else if(activeInterest == 4)
             setBudgets(budgetSocialmedia)
     }, [activeInterest])
+
+    const handleSubmit = (e) => { 
+        e.preventDefault()
+        console.log('Sending')
+        
+        let dataObj = {
+            email: activeEmail.current.value,
+            name: activeName.current.value,
+            message: 'Text of the message.',
+        }
+
+        axios.post(`/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${'text of the message'}`, {
+            dataObj // non si vede sulla richiesta
+        })
+            .then((res) => {
+                console.log(res)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+
+        /* fetch('/api/contact', {
+            method: 'POST',
+            body: JSON.stringify(data),
+        }).then((res) => {
+            console.log('Response received')
+
+            if (res.status === 200) {
+                console.log('Response succeeded!')
+            }
+        }).catch((err) => {
+            console.log(err)
+        }) */
+    }
 
     return (
         <div id="contact-wrapper" className="w-full">
@@ -570,6 +607,8 @@ export default function ContactForm(){
                         <div className="mt-6 flex flex-col gap-y-5 text-center">
                             <div className="block">
                                 <button 
+                                    type="submit" 
+                                    onClick={ (e) => handleSubmit(e) }
                                     className={`${buttonActive ? 'bg-slate-900 text-white' : 'bg-slate-300 text-white cursor-not-allowed'}
                                     z-[2] px-8 py-5 rounded-full transition duration-300`}
                                 >

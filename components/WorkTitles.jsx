@@ -10,7 +10,7 @@ export default function WorkTitles() {
             <WorkTitleAnimations />
 
             {/* Title and description */}
-            <div className="mx-auto text-center max-w-[900px] px-8 lg:px-0">
+            <div className="mx-auto text-center max-w-[1000px] px-8 lg:px-0">
                 <Title2
                     id="title2-work"
                     text={['Our work.', 'quello per cui esistiamo']}

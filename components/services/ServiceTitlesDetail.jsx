@@ -17,7 +17,7 @@ export default function ServiceTitlesDetail({ text = [], description = '', cipsT
                     <div className="text-center">
                         <Cips text={cipsText} />
 
-                        <h2 id={'subtitle-' + id} className="title-4 bg-gradient-radial-text my-10">
+                        <div id={'subtitle-' + id} className="title-4 bg-gradient-radial-text my-10">
                             {text.map((value, index) => (
                                 <p key={index + '-subtitle-' + id}>
                                     <span>
@@ -28,7 +28,7 @@ export default function ServiceTitlesDetail({ text = [], description = '', cipsT
                                     )}
                                 </p>
                             ))}
-                        </h2>
+                        </div>
 
                         <p id={'description-' + id} className="mx-auto max-w-[640px] text-3 text-white/60 tracking-tight px-8">
                             { description }

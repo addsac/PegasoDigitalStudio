@@ -19,12 +19,12 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
         {/* video modal  */}
         <ModalVideo />
 
-        <div className="w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
+        <div className="mx-auto max-w-[1440px] w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
             {/* text */}
             <div className="relative col-span-12 lg:col-span-5">
                 <Cips text={cipsText} />
 
-                <div id={'process-' + id} className="title-4 bg-gradient-radial-text my-10">
+                <div id={'process-' + id} className="title-4 bg-gradient-radial-text-left my-10">
                     {text.map((value, index) => (
                         <h2 key={index + '-process-' + id}>
                             <span>

@@ -9,7 +9,7 @@ export default function HomeServices(){
         <>
             <HomeServicesAnimation /> {/* client component for the ainmations */}
 
-            <div id="services-wrapper" className="mx-auto max-w-7xl pt-48 mb-40 md:mb-64 lg:mb-80">
+            <div id="services-wrapper" className="mx-auto max-w-7xl pt-48 mb-24 md:mb-40"> {/* mb-40 md:mb-64 lg:mb-80 */}
                 {/* Title and description */}
                 <div className="text-center">
                     <div className="relative overflow-hidden">

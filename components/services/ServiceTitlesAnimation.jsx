@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { gsap } from 'gsap/all'
+import { gsap, ScrollTrigger } from 'gsap/all'
 
 export default function ServiceTitlesAnimation(){
     /**
@@ -22,6 +22,8 @@ export default function ServiceTitlesAnimation(){
     }
 
     useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+
         setAnimations()
 
         gsap.to('#title2-service-title', {
@@ -39,10 +41,21 @@ export default function ServiceTitlesAnimation(){
             delay: 0.6,
         })
         gsap.to('#background-service', {
-            opacity: 1,
-            duration: 1,
+            opacity: 0.35,
+            duration: 1.2,
             delay: 1,
         })
+
+        /* gsap.to('#background-service', {
+            scrollTrigger: {
+                trigger: '#service-title-wrapper',
+                start: 'top 0',
+                end: 'top center',
+                markers: true,
+                scrub: 0.8,
+            },
+            opacity: 0.2,
+        }) */
     }, [])
 
     return null

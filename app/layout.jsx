@@ -21,16 +21,14 @@ export default function RootLayout({ children }) {
       
       <body className="bg-slate-900">
 
+        <HeaderWrapper />
+        {/* <ExperienceBackground /> */}
+
         {/* Utility */}
         {/* <HandleColorBackground /> */}
         <UtilityCustomCursor />
         <UtilityGoToTopOnChangeRoute />
         <UtilityCookie />
-
-        {/* Background */}
-        {/* <ExperienceBackground /> */}
-
-        <HeaderWrapper />
         
         { children }
 

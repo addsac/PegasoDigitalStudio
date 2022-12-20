@@ -70,7 +70,10 @@ export default function ServiceGrid8({ id = '' }) {
                                     <p className="text-lg text-white font-medium"> 
                                         { value == 1 && ('Le Origini')}
                                         { value == 2 && ('Il Perchè')}
-                                        { value == 3 && ('Il Nemico')}
+                                        { value == 3 && ('Il Conflitto')}
+                                        { value == 4 && ('Le Origini')}
+                                        { value == 5 && ('Il Perchè')}
+                                        { value == 6 && ('Il Conflitto')}
                                     </p>
                                     <p id={`paragraph-${value}`} className="paragraph-service-grid-8 text-sm text-white/60 pr-10">
                                         Marketing managers can choose frames directly from the videographer’s shoot, review the editor’s cut, and approve motion graphics changes to turn around social posts in just a few hours.
@@ -152,7 +155,11 @@ export default function ServiceGrid8({ id = '' }) {
                         />
                         <div className="absolute bottom-0 flex items-end w-full h-full bg-gradient-to-b from-transparent to-slate-900 p-6">
                             <div className="flex flex-col">
-                                <p className="text-lg text-white font-medium"> Direttore </p>
+                                <p className="text-lg text-white font-medium"> 
+                                    { value == 4 && ('Le Origini')}
+                                    { value == 5 && ('Il Perchè')}
+                                    { value == 6 && ('Il Conflitto')}
+                                </p>
                                 <p id={`paragraph-${value}`} className="paragraph-service-grid-8 text-sm text-white/60 pr-10">
                                     Directors can work with their whole pre-pro team simultaneously on one platform; reviewing wardrobe JPGs, storyboard PDFs, set design files, and location scouting videos.
                                 </p>

@@ -9,7 +9,7 @@ export default function ServiceTitles({ title = '', description = [] }) {
                 className="mx-auto w-full"
             >
                 {/* Title and description */}
-                <div className="mx-auto text-center max-w-[1000px] px-8">
+                <div className="mx-auto text-center px-8">
                     { title.length > 0 && (
                         <Title2
                             id="title2-service-title"
@@ -20,7 +20,7 @@ export default function ServiceTitles({ title = '', description = [] }) {
                     )}
 
                     { description.length > 0 && (
-                        <div id="text1-service-title" className="mx-auto mt-8 md:mt-12 lg:mt-16">
+                        <div id="text1-service-title" className="mx-auto mt-8 md:mt-10 max-w-[680px]">
                             {description.map((text, index) => (
                                 <div key={index + '-subtitle'}>
                                     <Text1

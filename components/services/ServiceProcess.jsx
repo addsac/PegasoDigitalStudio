@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function ServiceProcess({ cipsText = '', text = '', description = '', id = '' }) {
   return (
-    <div className="w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16 -mt-16">
+    <div className="mx-auto max-w-[1600px] w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16 -mt-16">
         {/* text */}
         <div className="relative col-span-12 md:col-span-5">
             <div className="sticky top-0 pt-16">

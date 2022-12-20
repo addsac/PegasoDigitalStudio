@@ -14,9 +14,9 @@ import ContactForm from '../../../components/ContactForm'
 
 export default function Page(){
     return (
-        <div className="bg-slate-900 pt-[140px] md:pt-[240px]">
-            <main className="py-8 pb-24 md:pb-32 lg:pb-48">
-                <div className="relative pb-[120px] md:pb-[240px]">
+        <div className="bg-slate-900">
+            <main className="">
+                <div className="relative h-[120vh] flex items-center justify-center">
                     <ServiceTitlesAnimation /> {/* client component for the ainmations */}
 
                     <ServiceBackground 
@@ -34,7 +34,7 @@ export default function Page(){
                 {/* Content of the Service */}
                 <div className="w-full flex flex-col gap-y-28 lg:gap-y-56 py-32 lg:py-40">
                     
-                    <div id="wrapper-what" className="flex flex-col gap-y-32">
+                    <div id="wrapper-what" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
                                 'Non solo il logo.',
@@ -52,7 +52,7 @@ export default function Page(){
                         path="/img/services/branding/branding-photo.png" 
                     />
 
-                    <div id="wrapper-why" className="flex flex-col gap-y-32">
+                    <div id="wrapper-why" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
                                 'Non solo il logo.',
@@ -90,7 +90,7 @@ export default function Page(){
                     <ServiceCitationSlider />
 
                     <WorkCitation 
-                        text="La più alta attività che un uomo possa fare è quella di ispirare gli altri. Un grande brand fa sentire le persone ispirate ad essere la loro più grande versione."
+                        text="Pensare all’origine dell’azienda, ai suoi scopi e mettendo i suoi clienti al centro di ogni azione, permette di creare un brand che si faccia ricordare e si connetta con le persone."
                         author="LEONARDO CITTON"
                         authorTitle="Designer in Pegaso Digital Studio"
                     />

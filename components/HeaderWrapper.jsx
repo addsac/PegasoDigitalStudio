@@ -18,12 +18,11 @@ export default function HeaderWrapper(){
     }, [pathname])
 
     return (
-        <>
-            <div
-                /* className={color == 'dark' ? (pathname.includes('/blog/') ? 'bg-slate-900' : '') : 'bg-white'} */
-            >
-                <Header color={ color } />
-            </div>
-        </>    
+        <div
+            style={{ position: 'relative', zIndex: '100 !important' }}
+            /* className={color == 'dark' ? (pathname.includes('/blog/') ? 'bg-slate-900' : '') : 'bg-white'} */
+        >
+            <Header color={ color } />
+        </div>   
     )
 }

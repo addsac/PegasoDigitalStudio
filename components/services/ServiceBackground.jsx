@@ -2,18 +2,21 @@ import Image from "next/image"
 
 export default function ServiceBackground(){
     return (
-        <div id="background-service">
+        <div
+            id="background-service" 
+            style={{ opacity: 0 }}
+        >
             <Image 
-                src="/img/services/social-media/bg.png" 
+                src="/car-bg.png" 
                 alt="" 
                 width={1200}
                 height={1200}
-                className="-z-10 absolute bottom-0 opacity-20 w-full h-auto" 
+                className="absolute bottom-0 w-full h-full object-cover" 
             />
 
             {/* Gradient on bottom of the page */}
             <div 
-                className="absolute bottom-0 w-full h-[165px]" 
+                className="absolute bottom-0 w-full h-[120px]" 
                 style={{background: 'linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, #0F172A 100%)'}}
             ></div>
         </div>

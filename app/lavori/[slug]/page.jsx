@@ -30,13 +30,13 @@ export default function Page({ params }) {
                     <div className="col-span-12 md:col-span-8 pt-8">
                         <div className="mx-auto w-full max-w-[800px]">
                             <Text1
-                                text="Social Media" 
+                                text="Caso Studio" 
                                 id="text1-work-detail"
                                 color="white" 
                                 opacity={60} 
                             />
 
-                            <div className="mt-8 md:mt-10">
+                            <div className="mt-8 md:mt-12">
                                 <Title3
                                     id="title3-work-detail" 
                                     text="The Unfiltered History Tour" 
