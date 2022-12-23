@@ -30,7 +30,7 @@ export default function BlogSwiper({ type }){
             { arrayToLoop.map((index) => (
                 <SwiperSlide style={{ width: 'auto' }} key={ index }>
                     <Link href="/blog/1">
-                        <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer">
+                        <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer hover:scale-[96%] transition duration-400">
                             <Image
                                 src="/blog-temporary-bg.jpg"
                                 alt=""

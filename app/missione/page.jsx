@@ -1,8 +1,10 @@
 import MissionAnimation from '../../components/mission/MissionAnimation'
 import MissionPhrases from '../../components/mission/MissionPhrases'
+import MissionSymbol from '../../components/mission/MissionSymbol'
 import MissionSwiper from '../../components/mission/MissionSwiper'
 import MissionStory from '../../components/mission/MissionStory'
 import MissionPhotoGradient from '../../components/mission/MissionPhotoGradient'
+import ServiceCitationSlider from '../../components/services/ServiceCitationSlider'
 import MissionValues from '../../components/mission/MissionValues'
 import WorkImageMargin from '../../components/work/WorkImageMargin'
 import Cips from '../../components/utility/Cips'
@@ -17,19 +19,23 @@ export default function Page() {
             
             <div className="py-8 pb-24 md:pb-32 lg:pb-48">
                 
-                <div id="text3-mission" className="text-center mb-16 md:mb-20">
+                <div id="text3-mission" className="text-center mb-16 md:mb-24">
                     <Cips 
-                        text="Magia Digitale fusa nella Praticità"
+                        text="Magia Digitale fusa alla Praticità"
                         color="white"
                         opacity={60}
                     />
                 </div>
 
                 <div id="title1-mission" className="mx-auto max-w-[1400px] text-center mb-24 md:mb-48 px-8 md:px-16 lg:px-24">
-                    <h1 className='title-2 !leading-[105%] text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/50'>
+                    <h1 className='title-3 !leading-[120%] text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/50'>
                         {/* Aiutiamo <br /> le persone <br /> a portare <br /> valore <br /> nel mondo */}
+                        
                         {/* Help people to share value to the world through crafting digital products always linked to a functional startpoint. */}
-                        Aiutiamo le persone a portare valore nel mondo creando prodotti digitali, partendo dalla funzione <span className='whitespace-nowrap'>prima di tutto.</span>
+                        
+                        {/* Aiutiamo le persone a portare valore nel mondo creando prodotti digitali, partendo dalla funzione <span className='whitespace-nowrap'>prima di tutto.</span> */}
+
+                        Aiutiamo le persone a raggiungere più persone, condividere valore e generare nuove idee creando prodotti digitali e strategie personalizatte
                     </h1>
                 </div>
 
@@ -41,10 +47,8 @@ export default function Page() {
                     <MissionSwiper />
                 </div>
 
-                <div className="my-32 md:my-48 lg:my-64 px-8 md:px-12 lg:px-16">
-                    <div className="w-full h-screen bg-white flex items-center justify-center">
-                        <p> 3D Model + Logo specifics </p>
-                    </div>
+                <div className="my-32 md:my-48 lg:my-64">
+                    <MissionSymbol />
                 </div>
 
                 <div className="my-32 md:my-48 lg:my-64">

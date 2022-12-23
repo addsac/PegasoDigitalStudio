@@ -76,6 +76,7 @@ export default async function BlogPreview({ title = '', description = '', type =
                         <Button
                             id="blog-preview-wrapper"
                             styleName="primary-lg"
+                            icon="arrow"
                             href="/blog"
                             text={ type == 'articles' ? 'Vedi tutti gli articoli' : (type == 'works' || type == 'service') ? 'Vedi tutti i lavori' : ''}
                         />

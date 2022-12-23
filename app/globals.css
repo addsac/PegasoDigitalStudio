@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    @apply max-w-[100vw] overflow-x-hidden;
+}
+
 /**
  * Utility
  */
@@ -48,10 +52,10 @@
 }
 
 .bg-gradient-radial-text{
-    @apply bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-50 via-slate-400 to-slate-900;
+    @apply bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-50 via-slate-400 to-slate-800;
 }
 .bg-gradient-radial-text-left{
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-50 to-slate-400 to-slate-700;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-50 to-slate-400 to-slate-600;
 }
 
 /**
@@ -65,4 +69,41 @@
 
 .swiper-pagination-bullet-active {
 background: #ffffff !important;
+}
+
+/**
+ * Blog
+ */
+.blog h2{
+    
+}
+.blog h3{
+    @apply text-2xl lg:text-5xl leading-[140%] md:leading-[140%] lg:leading-[140%] font-semibold tracking-tighter;
+}
+.blog h4{
+    @apply text-xl lg:text-2xl leading-[140%] md:leading-[140%] lg:leading-[140%] font-medium tracking-tight;
+}
+.blog p{
+    @apply -mt-4 text-lg lg:text-xl leading-[190%] md:leading-[190%] lg:leading-[190%] tracking-[-1%] opacity-60;
+}
+.blog .bold{
+    @apply font-semibold opacity-80;
+}
+.blog img{
+    @apply w-full h-auto;
+}
+.blog .sub-image{
+    @apply mt-6 text-center text-sm font-light text-white/80;
+}
+.blog .img-container{
+    @apply my-8;
+}
+.blog .link{
+    @apply py-8 px-6 bg-white border-l-[4px] border-purple-400 hover:bg-purple-100 cursor-pointer transition duration-200;
+}
+.blog .link p{
+    @apply !-mt-0 !opacity-100 text-sm lg:text-base !text-slate-900 underline;
+}
+.blog hr{
+    @apply w-full h-[2px] bg-white/20 my-6;
 }

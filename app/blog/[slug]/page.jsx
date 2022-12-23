@@ -9,7 +9,7 @@ export default function Page({ params }) {
         <div className="pt-[140px] md:pt-[240px]">
             <BlogDetailTitleAnimation />
 
-            <div className="w-full bg-slate-900">
+            <div className="w-full">
                 {/* Titles */}
                 <div className="w-full grid grid-cols-12 px-8 md:px-12 lg:px-16">
                     <div className="hidden md:block col-span-2"></div> {/* margin */}
@@ -32,7 +32,7 @@ export default function Page({ params }) {
                         </div>
 
                         <div id="author-blog-detail" className="flex items-center gap-x-6 mt-12 md:mt-20">
-                            <div className="flex items-center gap-x-6">
+                            <div className="flex items-center gap-x-6 text-sm md:text-base">
                                 <div className="w-12 h-12 rounded-full bg-white"></div>
                                 <a 
                                     href="https://www.linkedin.com/in/leonardo-citton" 
@@ -44,7 +44,7 @@ export default function Page({ params }) {
                                 </a> 
                             </div>
                             <div className="h-[64px] w-[1px] bg-white/20"></div>
-                            <div className="text-white/60"> 10 Luglio 2022 </div>
+                            <div className="text-white/60"> 11 luglio 2021 </div>
                         </div>
                     </div>
 
@@ -60,10 +60,12 @@ export default function Page({ params }) {
                 <div className="w-full grid grid-cols-12 my-24 md:my-32 lg:my-40 px-16 md:px-0">
                     <div className="hidden md:block col-span-3"></div>
                     <div className="col-span-12 md:col-span-6">
-                        <div className="mx-auto max-w-[600px] w-full flex items-center gap-x-4 mb-20">
-                            <a href="" className="text-white/60 hover:text-white">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor" strokeWidth={2} stroke="none" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_764_100)">
+
+                        {/* Sharing icons */}
+                        <div className="mx-auto max-w-[800px] w-full flex items-center gap-x-4 mb-20">
+                            <a href="" className="opacity-60 hover:opacity-100">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="white" strokeWidth={2} stroke="none" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+                                    <g clipPath="url(#clip0_764_100)">
                                         <path d="M35.6947 11.9526C35.7198 12.3036 35.7198 12.6546 35.7198 13.0056C35.7198 23.7103 27.5722 36.0447 12.6807 36.0447C8.09292 36.0447 3.83109 34.7159 0.246094 32.4096C0.897932 32.4848 1.52461 32.5098 2.20153 32.5098C5.987 32.5098 9.47176 31.2313 12.2545 29.0503C8.6946 28.975 5.71128 26.6435 4.68341 23.4346C5.18484 23.5097 5.6862 23.5599 6.21272 23.5599C6.93972 23.5599 7.6668 23.4596 8.34364 23.2842C4.63332 22.532 1.85049 19.273 1.85049 15.337V15.2368C2.92845 15.8385 4.18205 16.2145 5.51065 16.2646C3.32957 14.8105 1.90065 12.3286 1.90065 9.52081C1.90065 8.01666 2.30169 6.63782 3.00369 5.43446C6.9898 10.3481 12.9815 13.557 19.7001 13.908C19.5748 13.3064 19.4996 12.6797 19.4996 12.0529C19.4996 7.59046 23.1096 3.95538 27.5971 3.95538C29.9286 3.95538 32.0344 4.9331 33.5136 6.5125C35.3436 6.16154 37.0985 5.48462 38.6529 4.55706C38.0511 6.43734 36.7726 8.01673 35.093 9.01945C36.7225 8.84405 38.3019 8.3927 39.7559 7.76601C38.6531 9.37041 37.2741 10.7993 35.6947 11.9526V11.9526Z" />
                                     </g>
                                     <defs>
@@ -80,7 +82,7 @@ export default function Page({ params }) {
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_764_105">
-                                        <rect width="32" height="32" fill="white"/>
+                                        <rect width="32" height="32" fill="currentColor"/>
                                     </clipPath>
                                     </defs>
                                 </svg>
@@ -96,29 +98,86 @@ export default function Page({ params }) {
                                 </svg>
                             </a>
                         </div>
-                        <p className="mx-auto max-w-[600px] text-white text-lg md:text-xl lg:text-2xl leading-[170%] md:leading-[170%] lg:leading-[170%]">
-                            A portfolio speaks volumes about a designer’s skills. Include only those projects that let your talents shine. For instance, if your entire portfolio is in your Dribbble profile, all this means is that you’re capable of creating design concepts
-                            <br /><br />
-                            Here is a new pack of design tips, where we tell you:
-                            <br /><br />
-                            1. About the right projects in your portfolio.
-                            2. How to present your design concept?
-                            3. What you should know about preparing UI design during development?
-                            4. Is it possible to change the prototype when you’ve reached the visualization stage?
-                            5. What kind of deliverables you should provide as a separate services?
-                            <br /><br />
-                            A portfolio speaks volumes about a designer’s skills. Include only those projects that let your talents shine. For instance, if your entire portfolio is in your Dribbble profile, all this means is that you’re capable of creating design concepts
-                            <br /><br />
-                            Here is a new pack of design tips, where we tell you:
-                            <br /><br />
-                            1. About the right projects in your portfolio.
-                            2. How to present your design concept?
-                            3. What you should know about preparing UI design during development?
-                            4. Is it possible to change the prototype when you’ve reached the visualization stage?
-                            5. What kind of deliverables you should provide as a separate services?
-                        </p>
+                        
+                        {/* Article content */}
+                        <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
+                            <h3>
+                                Perché una buona landing page è fondamentale?
+                            </h3>
+                            <p>
+                                Puoi avere anche il miglior prodotto del mondo, ma se non sai comunicare agli altri che questo esiste, in mano non ti ritrovi niente. Ho visto per esperienza come una comunicazione del prodotto lasciata al caso faccia danni a te, al prodotto stesso e al tuo business.
+                                <br />
+                                Ma c'è una buona notizia, con questa guida imparerai a progettare la tua pagina di vendita per ottimizzata per le conversioni, imparando dalle migliori pagine di vendita del mondo.
+                                <br />
+                                Segui questi passi per essere sicuro che il tuo prodotto venga capito e aumenta le tue vendite.
+                            </p>
+                            <hr /> {/* divider */}
+                            <h3>
+                                2. Buyers Journey - Conosci il tuo potenziale cliente
+                            </h3>
+                            <p>
+                                Tutti i clienti passano per tre fasi principali prima di aquistare un prodotto
+                            </p>
+                            <h4>
+                                Fase 1 - Awareness Stage
+                            </h4>
+                            <p>
+                                Qui il cliente si rende conto di avere il problema che il tuo prodotto andrà a risolvere, qui il potenziale cliente si informerà con ricerche, blog e altri contenuti sulla soluzione al tuo problema. E sarà qui che dovrai comparire a presentare il tuo prodotto.
+                            </p>
+                            <h4>
+                                Fase 2 - Consideration Stage
+                            </h4>
+                            <p>
+                                Qui il cliente identifica chiaramente il suo problema e inizierà a valutare la soluzione che farà al caso suo. Aiutarlo in questo sul tuo sito gli sarà di crande aiuto e aumenterà la fiducia in te.
+                            </p>
+                            <h4>
+                                Fase 3 - Decision Stage
+                            </h4>
+                            <p>
+                                Qui dopo un'analisi dei potenziali prodotti/servizi sarà pronto ad acquistare il prodotto che riterrà più opportuno.
+                            </p>
+                            <div className="img-container">
+                                <img src="https://leonardocitton.com/blog_images/landing5.jpg" alt="" />
+                                <p className="sub-image">
+                                    Foto dal sito Netlify.com
+                                </p>
+                            </div>
+                            <hr /> {/* divider */}
+                            <h3>
+                                4. SEO per la landing
+                            </h3>
+                            <p>
+                                Quando ottimizzi la SEO per la tua landing page, sarà più facile che la tua offerta sia trovata dalle persone che già sono interessate a quello che offri,
+                            </p>
+                            <p>
+                                Gli utenti che trovano la tua landing tramite traffico organico tendono a convertire meglio perché stanno già cercando attivamente quello che offri.
+                            </p>
+                            <p>
+                                Ottimizzare la SEO per la tua landing page vuol dire:
+                            </p>   
+                            <p>
+                                Ottimizzare il title, headline, URL e le altre parti con le keywords su cui ti vuoi posizionare.
+                            </p>
+                            <p>
+                                Queste sono le cose principali che dovrai fare:
+                            </p>
+                            <p className="bold">
+                                1. Ottimizza la tua URL in base alle keywords su cui ti vuoi posizionare
+                            </p>
+                            <p className="bold">
+                                2. Scrivi anche le tue Headline principali (h1) e le Subheadline (h2, h3, h4) in base alle tue keywords
+                            </p>
+                            <p className="bold">
+                                3. Scrivi il tag alt delle tue immagini sempre con in mente la query che potrebbe ricercare l'utente
+                            </p>
+                            <div className="link">
+                                <p>
+                                    Dai un'occhiata alla guida completa sulla SEO per sviluppatori
+                                </p>
+                            </div>
+                        </div>
 
-                        <div className="cursor-default text-center gap-y-4 mx-auto max-w-[600px] rounded-xl border border-slate-700 bg-[#ffffff04] text-white p-6 py-10 w-full mt-32">
+                        <div className="cursor-default text-center gap-y-4 mx-auto max-w-[800px] w-full rounded-xl border border-slate-700 bg-[#ffffff04] backdrop-blur text-white p-6 py-10 mt-40">
                             <p className="text-xl font-medium tracking-tight"> Vuoi iniziare un nuovo progtto? </p>
                             <p className="opacity-50 tracking-tight mt-4 mb-6"> Puoi contattarci qui, ti aiuteremo a capire come renderlo realtà. </p>
                             <Link href="/contatti">

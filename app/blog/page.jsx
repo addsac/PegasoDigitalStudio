@@ -1,7 +1,13 @@
 import BlogTitles from "../../components/BlogTitle"
 import BlogArticlesSection from "../../components/BlogArticlesSection"
+// import { fetchBlogPosts } from "../../util/contentfulBlogPosts"
 
-export default function Page(){
+/* export const revalidate = 600; // revalidate every 10 minutes */
+
+export default async function Page(){
+    /* const posts = await fetchBlogPosts()
+    console.log(posts) */
+
     return <div className="pt-[140px] md:pt-[240px] bg-white">
         <main id="blog-wrapper" className="py-8 pb-24 md:pb-32 lg:pb-48">
 

@@ -10,7 +10,9 @@ export async function fetchBlogPosts() {
   const entries = await client.getEntries({
     content_type: "blogPost"
   })
+
   if (entries) return entries
+  
   console.log(`Error getting Entries for ${contentType.name}.`)
 }
 

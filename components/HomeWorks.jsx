@@ -181,7 +181,9 @@ export default function HomeWorks() {
                     <div className="py-28 md:py-32 lg:py-48 col-span-12 mx-auto">
                         <Button 
                             id="home-works"
-                            styleName="primary-lg" 
+                            styleName="primary-lg"
+                            icon="arrow"
+                            href="/lavori"
                             text="Vedi tutti i lavori"
                         />
                     </div>

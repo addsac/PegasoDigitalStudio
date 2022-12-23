@@ -9,7 +9,7 @@ export default function HeaderWrapper(){
     const [color, setColor] = useState('dark')
 
     useEffect(() => {
-        if(pathname === '/blog'){
+        if(pathname == '/blog'){
             setColor('light')
         }
         else{

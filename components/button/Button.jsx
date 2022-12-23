@@ -168,16 +168,18 @@ export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, op
                 <button
                     onMouseOver={ () => ballAnimationEnter() } 
                     onMouseLeave={ () => ballAnimationLeave() } 
-                    className="text-slate-900 tracking-[-1%] group-hover:text-white z-[2] px-8 py-5 transition duration-600"
+                    className="flex items-center text-slate-900 tracking-[-1%] group-hover:text-white z-[2] px-8 py-5 transition duration-600"
                 >
                     {/* title of the component */}
-                    {text}
+                    <div className="flex flex-col gap-y-6">
+                        {text}
+                    </div>
 
                     {/* icon of the component */}
-                    {icon && (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>              
+                    {icon == 'arrow' && (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-3">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
                     )}
                 </button>
             </div>

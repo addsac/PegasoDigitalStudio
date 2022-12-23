@@ -10,6 +10,8 @@ export default function ModalVideo() {
             autoAlpha: 0,
             duration: 0.4, 
         })
+
+        document.querySelector('#modal-video').pause()
     }
 
     useEffect(() => {
@@ -23,9 +25,15 @@ export default function ModalVideo() {
             <div
                 id="modal-video-wrapper"
                 style={{ opacity: 0, transform: 'scale(1.1)', zIndex: 10 }}
-                className="inset-0 fixed max-h-screen max-w-screen bg-slate-900/80 flex items-center justify-center p-8"
-                onClick={ () => ModalVideo() }
+                className="inset-0 fixed max-h-screen max-w-screen bg-white/5 backdrop-blur flex items-center justify-center p-8 md:p-12 lg:p-16"
             >
+                {/* Background for closing on click outside */}
+                <div 
+                    className="fixed inset-0"
+                    onClick={() => closeModal()} 
+                ></div>
+
+                {/* Content */}
                 <div className="w-full h-full bg-black rounded-[40px] flex items-center justify-center relative">
                     <button 
                         onClick={() => closeModal()} 
@@ -46,10 +54,10 @@ export default function ModalVideo() {
                         id="modal-video"
                         src="/img/services/social-media/video-social.mp4"
                         preload="auto"
-                        /* autoPlay={true}
+                        autoPlay={true}
                         controls={true}
                         playsInline={true}
-                        webkitplaysinline="true" */
+                        webkitplaysinline="true"
                         className="h-full w-auto"
                     ></video>
                 </div>

@@ -13,6 +13,7 @@ export default function HomeMission({ id, text, subtitle }){
                 <div id={`mission-subtext-${id}`} className="text-sm md:text-base text-white/50 tracking-widest uppercase">
                     <Cips text={ subtitle } />
                 </div>
+                
                 <div id={`mission-text-${id}`} className="text-white">
                     <p className="font-medium text-lg md:text-2xl lg:text-3xl leading-[150%] md:leading-[150%] lg:leading-[150%]">
                         { text }

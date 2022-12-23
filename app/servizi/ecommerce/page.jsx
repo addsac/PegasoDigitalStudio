@@ -14,14 +14,14 @@ import ContactForm from '../../../components/ContactForm'
 
 export default function Page(){
     return (
-        <div className="pt-[140px] md:pt-[220px]">
-            <main className="py-8 pb-24 md:pb-32 lg:pb-48">
-                <div className="pb-[120px] md:pb-[240px]">
+        <div className="bg-slate-900">
+            <main>
+                <div className="relative h-[120vh] flex items-center justify-center">
+                    <ServiceTitlesAnimation /> {/* client component for the ainmations */}
+                    
                     <ServiceBackground 
                         type="ecommerce"
                     />
-
-                    <ServiceTitlesAnimation /> {/* client component for the ainmations */}
 
                     <ServiceTitles
                         title={[ 'Ecommerce' ]} 

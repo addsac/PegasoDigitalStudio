@@ -105,7 +105,7 @@ export default function ContactForm(){
      * Handling the activation of the button in the form
      */
     const [interests] = useState(['Sito web', 'Ecommerce', 'Branding', 'Marketing', 'Social Media'])
-    const [budgets, setBudgets] = useState(['2k - 5k', '5k - 10k', '10k - 20k', '> 20k', 'Non specificato'])
+    const [budgets, setBudgets] = useState(['1 - 10k', '10 - 20k', '20 - 30k +', 'Non specificato'])
     const [activeInterest, setActiveInterest] = useState(null)
     const [activeBudget, setActiveBudget] = useState(null)
     const activeName = useRef()
@@ -226,9 +226,9 @@ export default function ContactForm(){
     ])
 
     useEffect(() => {
-        const budgetSitoWeb = ['3k - 5k', '5k - 10k', '10k - 25k', 'Non specificato']
-        const budgetEcommerce = ['3k - 5k', '5k - 10k', '10k - 30k', 'Non specificato']
-        const budgetBranding = ['3k - 5k', '5k - 10k', '10k - 20k', 'Non specificato']
+        const budgetSitoWeb = ['1 - 10k', '10 - 20k', '20 - 30k +', 'Non specificato']
+        const budgetEcommerce = ['1 - 10k', '10 - 20k', '20 - 30k +', 'Non specificato']
+        const budgetBranding = ['1 - 10k', '10 - 20k', '20 - 30k +', 'Non specificato']
         const budgetMarketing = []
         const budgetSocialmedia = []
 

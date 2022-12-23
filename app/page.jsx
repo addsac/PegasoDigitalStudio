@@ -27,18 +27,18 @@ export default function Page(){
 
       <HomeMission 
         id="1" 
-        text="We empower brands and creators by mastering the latest digital technologies, helping them to reach people and create value for the world." 
-        subtitle="La missione"
+        text="Aiutiamo le persone a portare valore nel mondo attraverso la creazione di prodotti e servizi digitali, partendo dalla funzione prima di tutto." 
+        subtitle="La Missione"
       />
       <HomeMission 
         id="2" 
-        text="We embody our mission by living up to our brand values, with an everlasting devotion to digital craftmanship and meaningful aesthetics." 
-        subtitle="Come lavoriamo"
+        text="Incarniamo la nostra missione rispettando i nostri valori, guidati da una ricerca continua nel design e da uno spirito di sperimentazione senza compromessi." 
+        subtitle="Come Lavoriamo"
       />
       <HomeMission 
         id="3" 
-        text="We serve our clients by producing quality websites, ecommerce, marketing strategies and taking care of their social media comunity." 
-        subtitle="Cosa facciamo"
+        text="Aiutiamo i nostri clienti costruendo Siti Web corporate, Ecommerce e Strategie di marketing che permetton alle persone di cooperare, portare valore e condividere idee in modi nuovi."  
+        subtitle="Cosa Facciamo"
       />
 
       <HomeServices />
