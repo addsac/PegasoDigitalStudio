@@ -6,7 +6,7 @@
 export default function Head({ params }) {
     return (
         <>
-            <title> Blog article | Pegaso Digital Studio </title>
+            <title> Come progettare una landing page che converte esempi pratici | Pegaso Digital Studio </title>
         </>
     )
 }

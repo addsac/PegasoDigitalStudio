@@ -5,11 +5,12 @@ import { useEffect, useRef, useState } from "react"
 import { gsap, ScrollTrigger } from 'gsap/all'
 import { usePathname } from 'next/navigation'
 import Text1 from "./text/Text1"
-
-const fetcher = (...args) => fetch(...args).then(res => res.json())
+import Button from './button/Button'
 
 export default function ContactForm(){
     const pathname = usePathname();
+
+    const [loading, setLoading] = useState(false)
 
     /**
      * Animations
@@ -249,36 +250,38 @@ export default function ContactForm(){
 
     const handleSubmit = (e) => { 
         e.preventDefault()
-        console.log('Sending')
-        
-        let dataObj = {
-            email: activeEmail.current.value,
-            name: activeName.current.value,
-            message: 'Text of the message.',
-        }
 
-        axios.post(`/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${'text of the message'}`, {
-            dataObj // non si vede sulla richiesta
-        })
+        setLoading(true)
+
+        const url = 
+            activeInterest == 0 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
+            : activeInterest == 1 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
+            : activeInterest == 2 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
+            : activeInterest == 3 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
+            : activeInterest == 4 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
+            : `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeName.current.value} ha scritto qualcosa.'}`
+
+        axios.post(`/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`)
             .then((res) => {
-                console.log(res)
+                setLoading(false)
+                
+                gsap.to('#form-not-submitted', {
+                    height: 0,
+                    opacity: 0,
+                    duration: 0.4,
+                    ease: 'circle.in'
+                })
+                gsap.to('#form-submitted', {
+                    height: 'auto',
+                    opacity: 1,
+                    duration: 0.2,
+                    ease: 'circle.out',
+                    delay: 0.4
+                })
             })
             .catch((err) => {
-                console.log(err)
+                setLoading(false)
             })
-
-        /* fetch('/api/contact', {
-            method: 'POST',
-            body: JSON.stringify(data),
-        }).then((res) => {
-            console.log('Response received')
-
-            if (res.status === 200) {
-                console.log('Response succeeded!')
-            }
-        }).catch((err) => {
-            console.log(err)
-        }) */
     }
 
     return (
@@ -315,8 +318,40 @@ export default function ContactForm(){
             <div id="contact-form" className="mx-auto max-w-7xl px-8 md:px-0 lg:px-16 grid grid-cols-12 gap-x-6 mt-20 md:mt-24">
                 <div className="col-span-0 md:col-span-2"></div>
                 <div className="col-span-12 md:col-span-8">
-                    {/* form */}
-                    <div className="w-full bg-white flex flex-col gap-y-12 p-8 md:p-12">
+                    {/* form submitted */}
+                    <div
+                        id="form-submitted" 
+                        className="w-full h-[400px] bg-white flex flex-col p-8 md:p-12 lg:p-16 gap-y-8"
+                        style={{ opacity: 0, height: 0 }}
+                    >
+                        <p className="text-5xl">
+                            🤝🏻 
+                        </p>
+
+                        <p className="text-slate-900 text-2xl font-medium tracking-tight">
+                            Il form è stato inviato!
+                        </p>
+
+                        <p className="text-slate-900 text-2xl font-medium tracking-tight">
+                            Ti ricontatteremo appena possibile dopo aver valutato le tue necessità.
+                        </p>
+
+                        <div className="flex items-center gap-x-6 mt-8">
+                            <Button
+                                styleName="primary-lg"
+                                text="Vedi il blog"
+                                href="/blog"
+                            />
+                            <Button
+                                styleName="link-black"
+                                text="Tornal alla home"
+                                href="/"
+                            />
+                        </div>
+                    </div>
+
+                    {/* form not submitted */}
+                    <div id="form-not-submitted" className="w-full bg-white flex flex-col gap-y-12 p-8 md:p-12">
 
                         {/* Input interest */}
                         <div className="flex flex-col gap-y-6">
@@ -608,11 +643,29 @@ export default function ContactForm(){
                             <div className="block">
                                 <button 
                                     type="submit" 
-                                    onClick={ (e) => handleSubmit(e) }
-                                    className={`${buttonActive ? 'bg-slate-900 text-white' : 'bg-slate-300 text-white cursor-not-allowed'}
-                                    z-[2] px-8 py-5 rounded-full transition duration-300`}
+                                    onClick={ !loading && ((e) => handleSubmit(e)) }
+                                    className={`
+                                        ${buttonActive ? 'bg-slate-900 text-white' : 'bg-slate-300 text-white cursor-not-allowed'}
+                                        ${loading ? '!bg-slate-900/80 !text-white !cursor-not-allowed' : ''}
+                                        z-[2] px-8 py-5 rounded-full transition duration-300
+                                    `}
+                                    disabled={loading ? true : false}
                                 >
-                                    Invia la richiesta
+                                    
+                                    { !loading && (
+                                        <p> 
+                                            Invia la richiesta
+                                        </p>
+                                    )}
+
+                                    {loading && (
+                                        <div className="mx-8">
+                                            <svg class="animate-spin h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3"></circle>
+                                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg>
+                                        </div>
+                                    )}
                                 </button>
                             </div>
                             <p className="mx-auto text-xs opacity-50 w-[280px]">
