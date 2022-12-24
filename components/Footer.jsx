@@ -38,7 +38,7 @@ export default function Footer(){
                 <div className="mt-16 md:mt-20 lg:mt-24 flex flex-col gap-y-20 px-0 md:px-8 lg:px-16">
                     <div className="w-full grid grid-cols-12 gap-y-12 lg:gap-y-0 lg:flex justify-between items-start">
                         <div className="col-span-12 text-sm md:text-base font-semibold text-white">
-                            <p className="font-normal opacity-50 mb-6">
+                            <p className="font-normal opacity-50 mb-4 md:mb-6">
                                 Luogo
                             </p>
                             <Link href="https://www.google.it/maps/place/Via+Borgo+Treviso,+56,+35013+Cittadella+PD/@45.6476664,11.778956,15z/data=!4m5!3m4!1s0x4778d44c5140a623:0x6a249f25dda05e59!8m2!3d45.6493508!4d11.7884809">
@@ -48,7 +48,7 @@ export default function Footer(){
                             </Link>
                         </div>
                         <div className="col-span-12 flex flex-col gap-y-2 text-sm md:text-base font-semibold text-white">
-                            <p className="font-normal opacity-50 mb-4">
+                            <p className="font-normal opacity-50 mb-2 md:mb-4">
                                 Pagine
                             </p>
                             <Link href="/lavori">
@@ -73,7 +73,7 @@ export default function Footer(){
                             </Link>
                         </div>
                         <div className="col-span-12 flex flex-col gap-y-2 text-sm md:text-base font-semibold text-white">
-                            <p className="font-normal opacity-50 mb-4">
+                            <p className="font-normal opacity-50 mb-2 md:mb-4">
                                 Servizi
                             </p>
                             <Link href="/">
@@ -102,7 +102,7 @@ export default function Footer(){
                             </Link>
                         </div>
                         <div className="col-span-12 flex flex-col gap-y-2 text-sm md:text-base font-semibold text-white">
-                            <p className="font-normal opacity-50 mb-4">
+                            <p className="font-normal opacity-50 mb-2 md:mb-4">
                                 Contatti
                             </p>
                             <a href="mailto:info@pegasodisgitalstudio.com" className="hover:opacity-60 transition duration-300">

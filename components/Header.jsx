@@ -101,11 +101,19 @@ export default function Header({ color }) {
         })
     }
     const closeMenuMobile = () => {
+        gsap.to('#sub-menu-servizi', {
+            opacity: 0,
+            height: '0px',
+            y: '-12px',
+            duration: 0.2,
+            ease: 'circle.in'
+        })
+
         gsap.to('.link-menu-mobile',{
             y: '-100%',
             opacity: 0,
+            duration: 0.4,
             stagger: 0.1,
-            duration: 0.3,
             ease: 'power1.in',
         })
 
@@ -299,19 +307,19 @@ export default function Header({ color }) {
                                     style={{ height: '0px', opacity: 0, transform: 'translateY(-12px)' }}
                                 >
                                     <div></div> {/* for margin in flex */}
-                                    <Link href="/servizi/siti-web" className="text-white hover:text-white/60 text-2xl tracking-tight ">
+                                    <Link href="/servizi/siti-web" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
                                         Siti web
                                     </Link>
-                                    <Link href="/servizi/ecommerce" className="text-white hover:text-white/60 text-2xl tracking-tight ">
+                                    <Link href="/servizi/ecommerce" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
                                         Ecommerce
                                     </Link>
-                                    <Link href="/servizi/branding" className="text-white hover:text-white/60 text-2xl tracking-tight ">
+                                    <Link href="/servizi/branding" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
                                         Branding
                                     </Link>
-                                    <Link href="/servizi/marketing" className="text-white hover:text-white/60 text-2xl tracking-tight ">
+                                    <Link href="/servizi/marketing" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
                                         Marketing
                                     </Link>
-                                    <Link href="/servizi/social-media" className="text-white hover:text-white/60 text-2xl tracking-tight ">
+                                    <Link href="/servizi/social-media" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
                                         Social Media
                                     </Link>
                                 </div>

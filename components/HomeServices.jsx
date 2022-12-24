@@ -1,6 +1,7 @@
 import Text1 from "./text/Text1"
 import Text2 from "./text/Text2"
 import Title2 from "./text/Title2"
+import Link from "next/link"
 import HomeServicesAnimation from './HomeServicesAnimation'
 
 export default function HomeServices(){
@@ -43,7 +44,7 @@ export default function HomeServices(){
                     <div className="col-span-12 md:col-span-10 lg:col-span-8 flex flex-col gap-y-20 md:gap-y-24 lg:gap-y-32">
                         {/* 1 and 2  */}
                         <div className="grid grid-cols-8 gap-y-20 md:gap-y-0 pl-4 md:pr-0 md:pl-6 lg:pl-12">
-                            <button className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
+                            <Link href="/servizi/siti-web" className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
                                 <Text2
                                     text="Siti corporate"
                                     color="white"
@@ -54,11 +55,11 @@ export default function HomeServices(){
                                 <div>
                                     <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                                 </div>
-                            </button>
+                            </Link>
 
                             <div className="hidden md:block md:col-span-2"></div>
 
-                            <button className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
+                            <Link href="/srevizi/ecommerce" className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
                                 <Text2
                                     text="Ecommerce"
                                     color="white"
@@ -69,12 +70,12 @@ export default function HomeServices(){
                                 <div>
                                     <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                                 </div>
-                            </button>
+                            </Link>
                         </div>
 
                         {/* 3 and 4 */}
                         <div className="grid grid-cols-8 gap-y-20 md:gap-y-0 pl-4 md:pr-0 md:pl-6 lg:pl-12">
-                            <button className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
+                            <Link href="/servizi/branding" className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
                                 <Text2
                                     text="Branding"
                                     color="white"
@@ -85,11 +86,11 @@ export default function HomeServices(){
                                 <div>
                                     <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                                 </div>
-                            </button>
+                            </Link>
 
                             <div className="hidden md:block md:col-span-2"></div>
 
-                            <button className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
+                            <Link href="/servizi/marketing" className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
                                 <Text2
                                     text="Digital Marketing"
                                     color="white"
@@ -100,12 +101,12 @@ export default function HomeServices(){
                                 <div>
                                     <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                                 </div>
-                            </button>
+                            </Link>
                         </div>
 
                         {/* 5 */}
                         <div className="grid grid-cols-8 gap-y-20 md:gap-y-0 pl-4 md:pr-0 md:pl-6 lg:pl-12">
-                            <button className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
+                            <Link href="/servizi/social-media" className="group col-span-8 md:col-span-3 flex flex-col gap-y-6 md:gap-y-8">
                                 <Text2
                                     text="Social Media"
                                     color="white"
@@ -116,7 +117,7 @@ export default function HomeServices(){
                                 <div>
                                     <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                                 </div>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="md:col-span-1 lg:col-span-2"></div>

@@ -6,6 +6,7 @@ import HomeServices from "../components/HomeServices"
 import HomeWorks from "../components/HomeWorks"
 import ContactForm from "../components/ContactForm"
 import BlogPreview from "../components/BlogPreview"
+import Image from "next/image"
 
 export default function Page(){
   return <>
@@ -15,7 +16,15 @@ export default function Page(){
     <main className="pt-[140px] md:pt-[240px]">
       {/* <ExperienceModel /> */}
 
-      <div className="md:mb-24 lg:mb-40">
+      <div className="md:mb-24 lg:mb-40 relative">
+        <Image 
+          src="/model.png" 
+          alt="" 
+          width={700}
+          height={700}
+          className="absolute left-1/2 top-0 opacity-60" 
+          style={{ transform: 'translate(-50%, -100px)' }}
+        />
        {/*  <div className="flex justify-center items-center flex-nowrap gap-x-16 px-8 md:px-12 lg:px-16 leading-loose text-slate-500">
           <p> Design </p>
           <p> Tecnologia </p>

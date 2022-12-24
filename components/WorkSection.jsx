@@ -23,7 +23,7 @@ export default function WorkSection({ text }){
                     {/* Works */}
                     <div className="grid grid-cols-12 gap-y-16 gap-x-6 mt-12">
                         {[1, 2, 3, 4].map((value) => (
-                            <div className="group col-span-12 md:col-span-6 cursor-pointer" key={value}>
+                            <div className="group col-span-12 md:col-span-6 cursor-pointer hover:scale-[96%] transition duration-400" key={value}>
                                 <Link href="/lavori/1">
                                     <div className="w-full h-[467px] bg-white overflow-clip">
                                         <Image 
