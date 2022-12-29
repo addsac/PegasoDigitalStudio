@@ -10,7 +10,7 @@ export default function Page(){
 
             <div className="w-full flex flex-col gap-y-48 px-8 mt-48 mb-64">
                 <WorkSection
-                    text='Siti web'
+                    text='Siti corporate'
                 />
 
                 <WorkSection
@@ -35,7 +35,7 @@ export default function Page(){
             </div>
 
             <BlogPreview 
-                title={['Non ancora pronto?']}
+                title={['Il Blog']}
                 description="Take a look on our latest articles to find some  inspiration for your project and more."
             />
         </main>

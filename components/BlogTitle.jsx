@@ -12,7 +12,7 @@ export default function BlogTitles() {
             <div className="mx-auto text-center max-w-[900px] px-8">
                 <Title2
                     id="title2-blog"
-                    text={['Gli articoli', 'del blog']}
+                    text={['Il Blog']}
                     color="slate-900"
                 />
                 <div className="mx-auto max-w-[550px] mt-8 md:mt-12 lg:mt-16">

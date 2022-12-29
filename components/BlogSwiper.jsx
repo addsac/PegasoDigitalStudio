@@ -12,7 +12,7 @@ export default function BlogSwiper({ type }){
 
     const pathname = usePathname()
 
-    return <div>
+    return <div className="pl-8 md:pl-12 lg:pl-16">
         <Swiper
             slidesPerView={"auto"}
             spaceBetween={24}
@@ -21,14 +21,17 @@ export default function BlogSwiper({ type }){
             className="mySwiper cursor-grab"
         >
             {/* White margin */}
-            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/') || pathname.includes('/servizi/')) && (
+            {/* {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/') || pathname.includes('/servizi/')) && (
                 <SwiperSlide style={{ width: 'auto' }}>
                     <div className="md:w-16 h-full"></div>
                 </SwiperSlide>
-            )}
+            )} */}
 
             { arrayToLoop.map((index) => (
-                <SwiperSlide style={{ width: 'auto' }} key={ index }>
+                <SwiperSlide 
+                    style={{ width: 'auto' }} 
+                    key={ index }
+                >
                     <Link href="/blog/1">
                         <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer hover:scale-[96%] transition duration-400">
                             <Image
@@ -46,6 +49,9 @@ export default function BlogSwiper({ type }){
                             
                             {/* overlay and text */}
                             <div className="w-full bg-white z-10 flex flex-col justify-end pt-6">
+                                <p className="text-slate-900/60 tracking-tight mb-3">
+                                    Ecommerce
+                                </p>
                                 {/* Text */}
                                 <p className="text-slate-900 text-xl md:text-2xl tracking-tight leading-[130%] group-hover:underline"> Le Sezioni più Importanti di un Ecommerce per Vendere di più </p>
                             </div>

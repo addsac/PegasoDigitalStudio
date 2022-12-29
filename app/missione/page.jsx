@@ -35,7 +35,9 @@ export default function Page() {
                         
                         {/* Aiutiamo le persone a portare valore nel mondo creando prodotti digitali, partendo dalla funzione <span className='whitespace-nowrap'>prima di tutto.</span> */}
 
-                        Aiutiamo le persone a raggiungere più persone, condividere valore e generare nuove idee creando prodotti digitali e strategie personalizatte
+                        {/* Aiutiamo le persone a raggiungere più persone, condividere valore e generare nuove idee creando prodotti digitali e strategie personalizatte */}
+
+                        Siamo qui per aiutare brand e professionisti a condividere il loro lavoro e comunicare il loro valore nel mondo, progettando e costruendo prodotti e servizi digitali che durano nel tempo.
                     </h1>
                 </div>
 

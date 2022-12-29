@@ -279,14 +279,6 @@ export default function Header({ color }) {
                                 </Link>
                             </div>
                             <div className="block overflow-hidden mt-2">
-                                <Link href="/lavori">
-                                    <p
-                                        style={{ transform: 'translateY(-100%)', opacity: 0 }}
-                                        className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
-                                    > Lavori </p>
-                                </Link>
-                            </div>
-                            <div className="block overflow-hidden mt-2">
                                 <button 
                                     style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                     className="link-menu-mobile flex items-center gap-x-4 text-white hover:text-white/60"
@@ -325,11 +317,11 @@ export default function Header({ color }) {
                                 </div>
                             </div>
                             <div className="block overflow-hidden mt-2">
-                                <Link href="/missione">
+                                <Link href="/lavori">
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
-                                    > Blog </p>
+                                    > Lavori </p>
                                 </Link>
                             </div>
                             <div className="block overflow-hidden mt-2">
@@ -338,6 +330,14 @@ export default function Header({ color }) {
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
                                     > Missione </p>
+                                </Link>
+                            </div>
+                            <div className="block overflow-hidden mt-2">
+                                <Link href="/missione">
+                                    <p
+                                        style={{ transform: 'translateY(-100%)', opacity: 0 }}
+                                        className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
+                                    > Blog </p>
                                 </Link>
                             </div>
 
@@ -355,13 +355,12 @@ export default function Header({ color }) {
                                     </Link>
                                 </div>
 
-                                <div className="w-full h-[1px] bg-white/20"></div>
+                                {/* <div className="w-full h-[1px] bg-white/20"></div> */}
 
                                 <div
-                                    className="flex flex-col gap-y-6 justify-between text-white text-sm mb-8"
+                                    className="flex flex-col gap-y-6 justify-between text-white"
                                 >
-                                    <div className="flex gap-x-4">
-                                        
+                                    {/* <div className="flex gap-x-4">
                                         <a href="" className="text-white hover:text-white/60">
                                             <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor" strokeWidth={2} stroke="none" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
                                                 <g clipPath="url(#clip0_764_100)">
@@ -398,11 +397,18 @@ export default function Header({ color }) {
                                                 </defs>
                                             </svg>
                                         </a>
+                                    </div> */}
 
+                                     <div className="flex flex-col gap-y-2 mt-10">
+                                        <a href="/" className='hover:opacity-60 transition duration-300'> Instagram </a>
+                                        <a href="/" className='hover:opacity-60 transition duration-300'> Twitter </a>
+                                        <a href="/" className='hover:opacity-60 transition duration-300'> Linkedin </a>
+                                        <a href="/" className='hover:opacity-60 transition duration-300'> Behance </a>
                                     </div>
-                                    <div className="text-sm flex gap-x-4 -mt-1">
-                                        <a href="mailto:info@pegasodisgitalstudio.com" className='pb-[2px] border-b border-white hover:opacity-60 transition duration-300'> info@pegasodisgitalstudio.com </a>
-                                        <a href="tel:0495940679" className='pb-[2px] border-b border-white hover:opacity-60 transition duration-300'> +39 049 594 0679 </a>
+
+                                    <div className="flex flex-col gap-y-2 mt-10 mb-12">
+                                        <a href="mailto:info@pegasodisgitalstudio.com" className='hover:opacity-60 transition duration-300'> info@pegasodisgitalstudio.com </a>
+                                        <a href="tel:0495917371" className='hover:opacity-60 transition duration-300'> +39 049 591 7371 </a>
                                     </div>
                                 </div>
                             </div>
@@ -410,92 +416,122 @@ export default function Header({ color }) {
                     </div>
                 </div>
 
-                <header className="fixed">
-                    <div
-                        onMouseLeave={ () => closeSubHeader() } 
-                        className="w-screen fixed"
-                    >
+                <header 
+                    className="w-full fixed"
+                    onMouseLeave={ () => closeSubHeader() } 
+                >
+                    <div>
                         <div 
                             id="header-decoration"
                             className={`
-                                flex justify-between items-center tracking-[-1%] 
+                                grid grid-cols-12 gap-x-6 tracking-[-1%] 
                                 px-8 md:px-12 lg:px-16 py-8 md:py-12 lg:py-12
                                 ${pathname.includes('/servizi/') ? '!bg-transparent' : ''}
                                 ${color == 'dark' ? 'bg-slate-900/60 border-white/10' : 'bg-white/90 border-slate-900/10'}
                             `}
                         >
                             {/* Main Header */}
-                            {/* Logo */}
-                            <Link href="/">
-                                {color == 'dark' ? 
-                                    (
-                                        <Image 
-                                            src="/logo_light.svg"
-                                            id="header-logo" 
-                                            width={40}
-                                            height={40}
-                                            className="w-auto h-8 md:h-10 hover:scale-110 transition duration-300"
-                                            alt=""
-                                        />
-                                    ) : 
-                                    (
-                                        <Image 
-                                            src="/logo_dark.svg"
-                                            id="header-logo" 
-                                            width={40}
-                                            height={40}
-                                            className="w-auto h-8 md:h-10 hover:scale-110 transition duration-300"
-                                            alt=""
-                                        />
-                                    )
-                                }
-                            </Link>
+                            <div className="col-span-12 md:col-span-4 lg:col-span-6 flex justify-between items-center">
+                                {/* Logo */}
+                                <Link href="/">
+                                    {color == 'dark' ? 
+                                        (
+                                            <>
+                                                {/* <Image 
+                                                    src="/logo.svg"
+                                                    id="header-logo" 
+                                                    width={100}
+                                                    height={40}
+                                                    className="text-white w-auto h-6 hover:opacity-60 transition duration-300"
+                                                    alt=""
+                                                /> */}
+                                                <svg width="105" height="28" viewBox="0 0 105 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white w-auto h-6 hover:opacity-60 transition duration-300">
+                                                    <path d="M0 21.9998H3.3V13.2998H8.94C12.99 13.2998 15.96 11.4398 15.96 6.9398C15.96 2.43981 12.99 0.549805 8.94 0.549805H0V21.9998ZM3.3 10.4498V3.39981H8.79C11.28 3.39981 12.54 4.5098 12.54 6.9398C12.54 9.3398 11.28 10.4498 8.79 10.4498H3.3Z" fill="currentColor"/>
+                                                    <path d="M23.959 22.4498C27.979 22.4498 30.229 20.2298 31.039 17.2898H28.039C27.769 18.3098 26.719 20.0498 24.019 20.0498C20.989 20.0498 19.489 17.6798 19.429 15.1298H31.189C31.219 14.8898 31.219 14.4398 31.219 14.0198C31.219 9.27981 28.609 6.2198 23.959 6.2198C19.279 6.2198 16.399 9.51981 16.399 14.3198C16.399 18.9998 19.099 22.4498 23.959 22.4498ZM19.429 12.8198C19.609 10.2998 21.409 8.61981 23.869 8.61981C26.479 8.61981 28.159 10.4198 28.159 12.8198H19.429Z" fill="currentColor"/>
+                                                    <path d="M39.9724 27.4898C44.3524 27.4898 47.1424 25.4198 47.1424 20.7998V6.6998H44.2024V8.4998H44.1424C43.3024 7.4198 41.8924 6.2498 39.4324 6.2498C35.6224 6.2498 32.6824 8.82981 32.6824 13.7498C32.6824 18.6398 35.6224 21.2198 39.4324 21.2198C41.8924 21.2198 43.3024 20.1398 44.1424 18.9098H44.2024V20.9798C44.2024 23.8598 42.7624 25.0898 39.9724 25.0898C37.4824 25.0898 36.4624 24.0098 36.1624 22.6298H33.1024C33.4024 25.3898 35.5924 27.4898 39.9724 27.4898ZM35.7424 13.7498C35.7424 10.8698 37.0924 8.7098 39.9724 8.7098C42.6124 8.7098 44.1724 10.3898 44.1724 13.7498C44.1724 17.0798 42.6124 18.7898 39.9724 18.7898C37.0924 18.7898 35.7424 16.6298 35.7424 13.7498Z" fill="currentColor"/>
+                                                    <path d="M54.3539 22.4198C56.8439 22.4198 58.5839 21.4298 59.5739 19.8398H59.6339C59.8139 21.5798 60.5939 22.1498 62.0639 22.1498C62.5439 22.1498 63.0539 22.0898 63.5639 21.9698V20.1698C63.3839 20.1998 63.2939 20.1998 63.2039 20.1998C62.6339 20.1998 62.4839 19.6298 62.4839 18.5198V11.4998C62.4839 7.53981 59.9639 6.2198 56.8139 6.2198C52.1339 6.2198 50.2139 8.5298 50.0639 11.4698H53.0639C53.2139 9.4298 54.0239 8.5898 56.6939 8.5898C58.9439 8.5898 59.6039 9.5198 59.6039 10.6298C59.6039 12.1298 58.1339 12.4298 55.7339 12.8798C51.9239 13.5998 49.3439 14.6198 49.3439 18.0398C49.3439 20.6498 51.2939 22.4198 54.3539 22.4198ZM52.4039 17.8298C52.4039 16.2398 53.5439 15.4898 56.2439 14.9498C57.8039 14.6198 59.1239 14.2898 59.6039 13.8398V16.0298C59.6039 18.6998 57.6539 20.0498 55.0139 20.0498C53.1839 20.0498 52.4039 19.2698 52.4039 17.8298Z" fill="currentColor"/>
+                                                    <path d="M71.7914 22.4198C75.8114 22.4198 78.0914 20.6198 78.0914 17.6498C78.0914 14.2298 75.0314 13.4198 72.2114 12.7598C70.0514 12.2798 68.3414 12.1298 68.3414 10.5398C68.3414 9.3998 69.1814 8.61981 71.1614 8.61981C73.7114 8.61981 74.3414 9.9698 74.5514 11.1398H77.5214C77.3114 8.4998 75.3014 6.2498 71.1014 6.2498C67.4114 6.2498 65.2814 8.01981 65.2814 10.6598C65.2814 13.8398 68.3414 14.6198 71.0114 15.2498C72.9914 15.6698 75.0314 15.8798 75.0314 17.7998C75.0314 18.9098 74.3414 20.0498 71.7614 20.0498C68.9114 20.0498 67.8314 18.6698 67.7114 16.8998H64.7414C64.8314 20.0198 67.1414 22.4198 71.7914 22.4198Z" fill="currentColor"/>
+                                                    <path d="M86.9498 22.4498C91.7198 22.4498 94.5998 19.1198 94.5998 14.3198C94.5998 9.5498 91.7198 6.2198 86.9798 6.2198C82.1798 6.2198 79.2998 9.5798 79.2998 14.3498C79.2998 19.1498 82.1798 22.4498 86.9498 22.4498ZM82.3598 14.3498C82.3598 11.1398 83.7998 8.6798 86.9798 8.6798C90.0998 8.6798 91.5398 11.1398 91.5398 14.3498C91.5398 17.5298 90.0998 20.0198 86.9798 20.0198C83.7998 20.0198 82.3598 17.5298 82.3598 14.3498Z" fill="currentColor"/>
+                                                    <path d="M100.87 7.39833C102.747 7.39833 104.268 5.87685 104.268 4C104.268 2.12315 102.747 0.601667 100.87 0.601667C98.9933 0.601667 97.4718 2.12315 97.4718 4C97.4718 5.87685 98.9933 7.39833 100.87 7.39833ZM104.805 4C104.805 6.17324 103.043 7.935 100.87 7.935C98.6969 7.935 96.9351 6.17324 96.9351 4C96.9351 1.82676 98.6969 0.065 100.87 0.065C103.043 0.065 104.805 1.82676 104.805 4Z" fill="currentColor" stroke="currentColor" stroke-width="0.13"/>
+                                                    <path d="M100.537 1H101.204V7H100.537V1Z" fill="currentColor"/>
+                                                    <path d="M103.87 3.66699L103.87 4.33366L97.8701 4.33366L97.8701 3.66699L103.87 3.66699Z" fill="currentColor"/>
+                                                </svg>
+                                            </>
+                                        ) : 
+                                        (
+                                            <>
+                                                {/* <Image 
+                                                    src="/logo.svg"
+                                                    id="header-logo" 
+                                                    width={100}
+                                                    height={2404}
+                                                    className="text-slate-900 w-auto h-6 hover:opacity-60 transition duration-300"
+                                                    alt=""
+                                                /> */}
+                                                <svg width="105" height="28" viewBox="0 0 105 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-slate-900 w-auto h-6 hover:opacity-60 transition duration-300">
+                                                    <path d="M0 21.9998H3.3V13.2998H8.94C12.99 13.2998 15.96 11.4398 15.96 6.9398C15.96 2.43981 12.99 0.549805 8.94 0.549805H0V21.9998ZM3.3 10.4498V3.39981H8.79C11.28 3.39981 12.54 4.5098 12.54 6.9398C12.54 9.3398 11.28 10.4498 8.79 10.4498H3.3Z" fill="currentColor"/>
+                                                    <path d="M23.959 22.4498C27.979 22.4498 30.229 20.2298 31.039 17.2898H28.039C27.769 18.3098 26.719 20.0498 24.019 20.0498C20.989 20.0498 19.489 17.6798 19.429 15.1298H31.189C31.219 14.8898 31.219 14.4398 31.219 14.0198C31.219 9.27981 28.609 6.2198 23.959 6.2198C19.279 6.2198 16.399 9.51981 16.399 14.3198C16.399 18.9998 19.099 22.4498 23.959 22.4498ZM19.429 12.8198C19.609 10.2998 21.409 8.61981 23.869 8.61981C26.479 8.61981 28.159 10.4198 28.159 12.8198H19.429Z" fill="currentColor"/>
+                                                    <path d="M39.9724 27.4898C44.3524 27.4898 47.1424 25.4198 47.1424 20.7998V6.6998H44.2024V8.4998H44.1424C43.3024 7.4198 41.8924 6.2498 39.4324 6.2498C35.6224 6.2498 32.6824 8.82981 32.6824 13.7498C32.6824 18.6398 35.6224 21.2198 39.4324 21.2198C41.8924 21.2198 43.3024 20.1398 44.1424 18.9098H44.2024V20.9798C44.2024 23.8598 42.7624 25.0898 39.9724 25.0898C37.4824 25.0898 36.4624 24.0098 36.1624 22.6298H33.1024C33.4024 25.3898 35.5924 27.4898 39.9724 27.4898ZM35.7424 13.7498C35.7424 10.8698 37.0924 8.7098 39.9724 8.7098C42.6124 8.7098 44.1724 10.3898 44.1724 13.7498C44.1724 17.0798 42.6124 18.7898 39.9724 18.7898C37.0924 18.7898 35.7424 16.6298 35.7424 13.7498Z" fill="currentColor"/>
+                                                    <path d="M54.3539 22.4198C56.8439 22.4198 58.5839 21.4298 59.5739 19.8398H59.6339C59.8139 21.5798 60.5939 22.1498 62.0639 22.1498C62.5439 22.1498 63.0539 22.0898 63.5639 21.9698V20.1698C63.3839 20.1998 63.2939 20.1998 63.2039 20.1998C62.6339 20.1998 62.4839 19.6298 62.4839 18.5198V11.4998C62.4839 7.53981 59.9639 6.2198 56.8139 6.2198C52.1339 6.2198 50.2139 8.5298 50.0639 11.4698H53.0639C53.2139 9.4298 54.0239 8.5898 56.6939 8.5898C58.9439 8.5898 59.6039 9.5198 59.6039 10.6298C59.6039 12.1298 58.1339 12.4298 55.7339 12.8798C51.9239 13.5998 49.3439 14.6198 49.3439 18.0398C49.3439 20.6498 51.2939 22.4198 54.3539 22.4198ZM52.4039 17.8298C52.4039 16.2398 53.5439 15.4898 56.2439 14.9498C57.8039 14.6198 59.1239 14.2898 59.6039 13.8398V16.0298C59.6039 18.6998 57.6539 20.0498 55.0139 20.0498C53.1839 20.0498 52.4039 19.2698 52.4039 17.8298Z" fill="currentColor"/>
+                                                    <path d="M71.7914 22.4198C75.8114 22.4198 78.0914 20.6198 78.0914 17.6498C78.0914 14.2298 75.0314 13.4198 72.2114 12.7598C70.0514 12.2798 68.3414 12.1298 68.3414 10.5398C68.3414 9.3998 69.1814 8.61981 71.1614 8.61981C73.7114 8.61981 74.3414 9.9698 74.5514 11.1398H77.5214C77.3114 8.4998 75.3014 6.2498 71.1014 6.2498C67.4114 6.2498 65.2814 8.01981 65.2814 10.6598C65.2814 13.8398 68.3414 14.6198 71.0114 15.2498C72.9914 15.6698 75.0314 15.8798 75.0314 17.7998C75.0314 18.9098 74.3414 20.0498 71.7614 20.0498C68.9114 20.0498 67.8314 18.6698 67.7114 16.8998H64.7414C64.8314 20.0198 67.1414 22.4198 71.7914 22.4198Z" fill="currentColor"/>
+                                                    <path d="M86.9498 22.4498C91.7198 22.4498 94.5998 19.1198 94.5998 14.3198C94.5998 9.5498 91.7198 6.2198 86.9798 6.2198C82.1798 6.2198 79.2998 9.5798 79.2998 14.3498C79.2998 19.1498 82.1798 22.4498 86.9498 22.4498ZM82.3598 14.3498C82.3598 11.1398 83.7998 8.6798 86.9798 8.6798C90.0998 8.6798 91.5398 11.1398 91.5398 14.3498C91.5398 17.5298 90.0998 20.0198 86.9798 20.0198C83.7998 20.0198 82.3598 17.5298 82.3598 14.3498Z" fill="currentColor"/>
+                                                    <path d="M100.87 7.39833C102.747 7.39833 104.268 5.87685 104.268 4C104.268 2.12315 102.747 0.601667 100.87 0.601667C98.9933 0.601667 97.4718 2.12315 97.4718 4C97.4718 5.87685 98.9933 7.39833 100.87 7.39833ZM104.805 4C104.805 6.17324 103.043 7.935 100.87 7.935C98.6969 7.935 96.9351 6.17324 96.9351 4C96.9351 1.82676 98.6969 0.065 100.87 0.065C103.043 0.065 104.805 1.82676 104.805 4Z" fill="currentColor" stroke="currentColor" stroke-width="0.13"/>
+                                                    <path d="M100.537 1H101.204V7H100.537V1Z" fill="currentColor"/>
+                                                    <path d="M103.87 3.66699L103.87 4.33366L97.8701 4.33366L97.8701 3.66699L103.87 3.66699Z" fill="currentColor"/>
+                                                </svg>
+                                            </>
+                                        )
+                                    }
+                                </Link>
 
-                            {/* Cta open menu for mobile */}
-                            <div 
-                                onClick={ () => openMenuMobile() } 
-                                className="group flex md:hidden items-center gap-x-3 cursor-pointer"
-                            >
-                                <button 
-                                    className={`text-sm font-semibold group-hover:opacity-50 
-                                    ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
-                                > Menu </button>
-                                <Image 
-                                    src={color == 'dark' ? '/menu_light.svg' : '/menu_dark.svg'}
-                                    alt="" 
-                                    width={20}
-                                    height={20}
-                                    className={`w-5 h-auto group-hover:opacity-50
-                                    ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
-                                />
-                            </div>
+                                {/* Cta open menu for mobile */}
+                                <div 
+                                    onClick={ () => openMenuMobile() } 
+                                    className="group flex md:hidden items-center gap-x-3 cursor-pointer"
+                                >
+                                    <button 
+                                        className={`text-sm font-semibold group-hover:opacity-50 
+                                        ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
+                                    > Menu </button>
+                                    <Image 
+                                        src={color == 'dark' ? '/menu_light.svg' : '/menu_dark.svg'}
+                                        alt="" 
+                                        width={20}
+                                        height={20}
+                                        className={`w-5 h-auto group-hover:opacity-50
+                                        ${color == 'dark' ? 'text-white' : 'text-slate-900'}`}
+                                    />
+                                </div>
 
-                            {/* Locazione */}
-                            <span className="hidden lg:block opacity-60">
-                                <Button 
-                                    styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                    icon="phone"
-                                    text="+39 049 594 0679" 
-                                    href="tel:0495940679"
-                                    size={'sm'}
-                                    weight='light'
-                                />
-                            </span>
-
-                            {/* Links */}
-                            <div className="hidden md:flex items-center gap-x-3">
-                                <div className="flex">
+                                {/* Phone */}
+                                {/* <span className="hidden lg:block opacity-60 mr-20 xl:mr-32">
                                     <Button 
                                         styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                        text="Lavori" 
-                                        href="/lavori"
-                                        /* onMouseEnter={ () => closeSubHeader() } */
+                                        // icon="phone"
+                                        text="+39 049 591 7371" 
+                                        href="tel:0495917371"
+                                        size={'xs'}
+                                        weight='light'
                                     />
+                                </span> */}
+                            </div>
+
+                            <div className="hidden xl:block col-span-1"></div>
+
+                            <div className="hidden md:block md:col-span-8 lg:col-span-6 xl:col-span-5">
+                                {/* Links */}
+                                <div className="hidden md:flex justify-between items-center gap-x-3">
                                     <Button 
                                         styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                         text="Servizi" 
                                         icon="dropdown" 
                                         onMouseEnter={ () => openSubHeader() } 
+                                    />
+                                    <Button 
+                                        styleName={color == 'dark' ? 'link-white' : 'link-black'}
+                                        text="Lavori" 
+                                        href="/lavori"
+                                        /* onMouseEnter={ () => closeSubHeader() } */
                                     />
                                     <Button 
                                         styleName={color == 'dark' ? 'link-white' : 'link-black'}
@@ -509,13 +545,14 @@ export default function Header({ color }) {
                                         href="/missione"
                                         /* onMouseEnter={ () => closeSubHeader() } */
                                     />
+                                    <Button 
+                                        styleName={color == 'dark' ? 'primary-sm-white' : 'primary-sm-dark'} 
+                                        text="Contatti" 
+                                        href="/contatti" 
+                                        icon="arrow"
+                                        /* onMouseEnter={ () => closeSubHeader() } */
+                                    />
                                 </div>
-                                <Button 
-                                    styleName={color == 'dark' ? 'primary-sm-white' : 'primary-sm-dark'} 
-                                    text="Contatti" 
-                                    href="/contatti" 
-                                    /* onMouseEnter={ () => closeSubHeader() } */
-                                />
                             </div>
                         </div>
 
@@ -529,10 +566,10 @@ export default function Header({ color }) {
                             }
                             style={{ opacity: 0, height: '64px', transform: 'translateY(-16px)' }}
                         >
-                            <div className="sub-header-items flex gap-x-3 lg:gap-x-5" style={{ transform: 'translateY(-6px)' }}>
+                            <div className="sub-header-items flex gap-x-12 lg:gap-x-16" style={{ transform: 'translateY(-6px)' }}>
                                 <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                    text="Siti web" 
+                                    text="Siti Corporate" 
                                     href="/servizi/siti-web"
                                 />
                                 <Button 

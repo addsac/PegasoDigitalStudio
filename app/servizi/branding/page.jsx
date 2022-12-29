@@ -108,7 +108,7 @@ export default function Page(){
                 </div>
 
                 <BlogPreview 
-                    title={['Non ancora pronto?']}
+                    title={['Il Blog']}
                     description="Take a look on our latest articles to find some  inspiration for your project and more."
                 />
             </main>

@@ -1,10 +1,10 @@
 import Button from "../button/Button";
 
-export default function WorkDescription({ title = '', description = [], textLink}) {
+export default function WorkDescription({ title = '', description = [], href = '', ctaText = '' }) {
   return (
-    <div className="px-8 md:px-16 w-full grid grid-cols-12 gap-x-6">
+    <div className="w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
         <div className="col-span-12 lg:col-span-6 mb-10">
-            <p className="text-4xl lg:text-[48px] tracking-tighter text-white leading-tight">
+            <p className="text-4xl lg:text-[48px] tracking-tighter text-white leading-[130%] lg:leading-[130%] -mt-[6px]">
                 { title }
             </p>
         </div>
@@ -14,7 +14,7 @@ export default function WorkDescription({ title = '', description = [], textLink
         <div className="col-span-12 lg:col-span-5">
             {description.map((value, index) => (
                 <div key={index}>
-                    <p className="text-lg lg:text-xl text-white/60 leading-relaxed">
+                    <p className="text-base lg:text-xl text-white/60 leading-[160%] lg:leading-[160%]">
                         { value }
                     </p>
                     {index != description.length - 1 && (
@@ -23,15 +23,18 @@ export default function WorkDescription({ title = '', description = [], textLink
                 </div>
             ))}
 
-            <div className="mt-20 flex">
-                <div className="flex-0">
-                    <Button 
-                        styleName="primary-lg-white"
-                        href="https://leonardocitton.com"
-                        text="Apri il progetto live"
-                    />
+            {ctaText != '' && (
+                <div className="mt-20 flex">
+                    <div className="flex-0">
+                        <Button 
+                            styleName="primary-lg-dark"
+                            href={ href }
+                            text={ ctaText }
+                            icon="arrow"
+                        />
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     </div>
   )

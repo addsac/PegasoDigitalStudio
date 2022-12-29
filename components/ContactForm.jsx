@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 import { useEffect, useRef, useState } from "react"
-import { gsap, ScrollTrigger } from 'gsap/all'
+import { gsap, ScrollTrigger, ScrollToPlugin } from 'gsap/all'
 import { usePathname } from 'next/navigation'
 import Text1 from "./text/Text1"
 import Button from './button/Button'
@@ -33,6 +33,7 @@ export default function ContactForm(){
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollToPlugin);
 
         setAnimations()
 
@@ -254,16 +255,22 @@ export default function ContactForm(){
         setLoading(true)
 
         const url = 
-            activeInterest == 0 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
-            : activeInterest == 1 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
-            : activeInterest == 2 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
-            : activeInterest == 3 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
-            : activeInterest == 4 ? `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`
-            : `/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeName.current.value} ha scritto qualcosa.'}`
+            activeInterest == 0 ? `/api/contact?interest=${activeInterest}&email=${activeEmail.current.value}&name=${activeName.current.value}&phone=${activePhone.current.value}&message=${activeProject.current.value}&budget=${activeBudget}`
+            : activeInterest == 1 ? `/api/contact?interest=${activeInterest}&email=${activeEmail.current.value}&name=${activeName.current.value}&phone=${activePhone.current.value}&message=${activeProject.current.value}&budget=${activeBudget}`
+            : activeInterest == 2 ? `/api/contact?interest=${activeInterest}&email=${activeEmail.current.value}&name=${activeName.current.value}&phone=${activePhone.current.value}&message=${activeProject.current.value}&budget=${activeBudget}`
+            : activeInterest == 3 ? `/api/contact?interest=${activeInterest}&email=${activeEmail.current.value}&name=${activeName.current.value}&phone=${activePhone.current.value}&question1=${activeMarketingQuestion1}&question2=${activeMarketingQuestion2}&question3=${activeMarketingQuestion3}`
+            : activeInterest == 4 ? `/api/contact?interest=${activeInterest}&email=${activeEmail.current.value}&name=${activeName.current.value}&phone=${activePhone.current.value}&list=${activeSocialMediaList}&question1=${activeSocialMediaQuestion1.current.value}&question2=${activeSocialMediaQuestion2.current.value}&question3=${activeSocialMediaQuestion3.current.value}`
+            : `/api/contact?interest=${activeInterest}&email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeName.current.value} ha scritto qualcosa.'}`
 
-        axios.post(`/api/contact?email=${activeEmail.current.value}&name=${activeName.current.value}&message=${activeProject.current.value}`)
+        axios.post(url)
             .then((res) => {
                 setLoading(false)
+
+                gsap.to(window, {
+                    duration: 0.4,
+                    scrollTo: { y: '#text1-contact' },
+                    ease: 'power2.out'
+                })
                 
                 gsap.to('#form-not-submitted', {
                     height: 0,
@@ -315,24 +322,23 @@ export default function ContactForm(){
             </div>
 
             {/* Form */}
-            <div id="contact-form" className="mx-auto max-w-7xl px-8 md:px-0 lg:px-16 grid grid-cols-12 gap-x-6 mt-20 md:mt-24">
-                <div className="col-span-0 md:col-span-2"></div>
-                <div className="col-span-12 md:col-span-8">
+            <div id="contact-form" className="mx-auto max-w-[730px] w-full mt-20 md:mt-24 px-8 md:px-0">
+                <div className="w-full">
                     {/* form submitted */}
                     <div
                         id="form-submitted" 
-                        className="w-full h-[400px] bg-white flex flex-col p-8 md:p-12 lg:p-16 gap-y-8"
+                        className="w-full h-[400px] bg-white flex flex-col p-8 md:p-12 gap-y-8"
                         style={{ opacity: 0, height: 0 }}
                     >
                         <p className="text-5xl">
                             🤝🏻 
                         </p>
 
-                        <p className="text-slate-900 text-2xl font-medium tracking-tight">
+                        <p className="text-xl md:text-2xl text-slate-900 tracking-tight">
                             Il form è stato inviato!
                         </p>
 
-                        <p className="text-slate-900 text-2xl font-medium tracking-tight">
+                        <p className="text-xl md:text-2xl text-slate-900 tracking-tight opacity-60">
                             Ti ricontatteremo appena possibile dopo aver valutato le tue necessità.
                         </p>
 
@@ -344,7 +350,8 @@ export default function ContactForm(){
                             />
                             <Button
                                 styleName="link-black"
-                                text="Tornal alla home"
+                                text="Torna alla home"
+                                weight="light"
                                 href="/"
                             />
                         </div>
@@ -643,7 +650,7 @@ export default function ContactForm(){
                             <div className="block">
                                 <button 
                                     type="submit" 
-                                    onClick={ !loading && ((e) => handleSubmit(e)) }
+                                    onClick={ !loading ? ((e) => handleSubmit(e)) : undefined }
                                     className={`
                                         ${buttonActive ? 'bg-slate-900 text-white' : 'bg-slate-300 text-white cursor-not-allowed'}
                                         ${loading ? '!bg-slate-900/80 !text-white !cursor-not-allowed' : ''}
@@ -660,9 +667,9 @@ export default function ContactForm(){
 
                                     {loading && (
                                         <div className="mx-8">
-                                            <svg class="animate-spin h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3"></circle>
-                                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            <svg className="animate-spin h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3"></circle>
+                                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                             </svg>
                                         </div>
                                     )}
@@ -675,39 +682,40 @@ export default function ContactForm(){
 
                     </div>
                 </div>
-                <div className="col-span-0 md:col-span-2"></div>
             </div>
 
             {/* Sub text */}
-            <div className="px-8 lg:px-16 grid grid-cols-12 gap-x-6 mt-24 md:mt-32">
-                <p className="col-span-12 text-center text-lg font-semibold text-white">
-                    Cosa aspettarsi lavorando con noi:
-                </p>
+            <div className="mx-auto max-w-[730px] w-full mt-24 md:mt-32 px-8 md:px-0">
+                <div className="w-full px-8 md:px-12">
+                    <p className="w-full text-center text-lg text-white">
+                        Cosa aspettarsi lavorando con noi:
+                    </p>
 
-                <div className="col-span-12 flex justify-center gap-x-16 md:gap-x-32 mt-24">
-                    <div className="flex flex-col gap-y-6 text-white max-w-[250px]">
-                        <p className="text-lg font-semibold">Project scopes</p>
-                        <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                    <div className="w-full flex justify-center gap-x-16 md:gap-x-32 mt-24">
+                        <div className="flex flex-col gap-y-6 text-white">
+                            <p className="text-lg">Project scopes</p>
+                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                        </div>
+
+                        <div className="flex flex-col gap-y-6 text-white">
+                            <p className="text-lg">Project preferencest</p>
+                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                        </div>
                     </div>
 
-                    <div className="flex flex-col gap-y-6 text-white max-w-[250px]">
-                        <p className="text-lg font-semibold">Project preferencest</p>
-                        <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
-                    </div>
-                </div>
+                    <div
+                        id={pathname === '/contatti' ? 'blog-preview-wrapper' : ''}
+                        className="w-full flex justify-center gap-x-16 md:gap-x-32 mt-24"
+                    >
+                        <div className="flex flex-col gap-y-6 text-white">
+                            <p className="text-lg">Partner preferencest</p>
+                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                        </div>
 
-                <div
-                    id={pathname === '/contatti' ? 'blog-preview-wrapper' : ''}
-                    className="col-span-12 flex justify-center gap-x-16 md:gap-x-32 mt-24"
-                >
-                    <div className="flex flex-col gap-y-6 text-white max-w-[250px]">
-                        <p className="text-lg font-semibold">Partner preferencest</p>
-                        <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
-                    </div>
-
-                    <div className="flex flex-col gap-y-6 text-white max-w-[250px]">
-                        <p className="text-lg font-semibold">Our expectations</p>
-                        <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                        <div className="flex flex-col gap-y-6 text-white">
+                            <p className="text-lg">Our expectations</p>
+                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                        </div>
                     </div>
                 </div>
             </div>

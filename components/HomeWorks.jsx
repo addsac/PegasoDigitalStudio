@@ -39,12 +39,10 @@ export default function HomeWorks() {
 
             <div id="works-wrapper" className="w-full px-8 md:px-12 lg:px-16 bg-white">
                 <div className="grid grid-cols-12 lg:gap-x-6">
-                    {/* This is a margin */}
-                    <div className="hidden xl:block col-span-1"></div>
 
                     {/* Title */}
-                    <div className="col-span-12 xl:col-span-11 pt-28 md:pt-32 lg:pt-48">
-                        <div className="relative overflow-hidden">
+                    <div className="col-span-12 pt-28 md:pt-32 lg:pt-48">
+                        <div className="relative overflow-hidden -ml-[8px] md:-ml-[12px] lg:-ml-[18px]">
                             <h2 id="title1-works" className="title-1 text-slate-900">Lavori</h2>
                         </div>
                     </div>
@@ -53,10 +51,10 @@ export default function HomeWorks() {
                     <div className="hidden lg:block col-span-1"></div>
 
                     {/* Works */}
-                    <div className="col-span-12 xl:col-span-11 mt-16 md:mt-24">
-                        <div className="w-full grid grid-cols-11 gap-x-6 gap-y-16 lg:gap-y-0">
+                    <div className="col-span-12 mt-16 md:mt-24">
+                        <div className="w-full grid grid-cols-12 gap-x-6 gap-y-16 lg:gap-y-0">
                             {/* work 1 */}
-                            <div className="col-span-12 lg:col-span-5 2xl:col-span-4">
+                            <div className="group col-span-12 lg:col-span-5 hover:scale-[98%] transition duration-400">
                                 <div
                                     className="h-[400px] lg:h-[650px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(1) }
@@ -67,7 +65,7 @@ export default function HomeWorks() {
                                         alt="" 
                                         width={500}
                                         height={500}
-                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" 
+                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi duration-200 group-hover:scale-105" 
                                     />
                                 </div>
                                 <div className="relative overflow-hidden mt-5">
@@ -81,10 +79,11 @@ export default function HomeWorks() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="hidden lg:block col-span-2 2xl:col-span-3"></div>
+                            <div className="hidden lg:block col-span-2"></div>
                             <div className="hidden lg:block col-span-4">
                                 <div className="mb-16">
-                                    <IconDivider color="slate-900" />
+                                    {/* <IconDivider color="slate-900" /> */}
+                                    <div className="w-3 h-3 bg-slate-900 rounded-full"></div>
                                 </div>
                                 <p className="max-w-[312px] text-xl leading-[28px] font-medium tracking-tight">
                                     {/* Highlights of cases that we passionately built with forward-thinking clients and friends over <nobr>the years.</nobr> */}
@@ -94,7 +93,7 @@ export default function HomeWorks() {
 
                             {/* work 2 */}
                             <div className="hidden lg:block col-span-7"></div>
-                            <div className="col-span-12 lg:col-span-4 2xl:col-span-3 lg:-mt-40">
+                            <div className="group col-span-12 lg:col-span-4 lg:-mt-40 hover:scale-[98%] transition duration-400">
                                 <div
                                     className="h-[350px] lg:h-[550px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(2) }
@@ -105,7 +104,7 @@ export default function HomeWorks() {
                                         alt="" 
                                         width={500}
                                         height={500}
-                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" 
+                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi  duration-200 group-hover:scale-105" 
                                     />
                                 </div>
                                 <div className="relative overflow-hidden mt-5">
@@ -122,7 +121,7 @@ export default function HomeWorks() {
 
                             {/* work 3 */}
                             <div className="hidden lg:block col-span-3"></div>
-                            <div className="col-span-12 lg:col-span-5 2xl:col-span-4 lg:mt-32">
+                            <div className="group col-span-12 lg:col-span-5 2xl:col-span-4 lg:mt-32 hover:scale-[98%] transition duration-400">
                                 <div
                                     className="h-[400px] lg:h-[650px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(3) }
@@ -133,7 +132,7 @@ export default function HomeWorks() {
                                         alt="" 
                                         width={500}
                                         height={500}
-                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" 
+                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi  duration-200 group-hover:scale-105" 
                                     />
                                 </div>
                                 <div className="relative overflow-hidden mt-5">
@@ -150,7 +149,7 @@ export default function HomeWorks() {
                             <div className="hidden lg:block col-span-3"></div>
 
                             {/* work 4 */}
-                            <div className="col-span-12 lg:col-span-4 2xl:col-span-3 lg:mt-32">
+                            <div className="group col-span-12 lg:col-span-4 2xl:col-span-3 lg:mt-32 hover:scale-[98%] transition duration-400">
                                 <div
                                     className="h-[350px] lg:h-[550px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(4) }
@@ -161,7 +160,7 @@ export default function HomeWorks() {
                                         alt="" 
                                         width={500}
                                         height={500}
-                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi" 
+                                        className="h-full w-full object-cover link-for-mouse-animation text-cursor-vedi  duration-200 group-hover:scale-105" 
                                     />
                                 </div>
                                 <div className="relative overflow-hidden mt-5">
