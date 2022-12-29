@@ -3,6 +3,7 @@ import Text2 from "./text/Text2"
 import Title2 from "./text/Title2"
 import Link from "next/link"
 import HomeServicesAnimation from './HomeServicesAnimation'
+import Balancer from "react-wrap-balancer"
 
 export default function HomeServices(){
 
@@ -12,7 +13,7 @@ export default function HomeServices(){
 
             <div id="services-wrapper" className="w-full pt-48 mb-24 md:mb-40 px-8 md:px-12 lg:px-16"> {/* mb-40 md:mb-64 lg:mb-80 */}
                 {/* Title and description */}
-                <div className="mx-auto max-w-[730px] text-center px-8 md:px-12">
+                <div className="mx-auto max-w-[730px] text-center">
                     <div className="relative overflow-hidden">
                         <Title2 
                             id="title2-services"
@@ -21,10 +22,10 @@ export default function HomeServices(){
                         />
                     </div>
 
-                    <div className="mt-8 md:mt-12 lg:mt-16 px-8 md:px-12">
+                    <div className="mt-8 md:mt-12 lg:mt-16 text-center">
                         <Text1 
                             id="text1-services"
-                            text="Find out more about our work on these leading design and technology platforms." 
+                            text="Ogni progetto è diverso, ha la sua finalità e le sue caratteristiche. Ecco come ti possiamo aiutare." 
                             opacity={60}
                             color="white"
                         />
@@ -43,7 +44,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Sviluppiamo siti web aziendali per comunicare il valore dell'azienda permettendole di raggiungere i suoi clienti.
+                                </Balancer> 
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -56,7 +59,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Sviluppiamo tutto quello che c'è dietro a un brand moderno, come logo, guide di stile e strategie di comunicazione. 
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -70,7 +75,9 @@ export default function HomeServices(){
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                    <Balancer>
+                                        Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                    </Balancer>
                                 </p>
                                 <div>
                                     <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -86,7 +93,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Progettiamo negozi digitali ottimizzati per vendere, e rendere l'esperienza d'acquisto di un prodotto senza compromessi.
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -99,7 +108,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -116,7 +127,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -129,7 +142,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -142,7 +157,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -155,7 +172,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
@@ -168,7 +187,9 @@ export default function HomeServices(){
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
-                                Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                <Balancer>
+                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                </Balancer>
                             </p>
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>

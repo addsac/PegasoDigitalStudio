@@ -9,13 +9,13 @@ export default function Title2({ id, text = [], color, gradient = false, shadow 
                 ${gradient ? 'bg-gradient-radial-text' : ''}
             `}
         >
-            { text.map((word, index) => (
+            {text.map((word, index) => (
                 <div key={index}>                
                     <span>
-                        { word }
+                        {word}
                     </span>
                 </div>
-            )) }
+            ))}
         </h2>
     )
 }

@@ -5,6 +5,7 @@ import IconDivider from './icon/IconDivider'
 import Button from './button/Button'
 import HomeWorksAnimation from './HomeWorksAnimation'
 import { gsap } from 'gsap/all'
+import Balancer from "react-wrap-balancer"
 
 export default function HomeWorks() {
     const animatePhotoEnter = (number) => {
@@ -71,7 +72,9 @@ export default function HomeWorks() {
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title1-photo" className="font-semibold hidden md:block">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        <Balancer>
+                                            Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        </Balancer>
                                     </p>
                                     {/* mobile */}
                                     <p className="font-semibold text-sm md:hidden">
@@ -82,8 +85,7 @@ export default function HomeWorks() {
                             <div className="hidden lg:block col-span-2"></div>
                             <div className="hidden lg:block col-span-4">
                                 <div className="mb-16">
-                                    {/* <IconDivider color="slate-900" /> */}
-                                    <div className="w-3 h-3 bg-slate-900 rounded-full"></div>
+                                    <IconDivider color="slate-900" />
                                 </div>
                                 <p className="max-w-[312px] text-xl leading-[28px] font-medium tracking-tight">
                                     {/* Highlights of cases that we passionately built with forward-thinking clients and friends over <nobr>the years.</nobr> */}

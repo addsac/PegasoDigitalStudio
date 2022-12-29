@@ -44,7 +44,7 @@ export default function MissionValues(){
                         <div className="grid grid-cols-8 gap-y-20 md:gap-y-0 pl-4 md:pr-0 md:pl-6 lg:pl-12">
                             <div className="group col-span-8 md:col-span-3 flex flex-col gap-y-4 md:gap-y-6">
                                 <Text2
-                                    text="Funzionalità prima di ogni cosa"
+                                    text="We are Ethic"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
@@ -56,7 +56,7 @@ export default function MissionValues(){
 
                             <div className="group col-span-8 md:col-span-3 flex flex-col gap-y-4 md:gap-y-6">
                                 <Text2
-                                    text="Portiamo umanità alla tecnologia"
+                                    text="We make Great work"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
@@ -69,7 +69,7 @@ export default function MissionValues(){
                         <div className="grid grid-cols-8 gap-y-20 md:gap-y-0 pl-4 md:pr-0 md:pl-6 lg:pl-12">
                             <div className="group col-span-8 md:col-span-3 flex flex-col gap-y-4 md:gap-y-6">
                                 <Text2
-                                    text="Viviamo per l'innovazione"
+                                    text="We put people first"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
@@ -81,7 +81,7 @@ export default function MissionValues(){
 
                             <div className="group col-span-8 md:col-span-3 flex flex-col gap-y-4 md:gap-y-6">
                                 <Text2
-                                    text="Puntiamo all'eccellenza"
+                                    text="We strive for innovation"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
@@ -94,7 +94,7 @@ export default function MissionValues(){
                         <div className="grid grid-cols-8 gap-y-20 md:gap-y-0 pl-4 md:pr-0 md:pl-6 lg:pl-12">
                             <div className="group col-span-8 md:col-span-3 flex flex-col gap-y-4 md:gap-y-6">
                                 <Text2
-                                    text="Ricerca e sperimentazione"
+                                    text="We work for the long term"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
@@ -106,7 +106,7 @@ export default function MissionValues(){
 
                             <div className="group col-span-8 md:col-span-3 flex flex-col gap-y-4 md:gap-y-6">
                                 <Text2
-                                    text="Lavoriamo per il lungo termine"
+                                    text="We link beauty to functionality"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">

@@ -1,3 +1,5 @@
+import Balancer from "react-wrap-balancer"
+
 export default function Text1({ id, text, color, opacity, shadow = false }){
     return (
         <h4 
@@ -9,7 +11,9 @@ export default function Text1({ id, text, color, opacity, shadow = false }){
                 text-1
             `}
         >
-            { text }
+            <Balancer>
+                { text }
+            </Balancer>
         </h4>
     )
 }

@@ -6,6 +6,7 @@ import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode } from "swiper"
 import { usePathname } from "next/navigation"
+import Balancer from "react-wrap-balancer"
 
 export default function BlogSwiper({ type }){
     const arrayToLoop = [1, 2, 3, 4, 5, 6]
@@ -53,7 +54,11 @@ export default function BlogSwiper({ type }){
                                     Ecommerce
                                 </p>
                                 {/* Text */}
-                                <p className="text-slate-900 text-xl md:text-2xl tracking-tight leading-[130%] group-hover:underline"> Le Sezioni più Importanti di un Ecommerce per Vendere di più </p>
+                                <p className="text-slate-900 text-xl md:text-2xl tracking-tight leading-[130%] group-hover:underline"> 
+                                    <Balancer>
+                                        Le Sezioni più Importanti di un Ecommerce per Vendere di più 
+                                    </Balancer>
+                                </p>
                             </div>
                         </div>
                     </Link>

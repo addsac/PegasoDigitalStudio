@@ -3,6 +3,7 @@ import Image from "next/image"
 import Title2 from "./text/Title2"
 import Button from "./button/Button"
 import FooterAnimation from './FooterAnimation'
+import Balancer from "react-wrap-balancer"
 
 export default function Footer(){
 
@@ -23,7 +24,9 @@ export default function Footer(){
                         <p
                             className="text-white/50 text-[20px] md:text-[24px] font-regular tracking-tight"
                         >
-                            The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr>
+                            <Balancer>
+                                The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr>
+                            </Balancer>
                         </p>
                         <Link href="/missione">
                             <Button 
@@ -159,17 +162,25 @@ export default function Footer(){
                             </Link>
                         </div>
                     </div>
-                    <div className="flex justify-between items-start gap-x-6">
-                        <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-sm">
-                            Pegaso S.a.s. di Citton Vittorio & C. | Sede legale: via Borgo Treviso 56 - Cittadella (PD) 35013 | P.Iva e C.F.: 05392800289 | Numero REA 464273
-                        </p>
-                        <Image
-                            src="/btc_logo.svg" 
-                            alt="" 
-                            width={120}
-                            height={120}
-                            className="w-[80px] md:w-[120px]"
-                        />
+                    <div className="col-span-12">
+                        <div className="grid grid-cols-12 gap-x-6 gap-y-20">
+                            <div className="col-span-12 lg:col-span-10">
+                                <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-sm">
+                                    <Balancer>
+                                        Pegaso S.a.s. di Citton Vittorio & C. | Sede legale: via Borgo Treviso 56 - Cittadella (PD) 35013 | P.Iva e C.F.: 05392800289 | Numero REA 464273
+                                    </Balancer>
+                                </p>
+                            </div>
+                            <div className="col-span-12 lg:col-span-2">
+                                <Image
+                                    src="/btc_logo.svg" 
+                                    alt="" 
+                                    width={120}
+                                    height={120}
+                                    className="w-[80px] md:w-[120px]"
+                                />
+                            </div>
+                        </div>
                     </div>
                     {/* <div className="mx-auto">
                         <Link href="/">

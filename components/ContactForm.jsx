@@ -6,6 +6,7 @@ import { gsap, ScrollTrigger, ScrollToPlugin } from 'gsap/all'
 import { usePathname } from 'next/navigation'
 import Text1 from "./text/Text1"
 import Button from './button/Button'
+import Balancer from "react-wrap-balancer"
 
 export default function ContactForm(){
     const pathname = usePathname();
@@ -305,7 +306,9 @@ export default function ContactForm(){
                         font-semibold lg:text-9xl md:text-8xl text-5xl leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tighter
                     `}
                 >
-                    Hai un progetto da realizzare?
+                    <Balancer>
+                        Hai un progetto da realizzare?
+                    </Balancer>
                 </h1>
             </div>
 
@@ -314,7 +317,7 @@ export default function ContactForm(){
                 <div className="px-16 md:px-0 max-w-[550px] mx-auto">
                     <Text1 
                         id="text1-contact"
-                        text="Compila il form con le necessità del tuo progetto – ti ricontatteremo appena possibile." 
+                        text="Compila il form con le necessità del tuo progetto, lo analizzeremo e ti ricontatteremo appena possibile." 
                         opacity={60}
                         color="white"
                     />
@@ -335,11 +338,15 @@ export default function ContactForm(){
                         </p>
 
                         <p className="text-xl md:text-2xl text-slate-900 tracking-tight">
-                            Il form è stato inviato!
+                            <Balancer>
+                                Il form è stato inviato!
+                            </Balancer>
                         </p>
 
                         <p className="text-xl md:text-2xl text-slate-900 tracking-tight opacity-60">
-                            Ti ricontatteremo appena possibile dopo aver valutato le tue necessità.
+                            <Balancer>
+                                Ti ricontatteremo appena possibile dopo aver valutato le tue necessità.
+                            </Balancer>
                         </p>
 
                         <div className="flex items-center gap-x-6 mt-8">
@@ -381,7 +388,9 @@ export default function ContactForm(){
                         { activeInterest == 3 && (
                             <div className="flex flex-col gap-y-6">
                                 <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
-                                    Hai attualmente attive altre campagne pubblicitarie online, o hai già provato a investire in pubblicità online in passato?
+                                    <Balancer>
+                                        Hai attualmente attive altre campagne pubblicitarie online, o hai già provato a investire in pubblicità online in passato?
+                                    </Balancer>
                                 </p>
 
                                 <div className="grid grid-cols-12 gap-4 md:gap-6">
@@ -423,7 +432,9 @@ export default function ContactForm(){
                         { activeInterest == 3 && (
                             <div className="flex flex-col gap-y-6">
                                 <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
-                                    Qual è il fatturato annuo della tua azienda?
+                                    <Balancer>
+                                        Qual è il fatturato annuo della tua azienda?
+                                    </Balancer>
                                 </p>
 
                                 <div className="grid grid-cols-12 gap-4 md:gap-6">
@@ -465,7 +476,9 @@ export default function ContactForm(){
                         { activeInterest == 3 && (
                             <div className="flex flex-col gap-y-6">
                                 <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
-                                    Hai un idea di budget mensile (comprensivo della nostra consulenza) da investire?
+                                    <Balancer>
+                                        Hai un idea di budget mensile (comprensivo della nostra consulenza) da investire?
+                                    </Balancer>
                                 </p>
 
                                 <div className="grid grid-cols-12 gap-4 md:gap-6">
@@ -527,7 +540,11 @@ export default function ContactForm(){
                         {/* SOCIAL MEDIA */}
                         { activeInterest == 4 && (
                             <div className="flex flex-col gap-y-6">
-                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> A che Social Media sei interessato? </p>
+                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
+                                    <Balancer>
+                                        A che Social Media sei interessato?
+                                    </Balancer>
+                                </p>
 
                                 <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
                                     {socialMedia.map((value, index) => (
@@ -629,7 +646,11 @@ export default function ContactForm(){
                         {/* Input budget */}
                         { budgets.length > 0 && (
                             <div className="flex flex-col gap-y-6">
-                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> Budget del progetto: </p>
+                                <p className="text-xl md:text-2xl text-slate-900 tracking-tight"> 
+                                    <Balancer>
+                                        Budget del progetto:
+                                    </Balancer>
+                                </p>
 
                                 <div className="flex flex-wrap items-center gap-x-4 gap-y-4">
                                     {budgets.map((value, index) => (
@@ -660,7 +681,7 @@ export default function ContactForm(){
                                 >
                                     
                                     { !loading && (
-                                        <p> 
+                                        <p>
                                             Invia la richiesta
                                         </p>
                                     )}
@@ -676,7 +697,9 @@ export default function ContactForm(){
                                 </button>
                             </div>
                             <p className="mx-auto text-xs opacity-50 w-[280px]">
-                                Sending the message you accept our Privacy Policy and Terms of Service.
+                                <Balancer>
+                                    Sending the message you accept our Privacy Policy and Terms of Service.
+                                </Balancer>
                             </p>
                         </div>
 
@@ -688,18 +711,28 @@ export default function ContactForm(){
             <div className="mx-auto max-w-[730px] w-full mt-24 md:mt-32 px-8 md:px-0">
                 <div className="w-full px-8 md:px-12">
                     <p className="w-full text-center text-lg text-white">
-                        Cosa aspettarsi lavorando con noi:
+                        <Balancer>
+                            Cosa aspettarsi lavorando con noi:
+                        </Balancer>
                     </p>
 
                     <div className="w-full flex justify-center gap-x-16 md:gap-x-32 mt-24">
                         <div className="flex flex-col gap-y-6 text-white">
                             <p className="text-lg">Project scopes</p>
-                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                            <p className="text-sm opacity-60">
+                                <Balancer>
+                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                </Balancer>
+                            </p>
                         </div>
 
                         <div className="flex flex-col gap-y-6 text-white">
                             <p className="text-lg">Project preferencest</p>
-                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                            <p className="text-sm opacity-60">
+                                <Balancer>
+                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                </Balancer>
+                            </p>
                         </div>
                     </div>
 
@@ -709,12 +742,20 @@ export default function ContactForm(){
                     >
                         <div className="flex flex-col gap-y-6 text-white">
                             <p className="text-lg">Partner preferencest</p>
-                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                            <p className="text-sm opacity-60">
+                                <Balancer>
+                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                </Balancer>
+                            </p>
                         </div>
 
                         <div className="flex flex-col gap-y-6 text-white">
                             <p className="text-lg">Our expectations</p>
-                            <p className="text-sm opacity-60">our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.</p>
+                            <p className="text-sm opacity-60">
+                                <Balancer>
+                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                </Balancer>
+                            </p>
                         </div>
                     </div>
                 </div>

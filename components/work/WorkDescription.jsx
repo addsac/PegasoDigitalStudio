@@ -1,11 +1,14 @@
-import Button from "../button/Button";
+import Button from "../button/Button"
+import Balancer from "react-wrap-balancer"
 
 export default function WorkDescription({ title = '', description = [], href = '', ctaText = '' }) {
   return (
     <div className="w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
         <div className="col-span-12 lg:col-span-6 mb-10">
             <p className="text-4xl lg:text-[48px] tracking-tighter text-white leading-[130%] lg:leading-[130%] -mt-[6px]">
-                { title }
+                <Balancer>
+                    { title }
+                </Balancer>
             </p>
         </div>
 
@@ -15,7 +18,9 @@ export default function WorkDescription({ title = '', description = [], href = '
             {description.map((value, index) => (
                 <div key={index}>
                     <p className="text-base lg:text-xl text-white/60 leading-[160%] lg:leading-[160%]">
-                        { value }
+                        <Balancer>
+                            { value }
+                        </Balancer>
                     </p>
                     {index != description.length - 1 && (
                         <div className="w-full h-10"></div> /* margin */
