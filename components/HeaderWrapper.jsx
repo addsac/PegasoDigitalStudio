@@ -20,6 +20,7 @@ export default function HeaderWrapper(){
     return (
         <div
             style={{ position: 'relative', zIndex: '100 !important' }}
+            className="relative"
             /* className={color == 'dark' ? (pathname.includes('/blog/') ? 'bg-slate-900' : '') : 'bg-white'} */
         >
             <Header color={ color } />

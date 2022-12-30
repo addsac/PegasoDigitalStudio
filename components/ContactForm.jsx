@@ -345,7 +345,7 @@ export default function ContactForm(){
 
                         <p className="text-xl md:text-2xl text-slate-900 tracking-tight opacity-60">
                             <Balancer>
-                                Ti ricontatteremo appena possibile dopo aver valutato le tue necessità.
+                                Ti ricontatteremo appena possibile non appena avremo valutato le tue necessità.
                             </Balancer>
                         </p>
 
@@ -718,19 +718,27 @@ export default function ContactForm(){
 
                     <div className="w-full flex justify-center gap-x-16 md:gap-x-32 mt-24">
                         <div className="flex flex-col gap-y-6 text-white">
-                            <p className="text-lg">Project scopes</p>
+                            <p className="text-lg">
+                                <Balancer>
+                                    Scopi dei progetti
+                                </Balancer>
+                            </p>
                             <p className="text-sm opacity-60">
                                 <Balancer>
-                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                    Lavoriamo per portare un risultato concreto alle persone, per questo ogni progetto deve avere uno scopo ben preciso, non lavorimo senza averlo definito prima.
                                 </Balancer>
                             </p>
                         </div>
 
                         <div className="flex flex-col gap-y-6 text-white">
-                            <p className="text-lg">Project preferencest</p>
+                            <p className="text-lg">
+                                <Balancer>
+                                    Preferenze dei progetti
+                                </Balancer>
+                            </p>
                             <p className="text-sm opacity-60">
                                 <Balancer>
-                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                    Il nostro team è abbastanza versatile da occuparsi di siti web, ecommerce, branding e social media. Questo è il tipo di lavoro che facciamo.
                                 </Balancer>
                             </p>
                         </div>
@@ -741,19 +749,27 @@ export default function ContactForm(){
                         className="w-full flex justify-center gap-x-16 md:gap-x-32 mt-24"
                     >
                         <div className="flex flex-col gap-y-6 text-white">
-                            <p className="text-lg">Partner preferencest</p>
+                            <p className="text-lg">
+                                <Balancer>
+                                    Preferenze dei clienti
+                                </Balancer>
+                            </p>
                             <p className="text-sm opacity-60">
                                 <Balancer>
-                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                    Non abbiamo un tipo preferito di clienti fino a quando questi siano onesti e voglia davvero migliorare la loro comunicazione digitale.
                                 </Balancer>
                             </p>
                         </div>
 
                         <div className="flex flex-col gap-y-6 text-white">
-                            <p className="text-lg">Our expectations</p>
+                            <p className="text-lg">
+                                <Balancer>
+                                    Le nostre aspettative
+                                </Balancer>
+                            </p>
                             <p className="text-sm opacity-60">
                                 <Balancer>
-                                    our team is versatile enough to take care of all aspects of branding & web production so that’s the type of work we’re after.
+                                    Pensiamo sia importante essere etici e onesti quando comunichiamo. Ci aspettiamo non meno di questo da ogni relazione con i nostri clienti.
                                 </Balancer>
                             </p>
                         </div>

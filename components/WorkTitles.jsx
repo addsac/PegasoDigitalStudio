@@ -13,13 +13,13 @@ export default function WorkTitles() {
             <div className="mx-auto text-center max-w-[1000px] px-8 lg:px-0">
                 <Title2
                     id="title2-work"
-                    text={['Our work.', 'quello per cui esistiamo']}
+                    text={['I nostri lavori', '– quello per cui esistiamo']}
                     gradient={true}
                 />
                 <div className="mx-auto max-w-[550px] mt-12 lg:mt-16">
                     <Text1
                         id="text1-work"
-                        text="Compila il form le necessità del tuo progetto – ti ricontatteremo appena possibile"
+                        text=""
                         opacity={60}
                         color="white"
                     />

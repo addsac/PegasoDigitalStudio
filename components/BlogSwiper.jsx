@@ -82,11 +82,11 @@ export default function BlogSwiper({ type }){
             </SwiperSlide> */}
             
             {/* White margin */}
-            {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/') || pathname.includes('/servizi/')) && (
+            {/* {(pathname == '/' || pathname == '/lavori' || pathname.includes('/blog/') || pathname.includes('/lavori/') || pathname.includes('/servizi/')) && (
                 <SwiperSlide style={{ width: 'auto' }}>
                     <div className="md:w-16 h-full"></div>
                 </SwiperSlide>
-            )}
+            )} */}
         </Swiper>
     </div>
 }

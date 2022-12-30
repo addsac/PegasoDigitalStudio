@@ -17,7 +17,7 @@ export default function Footer(){
                     <div className="flex flex-col items-start gap-y-8 md:gap-y-10 lg:gap-y-14 w-full md:w-1/2">
                         <div className="-ml-[8px] md:-ml-[12px] lg:-ml-[18px]">
                             <Title2
-                                text={ [ 'Our', ' Mission' ] } 
+                                text={ [ 'La', ' Missione' ] } 
                                 gradient={ true }
                             />
                         </div>
@@ -25,14 +25,15 @@ export default function Footer(){
                             className="text-white/50 text-[20px] md:text-[24px] font-regular tracking-tight"
                         >
                             <Balancer>
-                                The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr>
+                                {/* The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr> */}
+                                La storia dietro a Pegaso Digital Studio parla di ispirazione, design e praticità.
                             </Balancer>
                         </p>
                         <Link href="/missione">
                             <Button 
                                 styleName="primary-lg-dark"
                                 href="/missione"
-                                text="See our mission"
+                                text="Vedi la missione"
                                 icon="arrow"
                             />
                         </Link>

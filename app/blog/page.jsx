@@ -13,7 +13,7 @@ export default async function Page(){
 
             <BlogTitles />
 
-            <div className="w-full flex flex-col gap-y-24 md:gap-y-32 lg:gap-y-48 my-32 pl-8 md:pl-12 lg:pl-16">
+            <div className="w-full flex flex-col gap-y-24 md:gap-y-32 lg:gap-y-48 my-32">
                 <BlogArticlesSection
                     text='Design'
                 />

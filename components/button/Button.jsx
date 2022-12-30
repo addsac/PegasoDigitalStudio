@@ -91,15 +91,17 @@ export function PrimarySmDark({ styleName = '', text = '', icon = false, opacity
     return (
         <Link href={href}>
             <button className="font-semibold px-5 py-1 bg-slate-900 hover:bg-slate-900/80 text-white rounded-full transition duration-200">
-                {/* title of the component */}
-                {text}
+                <div className="flex items-center">
+                    {/* title of the component */}
+                    {text}
 
-                {/* icon of the component */}
-                {icon && (
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>              
-                )}
+                    {/* icon of the component */}
+                    {icon == 'arrow' && (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 ml-2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    )}
+                </div>
             </button>
         </Link>
     )
@@ -169,7 +171,7 @@ export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, op
                 <button
                     onMouseOver={ () => ballAnimationEnter() } 
                     onMouseLeave={ () => ballAnimationLeave() } 
-                    className="flex items-center text-slate-900 tracking-[-1%] group-hover:text-white transition duration-400 z-[2] px-8 py-5"
+                    className="flex justify-center items-center text-slate-900 tracking-[-1%] group-hover:text-white transition duration-400 z-[2] px-8 py-5"
                 >
                     {/* title of the component */}
                     <div className="flex flex-col gap-y-6">
@@ -191,7 +193,7 @@ export function PrimaryLgWhite({ id = '', styleName = '', text = '', icon = fals
     return (
         <Link href={ href }>
             <button
-                className="flex items-center text-slate-900 tracking-[-1%] group-hover:text-white transition duration-400 z-[2] px-8 py-5"
+                className="flex justify-center items-center text-slate-900 tracking-[-1%] group-hover:text-white transition duration-400 z-[2] px-8 py-5"
             >
                 {/* title of the component */}
                 <div className="flex flex-col gap-y-6">
@@ -215,7 +217,7 @@ export function PrimaryLgDark({ id = '', styleName = '', text = '', icon = false
                 className="group relative flex justify-center border border-white/40 hover:border-white text-white rounded-full z-[2] overflow-hidden transition duration-600"
             >
                 <button
-                    className="flex items-center tracking-tight z-[2] px-8 py-5"
+                    className="flex justify-center items-center tracking-tight z-[2] px-8 py-5"
                 >
                     {/* title of the component */}
                     {text}
