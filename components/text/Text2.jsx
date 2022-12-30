@@ -1,3 +1,5 @@
+import Balancer from "react-wrap-balancer"
+
 export default function Text2({ id = '', text, color, opacity = '' }){
     return (
         <h5 
@@ -8,7 +10,9 @@ export default function Text2({ id = '', text, color, opacity = '' }){
                 text-2    
             `}
         >
-            { text }
+            <Balancer>
+                { text }
+            </Balancer>
         </h5>
     )
 }

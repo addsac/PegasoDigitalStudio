@@ -35,8 +35,13 @@ export default function Page(){
         <Title1 id="home-title" text={ ['Pegaso', 'Digital', 'Studio'] } center />
       </div>
 
+      {/* 3D model */}
+      <div className="w-[730px] h-[730px] mx-auto bg-white/40 flex items-center justify-center mt-48">
+        <p> 3D Model + Logo specifics </p>
+      </div>
+
       <div>
-        <div className="w-full h-16 md:h-24"></div>
+        <div className="w-full h-48"></div>
         <WorkDescription 
           /* title="Siamo uno studio digitale indipendente e progettiamo prodotti e servizi digitali che uniscono i brand ai loro utenti." */
           title="Pegaso Digital Studio è uno studio digitale multidisciplinare che lavora con aziende e professionisti ambiziosi creando prodotti e strategie digitali personalizzate"

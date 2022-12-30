@@ -25,7 +25,7 @@ export default function HomeServices(){
                     <div className="mt-8 md:mt-12 lg:mt-16 text-center">
                         <Text1 
                             id="text1-services"
-                            text="Ogni progetto è diverso, ha la sua finalità e le sue caratteristiche. Ecco come ti possiamo aiutare." 
+                            text="Siamo un team di designer, sviluppatori, storyteller e marketers che lavorano all'unisono per offrire queste soluzioni:" 
                             opacity={60}
                             color="white"
                         />

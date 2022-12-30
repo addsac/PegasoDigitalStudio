@@ -8,6 +8,7 @@ import ServiceCitationSlider from '../../components/services/ServiceCitationSlid
 import MissionValues from '../../components/mission/MissionValues'
 import WorkImageMargin from '../../components/work/WorkImageMargin'
 import Cips from '../../components/utility/Cips'
+import Balancer from "react-wrap-balancer"
 
 export default function Page() {
     return (
@@ -21,7 +22,7 @@ export default function Page() {
                 
                 <div id="text3-mission" className="text-center mb-16 md:mb-24">
                     <Cips 
-                        text="Magia Digitale fusa alla Praticità"
+                        text="La Missione"
                         color="white"
                         opacity={60}
                     />
@@ -37,7 +38,11 @@ export default function Page() {
 
                         {/* Aiutiamo le persone a raggiungere più persone, condividere valore e generare nuove idee creando prodotti digitali e strategie personalizatte */}
 
-                        Siamo qui per aiutare brand e professionisti a condividere il loro lavoro e comunicare il loro valore nel mondo, progettando e costruendo prodotti e servizi digitali che durano nel tempo.
+                        {/* Siamo qui per aiutare brand e professionisti a condividere il loro lavoro e comunicare il loro valore nel mondo, progettando e costruendo prodotti e servizi digitali che durano nel tempo. */}
+
+                        <Balancer>
+                            La nostra missione quella di migliorare la vita alle persone, e lo facciamo progettando e creando prodotti digitali di qualità e che durino nel tempo
+                        </Balancer>
                     </h1>
                 </div>
 
