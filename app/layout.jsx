@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 // import HandleColorBackground from '../components/HandleColorBackground'
 import HeaderWrapper from '../components/HeaderWrapper'
 import UtilityCustomCursor from '../components/utility/UtilityCustomCursor'
-import UtilityGoToTopOnChangeRoute from '../components/utility/UtilityGoToTopOnChangeRoute'
+import UtilityGoUpOnChangeRoute from '../components/utility/UtilityGoUpOnChangeRoute'
 import UtilityCookie from '../components/utility/UtilityCookie'
 import ExperienceBackground from "../components/ExperienceBackground"
 import Footer from "../components/Footer"
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         {/* Utility */}
         {/* <HandleColorBackground /> */}
         <UtilityCustomCursor />
-        <UtilityGoToTopOnChangeRoute />
+        <UtilityGoUpOnChangeRoute />
         <UtilityCookie />
         
         { children }

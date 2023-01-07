@@ -3,7 +3,7 @@
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
 
-export default function UtilityGoToTopOnChangeRoute() {
+export default function UtilityGoUpOnChangeRoute() {
     const pathname = usePathname()
 
     useEffect(() => {
