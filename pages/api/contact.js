@@ -2,7 +2,7 @@ import mail from '@sendgrid/mail'
 
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 
-export default async (req, res) => {
+export default async function(req, res) {
     const query = req.query;
     const { interest, email, name, phone, budget, message, list, question1, question2, question3 } = query
 

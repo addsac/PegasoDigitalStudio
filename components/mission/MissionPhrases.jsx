@@ -22,7 +22,7 @@ export default function MissionPhrases() {
                 <div className="col-span-8 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
-                            Ma quando i prodotti digitali non vengono progettate partendo dall'umanità dell'esperienza e dalla sua qualità 
+                            Ma quando i prodotti digitali non vengono progettate partendo dall&apos;umanità dell&apos;esperienza e dalla sua qualità 
                             la tecnologia diventa solo un limite scomodo.
                         </Balancer>
                     </p>
@@ -45,7 +45,7 @@ export default function MissionPhrases() {
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
                             Per questo ogni progetto che facciamo parte dalla sua finalità, passa attraverso un processo di storytelling e psicologia applicata,
-                            permettendo così alle persone di cooperare nel metodo più efficace di cui l'uomo ha a disposizione.
+                            permettendo così alle persone di cooperare nel metodo più efficace di cui l&apos;uomo ha a disposizione.
                         </Balancer>
                     </p>
                 </div>

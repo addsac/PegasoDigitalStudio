@@ -49,7 +49,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Sviluppiamo siti web aziendali per comunicare il valore dell'azienda permettendole di raggiungere i suoi clienti.
+                                    Sviluppiamo siti web aziendali per comunicare il valore dell&apos;azienda permettendole di raggiungere i suoi clienti.
                                 </Balancer> 
                             </p>
                             <div>
@@ -64,7 +64,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Sviluppiamo tutto quello che c'è dietro a un brand moderno, come logo, guide di stile e strategie di comunicazione. 
+                                    Sviluppiamo tutto quello che c&apos;è dietro a un brand moderno, come logo, guide di stile e strategie di comunicazione. 
                                 </Balancer>
                             </p>
                             <div>
@@ -98,7 +98,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Progettiamo negozi digitali ottimizzati per vendere e rendere l'esperienza d'acquisto di un prodotto senza compromessi.
+                                    Progettiamo negozi digitali ottimizzati per vendere e rendere l&apos;esperienza d&apos;acquisto di un prodotto senza compromessi.
                                 </Balancer>
                             </p>
                             <div>

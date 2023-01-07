@@ -25,8 +25,8 @@ export default function ServiceTextAndImage({ title = '', description = [], alig
                     </p>
                     
                     { description.map((text, index) => (
-                        <div className="text-base leading-[150%] text-white/60 tracking-tight">
-                            <p key={index + '-description'} className="mb-6">
+                        <div key={index + '-description'} className="text-base leading-[150%] text-white/60 tracking-tight">
+                            <p className="mb-6">
                                 { text }
                             </p>
                         </div>

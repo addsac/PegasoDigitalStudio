@@ -4,9 +4,10 @@ export default function ServiceImageExampleWork({ images = [] }) {
   return (
     <div className="mx-auto w-1/2 bg-slate-700 py-64">
         <div className="flex flex-col gap-y-2">
-            {images.map((path) => (
+            {images.map((path, index) => (
                 <Image
                     src={path}
+                    key={`img-service-example-${index}`}
                     alt=""
                     height={800}
                     width={800}
