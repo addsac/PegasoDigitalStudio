@@ -10,5 +10,5 @@ export default function UtilityGoToTopOnChangeRoute() {
         window.scrollTo(0, 0)
     }, [pathname])
 
-    return <></>
+    return null
 }
