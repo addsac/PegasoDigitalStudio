@@ -40,7 +40,7 @@ export default function UtilityCustomCursor(){
     return (
         <div className="hidden md:block">
             <div 
-                className="text-sm custom-cursor hidden md:flex items-center justify-center h-28 w-28 bg-slate-900/20 backdrop-blur text-white rounded-full z-50"
+                className="text-sm custom-cursor hidden md:flex items-center justify-center h-28 w-28 border border-white/10 bg-slate-900/20 backdrop-blur text-white rounded-full z-50"
                 style={{ opacity: '0', scale: 0 }}
             >
                 Vedi

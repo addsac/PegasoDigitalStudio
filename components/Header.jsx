@@ -308,11 +308,11 @@ export default function Header({ color }) {
                                     <Link href="/servizi/branding" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
                                         Branding
                                     </Link>
-                                    <Link href="/servizi/marketing" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
-                                        Marketing
-                                    </Link>
                                     <Link href="/servizi/social-media" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
                                         Social Media
+                                    </Link>
+                                    <Link href="/servizi/marketing" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
+                                        Marketing
                                     </Link>
                                 </div>
                             </div>
@@ -584,13 +584,13 @@ export default function Header({ color }) {
                                 />
                                 <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                    text="Digital Marketing" 
-                                    href="/servizi/marketing"
+                                    text="Social Media" 
+                                    href="/servizi/social-media"
                                 />
                                 <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
-                                    text="Social Media" 
-                                    href="/servizi/social-media"
+                                    text="Digital Marketing" 
+                                    href="/servizi/marketing"
                                 />
                             </div>
                         </div>

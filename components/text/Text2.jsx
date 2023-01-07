@@ -10,9 +10,20 @@ export default function Text2({ id = '', text, color, opacity = '' }){
                 text-2    
             `}
         >
-            <Balancer>
-                { text }
-            </Balancer>
+            { text.split(' ').length > 2  ? 
+                (
+                    <>
+                        <Balancer>
+                            { text }
+                        </Balancer>
+                    </>
+                )   :
+                (
+                    <>
+                        { text }
+                    </>
+                )
+            }
         </h5>
     )
 }

@@ -40,8 +40,7 @@ export default function Page(){
         <p> 3D Model + Logo specifics </p>
       </div>
 
-      <div>
-        <div className="w-full h-48"></div>
+      <div className="pt-48">
         <WorkDescription 
           /* title="Siamo uno studio digitale indipendente e progettiamo prodotti e servizi digitali che uniscono i brand ai loro utenti." */
           title="Pegaso Digital Studio è uno studio digitale multidisciplinare che lavora con aziende e professionisti ambiziosi creando prodotti e strategie digitali personalizzate"

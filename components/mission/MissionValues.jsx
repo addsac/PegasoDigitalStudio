@@ -26,7 +26,7 @@ export default function MissionValues(){
                             <div className="max-w-[550px] mx-auto">
                                 <Text1 
                                     id="text1-mission-values"
-                                    text="The values we strive to embody and live by through our work and processes" 
+                                    text="I valori con i qualidiamo vita attraverso i nostri lavori e i nostri processi" 
                                     opacity={60}
                                     color="white"
                                 />
@@ -163,7 +163,7 @@ export default function MissionValues(){
 
                         <div className="group flex flex-col gap-y-6 md:gap-y-8">
                             <Text2
-                                text="Puntiamo all'innovazione"
+                                text="Miriamo all'innovazione"
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">

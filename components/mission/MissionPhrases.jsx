@@ -8,8 +8,11 @@ export default function MissionPhrases() {
                 <div className="col-span-8 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
-                            I migliori prodotti digitali nascono quando il design incontra e si fonde nella funzione del progetto.
-                            La tecnologia è nata per permettere alle persone di cooperare e generare nuove idee allargando i limiti dello spazio fisico.
+                            I migliori prodotti digitali permettono alle persone di comunicare il loro valore, di raggiungere altre persone con idee simili 
+                            e risolvere i loro problemi. La tecnologia è nata per permettere alle persone di cooperare e generare nuove idee, allargando i limiti dello spazio fisico
+
+                            {/* nascono quando il design incontra e si fonde nella funzione del progetto.
+                            La tecnologia è nata per permettere alle persone di cooperare e generare nuove idee allargando i limiti dello spazio fisico. */}
                         </Balancer>
                     </p>
                 </div>
@@ -19,8 +22,8 @@ export default function MissionPhrases() {
                 <div className="col-span-8 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
-                            Ma quando un prodotto nasce senza mettere al centro la sua funzione, le persone provano enorme ansia per la tecnologia 
-                            e la cooperazione diventa anche più difficile di prima.
+                            Ma quando i prodotti digitali non vengono progettate partendo dall'umanità dell'esperienza e dalla sua qualità 
+                            la tecnologia diventa solo un limite scomodo.
                         </Balancer>
                     </p>
                 </div>
@@ -30,8 +33,8 @@ export default function MissionPhrases() {
                 <div className="col-span-8 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
-                            Abbiamo fondato lo studio digitale Pegaso esattamente per creare esperienze che mettano 
-                            la funzione prima di tutto il resto, rendendo la tecnologia un bene più che un limite scomodo.
+                            Abbiamo fondato lo studio digitale Pegaso esattamente per dare un modo alle aziende di avere un partner fidato che riesca 
+                            a condividere efficaemente il loro valore, aiutando pesrone rendendo la tecnologia un bene prezioso.
                         </Balancer>
                     </p>
                 </div>
@@ -41,8 +44,8 @@ export default function MissionPhrases() {
                 <div className="col-span-8 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
-                            Per questo ogni progetto è un'occasione per partire dalla funzione, mettere al centro l'esperienza e ricerca nel design, 
-                            per permette alle persone di cooperare nel metodo più efficace che l'uomo conosce.
+                            Per questo ogni progetto che facciamo parte dalla sua finalità, passa attraverso un processo di storytelling e psicologia applicata,
+                            permettendo così alle persone di cooperare nel metodo più efficace di cui l'uomo ha a disposizione.
                         </Balancer>
                     </p>
                 </div>

@@ -22,7 +22,7 @@ export default function MissionStory() {
                             <div className="max-w-[660px] mx-auto">
                                 <Text1
                                     id="text1-mission-story"
-                                    text="We are designers, developers, storytellers and marketers all working togheter to create work that lasts."
+                                    text="Siamo designer, sviluppatori, storyteller e marketers lavorando all'unisono per craere lavori che durano nel tempo."
                                     color="white"
                                     opacity={60}
                                 />
@@ -42,7 +42,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> Le Origini </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Aesthetics work, but not without a strong foundation. Our creative concepts are backed by an insight-based approach and thorough understanding of your brand. This fuels us with the knowledge to strategically solve even the most complex problems. Only then, we can create digital experiences that maintain a yin-yang balance between magic and logic. 
+                                    Tutto è partito dalla passione per la creazione e progettazione di esperienze digitale di due fratelli, Massimo e Leonardo. Molto presto, lavorando con agenzie e professionisti esterni capimmo che c'era un problema, quello che l'agenzia creava era molto difficilmente quello che lazienda voleva comunicare. Per questo abbiamo cerato il nostro studio con l'obbiettivo di creare prodotti digitali che esprimono esattamente quello di cui un'azienda ha bisogno di comunicare.
                                 </Balancer>
                             </p>
                         </div>
@@ -54,7 +54,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> Il Percorso </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Aesthetics work, but not without a strong foundation. Our creative concepts are backed by an insight-based approach and thorough understanding of your brand. This fuels us with the knowledge to strategically solve even the most complex problems. Only then, we can create digital experiences that maintain a yin-yang balance between magic and logic.
+                                    Per essere sicuri di comunicare per raggiungere le persone e portare un cambiamento, abbiamo scoperto le qualità dello storytelling e della psicologia prestata al Design digitale. Questo ci ha portato ha sviluppare modi di lavorare strettamente personali e mirati. Quello che cercavamo mentre eravamo noi i clienti di qualche professionista.
                                 </Balancer>
                             </p>
                         </div>
@@ -76,7 +76,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> La Visione </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Aesthetics work, but not without a strong foundation. Our creative concepts are backed by an insight-based approach and thorough understanding of your brand. This fuels us with the knowledge to strategically solve even the most complex problems. Only then, we can create digital experiences that maintain a yin-yang balance between magic and logic.
+                                    Ogni progetto digitale ha come missione quella di comunicare con le persone, suscitare emozioni e portare un cambiamento reale in positivo alle persone. Questo è possibile solo quando l'esperienza è reale e sentita, per questo cerchiamo di realizzare ogni nostro progetto tramite un'equilibrio yin-yang tra estetica e funzionalità.
                                 </Balancer>
                             </p>
                         </div>
@@ -88,7 +88,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> I Principi </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Aesthetics work, but not without a strong foundation. Our creative concepts are backed by an insight-based approach and thorough understanding of your brand. This fuels us with the knowledge to strategically solve even the most complex problems. Only then, we can create digital experiences that maintain a yin-yang balance between magic and logic.
+                                    Lavoriamo per le persone. L'esteica funziona, ma solo se legata ad un'approccio basato sulla comprensione della persona finale che andrà ad usare il prodotto. Lavoriamo in modo etico, funzionale all'obbiettivo e vogliamo che i nostri clienti facciano lo stesso con noi. Pensiamo che solo così ogni lavoro rispetterà veramente i valori che cerchiamo di impersonare.
                                 </Balancer>
                             </p>
                         </div>

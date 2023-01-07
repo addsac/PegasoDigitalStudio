@@ -9,7 +9,7 @@ export default async function Page(){
     console.log(posts) */
 
     return <div className="pt-[140px] md:pt-[240px] bg-white">
-        <main id="blog-wrapper" className="py-8 pb-24 md:pb-32 lg:pb-48">
+        <main id="blog-wrapper" className="relative py-8 pb-24 md:pb-32 lg:pb-48">
 
             <BlogTitles />
 

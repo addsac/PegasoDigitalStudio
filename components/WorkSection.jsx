@@ -45,7 +45,7 @@ export default function WorkSection({ text }){
                         <div className="col-span-12 mx-auto mt-8">
                             <Button
                                 text="Vedi altri lavori"
-                                styleName="primary-sm-white"
+                                styleName="primary-lg-dark"
                                 size="lg"
                                 href="/"
                             />

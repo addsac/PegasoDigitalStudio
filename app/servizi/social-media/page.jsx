@@ -81,9 +81,8 @@ export default function Page(){
                     <div id="wrapper-clients" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
-                                'Non solo il logo.',
-                                'Progetta tutta',
-                                'la comunicazione.'
+                                'Profili social',
+                                'che seguiamo:'
                             ]}
                             description='In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'
                             cipsText="I nostri Clienti"

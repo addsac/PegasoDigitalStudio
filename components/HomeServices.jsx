@@ -22,12 +22,16 @@ export default function HomeServices(){
                         />
                     </div>
 
+                    <div className="relative">
+                        <div className="absolute opacity-60 mx-auto left-1/2 -ml-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
+                    </div>
+
                     <div className="mt-8 md:mt-12 lg:mt-16 text-center">
                         <Text1 
                             id="text1-services"
                             text="Siamo un team di designer, sviluppatori, storyteller e marketers che lavorano all'unisono per offrire queste soluzioni:" 
-                            opacity={60}
                             color="white"
+                            opacity="60"
                         />
                     </div>
                 </div>

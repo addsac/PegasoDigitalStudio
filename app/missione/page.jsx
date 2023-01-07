@@ -41,7 +41,7 @@ export default function Page() {
                         {/* Siamo qui per aiutare brand e professionisti a condividere il loro lavoro e comunicare il loro valore nel mondo, progettando e costruendo prodotti e servizi digitali che durano nel tempo. */}
 
                         <Balancer>
-                            La nostra missione quella di migliorare la vita alle persone, e lo facciamo progettando e creando prodotti digitali di qualità e che durino nel tempo
+                            La nostra missione è permettere alle aziende di raggiungere i propri clienti e portare valore nel mondo attraverso la progettazione e creazione di prodotti digitali di qualità e che durino nel tempo
                         </Balancer>
                     </h1>
                 </div>

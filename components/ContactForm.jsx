@@ -318,8 +318,8 @@ export default function ContactForm(){
                     <Text1 
                         id="text1-contact"
                         text="Compila il form con le necessità del tuo progetto, lo analizzeremo e ti ricontatteremo appena possibile." 
-                        opacity={60}
                         color="white"
+                        opacity="60"
                     />
                 </div>
             </div>
