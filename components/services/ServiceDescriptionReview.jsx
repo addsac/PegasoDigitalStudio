@@ -6,11 +6,32 @@ import ModalVideo from "../ModalVideo"
 import { gsap } from "gsap/all"
 
 export default function ServiceDescriptionReview({ cipsText = '', text = '', description = [], id = '' }) {
-    const openModal = () => {
+    const openModal = (n = 1) => {
+        // change the src of the video
+        const el = document.getElementById('modal-video')
+        if(n == 1){
+            el.src = "/img/services/social-media/video-recensione-daniele-pietrucci.mp4"
+            setTimeout(() => {
+                el.play()
+            }, 100)
+        }
+        else if(n == 2){
+            el.src = "/img/services/social-media/video-recensione-sara-caponigro.mp4"
+            setTimeout(() => {
+                el.play()
+            }, 100)
+        }
+        else if(n == 3){
+            el.src = "/img/services/social-media/video-recensione-daniele-pietrucci.mp4"
+            setTimeout(() => {
+                el.play()
+            }, 100)
+        }
+
         gsap.to('#modal-video-wrapper', {
             scale: 1,
             autoAlpha: 1,
-            duration: 0.4, 
+            duration: 0.4,
         })
     }
 
@@ -64,9 +85,9 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
             <div className="mt-12 md:mt-0 col-span-12 lg:col-span-6 flex flex-col">
                 <div className="w-full flex flex-col">
                     <div className="flex justify-between gap-x-12">
-                        <div onClick={() => openModal()} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden">
+                        <div onClick={() => openModal(1)} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden">
                             <Image 
-                                src="/img/services/social-media/placeholder-review-social.png" 
+                                src="/img/services/social-media/placeholder-review-social-1.png" 
                                 alt="" 
                                 width={600}
                                 height={600}
@@ -86,11 +107,11 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                             </div>
                         </div>
                         
-                        <div onClick={() => openModal()} className="mt-32 relative w-full h-[300px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
+                        <div onClick={() => openModal(2)} className="mt-32 relative w-full h-[300px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
                             <div className="absolute bottom-0 left-0 -ml-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
 
                             <Image 
-                                src="/img/services/social-media/placeholder-review-social.png" 
+                                src="/img/services/social-media/placeholder-review-social-2.png" 
                                 alt="" 
                                 width={600}
                                 height={600}
@@ -112,9 +133,9 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                     </div>
 
                     <div className="flex justify-between gap-x-12">
-                        <div onClick={() => openModal()} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden" style={{ marginTop: '-80px' }}>
+                        <div onClick={() => openModal(3)} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden" style={{ marginTop: '-80px' }}>
                             <Image 
-                                src="/img/services/social-media/placeholder-review-social.png" 
+                                src="/img/services/social-media/placeholder-review-social-1.png" 
                                 alt="" 
                                 width={600}
                                 height={600}

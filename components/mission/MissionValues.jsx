@@ -26,7 +26,7 @@ export default function MissionValues(){
                             <div className="max-w-[550px] mx-auto">
                                 <Text1 
                                     id="text1-mission-values"
-                                    text="I valori con i qualidiamo vita attraverso i nostri lavori e i nostri processi" 
+                                    text="Diamo vita ai nostri valori tramite ogni nostro processo e lavoro che progettiamo" 
                                     opacity={60}
                                     color="white"
                                 />

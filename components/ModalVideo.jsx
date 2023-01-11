@@ -52,9 +52,8 @@ export default function ModalVideo() {
 
                     <video
                         id="modal-video"
-                        src="/img/services/social-media/video-social.mp4"
+                        src="/img/services/social-media/video-recensione-daniele-pietrucci.mp4"
                         preload="auto"
-                        autoPlay={true}
                         controls={true}
                         playsInline={true}
                         webkitplaysinline="true"
