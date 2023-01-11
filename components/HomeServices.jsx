@@ -73,14 +73,14 @@ export default function HomeServices(){
                         </Link>
 
                         <div className="flex gap-x-24 gap-y-20 md:gap-y-0">
-                            <Link href="/servizi/social-media" className="group w-full flex flex-col gap-y-6 md:gap-y-8">
+                            <Link href="/servizi/marketing" className="group flex flex-col gap-y-6 md:gap-y-8">
                                 <Text2
-                                    text="Social Media"
+                                    text="Marketing"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                     <Balancer>
-                                        Creiamo e gestiamo le pagine Social di aziende e professionisti per aiutarli a comunicare online. 
+                                        Progettiamo campagne di marketing digitale per raggiungere gli obbiettivi aziendali e far crescere le aziende.
                                     </Balancer>
                                 </p>
                                 <div>
@@ -106,14 +106,14 @@ export default function HomeServices(){
                             </div>
                         </Link>
 
-                        <Link href="/servizi/marketing" className="group flex flex-col gap-y-6 md:gap-y-8">
+                        <Link href="/servizi/social-media" className="group w-full flex flex-col gap-y-6 md:gap-y-8">
                             <Text2
-                                text="Digital Marketing"
+                                text="Social Media"
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Progettiamo campagne di marketing digitale per raggiungere gli obbiettivi aziendali e far crescere le aziende.
+                                    Creiamo e gestiamo le pagine Social di aziende e professionisti per aiutarli a comunicare online. 
                                 </Balancer>
                             </p>
                             <div>
@@ -172,7 +172,7 @@ export default function HomeServices(){
 
                         <Link href="/servizi/marketing" className="order-4 group flex flex-col gap-y-6 md:gap-y-8">
                             <Text2
-                                text="Digital Marketing"
+                                text="Marketing"
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
@@ -248,7 +248,7 @@ export default function HomeServices(){
 
                             <Link href="/servizi/marketing" className="group flex flex-col gap-y-6 md:gap-y-8 pl:0 md:pl-12">
                                 <Text2
-                                    text="Digital Marketing"
+                                    text="Marketing"
                                     color="white"
                                 />
                                 <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">

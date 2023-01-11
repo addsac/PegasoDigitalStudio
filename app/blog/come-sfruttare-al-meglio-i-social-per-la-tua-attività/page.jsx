@@ -16,7 +16,7 @@ export default function Page({ params }) {
 
                     <div className="col-span-12 md:col-span-8 pt-8">
                         <Text1 
-                            text="Ecommerce" 
+                            text="Social Media" 
                             id="text1-blog-detail"
                             color="white" 
                             opacity={60} 
@@ -25,7 +25,7 @@ export default function Page({ params }) {
                         <div className="mt-8 md:mt-10">
                             <Title3 
                                 id="title3-blog-detail" 
-                                text="Come realizzare una landing page che converte"
+                                text="Come sfruttare al meglio i social per la tua attività"
                                 color="white"
                                 gradient={ true }
                             />
@@ -101,80 +101,39 @@ export default function Page({ params }) {
                         
                         {/* Article content */}
                         <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
-                            <h3>
-                                Perché una buona landing page è fondamentale?
-                            </h3>
                             <p>
-                                Puoi avere anche il miglior prodotto del mondo, ma se non sai comunicare agli altri che questo esiste, in mano non ti ritrovi niente. Ho visto per esperienza come una comunicazione del prodotto lasciata al caso faccia danni a te, al prodotto stesso e al tuo business.
-                                <br />
-                                Ma c'è una buona notizia, con questa guida imparerai a progettare la tua pagina di vendita per ottimizzata per le conversioni, imparando dalle migliori pagine di vendita del mondo.
-                                <br />
-                                Segui questi passi per essere sicuro che il tuo prodotto venga capito e aumenta le tue vendite.
+                                Quasi tutti noi abbiamo un profilo Instagram, Facebook e magari anche TikTok o YouTube… ma siamo così sicuri di saperlo sfruttare al massimo? 
+                                Spesso l’errore che si commette quando si iniziano ad usare i Social è non avere una strategia ben definita; si postano cose a caso senza sapere il perchè o come farlo. Ecco perchè è importante ancor prima di registrarsi su una piattaforma, avere ben chiara la propria nicchia e il proprio target. 
+                                Questo può aiutarti a posizionarti nel migliore dei modi, a non perdere di vista le persone a cui vuoi rivolgerti e ad instaurare un rapporto efficacie con la “giusta” communnity. 
                             </p>
+
+                            <p>
+                                Perchè dico “instaurare un rapporto”? 
+                                Ricordati sempre che stai interagendo con delle Persone vere, che hanno bisogno di emozioni, legami, di imparare sempre cose nuove… ecco perchè il tuo compito è quello di creare e trasmettere valore. 
+                                Le persone per seguirti vogliono qualcosa in cambio, e quel qualcosa deve essere il VALORE, ecco perchè sta diventando sempre più difficile attrarre nuovi Clienti o crescere sui Social. 
+                                La concorrenza è tanta e tu devi fare la differenza. 
+                            </p>
+
                             <hr /> {/* divider */}
-                            <h3>
-                                2. Buyers Journey - Conosci il tuo potenziale cliente
-                            </h3>
-                            <p>
-                                Tutti i clienti passano per tre fasi principali prima di aquistare un prodotto
-                            </p>
+
                             <h4>
-                                Fase 1 - Awareness Stage
+                                Un altro errore che spesso si commette sui Social è quello di focalizzarsi solo sulla vendita del proprio prodotto o servizio, senza curare però le relazioni umane.
                             </h4>
-                            <p>
-                                Qui il cliente si rende conto di avere il problema che il tuo prodotto andrà a risolvere, qui il potenziale cliente si informerà con ricerche, blog e altri contenuti sulla soluzione al tuo problema. E sarà qui che dovrai comparire a presentare il tuo prodotto.
-                            </p>
-                            <h4>
-                                Fase 2 - Consideration Stage
-                            </h4>
-                            <p>
-                                Qui il cliente identifica chiaramente il suo problema e inizierà a valutare la soluzione che farà al caso suo. Aiutarlo in questo sul tuo sito gli sarà di crande aiuto e aumenterà la fiducia in te.
-                            </p>
-                            <h4>
-                                Fase 3 - Decision Stage
-                            </h4>
-                            <p>
-                                Qui dopo un'analisi dei potenziali prodotti/servizi sarà pronto ad acquistare il prodotto che riterrà più opportuno.
-                            </p>
-                            <div className="img-container">
-                                <img src="https://leonardocitton.com/blog_images/landing5.jpg" alt="" />
-                                <p className="sub-image">
-                                    Foto dal sito Netlify.com
-                                </p>
-                            </div>
+
                             <hr /> {/* divider */}
-                            <h3>
-                                4. SEO per la landing
-                            </h3>
+
                             <p>
-                                Quando ottimizzi la SEO per la tua landing page, sarà più facile che la tua offerta sia trovata dalle persone che già sono interessate a quello che offri,
+                                “L’obiettivo però per me è vendere” mi dirai… si è vero. 
+                                Vendere è quello che tutti vogliono, ma le persone a cui ti rivolgi non vogliono acquistare da qualcuno che non conoscono o di cui non sanno niente.
+                                L’obiettivo nei Social quindi, è costruire relazioni, creare la fiducia verso la tua persona e la tua figura come professionista/azienda, perché questo è quello che genera poi la vendita. 
+                                Le vendite si ottengono grazie alla fiducia!
                             </p>
+
                             <p>
-                                Gli utenti che trovano la tua landing tramite traffico organico tendono a convertire meglio perché stanno già cercando attivamente quello che offri.
+                                Ovviamente non è così semplice…
+                                I Social richiedono infatti tempo, sperimentazione e tanta costanza. 
+                                Se sei disposto ad investire il tuo tempo e i tuoi sforzi allora potrai ottenere grandi risultati!
                             </p>
-                            <p>
-                                Ottimizzare la SEO per la tua landing page vuol dire:
-                            </p>   
-                            <p>
-                                Ottimizzare il title, headline, URL e le altre parti con le keywords su cui ti vuoi posizionare.
-                            </p>
-                            <p>
-                                Queste sono le cose principali che dovrai fare:
-                            </p>
-                            <p className="bold">
-                                1. Ottimizza la tua URL in base alle keywords su cui ti vuoi posizionare
-                            </p>
-                            <p className="bold">
-                                2. Scrivi anche le tue Headline principali (h1) e le Subheadline (h2, h3, h4) in base alle tue keywords
-                            </p>
-                            <p className="bold">
-                                3. Scrivi il tag alt delle tue immagini sempre con in mente la query che potrebbe ricercare l'utente
-                            </p>
-                            <div className="link">
-                                <p>
-                                    Dai un'occhiata alla guida completa sulla SEO per sviluppatori
-                                </p>
-                            </div>
                         </div>
 
                         <div className="cursor-default text-center gap-y-4 mx-auto max-w-[800px] w-full rounded-xl border border-slate-700 bg-[#ffffff04] backdrop-blur text-white p-6 py-10 mt-40">

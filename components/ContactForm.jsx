@@ -317,7 +317,7 @@ export default function ContactForm(){
                 <div className="px-16 md:px-0 max-w-[550px] mx-auto">
                     <Text1 
                         id="text1-contact"
-                        text="Compila il form con le necessità del tuo progetto, lo analizzeremo e ti ricontatteremo appena possibile." 
+                        text="Parlaci del tuo progetto e ti ricontatteremo appena possibile, non appena l&apos;avremo analizzato." 
                         color="white"
                         opacity="60"
                     />

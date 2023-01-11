@@ -64,13 +64,13 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
             <div className="mt-12 md:mt-0 col-span-12 lg:col-span-6 flex flex-col">
                 <div className="w-full flex flex-col">
                     <div className="flex justify-between gap-x-12">
-                        <div onClick={() => openModal()} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] bg-white rounded-[19px] overflow-hidden">
+                        <div onClick={() => openModal()} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden">
                             <Image 
                                 src="/img/services/social-media/placeholder-review-social.png" 
                                 alt="" 
                                 width={600}
                                 height={600}
-                                className="absolute h-full w-full object-cover" 
+                                className="absolute h-full w-full object-cover rounded-[19px]" 
                             />
                             <div className="group absolute w-full h-full flex items-center justify-center bg-slate-900/30 hover:bg-slate-900/50 cursor-pointer transition duration-300">
                                 <div className="rounded-full h-12 w-12 md:h-16 md:w-16 bg-white flex items-center justify-center group-hover:scale-110 transition duration-300">
@@ -86,7 +86,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                             </div>
                         </div>
                         
-                        <div onClick={() => openModal()} className="mt-32 relative w-full h-[300px] lg:h-[370px] xl:h-[440px] bg-white rounded-[19px] overflow-hidden">
+                        <div onClick={() => openModal()} className="mt-32 relative w-full h-[300px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
                             <div className="absolute bottom-0 left-0 -ml-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
 
                             <Image 
@@ -94,7 +94,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                                 alt="" 
                                 width={600}
                                 height={600}
-                                className="absolute h-full w-full object-cover" 
+                                className="absolute h-full w-full object-cover rounded-[19px]" 
                             />
                             <div className="group absolute w-full h-full flex items-center justify-center bg-slate-900/30 hover:bg-slate-900/50 cursor-pointer transition duration-300">
                                 <div className="rounded-full h-12 w-12 md:h-16 md:w-16 bg-white flex items-center justify-center group-hover:scale-110 transition duration-300">
@@ -112,13 +112,13 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                     </div>
 
                     <div className="flex justify-between gap-x-12">
-                        <div onClick={() => openModal()} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] bg-white rounded-[19px] overflow-hidden" style={{ marginTop: '-80px' }}>
+                        <div onClick={() => openModal()} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden" style={{ marginTop: '-80px' }}>
                             <Image 
                                 src="/img/services/social-media/placeholder-review-social.png" 
                                 alt="" 
                                 width={600}
                                 height={600}
-                                className="absolute h-full w-full object-cover" 
+                                className="absolute h-full w-full object-cover rounded-[19px]" 
                             />
                             <div className="group absolute w-full h-full flex items-center justify-center bg-slate-900/30 hover:bg-slate-900/50 cursor-pointer transition duration-300">
                                 <div className="rounded-full h-12 w-12 md:h-16 md:w-16 bg-white flex items-center justify-center group-hover:scale-110 transition duration-300">

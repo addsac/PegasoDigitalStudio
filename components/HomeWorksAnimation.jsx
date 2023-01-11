@@ -24,7 +24,7 @@ export default function HomeWorksAnimation() {
             y: 0,
             opacity: 1,
             rotate: 0,
-            duration: 0.8,
+            duration: 0.6,
             ease: 'circ.out',
             delay: 0.3,
         })

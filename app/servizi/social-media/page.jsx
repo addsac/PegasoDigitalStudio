@@ -49,7 +49,7 @@ export default function Page(){
                             'Grazie ai Social potrai parlare con le persone ancora prima che diventino tuoi Clienti, questa è un’opportunità unica!',
                             'Potrai finalmente far risaltare la tua Azienda e i suoi punti di forza, costruendo una strategia che ti permetta di raggiungere i risultati sperati.',
                             'I tuoi contenuti saranno mirati per ottenere più visibilità e in grado di intrattenere, convertire e fidelizzare i tuoi Clienti.',
-                            'Il tuo profilo diventerà un profilo di impatto, chiaro, unico e ordinato, creato per attrarre nuovi Clienti.,',
+                            'Il tuo profilo diventerà un profilo di impatto, chiaro, unico e ordinato, creato per attrarre nuovi Clienti.',
                             'Non dovrai più sperare in un passaparola incerto e non misurabile, ma potrai basare le tue valutazioni su risultati (dati) certi e misurabili.'
                         ]}
                         align='img-right'
@@ -81,7 +81,7 @@ export default function Page(){
                     <div id="wrapper-clients" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
-                                'Profili social',
+                                'Profili Social',
                                 'che seguiamo:'
                             ]}
                             description='In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'

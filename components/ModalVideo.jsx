@@ -24,7 +24,7 @@ export default function ModalVideo() {
         <>
             <div
                 id="modal-video-wrapper"
-                style={{ opacity: 0, transform: 'scale(1.1)', zIndex: 10 }}
+                style={{ opacity: 0, transform: 'scale(1.1)', zIndex: 1002 }}
                 className="inset-0 fixed max-h-screen max-w-screen bg-white/5 backdrop-blur flex items-center justify-center p-8 md:p-12 lg:p-16"
             >
                 {/* Background for closing on click outside */}
@@ -34,11 +34,11 @@ export default function ModalVideo() {
                 ></div>
 
                 {/* Content */}
-                <div className="w-full h-full bg-black rounded-[40px] flex items-center justify-center relative">
+                <div className="h-full rounded-[40px] flex items-center justify-center relative"> {/* w-full bg-black */}
                     <button 
                         onClick={() => closeModal()} 
                         style={{ zIndex: 11 }}
-                        className="h-12 w-12 border border-slate-700 text-white bg-slate-900 hover:bg-white hover:text-slate-900 flex items-center justify-center rounded-full absolute top-8 right-8 transition duration-200"
+                        className="h-12 w-12 border border-slate-700 text-white bg-slate-900 hover:bg-white/10 hover:text-slate-900 flex items-center justify-center rounded-full absolute top-6 right-6 transition duration-200"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ export default function ModalVideo() {
                         controls={true}
                         playsInline={true}
                         webkitplaysinline="true"
-                        className="h-full w-auto"
+                        className="h-full w-auto rounded-[24px]"
                     ></video>
                 </div>
             </div>

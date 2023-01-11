@@ -25,12 +25,10 @@ export default function Footer(){
                         <p
                             className="text-white/50 text-[20px] md:text-[24px] font-regular tracking-tight"
                         >
-                            <Balancer>
-                                {/* The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr> */}
-                                La storia dietro a Pegaso Digital Studio 
-                                <br />
-                                parla di ispirazione, design e praticità.
-                            </Balancer>
+                            {/* The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr> */}
+                            La storia dietro a Pegaso Digital Studio 
+                            <br /> 
+                            parla di ispirazione, design e praticità.
                         </p>
                         <Link href="/missione">
                             <Button 
@@ -51,7 +49,7 @@ export default function Footer(){
                     <div className="w-full grid grid-cols-12 gap-x-6 gap-y-12 lg:gap-y-0 items-start">
                         <div className="col-span-12 lg:col-span-3 text-sm md:text-base font-medium text-white">
                             <p className="font-normal opacity-50 mb-4 md:mb-6">
-                                Luogo
+                                Sede legale
                             </p>
                             <Link href="https://www.google.it/maps/place/Via+Borgo+Treviso,+56,+35013+Cittadella+PD/@45.6476664,11.778956,15z/data=!4m5!3m4!1s0x4778d44c5140a623:0x6a249f25dda05e59!8m2!3d45.6493508!4d11.7884809">
                                 <button className="text-left hover:opacity-60 leading-loose transition duration-300">

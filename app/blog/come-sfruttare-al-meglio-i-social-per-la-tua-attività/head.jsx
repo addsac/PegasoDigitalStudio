@@ -10,7 +10,7 @@ export default function Head({ params }) {
             <meta content="width=device-width, initial-scale=1" name="viewport" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="icon" href="/favicon.ico" />
-            <title> Come progettare una landing page che converte esempi pratici | Blog | Pegaso Digital Studio </title>
+            <title> Come sfruttare al meglio i social per la tua attività | Blog | Pegaso Digital Studio </title>
         </>
     )
 }

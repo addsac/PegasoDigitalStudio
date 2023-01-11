@@ -8,7 +8,10 @@ html, body {
 
 /**
  * Utility
- */
+ */ 
+*{
+    @apply selection:bg-white/10 selection:text-white;
+}
 .custom-cursor {
     position: fixed;
     display: inline-block;

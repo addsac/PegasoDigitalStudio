@@ -53,7 +53,7 @@ export default function HomeDescriptionAndDetail(){
             <div className="col-span-12 lg:col-span-7">
                 <p className="text-white tracking-tighter text-3xl md:text-[42px] leading-[140%]">
                     <Balancer>
-                        Pegaso è simbolo di libertà ma anche di assistenza nel completamento delle sfide più difficili, questo ci ricoda che il nostro compito 
+                        Pegaso è simbolo di libertà ma anche di assistenza nel completamento delle sfide più difficili, ecco perchè il nostro compito 
                         è quello di aiutarti nel realizzare i tuoi progetti e raggiungere i tuoi obiettivi in ambito digitale.
                     </Balancer>
                 </p>
