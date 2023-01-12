@@ -4,8 +4,8 @@ export default function MissionPhrases() {
     return (
         <>
             <div className="w-full grid grid-cols-12 gap-x-6">
-                <div className="col-span-2 lg:col-span-3"></div> {/* margin */}
-                <div className="col-span-8 lg:col-span-6">
+                <div className="col-span-1 lg:col-span-3"></div> {/* margin */}
+                <div className="col-span-10 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
                             I migliori prodotti digitali permettono alle persone di comunicare il loro valore, di raggiungere altre persone con idee simili 
@@ -18,8 +18,8 @@ export default function MissionPhrases() {
                 </div>
             </div>
             <div className="w-full grid grid-cols-12 gap-x-6">
-                <div className="col-span-2 lg:col-span-3"></div> {/* margin */}
-                <div className="col-span-8 lg:col-span-6">
+                <div className="col-span-1 lg:col-span-3"></div> {/* margin */}
+                <div className="col-span-10 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
                             Ma quando i prodotti digitali non vengono progettate partendo dall&apos;umanità dell&apos;esperienza e dalla sua qualità 
@@ -29,8 +29,8 @@ export default function MissionPhrases() {
                 </div>
             </div>
             <div className="w-full grid grid-cols-12 gap-x-6">
-                <div className="col-span-2 lg:col-span-3"></div> {/* margin */}
-                <div className="col-span-8 lg:col-span-6">
+                <div className="col-span-1 lg:col-span-3"></div> {/* margin */}
+                <div className="col-span-10 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
                             Abbiamo fondato lo studio digitale Pegaso esattamente per dare un modo alle aziende di avere un partner fidato che riesca 
@@ -40,8 +40,8 @@ export default function MissionPhrases() {
                 </div>
             </div>
             <div className="w-full grid grid-cols-12 gap-x-6">
-                <div className="col-span-2 lg:col-span-3"></div> {/* margin */}
-                <div className="col-span-8 lg:col-span-6">
+                <div className="col-span-1 lg:col-span-3"></div> {/* margin */}
+                <div className="col-span-10 lg:col-span-6">
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
                             Per questo ogni progetto che facciamo parte dalla sua finalità, passa attraverso un processo di storytelling e psicologia applicata,

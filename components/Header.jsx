@@ -168,9 +168,6 @@ export default function Header({ color }) {
             })
         }
     }
-    const closeMobileHeader = () => {
-
-    }
 
     useEffect(() => {
         gsap.set('#menu-mobile', {
@@ -271,7 +268,7 @@ export default function Header({ color }) {
 
                             </button>
                             <div className="block overflow-hidden">
-                                <Link href="/">
+                                <Link href="/" onClick={() => closeMenuMobile() }>
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
@@ -299,25 +296,45 @@ export default function Header({ color }) {
                                     style={{ height: '0px', opacity: 0, transform: 'translateY(-12px)' }}
                                 >
                                     <div></div> {/* for margin in flex */}
-                                    <Link href="/servizi/siti-web" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
+                                    <Link 
+                                        href="/servizi/siti-web" 
+                                        onClick={() => closeMenuMobile() } 
+                                        className="text-white hover:text-white/60 text-2xl tracking-tight pl-6"
+                                    >
                                         Siti web
                                     </Link>
-                                    <Link href="/servizi/ecommerce" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
+                                    <Link 
+                                        href="/servizi/ecommerce" 
+                                        onClick={() => closeMenuMobile() } 
+                                        className="text-white hover:text-white/60 text-2xl tracking-tight pl-6"
+                                    >
                                         Ecommerce
                                     </Link>
-                                    <Link href="/servizi/branding" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
+                                    <Link 
+                                        href="/servizi/branding" 
+                                        onClick={() => closeMenuMobile() } 
+                                        className="text-white hover:text-white/60 text-2xl tracking-tight pl-6"
+                                    >
                                         Branding
                                     </Link>
-                                    <Link href="/servizi/social-media" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
+                                    <Link 
+                                        href="/servizi/social-media" 
+                                        onClick={() => closeMenuMobile() } 
+                                        className="text-white hover:text-white/60 text-2xl tracking-tight pl-6"
+                                    >
                                         Social Media
                                     </Link>
-                                    <Link href="/servizi/marketing" className="text-white hover:text-white/60 text-2xl tracking-tight pl-6">
+                                    <Link 
+                                        href="/servizi/marketing" 
+                                        onClick={() => closeMenuMobile() } 
+                                        className="text-white hover:text-white/60 text-2xl tracking-tight pl-6"
+                                    >
                                         Marketing
                                     </Link>
                                 </div>
                             </div>
                             <div className="block overflow-hidden mt-2">
-                                <Link href="/lavori">
+                                <Link href="/lavori" onClick={() => closeMenuMobile() }>
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
@@ -325,7 +342,7 @@ export default function Header({ color }) {
                                 </Link>
                             </div>
                             <div className="block overflow-hidden mt-2">
-                                <Link href="/missione">
+                                <Link href="/missione" onClick={() => closeMenuMobile() }>
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
@@ -333,7 +350,7 @@ export default function Header({ color }) {
                                 </Link>
                             </div>
                             <div className="block overflow-hidden mt-2">
-                                <Link href="/missione">
+                                <Link href="/missione" onClick={() => closeMenuMobile() }>
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
@@ -346,7 +363,7 @@ export default function Header({ color }) {
                                 className="link-menu-mobile-contatti flex flex-col gap-y-6"
                             >
                                 <div className="block overflow-hidden mt-12">
-                                    <Link href="/contatti">
+                                    <Link href="/contatti" onClick={() => closeMenuMobile() }>
                                         <div>
                                             <button className="text-lg border border-white hover:bg-white text-white hover:text-slate-900 tracking-tight rounded-full px-8 py-2"> 
                                                 Contatti
@@ -400,10 +417,30 @@ export default function Header({ color }) {
                                     </div> */}
 
                                      <div className="flex flex-col gap-y-2 mt-10">
-                                        <a href="/" className='hover:opacity-60 transition duration-300'> Instagram </a>
-                                        <a href="/" className='hover:opacity-60 transition duration-300'> Twitter </a>
-                                        <a href="/" className='hover:opacity-60 transition duration-300'> Linkedin </a>
-                                        <a href="/" className='hover:opacity-60 transition duration-300'> Behance </a>
+                                        <a 
+                                            href="/" 
+                                            rel="nofollow" 
+                                            target="_blank" 
+                                            className='hover:opacity-60 transition duration-300'
+                                        > Instagram </a>
+                                        <a 
+                                            href="/" 
+                                            rel="nofollow" 
+                                            target="_blank" 
+                                            className='hover:opacity-60 transition duration-300'
+                                        > Twitter </a>
+                                        <a 
+                                            href="/" 
+                                            rel="nofollow" 
+                                            target="_blank" 
+                                            className='hover:opacity-60 transition duration-300'
+                                        > Linkedin </a>
+                                        <a 
+                                            href="/" 
+                                            rel="nofollow" 
+                                            target="_blank" 
+                                            className='hover:opacity-60 transition duration-300'
+                                        > Behance </a>
                                     </div>
 
                                     <div className="flex flex-col gap-y-2 mt-10 mb-12">
