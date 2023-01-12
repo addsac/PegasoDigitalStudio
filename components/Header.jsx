@@ -520,9 +520,9 @@ export default function Header({ color }) {
 
                             <div className="hidden md:block md:col-span-8 lg:col-span-6 xl:col-span-5">
                                 {/* Links */}
-                                <div className="hidden md:flex justify-between items-center gap-x-3">
+                                <div className="hidden md:flex justify-end items-center gap-x-16">
                                     <Button 
-                                        
+                                        href={false}
                                         styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                         text="Servizi" 
                                         icon="dropdown" 
