@@ -26,9 +26,14 @@ export default function Footer(){
                             className="text-white/50 text-[20px] md:text-[24px] font-regular tracking-tight"
                         >
                             {/* The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr> */}
-                            La storia dietro a Pegaso Digital Studio 
-                            <br /> 
-                            parla di ispirazione, design e praticità.
+                            <div className="hidden md:block">
+                                La storia dietro a Pegaso Digital Studio 
+                                <br className="hidden md:block" /> 
+                                parla di ispirazione, design e praticità.
+                            </div>
+                            <div className="md:hidden">
+                                La storia dietro a Pegaso Digital Studio parla di ispirazione, design e praticità.
+                            </div>
                         </p>
                         <Link href="/missione">
                             <Button 
@@ -55,7 +60,7 @@ export default function Footer(){
                                 <button className="text-left hover:opacity-60 leading-loose transition duration-300">
                                     {/* Swalmerstraat 78 <br className="hidden lg:block" /> 6041 CZ, Roermond <br /> The Netherlands */}
                                     Via Borgo Treviso, 56
-                                    <br className="hidden lg:block" />
+                                    <br />
                                     35013 Cittadella (PD)
                                     <br />
                                     Italia

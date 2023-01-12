@@ -10,7 +10,7 @@ html, body {
  * Utility
  */ 
 *{
-    @apply selection:bg-white/10 selection:text-white;
+    @apply selection:bg-white/10 selection:text-white selection:opacity-100;
 }
 .custom-cursor {
     position: fixed;
@@ -55,7 +55,7 @@ html, body {
 }
 
 .bg-gradient-radial-text{
-    @apply bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-50 via-slate-400 to-slate-800;
+    @apply bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-50 via-slate-400 to-slate-600;
 }
 .bg-gradient-radial-text-left{
     @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-50 to-slate-400;

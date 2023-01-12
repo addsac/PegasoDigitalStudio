@@ -376,7 +376,7 @@ export default function ContactForm(){
                                     <button 
                                         key={'interest-' + index}
                                         onClick={ () => activeInterest != index ? setActiveInterest(index) : setActiveInterest(null) }
-                                        className={`${activeInterest == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
+                                        className={`${activeInterest == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-4 py-3 md:px-6 md:py-5 transition duration-300`}
                                     >
                                         { value }
                                     </button>
@@ -657,7 +657,7 @@ export default function ContactForm(){
                                         <button 
                                             key={'budget-' + index}
                                             onClick={ () => activeBudget != index ? setActiveBudget(index) : setActiveBudget(null) }
-                                            className={`${activeBudget == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-6 py-5 transition duration-300`}
+                                            className={`${activeBudget == index ? 'bg-slate-900 text-white border-slate-900' : 'text-slate-900 border-slate-300 hover:border-slate-900'} tracking-[-1%] border rounded-full z-[2] px-4 py-3 md:px-6 md:py-5 transition duration-300`}
                                         >
                                             { value }
                                         </button>
@@ -696,7 +696,7 @@ export default function ContactForm(){
                                     )}
                                 </button>
                             </div>
-                            <p className="mx-auto text-xs opacity-50 w-[280px]">
+                            <p className="mx-auto text-center text-xs opacity-50 w-full md:w-[280px]">
                                 <Balancer>
                                     Sending the message you accept our Privacy Policy and Terms of Service.
                                 </Balancer>
@@ -709,7 +709,7 @@ export default function ContactForm(){
 
             {/* Sub text */}
             <div className="mx-auto max-w-[730px] w-full mt-24 md:mt-32 px-8 md:px-0">
-                <div className="w-full px-8 md:px-12">
+                <div className="w-full px-0 md:px-12">
                     <p className="w-full text-center text-lg text-white">
                         <Balancer>
                             Cosa aspettarsi lavorando con noi:
