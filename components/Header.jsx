@@ -522,7 +522,7 @@ export default function Header({ color }) {
                                 {/* Links */}
                                 <div className="hidden md:flex justify-between items-center gap-x-3">
                                     <Button 
-                                        href={ false }
+                                        
                                         styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                         text="Servizi" 
                                         icon="dropdown" 
