@@ -1,8 +1,16 @@
+import NextCors from 'nextjs-cors';
 import mail from '@sendgrid/mail'
 
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async function(req, res) {
+    await NextCors(req, res, {
+        // Options
+        methods: ['GET', 'POST'], // 'HEAD', 'PUT', 'PATCH', 'DELETE'
+        origin: '*',
+        optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    });
+
     const query = req.query;
     const { source } = query
     const { interest, email, name, phone, budget, message, list, question1, question2, question3 } = query
