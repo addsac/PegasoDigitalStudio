@@ -7,7 +7,50 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode } from 'swiper'
 
 export default function ServiceClientsSlider({ id }) {
-    const arrayToLoop = [1, 2, 3, 4, 5]
+    const arrayToLoop = [
+        {
+            name: 'Sara Caponigro',
+            description: 'Instagram',
+            photo: 'caponigro.jpg',
+            href: 'https://www.instagram.com/dott.ssa_saracaponigro/'
+        },
+        {
+            name: 'Sara Caponigro',
+            description: 'TikTok',
+            photo: 'caponigro.jpg',
+            href: 'https://www.tiktok.com/@dottsaracaponigrommg'
+        },
+        {
+            name: 'Daniele Pietrucci',
+            description: 'Instagram',
+            photo: 'pietrucci.jpg',
+            href: 'https://www.instagram.com/dott_daniele_pietrucci/'
+        },
+        {
+            name: 'Hevoluta',
+            description: 'Instagram',
+            photo: 'hevoluta.jpg',
+            href: 'https://www.instagram.com/hevoluta/'
+        },
+        {
+            name: 'Moira Bonaldo',
+            description: 'TikTok',
+            photo: 'hevoluta.jpg',
+            href: 'https://www.tiktok.com/@moirabonaldohevolutacosm'
+        },
+        {
+            name: 'Chiara Moretti',
+            description: 'Instagram',
+            photo: 'a.jpg',
+            href: 'https://www.instagram.com/chiaramoretti_nutrizionista/'
+        },
+        {
+            name: 'FrancaViaRoma15',
+            description: 'Instagram',
+            photo: 'a.jpg',
+            href: 'https://www.instagram.com/francaviaromaquindici/'
+        },
+    ]
 
     return (
         <div
@@ -27,12 +70,12 @@ export default function ServiceClientsSlider({ id }) {
                     className="mySwiper cursor-grab"
                 >
                     {
-                        arrayToLoop.map((index) => (
+                        arrayToLoop.map((item, index) => (
                             <SwiperSlide style={{ width: 'auto' }} key={index}>
-                                <Link href="/blog/1">
+                                <Link target="_blank" href={item.href}>
                                     <div className="group w-[200px] md:w-[200px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer rounded-[19px]">
                                         <Image
-                                            src="/img/services/social-media/placeholder-review-social.png"
+                                            src={`/img/services/social-media/${item.photo}`}
                                             alt=""
                                             width={200}
                                             height={350}
@@ -46,9 +89,9 @@ export default function ServiceClientsSlider({ id }) {
                                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                                                     </svg> 
 
-                                                    Sara Caponigro
+                                                    { item.name }
                                                 </p>
-                                                <p className="mt-1 opacity-60"> Medico di famiglia </p>
+                                                <p className="mt-1 opacity-60"> { item.description } </p>
                                             </div>
                                         </div>
                                     </div>

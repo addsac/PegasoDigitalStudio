@@ -81,13 +81,13 @@ background: #ffffff !important;
     
 }
 .blog h3{
-    @apply text-2xl lg:text-5xl leading-[140%] md:leading-[140%] lg:leading-[140%] font-semibold tracking-tighter;
+    @apply text-3xl lg:text-5xl leading-[140%] md:leading-[140%] lg:leading-[140%] font-semibold tracking-tighter;
 }
 .blog h4{
     @apply text-xl lg:text-2xl leading-[140%] md:leading-[140%] lg:leading-[140%] font-medium tracking-tight;
 }
 .blog p{
-    @apply -mt-4 text-lg lg:text-xl leading-[190%] md:leading-[190%] lg:leading-[190%] tracking-[-1%] opacity-60;
+    @apply -mt-4 text-lg lg:text-xl leading-[190%] md:leading-[190%] lg:leading-[190%] tracking-[-1%] opacity-70;
 }
 .blog .bold{
     @apply font-semibold opacity-80;

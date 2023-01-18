@@ -43,7 +43,7 @@ export default function Page(){
       <div className="pt-48">
         <WorkDescription 
           /* title="Siamo uno studio digitale indipendente e progettiamo prodotti e servizi digitali che uniscono i brand ai loro utenti." */
-          title="Pegaso Digital Studio è uno studio digitale multidisciplinare che lavora con aziende e professionisti ambiziosi creando prodotti e strategie digitali personalizzate"
+          title="Pegaso Digital Studio è uno studio digitale situato in Italia. Collaboriamo con aziende e professionisti raccontando le loro storie e coinvolgendo i loro clienti costruendo prodotti ed sperienze digitali personalizzate."
           description={[
             'Situati in Italia, abbiamo come missione quella di pensare, progettare e creare esperienze digitali che connettono le aziende ai loro clienti. E lo facciamo con un approccio basato su un design emozionale, comunicazioni basate sullo storytelling e psicologia applicata alla tecnologia.',
             'I nostri valori sono semplici, amiamo fare le cose bene e lavorare con persone oneste che cercano di rendere il mondo un posto migliore per se stessi e per gli altri. Siamo ispirati dalla bellezza, dalle possiblità delle nuove tecnologie e dal vedere i nostri progetti toccare le persone. Siamo semplicemente appassionati di quello che facciamo, tutto qui.',
