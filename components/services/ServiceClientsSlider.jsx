@@ -30,11 +30,11 @@ export default function ServiceClientsSlider({ id }) {
             social: 'instagram'
         },
         {
-            name: 'Hevoluta',
+            name: 'HEVOLUTA',
             description: 'Brand di cosmetica',
             photo: 'hevoluta.jpg',
             href: 'https://www.instagram.com/hevoluta/',
-            social: 'tiktok'
+            social: 'instagram'
         },
         {
             name: 'Moira Bonaldo',
