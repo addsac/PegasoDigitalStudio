@@ -29,7 +29,7 @@ function Model() {
 
 export default function ExperienceModel(){
     return (
-        <div id="gl-model" className="inset-0 fixed -z-10"> {/* -z-5 */}
+        <div id="gl-model" className="w-full h-full -z-10"> {/* -z-5 */}
             <Canvas
                 camera={ {
                     fov: 45,

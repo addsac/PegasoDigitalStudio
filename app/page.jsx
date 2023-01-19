@@ -1,5 +1,5 @@
 import Title1 from "../components/text/Title1"
-// import ExperienceModel from "../components/ExperienceModel"
+import ExperienceModel from "../components/ExperienceModel"
 // import ExperienceLoading from "../components/ExperienceLoading"
 import WorkDescription from "../components/work/WorkDescription"
 import HomeMission from "../components/HomeMission"
@@ -15,7 +15,6 @@ export default function Page(){
     {/* <ExperienceLoading progress={ 16 } /> */}
 
     <main className="pt-[140px] md:pt-[240px]">
-      {/* <ExperienceModel /> */}
 
       <div className="md:mb-24 lg:mb-40 relative">
         {/* <Image 
@@ -37,7 +36,7 @@ export default function Page(){
 
       {/* 3D model */}
       <div className="w-[730px] h-[730px] mx-auto bg-white/40 flex items-center justify-center mt-48">
-        <p> 3D Model + Logo specifics </p>
+        <ExperienceModel />
       </div>
 
       <div className="pt-48">

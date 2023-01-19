@@ -25,7 +25,7 @@ export default function Page({ params }) {
                         <div className="mt-8 md:mt-10">
                             <Title3 
                                 id="title3-blog-detail" 
-                                text="Gli elementi chiave per un sito web di successo"
+                                text="Come creare esperienze digitali memorabili"
                                 color="white"
                                 gradient={ true }
                             />
@@ -111,7 +111,7 @@ export default function Page({ params }) {
                                 Affidandosi a queste piattaforme e prendendo un tema standard già pronto, si salta tutta la parte di strategia di un progetto digitale, che è il cuore di un esperienza digitale, e che ti permette di comunicare quello di cui hai bisogno di comunicare, e che farà veramente la differenza tra un prodotto che funziona e uno che esiste senza troppe pretese.
                             </p>
                             <p>
-                                Detto questo la domanda è: di quali parti è costituito un prodotto digitale studiato per il cliente e personalizzato per raggiungere gli obbiettivi prefissati? Con il nostro studio abbiamo stilato una lista di questi elementi chiave.
+                                Detto questo la domanda è: di quali parti è costituito un prodotto digitale studiato per il cliente e personalizzato per raggiungere gli obbiettivi prefissati? Con il nostro studio abbiamo stilato una lista di questi elementi chiave. (Psicologia, Strategia, Storytelling, Motion design, Usabilità)
                             </p>
                             <hr /> {/* divider */}
                             <h3>
@@ -121,20 +121,68 @@ export default function Page({ params }) {
                                 Psicologia
                             </h4>
                             <p>
-                                ...
+                                Sapere come funziona la mente umana in generale ti permette di costruire interfarcce utente per siti web e applicazioni che permettono all'utilizzatore del servizio di avere un esperienza positiva, memorabile ed facile da usare.
                             </p>
+                            <p>
+                                Costruire sulla base di leggi definite di comportamento degli utenti li aiuta a riconoscere cosa fare quando interagiscono con questi strumenti, e tramite le euristiche che le persone di solito provano, rendere efficacie la comunicazione dei messaggi che vuoi che gli  altri capiscano.
+                            </p>
+                            <p>
+                                Leggi, come la <b>Legge di Hick</b> enuncia che più opzioni una persona ha, più decide con fatica e rimanda la sua azione. Questo ci dice che a volte è meglio limitare artificialmente le scelte di una determinata azione per permettere all'utente di navigare con più facilità.
+                            </p>
+                            <p>
+                                L'effettp Von Restorff dice che dato un gruppo di oggetti visivamente simili ricordiamo con molta più facilità quelli che sono diversi. Questa legge è applicata molto nello studio di interfacce digtali e peremette di studiare la gerarchia degli elementi grafici in modo che l'utente riesca a capire quali elementi sono più importanti di altri, e quali azioni compiere successivamente.
+                            </p>
+                            <p>
+                                Una risorsa molto curata è linkata in seguito.
+                            </p>
+                            <div>
+                                <a href="https://lawsofux.com/">
+                                    lawsofux.com
+                                </a>
+                            </div>
+                            <br />
                             <h4>
                                 Strategia
                             </h4>
                             <p>
-                                ...
+                                Sapere per quale scopo si progetta un prodotto digitale, sapere chi sarà l'utilizaztore finale, sapere i suoi bisogni e le sue aspettative, tutto questo è di fondamnetale importanza per creare un prodotto che produca un risultato concreto, ma troppo spesso prodtti digitali non vengono progettati partendo dalla giusta strategia.
                             </p>
+                            <p>
+                                Prima di ogni porgetto, abbiamo visto che la cosa più utile per il cliente e per la buona riuscita del progetto è fare questo tipo di domande per essere sicuri di comunicare ciò che chi commissiona il lavori vuole comunicare.
+                            </p>
+                            <p>
+                                Qual'è il motivo per cui vuoi creare questo prodotto?
+                                Chi sono i tuoi clienti?
+                                Che dubbi potrebbero avere ascoltando la tua offerta?
+                                Come vuoi che ti vedano i tuoi clienti che interagiscono con l'esprienza?
+                                Costruire la proposta unica di vendita.
+                            </p>
+                            <p>
+                                Questo processo di discovery è neccessario per progetto che esce dal nostro studio, inosltre aiuta il nosto cliente a capire quello che bisognerà comuncare per avere un prodotto che funziona. Può richiedere anche alcune ore ma  un processo di discovery del genere ha un grande valore di per se per l'azienda cliente, amche senza prodotto.
+                            </p>
+                            <br />
                             <h4>
                                 Storytelling
                             </h4>
                             <p>
-                                ...
+                                La tecnologia e la rete sono nate per rendere possibile scambiare informazioni oltre i limiti fisici di un tempo. Ogni prodotto digiale è quindi un progetto di comuniazione prima di tutto.
                             </p>
+                            <p>
+                                Come comunicare bene, e in modo che l'ascoltatore capisca il messaggio che vogliamo far riecevere, e allo stesso tempo coinvolgere l'ascoltatore a continuare ad avere interesse? C'è uno studio da millenni su questa domanda. Questo è lo studio dello storytelling.
+                            </p>
+                            <p>
+                                Ma cosa vuol dire fare storytelling e come usarlo in ambito digitale?
+                            </p>
+                            <p>
+                                Equilibrio, rottura, climax, rinascita. Questa è la struttura classica su cui ogni film, ogni libro, o articolo che comunichi in modo efficace si basa.
+                            </p>
+                            <p>
+                                In un progetto digitale la comunicazione avviene nell'ordine dei contenuti, nelle sezioni che raggruppano un determinato concetto di un servizio, e in ogni paragrafo di testo che l'utente vede.
+                            </p>
+                            <p>
+                                Lo storytelling permette di condividere il nostro messaggio in modo che l'ascoltatore riesca a capirlo con facilità. Perchè è portato a portare attenzione per natura ad una comunicazione basata su questi principi. 
+                            </p>
+                            <br />
                             <h4>
                                 Motion design
                             </h4>
@@ -156,91 +204,23 @@ export default function Page({ params }) {
                             <p>
                                 Le animazioni quindi riescono a far usare bene lo strumento che gli proponi di utilizzare per raggiungerti, lo scopo finale di ogni prodotto digitale.
                             </p>
+                            <br />
                             <h4>
                                 Usabilità
                             </h4>
                             <p>
-                                ...
+                                Ogni nuova interazione con qualcosa che non conosciamo ci produce stress, anche se in minima parte. Lo stress è essenziale per portare attenzione alle cose che facciamo, ma in quantità esagerate è controproducente.
+                            </p>
+                            <p>
+                                Un prodotto digitale deve essere facilmente navigabile, deve rendere chiaro all'utente il modo in cui interagire con esso e i suoi conenuti devono essere facile da leggere a livello visivo. Tutto questo previene che un utente non riesca ad usare il nostro prodotto o che l'esperienza sia troppo complicata.
+                            </p>
+                            <p>
+                                Portare attenzione all'usabilità del prodotto vuol dire quindi misurare le animazioni senza rendere lenta e controintuitiva l'esperienza, ma anche portare attenzione ai contrasti visivi e accertarsi che ogni elemento importante sia ben visibile, in modo da guidare gli utenti e portarli ad avere ciò di cui hanno bisogno.
                             </p>
                             <hr /> {/* divider */}
                             <p>
-                                Grazie per aver letto fino a qui e speriamo che questo articolo ti sia stato utile.
+                                Grazie per aver letto fino a qui, speriamo che questo articolo ti sia stato piaciuto e ti sia stato utile.
                             </p>
-
-                            {/* <h3>
-                                Perché una buona landing page è fondamentale?
-                            </h3>
-                            <p>
-                                Puoi avere anche il miglior prodotto del mondo, ma se non sai comunicare agli altri che questo esiste, in mano non ti ritrovi niente. Ho visto per esperienza come una comunicazione del prodotto lasciata al caso faccia danni a te, al prodotto stesso e al tuo business.
-                                <br />
-                                Ma c'è una buona notizia, con questa guida imparerai a progettare la tua pagina di vendita per ottimizzata per le conversioni, imparando dalle migliori pagine di vendita del mondo.
-                                <br />
-                                Segui questi passi per essere sicuro che il tuo prodotto venga capito e aumenta le tue vendite.
-                            </p>
-                            <hr /> divider
-                            <h3>
-                                2. Buyers Journey - Conosci il tuo potenziale cliente
-                            </h3>
-                            <p>
-                                Tutti i clienti passano per tre fasi principali prima di aquistare un prodotto
-                            </p>
-                            <h4>
-                                Fase 1 - Awareness Stage
-                            </h4>
-                            <p>
-                                Qui il cliente si rende conto di avere il problema che il tuo prodotto andrà a risolvere, qui il potenziale cliente si informerà con ricerche, blog e altri contenuti sulla soluzione al tuo problema. E sarà qui che dovrai comparire a presentare il tuo prodotto.
-                            </p>
-                            <h4>
-                                Fase 2 - Consideration Stage
-                            </h4>
-                            <p>
-                                Qui il cliente identifica chiaramente il suo problema e inizierà a valutare la soluzione che farà al caso suo. Aiutarlo in questo sul tuo sito gli sarà di crande aiuto e aumenterà la fiducia in te.
-                            </p>
-                            <h4>
-                                Fase 3 - Decision Stage
-                            </h4>
-                            <p>
-                                Qui dopo un'analisi dei potenziali prodotti/servizi sarà pronto ad acquistare il prodotto che riterrà più opportuno.
-                            </p>
-                            <div className="img-container">
-                                <img src="https://leonardocitton.com/blog_images/landing5.jpg" alt="" />
-                                <p className="sub-image">
-                                    Foto dal sito Netlify.com
-                                </p>
-                            </div>
-                            <hr /> divider
-                            <h3>
-                                4. SEO per la landing
-                            </h3>
-                            <p>
-                                Quando ottimizzi la SEO per la tua landing page, sarà più facile che la tua offerta sia trovata dalle persone che già sono interessate a quello che offri,
-                            </p>
-                            <p>
-                                Gli utenti che trovano la tua landing tramite traffico organico tendono a convertire meglio perché stanno già cercando attivamente quello che offri.
-                            </p>
-                            <p>
-                                Ottimizzare la SEO per la tua landing page vuol dire:
-                            </p>   
-                            <p>
-                                Ottimizzare il title, headline, URL e le altre parti con le keywords su cui ti vuoi posizionare.
-                            </p>
-                            <p>
-                                Queste sono le cose principali che dovrai fare:
-                            </p>
-                            <p className="bold">
-                                1. Ottimizza la tua URL in base alle keywords su cui ti vuoi posizionare
-                            </p>
-                            <p className="bold">
-                                2. Scrivi anche le tue Headline principali (h1) e le Subheadline (h2, h3, h4) in base alle tue keywords
-                            </p>
-                            <p className="bold">
-                                3. Scrivi il tag alt delle tue immagini sempre con in mente la query che potrebbe ricercare l'utente
-                            </p>
-                            <div className="link">
-                                <p>
-                                    Dai un'occhiata alla guida completa sulla SEO per sviluppatori
-                                </p>
-                            </div> */}
                         </div>
 
                         <div className="cursor-default text-center gap-y-4 mx-auto max-w-[800px] w-full rounded-xl border border-slate-700 bg-[#ffffff04] backdrop-blur text-white p-6 py-10 mt-40">

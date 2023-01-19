@@ -103,8 +103,8 @@ export default function Footer(){
                                     </svg>
                                 </a>
                                 <a href="" className="text-white/60 hover:text-white mt-1">
-                                    <svg width="38" height="40" viewBox="0 0 38 40" fill="currentColor" strokeWidth={2} stroke="none" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
-                                        <path fillRule="evenodd" clipRule="evenodd" d="M28 3.5H10C6.13401 3.5 3 6.63401 3 10.5V29.5C3 33.366 6.13401 36.5 10 36.5H28C31.866 36.5 35 33.366 35 29.5V10.5C35 6.63401 31.866 3.5 28 3.5ZM10 0.5C4.47715 0.5 0 4.97715 0 10.5V29.5C0 35.0228 4.47715 39.5 10 39.5H28C33.5228 39.5 38 35.0228 38 29.5V10.5C38 4.97715 33.5228 0.5 28 0.5H10ZM26 20C26 23.866 22.866 27 19 27C15.134 27 12 23.866 12 20C12 16.134 15.134 13 19 13C22.866 13 26 16.134 26 20ZM28.5 12.5C29.8807 12.5 31 11.3807 31 10C31 8.61929 29.8807 7.5 28.5 7.5C27.1193 7.5 26 8.61929 26 10C26 11.3807 27.1193 12.5 28.5 12.5Z" fill="currentColor"/>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.65 7.2H16.66M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20ZM15.75 12C15.75 14.0711 14.0711 15.75 12 15.75C9.92893 15.75 8.25 14.0711 8.25 12C8.25 9.92893 9.92893 8.25 12 8.25C14.0711 8.25 15.75 9.92893 15.75 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                 </a>
                                 <a href="" className="text-white/60 hover:text-white mt-1">
