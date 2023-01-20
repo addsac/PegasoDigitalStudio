@@ -170,9 +170,9 @@ export default function HomeServices(){
                             </div>
                         </Link>
 
-                        <Link href="/servizi/marketing" className="order-4 group flex flex-col gap-y-6 md:gap-y-8">
+                        <Link href="/servizi/social-media" className="order-5 group w-full flex flex-col gap-y-6 md:gap-y-8">
                             <Text2
-                                text="Marketing"
+                                text="Social Media"
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
@@ -184,10 +184,10 @@ export default function HomeServices(){
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                             </div>
                         </Link>
-    
-                        <Link href="/servizi/social-media" className="order-5 group w-full flex flex-col gap-y-6 md:gap-y-8">
+
+                        <Link href="/servizi/marketing" className="order-4 group flex flex-col gap-y-6 md:gap-y-8">
                             <Text2
-                                text="Social Media"
+                                text="Marketing"
                                 color="white"
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">

@@ -102,7 +102,7 @@ export default function Page({ params }) {
                         {/* Article content */}
                         <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
                             <p>
-                                Costruire un sito web non è più come 10 anni fa, una cosa elitaria che solo dei tecnici potevano rendere realtà. In questi ultimi anni la maggio parte delle persone può riuscire a farlo anche da solo grazie alle nuove piattaforme che ti permettono di creare un sito web senza scrivere codice.
+                                Costruire un sito web non è più come 10 anni fa, una cosa elitaria che solo dei tecnici potevano rendere realtà. In questi ultimi anni la maggior parte delle persone può riuscire a farlo anche da solo grazie alle nuove piattaforme che ti permettono di creare un sito web senza scrivere codice.
                             </p>
                             <p>
                                 Non ci sono dubbi che queste piattaforme diano nuove possibilità per le persone, ma i professionisti che si affidano a queste avranno un problema.
