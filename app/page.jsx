@@ -35,7 +35,7 @@ export default function Page(){
       </div>
 
       {/* 3D model */}
-      <div className="w-[730px] h-[730px] mx-auto bg-white/40 flex items-center justify-center mt-48">
+      <div className="w-[730px] h-[730px] mx-auto bg-white/40 mt-48">
         <ExperienceModel />
       </div>
 
