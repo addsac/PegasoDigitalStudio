@@ -34,14 +34,14 @@ export default function Page({ params }) {
                         <div id="author-blog-detail" className="flex items-center gap-x-6 mt-12 md:mt-20">
                             <div className="flex items-center gap-x-6 text-sm md:text-base">
                                 <div className="w-12 h-12 rounded-full bg-white"></div>
-                                <a 
+                                {/* <a 
                                     href="https://www.linkedin.com/in/leonardo-citton" 
                                     target="_blank" 
                                     rel="nofollow" 
                                     className="text-white/60 font-medium hover:opacity-60 transition duration-300"
-                                >
-                                    Scritto da: Leonardo Citton
-                                </a> 
+                                > */}
+                                    Scritto da: Chiara Cogo
+                                {/* </a>  */}
                             </div>
                             <div className="h-[64px] w-[1px] bg-white/20"></div>
                             <div className="text-white/60"> 11 luglio 2021 </div>
