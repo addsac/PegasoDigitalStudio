@@ -52,7 +52,7 @@ export default function Page({ params }) {
                 </div>
 
                 {/* Image */}
-                <div className="w-full h-[350px] md:h-[600px] mt-20 md:mt-28 lg:mt-32">
+                <div className="w-full h-auto mt-20 md:mt-28 lg:mt-32">
                     <img src="/blog/come-creare-esperienze-digitali-memorabili.jpg" alt="Foto di Mo Eid" className="h-full w-full object-cover" />
                 </div>
 
