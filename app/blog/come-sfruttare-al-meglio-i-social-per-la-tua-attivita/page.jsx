@@ -40,7 +40,9 @@ export default function Page({ params }) {
                                     rel="nofollow" 
                                     className="text-white/60 font-medium hover:opacity-60 transition duration-300"
                                 > */}
+                                <p className="text-white/60 font-medium hover:opacity-60 transition duration-300">
                                     Scritto da: Chiara Cogo
+                                </p>
                                 {/* </a>  */}
                             </div>
                             <div className="h-[64px] w-[1px] bg-white/20"></div>
