@@ -8,10 +8,14 @@ import { FreeMode } from "swiper"
 import { usePathname } from "next/navigation"
 import Balancer from "react-wrap-balancer"
 
-export default function BlogSwiper({ type }){
-    const arrayToLoop = [1, 2, 3, 4, 5, 6]
+export default function BlogSwiper({ type, array }){
+    const arrayToLoop = array || [1, 2, 3, 4, 5, 6]
 
     const pathname = usePathname()
+
+    const firstLetterUppercase = (string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
 
     return <div className="pl-8 md:pl-12 lg:pl-16">
         <Swiper
@@ -28,15 +32,15 @@ export default function BlogSwiper({ type }){
                 </SwiperSlide>
             )} */}
 
-            { arrayToLoop.map((index) => (
+            { arrayToLoop.map((item, index) => (
                 <SwiperSlide 
                     style={{ width: 'auto' }} 
                     key={ index }
                 >
-                    <Link href="/blog/1">
+                    <Link href={item.slug ? '/blog/'+item.slug : '/blog/1'}>
                         <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer hover:scale-[96%] transition duration-400">
                             <Image
-                                src="/blog-temporary-bg.jpg"
+                                src={item.slug ? '/blog/'+item.slug+'.jpg' : '/blog-temporary-bg.jpg'}
                                 alt=""
                                 width={500}
                                 height={500}
@@ -51,12 +55,12 @@ export default function BlogSwiper({ type }){
                             {/* overlay and text */}
                             <div className="w-full bg-white z-10 flex flex-col justify-end pt-6">
                                 <p className="text-slate-900/60 tracking-tight mb-3">
-                                    Ecommerce
+                                    { item.slug ? firstLetterUppercase(item.category) : 'Ecommerce' }
                                 </p>
                                 {/* Text */}
                                 <p className="text-slate-900 text-xl md:text-2xl tracking-tight leading-[130%] group-hover:underline"> 
                                     <Balancer>
-                                        Le Sezioni più Importanti di un Ecommerce per Vendere di più 
+                                        { item.slug ? item.title : 'Come creare una landing page che converte - esempi pratici' }
                                     </Balancer>
                                 </p>
                             </div>

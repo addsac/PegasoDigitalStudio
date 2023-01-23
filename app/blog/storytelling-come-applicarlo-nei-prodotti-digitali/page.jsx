@@ -16,7 +16,7 @@ export default function Page({ params }) {
 
                     <div className="col-span-12 md:col-span-8 pt-8">
                         <Text1 
-                            text="Design" 
+                            text="Sviluppo" 
                             id="text1-blog-detail"
                             color="white" 
                             opacity={60} 

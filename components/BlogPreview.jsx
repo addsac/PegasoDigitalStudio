@@ -8,10 +8,10 @@ import { fetchBlogPosts } from '../util/contentfulBlogPosts'
 
 export const revalidate = 100; // revalidate every 100 seconds
 
-async function getPosts() {
+/* async function getPosts() {
     const posts = await fetchBlogPosts()
     return posts ? posts : null;
-}
+} */
 
 export default async function BlogPreview({ title = '', description = '', type = 'articles' }) {
     // const posts = await getPosts();

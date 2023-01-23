@@ -48,7 +48,7 @@ html, body {
     @apply text-lg md:text-[22px] leading-[150%] md:leading-[150%] font-medium tracking-tight;
 }
 .text-2{
-    @apply text-[24px] md:text-[28px] lg:text-[32px] font-medium leading-[140%] tracking-tight;
+    @apply text-[24px] md:text-[28px] lg:text-[32px] font-medium leading-[150%] md:leading-[150%] lg:leading-[150%] tracking-tight;
 }
 .text-3{
     @apply text-base md:text-lg tracking-[-1%];
