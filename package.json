@@ -18,7 +18,7 @@
     "eslint": "8.27.0",
     "eslint-config-next": "^13.0.6",
     "gsap": "^3.11.3",
-    "next": "^13.1.1",
+    "next": "^13.1.4",
     "nextjs-cors": "^2.1.2",
     "r3f-perf": "^6.5.0",
     "react": "^18.2.0",

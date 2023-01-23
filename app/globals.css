@@ -9,8 +9,8 @@ html, body {
 /**
  * Utility
  */ 
-*{
-    @apply selection:bg-white/10 selection:text-white selection:opacity-100;
+* {
+    @apply selection:bg-gray-800 selection:text-white;
 }
 .custom-cursor {
     position: fixed;
@@ -108,7 +108,7 @@ background: #ffffff !important;
     @apply !-mt-0 !opacity-100 text-sm lg:text-base !text-slate-900 underline;
 }
 .blog hr{
-    @apply w-full h-[2px] bg-white/20 my-6;
+    @apply w-full h-[2px] !bg-white/10 my-6;
 }
 .blog a{
     @apply text-lg px-4 py-2 rounded bg-white/20 hover:bg-white/30 transition;

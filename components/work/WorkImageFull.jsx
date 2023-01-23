@@ -1,10 +1,10 @@
 import Image from "next/image"
 
-export default function WorkImageFull(){
+export default function WorkImageFull({ src }){
     return (
-        <div className="w-full h-[400px] lg:h-[623px] overflow-clip">
+        <div className="w-full h-[400px] lg:h-[800px] overflow-clip">
             <Image
-                src="/blog-temporary-bg.jpg" 
+                src={`${src ? src : '/blog-temporary-bg.jpg'}`}
                 alt="" 
                 width={500}
                 height={500}
