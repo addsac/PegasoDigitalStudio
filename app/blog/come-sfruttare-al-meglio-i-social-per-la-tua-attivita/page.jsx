@@ -33,7 +33,7 @@ export default function Page({ params }) {
 
                         <div id="author-blog-detail" className="flex items-center gap-x-6 mt-12 md:mt-20">
                             <div className="flex items-center gap-x-6 text-sm md:text-base">
-                                <div className="w-12 h-12 rounded-full bg-white"></div>
+                                <div className="w-12 h-12 aspect-square rounded-full bg-white"></div>
                                 {/* <a 
                                     href="https://www.linkedin.com/in/leonardo-citton" 
                                     target="_blank" 
@@ -46,7 +46,7 @@ export default function Page({ params }) {
                                 {/* </a>  */}
                             </div>
                             <div className="h-[64px] w-[1px] bg-white/20"></div>
-                            <div className="text-white/60"> 11 luglio 2021 </div>
+                            <div className="text-sm lg:text-base text-white/60"> 11 luglio 2021 </div>
                         </div>
                     </div>
 
@@ -59,12 +59,13 @@ export default function Page({ params }) {
                 </div>
 
                 {/* Article content */}
-                <div className="w-full grid grid-cols-12 my-24 md:my-32 lg:my-40 px-16 md:px-0">
+                <div className="w-full grid grid-cols-12 my-24 md:my-32 lg:my-40 px-8 md:px-0">
                     <div className="hidden md:block col-span-3"></div>
                     <div className="col-span-12 md:col-span-6">
 
                         {/* Sharing icons */}
                         <div className="mx-auto max-w-[800px] w-full flex items-center gap-x-4 mb-20">
+                            <p className='text-white mr-2'> Condividi: </p>
                             <a href="" className="opacity-60 hover:opacity-100">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="white" strokeWidth={2} stroke="none" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_764_100)">
