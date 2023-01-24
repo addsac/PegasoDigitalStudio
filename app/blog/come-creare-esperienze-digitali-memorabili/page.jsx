@@ -5,6 +5,24 @@ import BlogPreview from '../../../components/BlogPreview'
 import BlogDetailTitleAnimation from '../../../components/BlogDetailTitleAnimation'
 
 export default function Page({ params }) {
+    const articles = [
+        {
+            category: 'design',
+            title: 'Come creare esperienze digitali memorabili',
+            slug: 'come-creare-esperienze-digitali-memorabili'
+        },
+        {
+            category: 'sviluppo',
+            title: 'Storytelling: come applicarlo nei prodotti digitali',
+            slug: 'storytelling-come-applicarlo-nei-prodotti-digitali'
+        },
+        {
+            category: 'social media',
+            title: 'Come sfruttare al meglio i social per la tua attivita',
+            slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        
+        }
+    ]
+
     return (
         <div className="pt-[140px] md:pt-[240px]">
             <BlogDetailTitleAnimation />
@@ -239,7 +257,8 @@ export default function Page({ params }) {
 
                 {/* Simil articles */}
                 <BlogPreview
-                    title={['Articoli', 'simili']}
+                    title={['Altri', 'articoli']}
+                    array={ articles }
                 />
             </div>
         </div>
