@@ -13,7 +13,7 @@ export const revalidate = 100; // revalidate every 100 seconds
     return posts ? posts : null;
 } */
 
-export default async function BlogPreview({ title = '', description = '', type = 'articles' }) {
+export default async function BlogPreview({ title = '', description = '', type = 'articles', articles }) {
     // const posts = await getPosts();
 
     return (
@@ -65,7 +65,7 @@ export default async function BlogPreview({ title = '', description = '', type =
                     className="pb-24 md:pb-28 lg:pb-40 pt-24 relative"
                 >
                     {/* swiper */}
-                    <BlogSwiper type={type} />
+                    <BlogSwiper type={type} array={ articles } />
                 </div>
 
                 <div

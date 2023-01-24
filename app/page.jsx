@@ -10,6 +10,24 @@ import BlogPreview from "../components/BlogPreview"
 import Image from "next/image"
 
 export default function Page(){
+  const articles = [
+    {
+      category: 'design',
+      title: 'Come creare esperienze digitali memorabili',
+      slug: 'come-creare-esperienze-digitali-memorabili'
+    },
+    {
+      category: 'sviluppo',
+      title: 'Storytelling: come applicarlo nei prodotti digitali',
+      slug: 'storytelling-come-applicarlo-nei-prodotti-digitali'
+    },
+    {
+    category: 'social media',
+    title: 'Come sfruttare al meglio i social per la tua attivita',
+    slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        
+    }
+  ]
+
   return <>
 
     {/* <ExperienceLoading progress={ 16 } /> */}
@@ -84,6 +102,7 @@ export default function Page(){
       <BlogPreview 
         title={['Il Blog']}
         description="Qui puoi troviare alcuni degli articoli del nostro blog per rimanere aggiornato sulle nostre novità."
+        articles={ articles }
       />
     </main>
   </>

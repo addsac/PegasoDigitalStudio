@@ -4,6 +4,24 @@ import ContactForm from "../../components/ContactForm"
 import BlogPreview from "../../components/BlogPreview"
 
 export default function Page(){
+    const articles = [
+        {
+            category: 'design',
+            title: 'Come creare esperienze digitali memorabili',
+            slug: 'come-creare-esperienze-digitali-memorabili'
+        },
+        {
+            category: 'sviluppo',
+            title: 'Storytelling: come applicarlo nei prodotti digitali',
+            slug: 'storytelling-come-applicarlo-nei-prodotti-digitali'
+        },
+        {
+            category: 'social media',
+            title: 'Come sfruttare al meglio i social per la tua attivita',
+            slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        
+        }
+    ]
+
     return <div className="pt-[140px] md:pt-[240px]">
         <main className="py-8 pb-24 md:pb-32 lg:pb-48">
             <WorkTitles />
@@ -37,6 +55,7 @@ export default function Page(){
             <BlogPreview 
                 title={['Il Blog']}
                 description="Take a look on our latest articles to find some  inspiration for your project and more."
+                articles={ articles }
             />
         </main>
     </div>

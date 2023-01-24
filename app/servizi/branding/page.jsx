@@ -13,6 +13,24 @@ import BlogPreview from '../../../components/BlogPreview'
 import ContactForm from '../../../components/ContactForm'
 
 export default function Page(){
+    const articles = [
+        {
+            category: 'design',
+            title: 'Come creare esperienze digitali memorabili',
+            slug: 'come-creare-esperienze-digitali-memorabili'
+        },
+        {
+            category: 'sviluppo',
+            title: 'Storytelling: come applicarlo nei prodotti digitali',
+            slug: 'storytelling-come-applicarlo-nei-prodotti-digitali'
+        },
+        {
+            category: 'social media',
+            title: 'Come sfruttare al meglio i social per la tua attivita',
+            slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        
+        }
+    ]
+
     return (
         <div className="bg-slate-900">
             <main className="">
@@ -110,6 +128,7 @@ export default function Page(){
                 <BlogPreview 
                     title={['Il Blog']}
                     description="Take a look on our latest articles to find some  inspiration for your project and more."
+                    articles={ articles }
                 />
             </main>
         </div>

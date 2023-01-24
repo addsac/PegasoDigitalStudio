@@ -53,7 +53,7 @@ export default function Page({ params }) {
 
                 {/* Image */}
                 <div className="w-full h-auto mt-20 md:mt-28 lg:mt-32">
-                    <img src="/blog/storytelling-come-applicarlo-nei-prodotti-digitali.jpg" alt="Foto di Lum3n" className="h-full w-full object-cover" />
+                    <img src="/blog/storytelling-come-applicarlo-nei-prodotti-digitali.jpg" alt="Foto di Emir Anık" className="h-full w-full object-cover" />
                 </div>
 
                 {/* Article content */}
@@ -103,7 +103,7 @@ export default function Page({ params }) {
                         {/* Article content */}
                         <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
                             <p>
-                                Storytelling è probabilmente una delle parole più inflazionate nel mondo della comunicazione nei nostri tempi, ma al di là del marketing della parola c'è una perchè che sta alla base del suo hype e in ogni prodotto digitali che comunica efficacemente.
+                                Storytelling è probabilmente una delle parole più inflazionate nel mondo della comunicazione nei nostri tempi, ma al di là del marketing della parola c'è una perchè che sta alla base del suo hype e in ogni prodotto digitale che comunica efficacemente.
                             </p>
                             <h3>
                                 La nascita della necessità
@@ -113,7 +113,7 @@ export default function Page({ params }) {
                                 Da questo è sempre dipeso il suo stato sociale e quante persone riusciva a raggiungere con il suo lavoro e le sue idee.
                             </p>
                             <p>
-                                Qui nacque il bisogno di troavre uno standard, o per lo meno un metodo scentifico che accomunava tutte le comunicazioni che riusciavano effettivamente a muovere la controparte e influenzarla.
+                                Qui nacque il bisogno di trovare uno standard, o per lo meno un metodo scientifico che accomunava tutte le comunicazioni che riusciavano effettivamente a muovere la controparte e influenzarla.
                             </p>
                             <p>
                                 La storia di questi studi parte nell'antica grecia, con la nascita del pensiero razionale di Aristotele, che si chiedeva come strutturare un pensiero da condividere con il fine di muovere le persone, passando per i pensatori del rinascimento come Macchiavelli, fino ai più moderni ricercatori del nostro tempo, come Joseph Campbell, autore del libro L'eroe dai mille volti, lo standard per chi vuole avere un approccio moderno alla materia.
@@ -123,7 +123,7 @@ export default function Page({ params }) {
                                 Come strutturare una storia
                             </h3>
                             <p>
-                                Dai romanzi classici di Omero fino ai recenti film di animazione giapponese, un racconto capace di coinvolgere deve avere i contenuti strutturati in modo da mantere l'attenzione dell'ascoltatore. Ogni storia di successo è partita da un'equilibri, fino a quando il protagonista trova una rottura, una chiamata ad un cambiamento necessario per la continuazione spesso della sua vita, arrivando poi ad un climax di massima pressione, e risolvendo 
+                                Dai romanzi classici di Omero fino ai recenti film di animazione giapponese, un racconto capace di coinvolgere deve avere i contenuti strutturati in modo da mantere l'attenzione dell'ascoltatore. Ogni storia di successo è partita da un'equilibrio, fino a quando il protagonista trova una rottura, una chiamata ad un cambiamento necessario per la continuazione spesso della sua vita, arrivando poi ad un climax di massima pressione, e risolvendo 
                                 il tutto raggiungendo una rinascita fisica, intellettuale o di status del protagonista.
                             </p>
                             <br />
@@ -131,7 +131,7 @@ export default function Page({ params }) {
                                 L'equilibrio
                             </h4>
                             <p>
-                                Questo è la descrizione di quando la storia inizia, e il protagonista ci viene descritto nel suo mondo ordinario, prima della sua trasformazione. In questa parte della storia, le infomrazioni sono spesso emotive e sensoriali per cercare di creare un collegamento tra il protagonista e lo spettatore, rispecchiandolo, e portandolo poi alla fase successiva a provare quelle situazzioni di rottura per sentirle come sue e tenere la sua attenzione alta per risolverle.
+                                Questo è la descrizione di quando la storia inizia, e il protagonista ci viene descritto nel suo mondo ordinario, prima della sua trasformazione. In questa parte della storia, le informazioni sono spesso emotive e sensoriali per cercare di creare un collegamento tra il protagonista e lo spettatore, rispecchiandolo, e portandolo poi alla fase successiva a provare quelle situazioni di rottura per sentirle come sue e tenere la sua attenzione alta per risolverle.
                             </p>
                             <br />
                             <h4>
@@ -139,16 +139,16 @@ export default function Page({ params }) {
                             </h4>
                             <p>
                                 Questa è la parte della storia che introduce il problema che l'eroe dovrà affrontare e l'equilibrio del suo mondo ordinario si rompe.
-                                Qui è necessario comunicare i rischi che il protagonista ha se resterà fermo e non continuerà il suo cammino. Ricordiamoci che attraverso lo stress, il contrisolo auementa, e se abbiamo fatto un buon lavoro per agganciare lo spettatore al protagonista nella fase di Equilibrio, il problema del protagonista non sarà solo suo, ma saremo un unica entità che combatte una situazione.
-                                Il pubblico deve sempre chiedersi, come fara lui a superare una situazione di difficoltà così grande?
+                                Qui è necessario comunicare i rischi che il protagonista ha se resterà fermo e non continuerà il suo cammino. Ricordiamoci che attraverso lo stress, il cortisolo auementa, e se abbiamo fatto un buon lavoro per agganciare lo spettatore al protagonista nella fase di Equilibrio, il problema del protagonista non sarà solo suo, ma saremo un unica entità che combatte una situazione.
+                                Il pubblico deve sempre chiedersi: come fara lui a superare una situazione di difficoltà così grande?
                             </p>
                             <br />
                             <h4>
                                 Il climax
                             </h4>
                             <p>
-                                Ricordiamoci che il cervello è un organo predittivo, il solo fatto di raccontare una storia attiva la parte predittiva del nostro cervello.
-                                Dalla rottura, e quindi dalla chiamata all'azione si arriva, dopo la parte più lunga dlla storia fino ad un momento di massima dove sentiamo che può cambiare tutto, e che stiamo per ricevere una super ricompensa.
+                                Il solo fatto di raccontare una storia attiva la parte predittiva del nostro cervello.
+                                Dalla rottura, e quindi dalla chiamata all'azione si arriva, dopo la parte più lunga della storia fino ad un momento di massima dove sentiamo che può cambiare tutto, e che stiamo per ricevere una super ricompensa.
                                 Arriviamo finalmente al momento in cui l'eroe vince la situazione, il cliffhanger.
                             </p>
                             <br />
@@ -175,8 +175,8 @@ export default function Page({ params }) {
                             </h4>
                             <p>
                                 Quando creiamo un'esperienza digitale dobbiamo partire da cosa vogliamo comunicare, e ora che sappiamo come strutturare la storia, possiamo creare dei passaggi ordinati che facciamo arrivare all'utente il messaggio che vogliamo.
-                                Nei siti web ad esempio, come nelle app o negli ecommerce, possiamo strutturare il layout dei contenuti in modo che segua la sequenza di equilibri, rottura, climax e rinascita. 
-                                Dobbiamo pernsare all'intera pagina come una storia che viene raccontata all'utente, e ogni sezione della pagina deve rispondere ad un fatto specifico della storia.
+                                Nei siti web ad esempio, come nelle app o negli ecommerce, possiamo strutturare il layout dei contenuti in modo che segua la sequenza di equilibrio, rottura, climax e rinascita. 
+                                Dobbiamo pensare all'intera pagina come una storia che viene raccontata all'utente, e ogni sezione della pagina deve rispondere ad un fatto specifico della storia.
                             </p>
                             <br />
                             <h4>
@@ -184,7 +184,7 @@ export default function Page({ params }) {
                             </h4>
                             <p>
                                 Ogni sezione di un'esperienza digitale è formata partendo essenzialmente da testi. Possiamo quindi strutturare in modo più specifico una piccola parte del sito o app in modo che segua l'ordine logico caratteristico dello storytelling.
-                                Possiamo farlo quando descrviamo una caratteristica del prodotto, possiamo farlo quando creaimo la storia del nostro brand, e altre parti dell'esperienza ancora.
+                                Possiamo farlo quando descriviamo una caratteristica del prodotto, possiamo farlo quando creiamo la storia del nostro brand, e altre parti dell'esperienza ancora.
                             </p>
                             <br />
                             <h4>
