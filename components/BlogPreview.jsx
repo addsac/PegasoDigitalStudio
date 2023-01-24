@@ -6,7 +6,7 @@ import BlogSwiper from './BlogSwiper'
 import BlogPreviewAnimation from './BlogPreviewAnimation'
 import { fetchBlogPosts } from '../util/contentfulBlogPosts'
 
-export const revalidate = 100; // revalidate every 100 seconds
+// export const revalidate = 100; // revalidate every 100 seconds
 
 /* async function getPosts() {
     const posts = await fetchBlogPosts()

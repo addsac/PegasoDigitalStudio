@@ -63,7 +63,7 @@ export default function Page({ params }) {
                                     rel="nofollow" 
                                     className="text-white/60 font-medium hover:opacity-60 transition duration-300"
                                 >
-                                    Scritto da: Leonardo Citton
+                                    Scritto da: Massimo Citton
                                 </a> 
                             </div>
                             <div className="h-[64px] w-[1px] bg-white/20"></div>
@@ -183,7 +183,7 @@ export default function Page({ params }) {
                 {/* Simil articles */}
                 <BlogPreview
                     title={['Altri', 'articoli']}
-                    array={ articles }
+                    articles={ articles }
                 />
             </div>
         </div>

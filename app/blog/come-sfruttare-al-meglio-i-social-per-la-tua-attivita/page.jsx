@@ -178,6 +178,7 @@ export default function Page({ params }) {
                 {/* Simil articles */}
                 <BlogPreview
                     title={['Altri', 'articoli']}
+                    articles={ articles }
                 />
             </div>
         </div>
