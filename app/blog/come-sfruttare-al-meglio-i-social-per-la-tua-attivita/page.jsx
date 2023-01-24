@@ -17,6 +17,11 @@ export default function Page({ params }) {
             slug: 'storytelling-come-applicarlo-nei-prodotti-digitali'
         },
         {
+            category: 'marketing',
+            title: 'Che social dovrei utilizzare per la mia attività',
+            slug: 'che-social-dovrei-utilizzare-per-la-mia-attivita'
+        },
+        {
             category: 'social media',
             title: 'Come sfruttare al meglio i social per la tua attivita',
             slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        

@@ -39,7 +39,7 @@ export default function Page({ params }) {
 
                     <div className="col-span-12 md:col-span-8 pt-8">
                         <Text1 
-                            text="Design" 
+                            text="Marketing" 
                             id="text1-blog-detail"
                             color="white" 
                             opacity={60} 
@@ -48,7 +48,7 @@ export default function Page({ params }) {
                         <div className="mt-8 md:mt-10">
                             <Title3 
                                 id="title3-blog-detail" 
-                                text="Come creare esperienze digitali memorabili"
+                                text="Che social dovrei utilizzare per la mia attività"
                                 color="white"
                                 gradient={ true }
                             />
@@ -76,7 +76,7 @@ export default function Page({ params }) {
 
                 {/* Image */}
                 <div className="w-full h-auto mt-20 md:mt-28 lg:mt-32">
-                    <img src="/blog/come-creare-esperienze-digitali-memorabili.jpg" alt="Foto di Mo Eid" className="h-full w-full object-cover" />
+                    <img src="/blog/che-social-dovrei-utilizzare-per-la-mia-attivita.jpg" alt="Foto di Anna Shvets" className="h-full w-full object-cover" />
                 </div>
 
                 {/* Article content */}
@@ -126,124 +126,44 @@ export default function Page({ params }) {
                         {/* Article content */}
                         <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
                             <p>
-                                Costruire un sito web non è più come 10 anni fa, una cosa elitaria che solo dei tecnici potevano rendere realtà. In questi ultimi anni la maggior parte delle persone può riuscire a farlo anche da solo grazie alle nuove piattaforme che ti permettono di creare un sito web senza scrivere codice.
+                                Ad oggi ci sono molti pareri sul definire la piattaforma migliore per il proprio business. C’è chi preferisce Social come Instagram o TikTok che permettono la realizzazione di <b>Contenuti Short</b>, altri invece preferiscono i Social come YouTube, il quale ti dà la possibilità di realizzare <b>più lunghi e dettagliati</b>, o altri più specifici come nel caso di LinkedIn per quanto riguarda il mondo del lavoro.
                             </p>
                             <p>
-                                Non ci sono dubbi che queste piattaforme diano nuove possibilità per le persone, ma i professionisti che si affidano a queste avranno un problema.
+                                Esiste quindi una piattaforma adatta in base alla tua attività? Dipende... Perché è vero che <b>ci sono piattaforme più adatte a tipi specifici di attività</b> ma questo non toglie che sia possibile <b>cambiare completamente lo status quo</b> di quello che fanno tutti e avventurarsi in un nuovo format, e questo a volte porta grandi risultati grazie soprattutto alla <b>differenziazione</b>.
                             </p>
                             <p>
-                                Affidandosi a queste piattaforme e prendendo un tema standard già pronto, si salta tutta la parte di strategia di un progetto digitale, che è il cuore di un esperienza digitale, e che ti permette di comunicare quello di cui hai bisogno di comunicare, e che farà veramente la differenza tra un prodotto che funziona e uno che esiste senza troppe pretese.
+                                In ogni caso ci sono 2 aspetti fondamentali da tenere a mente oggi:
+                                <ul className='list-disc'>
+                                    <li>
+                                        i <b>video</b> la fanno da padrone → è un fatto indiscusso che oggi i video siano il contenuto più performante. Normalmente un video è molto più <b>coinvolgente</b> di una foto o di un testo, questo spiega perché è più facile per una persona provare emozioni e sentimenti e quindi legarsi ad esso, al messaggio che trasmette e alle persone che vede in esso;
+                                    </li>
+                                    <li>
+                                        appunto per questo motivo, oggi, <b>“metterci</b> la faccia” è ormai quasi indispensabile per qualunque tipo di attività. Le persone non vogliono più vedere brand e prodotti/servizi anonimi, vogliono le persone che ci stanno dietro, vogliono poter creare relazioni con loro, vogliono sentirsi capite e vogliono poter dare fiducia a chi se lo merita.
+                                    </li>
+                                </ul>
                             </p>
                             <p>
-                                Detto questo la domanda è: di quali parti è costituito un prodotto digitale studiato per il cliente e personalizzato per raggiungere gli obbiettivi prefissati? Con il nostro studio abbiamo stilato una lista di questi elementi chiave. (Psicologia, Strategia, Storytelling, Motion design, Usabilità)
-                            </p>
-                            <hr /> {/* divider */}
-                            <h3>
-                                Gli elementi
-                            </h3>
-                            <h4>
-                                Psicologia
-                            </h4>
-                            <p>
-                                Sapere come funziona la mente umana in generale ti permette di costruire interfarcce utente per siti web e applicazioni che permettono all'utilizzatore del servizio di avere un esperienza positiva, memorabile ed facile da usare.
+                                Detto questo, una cosa è certa: bisogna strutturare e avere ben chiaro in mente il <b>percorso</b>che porterà la persona dal <b>conoscerci per la 1° volta</b> fino a magari <b>diventare nostro Cliente</b> e a creare con noi una <b>relazione</b> duratura. Da questo deve dipendere la scelta del formato del contenuto (testo, immagini/foto, video, audio…) e quindi del Social più adatti.
                             </p>
                             <p>
-                                Costruire sulla base di leggi definite di comportamento degli utenti li aiuta a riconoscere cosa fare quando interagiscono con questi strumenti, e tramite le euristiche che le persone di solito provano, rendere efficacie la comunicazione dei messaggi che vuoi che gli  altri capiscano.
+                                Un esempio concreto di questo è quello che abbiamo fatto recentemente con un nostro Cliente che ci ha contattato per far conoscere il suo Brand di Cosmesi: dopo una lunga e attenta analisi siamo arrivati, in fase di definizione della <b>Strategia</b>, alla conclusione che conveniva “sconvolgere” i piani iniziali (concentrarsi sul Brand di Cosmesi) e puntare sullo sviluppo del <b>Personal Brand</b> della sua fondatrice.
+                                Abbiamo quindi deciso di creare contenuti divulgativi brevi su <b>TikTok</b> per portare traffico a <b>Instagram</b> (che abbiamo scelto come canale principale per divulgare la sua offerta) e infine creare contenuti più lunghi e dettagliati da condividere su <b>YouTube</b>, per chi vuole più informazioni possibili ed è veramente interessato ai contenuti che lei pubblica. 
+                                Una volta ottenuta la visibilità desiderata, trasferirla al suo Brand di Cosmesi diventa molto più semplice.
                             </p>
                             <p>
-                                Leggi, come la <b>Legge di Hick</b> enuncia che più opzioni una persona ha, più decide con fatica e rimanda la sua azione. Questo ci dice che a volte è meglio limitare artificialmente le scelte di una determinata azione per permettere all'utente di navigare con più facilità.
-                            </p>
-                            <p>
-                                L'effettp Von Restorff dice che dato un gruppo di oggetti visivamente simili ricordiamo con molta più facilità quelli che sono diversi. Questa legge è applicata molto nello studio di interfacce digtali e peremette di studiare la gerarchia degli elementi grafici in modo che l'utente riesca a capire quali elementi sono più importanti di altri, e quali azioni compiere successivamente.
-                            </p>
-                            <p>
-                                Una risorsa molto curata è linkata in seguito.
+                                Se vuoi approfondire nel dettaglio questo caso studio esserti utile:
                             </p>
                             <div>
-                                <a href="https://lawsofux.com/">
-                                    lawsofux.com
+                                <a href="/lavori/1">
+                                    HEVOLUTA - Brand di Cosmesi.
                                 </a>
                             </div>
-                            <br />
-                            <h4>
-                                Strategia
-                            </h4>
+                            <hr /> {/* spacing */}
                             <p>
-                                Sapere per quale scopo si progetta un prodotto digitale, sapere chi sarà l'utilizaztore finale, sapere i suoi bisogni e le sue aspettative, tutto questo è di fondamnetale importanza per creare un prodotto che produca un risultato concreto, ma troppo spesso prodtti digitali non vengono progettati partendo dalla giusta strategia.
+                                Se vuoi puoi vedere altri <b>esempi concreti e reali</b> di persone/aziende che abbiamo aiutato nella scelta dei propri canali Social e della creazione della propria immagine nella sezione <b>Lavori</b>.
                             </p>
                             <p>
-                                Prima di ogni porgetto, abbiamo visto che la cosa più utile per il cliente e per la buona riuscita del progetto è fare questo tipo di domande per essere sicuri di comunicare ciò che chi commissiona il lavori vuole comunicare.
-                            </p>
-                            <p>
-                                Qual'è il motivo per cui vuoi creare questo prodotto?
-                                Chi sono i tuoi clienti?
-                                Che dubbi potrebbero avere ascoltando la tua offerta?
-                                Come vuoi che ti vedano i tuoi clienti che interagiscono con l'esprienza?
-                                Costruire la proposta unica di vendita.
-                            </p>
-                            <p>
-                                Questo processo di discovery è neccessario per progetto che esce dal nostro studio, inosltre aiuta il nosto cliente a capire quello che bisognerà comuncare per avere un prodotto che funziona. Può richiedere anche alcune ore ma  un processo di discovery del genere ha un grande valore di per se per l'azienda cliente, amche senza prodotto.
-                            </p>
-                            <br />
-                            <h4>
-                                Storytelling
-                            </h4>
-                            <p>
-                                La tecnologia e la rete sono nate per rendere possibile scambiare informazioni oltre i limiti fisici di un tempo. Ogni prodotto digiale è quindi un progetto di comuniazione prima di tutto.
-                            </p>
-                            <p>
-                                Come comunicare bene, e in modo che l'ascoltatore capisca il messaggio che vogliamo far riecevere, e allo stesso tempo coinvolgere l'ascoltatore a continuare ad avere interesse? C'è uno studio da millenni su questa domanda. Questo è lo studio dello storytelling.
-                            </p>
-                            <p>
-                                Ma cosa vuol dire fare storytelling e come usarlo in ambito digitale?
-                            </p>
-                            <p>
-                                Equilibrio, rottura, climax, rinascita. Questa è la struttura classica su cui ogni film, ogni libro, o articolo che comunichi in modo efficace si basa.
-                            </p>
-                            <p>
-                                In un progetto digitale la comunicazione avviene nell'ordine dei contenuti, nelle sezioni che raggruppano un determinato concetto di un servizio, e in ogni paragrafo di testo che l'utente vede.
-                            </p>
-                            <p>
-                                Lo storytelling permette di condividere il nostro messaggio in modo che l'ascoltatore riesca a capirlo con facilità. Perchè è portato a portare attenzione per natura ad una comunicazione basata su questi principi. 
-                            </p>
-                            <br />
-                            <h4>
-                                Motion design
-                            </h4>
-                            <p>
-                                Le animazioni in un'interfaccia utente sono importanti. e le persone che dicono il contrario lo dicono ai loro clienti perchè creale è difficle e oneroso a livello di tempo.
-                            </p>
-                            <p>
-                                Perchè allora pensiamo che le animazioni siano così importanti per l'effiacia di un'esperieza digitale?
-                            </p>
-                            <p>
-                                Ogni cosa in natura è in moto e non esiste un movimento che inizia e finisce allo stesso tempo. 
-                            </p>
-                            <p>
-                                Animare un elemento di un sito fà capire all'utente cosa sta succedendo visivamente, e quando la persona capisce cosa sta succedendo riesce a orientarsi nel modo migliore e lo stress nell'usare un prodotto che non conosce svanisce.
-                            </p>
-                            <p>
-                                Quando un elemento passa da uno stato visivo ad un altro senza un collegamento visivo,  l'utente dovrà sforzarsi per capire cosa è successo, e quando l'utente è abituato a piattaforme famose come social network e apllicazioni, la pazienza non è infinita e si finisce per farlo andare via dal prodotto.
-                            </p>
-                            <p>
-                                Le animazioni quindi riescono a far usare bene lo strumento che gli proponi di utilizzare per raggiungerti, lo scopo finale di ogni prodotto digitale.
-                            </p>
-                            <br />
-                            <h4>
-                                Usabilità
-                            </h4>
-                            <p>
-                                Ogni nuova interazione con qualcosa che non conosciamo ci produce stress, anche se in minima parte. Lo stress è essenziale per portare attenzione alle cose che facciamo, ma in quantità esagerate è controproducente.
-                            </p>
-                            <p>
-                                Un prodotto digitale deve essere facilmente navigabile, deve rendere chiaro all'utente il modo in cui interagire con esso e i suoi conenuti devono essere facile da leggere a livello visivo. Tutto questo previene che un utente non riesca ad usare il nostro prodotto o che l'esperienza sia troppo complicata.
-                            </p>
-                            <p>
-                                Portare attenzione all'usabilità del prodotto vuol dire quindi misurare le animazioni senza rendere lenta e controintuitiva l'esperienza, ma anche portare attenzione ai contrasti visivi e accertarsi che ogni elemento importante sia ben visibile, in modo da guidare gli utenti e portarli ad avere ciò di cui hanno bisogno.
-                            </p>
-                            <hr /> {/* divider */}
-                            <p>
-                                Grazie per aver letto fino a qui, speriamo che questo articolo ti sia stato piaciuto e ti sia stato utile.
+                                Se invece vuoi ancora di più non esitare a <b>contattarci</b> per farti dare il nostro parere sulla tua situazione e magari sull’aiuto che in caso potremmo darti per realizzare il tuo obiettivo!
                             </p>
                         </div>
 

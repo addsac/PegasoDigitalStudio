@@ -22,7 +22,13 @@ export default async function Page(){
             slug: 'storytelling-come-applicarlo-nei-prodotti-digitali'
         }
     ]
-    const marketingArticles = []
+    const marketingArticles = [
+        {
+            category: 'marketing',
+            title: 'Che social dovrei utilizzare per la mia attività',
+            slug: 'che-social-dovrei-utilizzare-per-la-mia-attivita'
+        }
+    ]
 
     const socialArticles = [
         {
@@ -48,10 +54,10 @@ export default async function Page(){
                     articles={sviluppoArticles}
                 />
 
-                {/* <BlogArticlesSection
+                <BlogArticlesSection
                     text='Marketing'
                     articles={marketingArticles}
-                /> */}
+                />
 
                 <BlogArticlesSection
                     text='Social Media'
