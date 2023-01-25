@@ -36,7 +36,6 @@ export default async function Page(){
             title: 'Come sfruttare al meglio i Social per la tua attività',
             slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        
         },
-        ,
         {
             category: 'social media',
             title: '4 cose da fare prima di iniziare ad utilizzare i Social',
