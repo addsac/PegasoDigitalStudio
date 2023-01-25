@@ -35,6 +35,12 @@ export default async function Page(){
             category: 'social media',
             title: 'Come sfruttare al meglio i Social per la tua attività',
             slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        
+        },
+        ,
+        {
+            category: 'social media',
+            title: '4 cose da fare prima di iniziare ad utilizzare i Social',
+            slug: '4-cose-da-fare-prima-di-iniziare-ad-utilizzare-i-social'        
         }
     ]
 
@@ -65,7 +71,7 @@ export default async function Page(){
                 />
             </div>
 
-            <div id="footer-animation-trigger" className="absolute"></div>
+            {/* <div id="footer-animation-trigger" className="absolute"></div> */}
 
         </main>
     </div>

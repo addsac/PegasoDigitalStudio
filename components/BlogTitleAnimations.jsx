@@ -52,7 +52,7 @@ export default function BlogTitleAnimations() {
         /**
          * Animations to show the footer and scale the blog wrapper
          */
-        gsap.to('#blog-wrapper', {
+        /* gsap.to('#blog-wrapper', {
             scrollTrigger: {
                 trigger: '#footer-animation-trigger',
                 start: 'top center',
@@ -60,7 +60,7 @@ export default function BlogTitleAnimations() {
                 scrub: 0.8,
             },
             scale: 0.95,
-        })
+        }) */
     }, [])
 
     return null
