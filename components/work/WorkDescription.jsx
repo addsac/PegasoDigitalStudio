@@ -36,6 +36,7 @@ export default function WorkDescription({ title = '', description = [], href = '
                             href={ href }
                             text={ ctaText }
                             icon="arrow"
+                            target="_blank"
                         />
                     </div>
                 </div>

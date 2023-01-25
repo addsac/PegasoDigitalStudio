@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useEffect, useRef } from "react"
 import gsap from "gsap/all"
 
-export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', onMouseEnter, size = '', weight = '' }) {
+export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', onMouseEnter, size = '', weight = '', target = '' }) {
     // switch of the classes base on the props "style"
     if (styleName == 'link-white') {
         return (
@@ -37,7 +37,7 @@ export default function Button({ id = '', styleName = '', text = '', icon = fals
         return <PrimaryLgWhite id={id} styleName={styleName} text={text} icon={icon} href={href} />
     } 
     else if(styleName == 'primary-lg-dark'){
-        return <PrimaryLgDark id={id} styleName={styleName} text={text} icon={icon} href={href} />
+        return <PrimaryLgDark id={id} styleName={styleName} text={text} icon={icon} href={href} target={target} />
     }
 }
 
@@ -254,9 +254,9 @@ export function PrimaryLgWhite({ id = '', styleName = '', text = '', icon = fals
         </Link>
     )
 }
-export function PrimaryLgDark({ id = '', styleName = '', text = '', icon = false, opacity = 100, href = '/' }){
+export function PrimaryLgDark({ id = '', styleName = '', text = '', icon = false, opacity = 100, href = '/', target = '' }){
     return (
-        <Link href={ href }>
+        <Link href={ href } target={target}>
             <div
                 className="group relative flex justify-center border border-white/40 hover:border-white text-white rounded-full z-[2] overflow-hidden transition duration-600"
             >

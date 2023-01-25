@@ -90,13 +90,14 @@ export default function Page({ params }) {
                     {/* <WorkImageFull src="/lavori/marco-baldassa.jpg" /> */}
                     <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
                     <WorkDescription 
-                        title="Studs is an experiential retail and e-commerce brand that has reimagined the ear piercing experience. Studs believes pierced ears are the key to unlocking reinvention."
+                        title="Marco Baldassa è un architetto e progettista di interni. Ha aperto il suo studio proprietario da più di dieci anni a Padova."
                         description={[
-                            'Studs has coined the term Earscape®, through providing their customers a new way to self-express with healthy and safe ear piercings and on-trend earrings in a retail environment and online at Studs.com. ',
-                            'Studs customers are highly engaged brand loyalists that love to create and share their one-of-a-kind earscape styles. Studs.com makes shopping a 250+ assortment filled with glittering huggies, hoops, cuffs, and studs easy and fun. The site supports bundles and add-ons, to ensure the customer is able to create a unique and personalized look.',
-                            'Since coming on board two years ago as their tech team, PACT has helped STUDS build an omnichannel retail experience that powers a holistic customer journey built on personalization and performance.'
+                            'Il progetto aveva come finalità quella di posizionare i lavori dello studio, partendoda dall\'identità caratteristica dei loro progetti tramite uno strumento digitale che riuscisse a raggiungere diversi tipi di clienti.',
+                            'È stato importante creare un\'identità grafica che non togliesse attenzione al cuore della comunicazione aziendale: i progetti dell\'architetto. Il sito è minimal, i colori sono naturali, quasi pastello e non c\'è elemento grafico che toglie gerarchia alla fotografia.',
+                            'Il ritmo è statico, proprio per dare all\'utilizzatore il modo di navigare secondo quanto vuole dare attenzione alle immagini, senza distrazioni. In modo da creare un\'esperienza che si adatti a tutti i tipi di visitatori.'
                         ]}
-                        ctaLink="Apri il progetto live"
+                        ctaText="Apri il progetto live"
+                        href="https://marcobaldassa.com"
                     />
                     <WorkImageMargin />
                     <WorkCitation 

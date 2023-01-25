@@ -25,7 +25,7 @@ export default async function Page(){
     const marketingArticles = [
         {
             category: 'marketing',
-            title: 'Che social dovrei utilizzare per la mia attività',
+            title: 'Che Social dovrei utilizzare per la mia attività',
             slug: 'che-social-dovrei-utilizzare-per-la-mia-attivita'
         }
     ]
@@ -33,7 +33,7 @@ export default async function Page(){
     const socialArticles = [
         {
             category: 'social media',
-            title: 'Come sfruttare al meglio i social per la tua attivita',
+            title: 'Come sfruttare al meglio i Social per la tua attività',
             slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita'        
         }
     ]
