@@ -1,7 +1,7 @@
 import Text2 from './../text/Text2'
 import Text1 from './../text/Text1'
 
-export default function WorkTextDescription(){
+export default function WorkTextDescription({ text = '' }){
     return (
         <div className="w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
             <div className="hidden md:block md:col-span-1 lg:col-span-2"></div> {/* margin */}
@@ -10,7 +10,7 @@ export default function WorkTextDescription(){
                 <div className="w-full grid grid-cols-8 gap-x-6 gap-y-8">
                     <div className="col-span-7">
                         <Text1
-                            text="Photography"
+                            text={ text }
                             color="white"
                             opacity={60}
                         />

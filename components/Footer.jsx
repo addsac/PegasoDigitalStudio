@@ -22,7 +22,7 @@ export default function Footer(){
                                 gradient={ true }
                             />
                         </div>
-                        <p
+                        <div
                             className="text-white/50 text-[20px] md:text-[24px] font-regular tracking-tight"
                         >
                             {/* The story behind Exo Ape is one of <br className="hidden lg:block" /> <nobr>exploration, creativity and curiosity.</nobr> */}
@@ -34,15 +34,13 @@ export default function Footer(){
                             <div className="md:hidden">
                                 La storia dietro a Pegaso Digital Studio parla di ispirazione, design e praticità.
                             </div>
-                        </p>
-                        <Link href="/missione">
-                            <Button 
-                                styleName="primary-lg-dark"
-                                href="/missione"
-                                text="Vedi la missione"
-                                icon="arrow"
-                            />
-                        </Link>
+                        </div>
+                        <Button 
+                            styleName="primary-lg-dark"
+                            href="/missione"
+                            text="Vedi la missione"
+                            icon="arrow"
+                        />
                     </div>
                 </div>
 
@@ -172,11 +170,11 @@ export default function Footer(){
                     <div className="col-span-12">
                         <div className="grid grid-cols-12 gap-x-6 gap-y-20">
                             <div className="col-span-12 lg:col-span-10">
-                                <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-sm">
-                                    <Balancer>
+                                <Balancer>
+                                    <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-sm">
                                         Pegaso S.a.s. di Citton Vittorio & C. | Sede legale: via Borgo Treviso 56 - Cittadella (PD) 35013 | P.Iva e C.F.: 05392800289 | Numero REA 464273
-                                    </Balancer>
-                                </p>
+                                    </p>
+                                </Balancer>
                             </div>
                             <div className="col-span-12 lg:col-span-2">
                                 <Image

@@ -39,7 +39,7 @@ export default function Page({ params }) {
                             <div className="mt-8 md:mt-12">
                                 <Title3
                                     id="title3-work-detail" 
-                                    text="Marco Baldassa Sito Web" 
+                                    text="Architettura – Marco Baldassa" 
                                     gradient={true} 
                                 />
                             </div>
@@ -88,25 +88,64 @@ export default function Page({ params }) {
                 <div className="flex flex-col gap-y-48 min-h-screen max-w-screen w-screen py-48">
                     {/* Various components that describe the work */}
                     {/* <WorkImageFull src="/lavori/marco-baldassa.jpg" /> */}
-                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
+                    <div className="w-full h-auto">
+                        <div className="grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
+                            <div className="col-span-2"></div>
+                            <div className="col-span-8">
+                                <video 
+                                    className="h-auto w-full" /* rounded-[24px] */
+                                    autoplay={true}
+                                    loop={true}
+                                    muted={true}
+                                    playsinline={true}
+                                >
+                                    <source src="/lavori/video-desktop-marco-maldassa.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                            <div className="col-span-2"></div>
+                        </div>
+                    </div>
                     <WorkDescription 
                         title="Marco Baldassa è un architetto e progettista di interni. Ha aperto il suo studio proprietario da più di dieci anni a Padova."
                         description={[
                             'Il progetto aveva come finalità quella di posizionare i lavori dello studio, partendoda dall\'identità caratteristica dei loro progetti tramite uno strumento digitale che riuscisse a raggiungere diversi tipi di clienti.',
                             'È stato importante creare un\'identità grafica che non togliesse attenzione al cuore della comunicazione aziendale: i progetti dell\'architetto. Il sito è minimal, i colori sono naturali, quasi pastello e non c\'è elemento grafico che toglie gerarchia alla fotografia.',
-                            'Il ritmo è statico, proprio per dare all\'utilizzatore il modo di navigare secondo quanto vuole dare attenzione alle immagini, senza distrazioni. In modo da creare un\'esperienza che si adatti a tutti i tipi di visitatori.'
+                            'Il ritmo è statico, proprio per dare all\'utilizzatore il modo di navigare secondo quanto vuole dare attenzione alle immagini, senza distrazioni creando un\'esperienza che si adatti a tutti i tipi di visitatori.'
                         ]}
                         ctaText="Apri il progetto live"
                         href="https://marcobaldassa.com"
                     />
-                    <WorkImageMargin />
+                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
+                    <WorkTextDetail 
+                        subtitle={'OBBIETTIVO'}
+                        title={'Creare un\'esperienza digitale che coinvolge l\'utente e informi'}
+                        description={[
+                            ''
+                        ]}
+                    />
+                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
+                    <WorkTextDescription text="Branding" />
+                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
+                    <WorkTextDescription text="Startegia e ricerca" />
+                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
+                    <WorkTextDescription text="Pagine" />
+                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
+                    <WorkTextDescription text="Responsive design" />
+                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
+
                     <WorkCitation 
                         text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."
                         author="YUJIN YONG"
                         authorTitle="VP OF DIGITAL PRODUCT"
                     />
+                    <WorkResults />
+
+                    {/* <WorkCitation 
+                        text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."
+                        author="YUJIN YONG"
+                        authorTitle="VP OF DIGITAL PRODUCT"
+                    />
                     <WorkImageMargin />
-                    <WorkTextDetail />
                     <WorkImageFullSwiper />
                     <WorkTextCentral />
                     <WorkImageGrid3 />
@@ -114,7 +153,7 @@ export default function Page({ params }) {
                     <WorkImageMargin />
                     <WorkTextDescription />
                     <WorkImageGridSwiper />
-                    <WorkResults />
+                    <WorkResults /> */}
                     {/* <WorkVideo /> */}
                     {/* <WorkMobile4 /> */}
                 </div>
