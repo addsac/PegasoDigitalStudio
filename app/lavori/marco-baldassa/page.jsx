@@ -65,17 +65,17 @@ export default function Page({ params }) {
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Servizi </p>
-                                    <p className="opacity-60"> Web Development </p>
-                                    <p className="opacity-60"> UI & UX </p>
+                                    <p className="opacity-60"> Design e Sviluppo </p>
+                                    <p className="opacity-60"> UI/UX Design </p>
                                     <p className="opacity-60"> Branding </p>
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Settore </p>
-                                    <p className="opacity-60"> Architettura e Interni </p>
+                                    <p className="opacity-60"> Architettura </p>
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Data </p>
-                                    <p className="opacity-60"> 12 / 10 / 2022 </p>
+                                    <p className="opacity-60"> 12/04/2022 </p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,8 @@ export default function Page({ params }) {
                 {/* Content */}
                 <div className="flex flex-col gap-y-48 min-h-screen max-w-screen w-screen py-48">
                     {/* Various components that describe the work */}
-                    <WorkImageFull src="/lavori/case-sitiweb-aarchitetto-preview.jpg" />
+                    {/* <WorkImageFull src="/lavori/marco-baldassa.jpg" /> */}
+                    <div className="w-full h-[400px] lg:h-[800px] bg-white"></div>
                     <WorkDescription 
                         title="Studs is an experiential retail and e-commerce brand that has reimagined the ear piercing experience. Studs believes pierced ears are the key to unlocking reinvention."
                         description={[

@@ -87,7 +87,7 @@ background: #ffffff !important;
     @apply text-xl lg:text-2xl leading-[140%] md:leading-[140%] lg:leading-[140%] font-medium tracking-tight;
 }
 .blog p{
-    @apply -mt-4 text-lg lg:text-xl leading-[190%] md:leading-[190%] lg:leading-[190%] tracking-[-1%] opacity-70;
+    @apply -mt-4 text-lg lg:text-xl leading-[190%] md:leading-[190%] lg:leading-[190%] tracking-[-1%];
 }
 .blog .bold{
     @apply font-semibold opacity-80;

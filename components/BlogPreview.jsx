@@ -18,7 +18,7 @@ export default async function BlogPreview({ title = '', description = '', type =
 
     return (
         <>
-            <BlogPreviewAnimation /> {/* client component for the ainmations */}
+            {/* <BlogPreviewAnimation /> */} {/* client component for the ainmations */}
 
             <div
                 id="blog-preview-wrapper"
