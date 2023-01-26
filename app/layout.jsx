@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <body className="bg-slate-900">
 
         <HeaderWrapper />
-        <ExperienceBackground />
+        {/* <ExperienceBackground /> */}
 
         {/* Utility */}
         {/* <HandleColorBackground /> */}

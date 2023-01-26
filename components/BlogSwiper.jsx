@@ -49,7 +49,9 @@ export default function BlogSwiper({ type, array }){
 
                             {/* Date */}
                             { type == 'articles' && (
-                                <p className="absolute top-6 left-6 px-3 py-2 rounded-full bg-white/60 backdrop-blur-md text-slate-900 text-xs"> 16 Novembre 2022 </p>
+                                <p className="absolute top-6 left-6 px-3 py-2 rounded-full bg-white/60 backdrop-blur-md text-slate-900 text-xs"> 
+                                    { item.date != '' ? '16 Novembre 2022' : ''}
+                                </p>
                             )}
                             
                             {/* overlay and text */}
