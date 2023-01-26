@@ -136,7 +136,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto px-8 md:px-12 lg:px-16 bg-white">
                         <div className="relative flex items-center justify-evenly py-40"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <video 
-                                className="h-[600px] w-auto rounded-[13px] scale-[101%]"
+                                className="h-[500px] w-auto rounded-[13px] scale-[101%]"
                                 autoPlay={true}
                                 loop={true}
                                 muted={true}
@@ -146,7 +146,7 @@ export default function Page({ params }) {
                             </video>
 
                             <video 
-                                className="h-[600px] w-auto rounded-[13px]"
+                                className="h-[500px] w-auto rounded-[13px]"
                                 autoPlay={true}
                                 loop={true}
                                 muted={true}
@@ -156,7 +156,7 @@ export default function Page({ params }) {
                             </video>
 
                             <video 
-                                className="h-[600px] w-auto rounded-[13px]"
+                                className="h-[500px] w-auto rounded-[13px]"
                                 autoPlay={true}
                                 loop={true}
                                 muted={true}
@@ -168,9 +168,18 @@ export default function Page({ params }) {
                     </div>
                     <WorkTextDescription text="Logo, tipografia, colori" />
                     <div className="w-full h-auto bg-slate-900">
-                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full">
-                                <img src="/img/lavori/marco-baldassa3.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                            <div className="col-span-12">
+                                <img src="/img/lavori/marco-baldassa-logo-structure.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                            </div>
+                            <div className="col-span-6 h-auto">
+                                <img src="/img/lavori/marco-baldassa-branding-1-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                            </div>
+                            <div className="col-span-6 h-auto">
+                                <img src="/img/lavori/marco-baldassa-branding-1-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                            </div>
+                            <div className="col-span-12">
+                                <img src="/img/lavori/marco-baldassa-branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
