@@ -89,10 +89,10 @@ export default function Page({ params }) {
                 <div className="flex flex-col gap-y-48 min-h-screen max-w-screen w-screen py-48">
                     {/* Various components that describe the work */}
                     {/* <WorkImageFull src="/lavori/marco-baldassa.jpg" /> */}
-                    <div className="w-full h-auto bg-white">
+                    {/* <div className="w-full h-auto bg-white">
                         <div className="relative grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16 py-40">
-                            <div className="col-span-1"></div>
-                            <div className="col-span-10">
+                            <div className="col-span-2"></div>
+                            <div className="col-span-8">
                                 <video 
                                     className="h-auto w-full bg-slate-200 rounded-[13px] scale-[101%]"
                                     autoPlay={true}
@@ -103,9 +103,16 @@ export default function Page({ params }) {
                                     <source src="/img/lavori/video-desktop-marco-baldassa.mp4" type="video/mp4" />
                                 </video>
                             </div>
-                            <div className="col-span-1"></div>
+                            <div className="col-span-2"></div>
 
-                            {/* <img src="/img/lavori/marco-baldassa.jpg" alt="" className="absolute w-full h-full object-cover opacity-20 -z-[5]" /> */}
+                            // <img src="/img/lavori/marco-baldassa.jpg" alt="" className="absolute w-full h-full object-cover opacity-20 -z-[5]" />
+                        </div>
+                    </div> */}
+                    <div className="w-full h-auto bg-slate-900">
+                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                            <div className="w-full">
+                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                            </div>
                         </div>
                     </div>
                     <WorkDescription 
@@ -133,41 +140,11 @@ export default function Page({ params }) {
                             'Dovevamo costriure un esperienza digitale senza distrazioni, minimale, e dove il contenuto grafico del progetto era dato solamente dai loro lavori. Le immagini dovevano essere ottimizzate in automatico essendo la parte visiva principale, tutto gestito in autonomia dallo studio.'
                         ]}
                     />
-                    <div className="w-full h-auto px-8 md:px-12 lg:px-16">
-                        <div className="flex flex-col bg-white">
-                            <div className="h-40"></div>
-                            <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                                <video 
-                                    className="h-[500px] w-auto rounded-[13px] -mt-12 scale-[101%]"
-                                    autoPlay={true}
-                                    loop={true}
-                                    muted={true}
-                                    playsInline={true}
-                                >
-                                    <source src="/img/lavori/marco-baldassa-mobile-1.mp4" type="video/mp4" />
-                                </video>
-
-                                <video 
-                                    className="h-[500px] w-auto rounded-[13px]"
-                                    autoPlay={true}
-                                    loop={true}
-                                    muted={true}
-                                    playsInline={true}
-                                >
-                                    <source src="/img/lavori/marco-baldassa-mobile-2.mp4" type="video/mp4" />
-                                </video>
-
-                                <video 
-                                    className="h-[500px] w-auto rounded-[13px] mt-12"
-                                    autoPlay={true}
-                                    loop={true}
-                                    muted={true}
-                                    playsInline={true}
-                                >
-                                    <source src="/img/lavori/marco-baldassa-mobile-3.mp4" type="video/mp4" />
-                                </video>
+                    <div className="w-full h-auto bg-slate-900">
+                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                            <div className="w-full">
+                                <img src="/img/lavori/marco-baldassa6.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
-                            <div className="h-40"></div>
                         </div>
                     </div>
                     <WorkTextDescription text="Logo, tipografia, colori" description="La richiesta del cliente è stata di creare una comunicazine visuale moderna ma che non distorga i progetti dello studio. Abbiamo progettato il nuovo stile con un approccio minimale e con colori neutri per non far mischiare nessuna tonalità colore con quelle delle immagini. Il font è un Avenir, e i colori principali sono un grigio argilla, un nero carbone e il bianco." />
@@ -198,9 +175,12 @@ export default function Page({ params }) {
                     </div>
                     <WorkTextDescription text="Design e pagine" />
                     <div className="w-full h-auto bg-slate-900">
-                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                            <div className="col-span-12">
+                                <img src="/img/lavori/marco-baldassa7.jpg" alt="" className="h-auto w-full" />
+                            </div>
+                            <div className="col-span-12">
+                                <img src="/img/lavori/marco-baldassa8.jpg" alt="" className="h-auto w-full" />
                             </div>
                         </div>
                     </div>
@@ -210,10 +190,59 @@ export default function Page({ params }) {
                         author="YUJIN YONG"
                         authorTitle="VP OF DIGITAL PRODUCT"
                     />
-                    <div className="w-full h-auto bg-slate-900">
-                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                    <div className="w-full h-auto">
+                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                            <div className="col-span-12 bg-white py-40 grid grid-cols-12 gap-x-6">
+                                <div className="col-span-2"></div>
+                                <div className="col-span-8">
+                                    <video
+                                        className="h-auto w-full bg-slate-200 rounded-[13px]"
+                                        autoPlay={true}
+                                        loop={true}
+                                        muted={true}
+                                        playsInline={true}
+                                    >
+                                        <source src="/img/lavori/video-desktop-marco-baldassa.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                                <div className="col-span-2"></div>
+                            </div>
+                            <div className="col-span-12">
+                                <div className="flex flex-col bg-white">
+                                    <div className="h-40"></div>
+                                    <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                                        <video 
+                                            className="h-[500px] w-auto rounded-[13px] -mt-20 scale-[101%]"
+                                            autoPlay={true}
+                                            loop={true}
+                                            muted={true}
+                                            playsInline={true}
+                                        >
+                                            <source src="/img/lavori/marco-baldassa-mobile-1.mp4" type="video/mp4" />
+                                        </video>
+
+                                        <video 
+                                            className="h-[500px] w-auto rounded-[13px]"
+                                            autoPlay={true}
+                                            loop={true}
+                                            muted={true}
+                                            playsInline={true}
+                                        >
+                                            <source src="/img/lavori/marco-baldassa-mobile-2.mp4" type="video/mp4" />
+                                        </video>
+
+                                        <video 
+                                            className="h-[500px] w-auto rounded-[13px] mt-20"
+                                            autoPlay={true}
+                                            loop={true}
+                                            muted={true}
+                                            playsInline={true}
+                                        >
+                                            <source src="/img/lavori/marco-baldassa-mobile-3.mp4" type="video/mp4" />
+                                        </video>
+                                    </div>
+                                    <div className="h-40"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
