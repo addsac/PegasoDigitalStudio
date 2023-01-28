@@ -8,7 +8,7 @@ export default function WorkCitation({ text, author, authorTitle}) {
             <p className="text-white uppercase tracking-tighter">
                 { author }
             </p>
-            <p className="text-white/60 font-medium uppercase tracking-tighter">
+            <p className="mt-2 text-white/60 uppercase tracking-tighter">
                 { authorTitle }
             </p>
         </div>

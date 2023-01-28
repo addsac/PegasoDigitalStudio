@@ -111,7 +111,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/marco-baldassa3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -127,17 +127,29 @@ export default function Page({ params }) {
                     />
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full">
-                                <img src="/img/lavori/marco-baldassa3.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                            <div className="w-full bg-white py-20 lg:py-40 grid grid-cols-12 gap-x-6">
+                                <div className="col-span-2"></div>
+                                <div className="col-span-8">
+                                    <video
+                                        className="h-auto w-full bg-slate-200 rounded-[13px]"
+                                        autoPlay={true}
+                                        loop={true}
+                                        muted={true}
+                                        playsInline={true}
+                                    >
+                                        <source src="/img/lavori/video-desktop-marco-baldassa.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                                <div className="col-span-2"></div>
                             </div>
                         </div>
                     </div>
                     <WorkTextDetail 
                         subtitle={'Obbiettivo'}
-                        title={'Raccontare i progetti dello studio in un esperienza digitale senza interruzioni'}
+                        title={'Raccontare i progetti dello studio in un\'esperienza digitale senza interruzioni'}
                         description={[
                             'L\'obbiettivo che ha portato il cliente a voler costruire il portale del proprio studio è partita dalla necessità dei suoi potenziali clienti di avere un posto dove capire se l\'approccio era quello giusto per loro.',
-                            'Dovevamo costriure un esperienza digitale senza distrazioni, minimale, e dove il contenuto grafico del progetto era dato solamente dai loro lavori. Le immagini dovevano essere ottimizzate in automatico essendo la parte visiva principale, tutto gestito in autonomia dallo studio.'
+                            'Dovevamo costriure un\'esperienza digitale senza distrazioni, minimale, e dove il contenuto grafico del progetto era dato solamente dai loro lavori. Le immagini dovevano essere ottimizzate in automatico essendo la parte visiva principale, tutto gestito in autonomia dallo studio.'
                         ]}
                     />
                     <div className="w-full h-auto bg-slate-900">
@@ -173,7 +185,11 @@ export default function Page({ params }) {
                             </div>
                         </div>
                     </div>
-                    <WorkTextDescription text="Design e pagine" />
+                    <WorkTextDescription text="Design e pagine" description="
+                        Il risultato della ricerca ha creato un'esperienza pulita e chiara, le immagini hanno ampio spazio per la visibilità permettendone di essere al centro del tema.
+                        I colori neutri fanno in modo che a prescindere dai colori delle immagini, il layout non cambi il colore percepito.
+                        La navigazione è semplice e il layout è costante su tutte le pagine rendendo scorrevole l'esperienza dei progetti.
+                    " />
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
@@ -186,33 +202,21 @@ export default function Page({ params }) {
                     </div>
 
                     <WorkCitation 
-                        text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."
-                        author="YUJIN YONG"
-                        authorTitle="VP OF DIGITAL PRODUCT"
+                        text="Direi che il progetto è molto, molto bello. Sono venuto bene in foto, quindi il progetto è molto, molto bello."
+                        author="MARCO BALDASSA"
+                        authorTitle="ARCHITETTO E DESIGNER DI INTERNI"
                     />
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="col-span-12 bg-white py-40 grid grid-cols-12 gap-x-6">
-                                <div className="col-span-2"></div>
-                                <div className="col-span-8">
-                                    <video
-                                        className="h-auto w-full bg-slate-200 rounded-[13px]"
-                                        autoPlay={true}
-                                        loop={true}
-                                        muted={true}
-                                        playsInline={true}
-                                    >
-                                        <source src="/img/lavori/video-desktop-marco-baldassa.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-                                <div className="col-span-2"></div>
+                            <div className="col-span-12">
+                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
                                 <div className="flex flex-col bg-white">
-                                    <div className="h-40"></div>
+                                    <div className="h-20 lg:h-40"></div>
                                     <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                                         <video 
-                                            className="h-[500px] w-auto rounded-[13px] -mt-20 scale-[101%]"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] -mt-20 scale-[101%]"
                                             autoPlay={true}
                                             loop={true}
                                             muted={true}
@@ -222,7 +226,7 @@ export default function Page({ params }) {
                                         </video>
 
                                         <video 
-                                            className="h-[500px] w-auto rounded-[13px]"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px]"
                                             autoPlay={true}
                                             loop={true}
                                             muted={true}
@@ -232,7 +236,7 @@ export default function Page({ params }) {
                                         </video>
 
                                         <video 
-                                            className="h-[500px] w-auto rounded-[13px] mt-20"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] mt-20"
                                             autoPlay={true}
                                             loop={true}
                                             muted={true}
@@ -241,12 +245,39 @@ export default function Page({ params }) {
                                             <source src="/img/lavori/marco-baldassa-mobile-3.mp4" type="video/mp4" />
                                         </video>
                                     </div>
-                                    <div className="h-40"></div>
+                                    <div className="h-20 lg:h-40"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <WorkResults />
+                    <WorkResults result={
+                        [
+                            {
+                                data: '28+',
+                                title: 'Progetti'
+                            },
+                            {
+                                data: '7',
+                                title: 'Paesi degli utenti'
+                            },
+                            {
+                                data: '3000+',
+                                title: 'Nuovi visitatori dei progetti'
+                            },
+                            {
+                                data: '100%',
+                                title: 'Best practice da analisi google'
+                            },
+                            {
+                                data: '100+',
+                                title: 'Foto caricate'
+                            },
+                            {
+                                data: '1000+',
+                                title: 'Utenti da ricerca organica'
+                            },
+                        ]
+                    } />
 
                     {/* <WorkCitation 
                         text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."

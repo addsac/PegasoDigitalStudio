@@ -16,7 +16,7 @@ export default function WorkTextDetail({ subtitle = 'RESULTS',  title = 'A Sharp
                             color="white"
                             opacity={60}
                         />
-                        <h5 className="max-w-[800px] text-5xl md:text-6xl text-white font-semibold tracking-tight leading-[120%] md:leading-[120%]">
+                        <h5 className="max-w-[800px] text-3xl md:text-6xl text-white font-semibold tracking-tight leading-[120%] md:leading-[120%]">
                             { title }
                         </h5>
                     </div>

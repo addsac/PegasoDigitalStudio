@@ -5,7 +5,7 @@ export default function Text1({ id, text, color, opacity, shadow = false, gradie
         <h4 
             id={id && id}
             className={`
-                ${color ? (gradient ? 'bg-clip-text text-transparent bg-gradient-to-b from-slate-50 to-slate-400' : ('text-'+color)) : (gradient ? '' : '')} 
+                ${color ? (gradient ? 'bg-clip-text text-transparent bg-gradient-to-b from-slate-50 to-slate-300' : ('text-'+color)) : (gradient ? '' : '')} 
                 ${opacity ? ('opacity-'+opacity) : ''} 
                 ${shadow && 'drop-shadow-lg'}
                 text-1
