@@ -132,10 +132,10 @@ export default function Page({ params }) {
                                 <div className="col-span-10 lg:col-span-8">
                                     <video
                                         className="h-auto w-full bg-slate-200 rounded-[13px]"
-                                        autoPlay={true}
-                                        loop={true}
-                                        muted={true}
-                                        playsInline={true}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
                                     >
                                         <source src="/img/lavori/video-desktop-marco-baldassa.mp4" type="video/mp4" />
                                     </video>
@@ -217,30 +217,30 @@ export default function Page({ params }) {
                                     <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                                         <video 
                                             className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] -mt-20 scale-[101%]"
-                                            autoPlay={true}
-                                            loop={true}
-                                            muted={true}
-                                            playsInline={true}
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
                                         >
                                             <source src="/img/lavori/marco-baldassa-mobile-1.mp4" type="video/mp4" />
                                         </video>
 
                                         <video 
                                             className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px]"
-                                            autoPlay={true}
-                                            loop={true}
-                                            muted={true}
-                                            playsInline={true}
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
                                         >
                                             <source src="/img/lavori/marco-baldassa-mobile-2.mp4" type="video/mp4" />
                                         </video>
 
                                         <video 
                                             className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] mt-20"
-                                            autoPlay={true}
-                                            loop={true}
-                                            muted={true}
-                                            playsInline={true}
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
                                         >
                                             <source src="/img/lavori/marco-baldassa-mobile-3.mp4" type="video/mp4" />
                                         </video>
