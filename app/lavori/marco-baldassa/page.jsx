@@ -86,7 +86,7 @@ export default function Page({ params }) {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col gap-y-48 min-h-screen max-w-screen w-screen py-48">
+                <div className="flex flex-col gap-y-24 lg:gap-y-48 min-h-screen max-w-screen w-screen py-48">
                     {/* Various components that describe the work */}
                     {/* <WorkImageFull src="/lavori/marco-baldassa.jpg" /> */}
                     {/* <div className="w-full h-auto bg-white">
@@ -128,8 +128,8 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full bg-white py-20 lg:py-40 grid grid-cols-12 gap-x-6">
-                                <div className="col-span-2"></div>
-                                <div className="col-span-8">
+                                <div className="col-span-1 lg:col-span-2"></div>
+                                <div className="col-span-10 lg:col-span-8">
                                     <video
                                         className="h-auto w-full bg-slate-200 rounded-[13px]"
                                         autoPlay={true}
@@ -140,7 +140,7 @@ export default function Page({ params }) {
                                         <source src="/img/lavori/video-desktop-marco-baldassa.mp4" type="video/mp4" />
                                     </video>
                                 </div>
-                                <div className="col-span-2"></div>
+                                <div className="col-span-1 lg:col-span-2"></div>
                             </div>
                         </div>
                     </div>
