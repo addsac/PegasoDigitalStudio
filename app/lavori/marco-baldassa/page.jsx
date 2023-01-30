@@ -86,7 +86,7 @@ export default function Page({ params }) {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col gap-y-24 lg:gap-y-48 min-h-screen max-w-screen w-screen py-48">
+                <div className="flex flex-col gap-y-32 lg:gap-y-48 min-h-screen max-w-screen w-screen py-48">
                     {/* Various components that describe the work */}
                     {/* <WorkImageFull src="/lavori/marco-baldassa.jpg" /> */}
                     {/* <div className="w-full h-auto bg-white">
@@ -238,18 +238,7 @@ export default function Page({ params }) {
                             <div className="col-span-12">
                                 <img src="/img/lavori/marco-baldassa8.jpg" alt="" className="h-auto w-full" />
                             </div>
-                        </div>
-                    </div>
-
-                    <WorkCitation 
-                        text="Direi che il progetto è molto, molto bello. Sono venuto bene in foto, quindi il progetto è molto, molto bello."
-                        author="MARCO BALDASSA"
-                        authorTitle="ARCHITETTO E DESIGNER DI INTERNI"
-                    />
-
-                    <div className="w-full h-auto bg-slate-900">
-                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full">
+                            <div className="col-span-12">
                                 <img src="/img/lavori/marco-baldassa6.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
@@ -283,6 +272,12 @@ export default function Page({ params }) {
                             },
                         ]
                     } />
+
+                    <WorkCitation 
+                        text="Supporto e consulenza per la realizzazione del mio sito di architettura con un percorso di sviluppo condiviso che ha portato ad un eccellente risultato!"
+                        author="MARCO BALDASSA"
+                        authorTitle="ARCHITETTO E DESIGNER DI INTERNI"
+                    />
 
                     {/* <WorkCitation 
                         text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."

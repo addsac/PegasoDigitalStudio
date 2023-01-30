@@ -43,7 +43,7 @@ export default function WorkResults({ result = [] }){
 
                     <div className="col-span-4 md:col-span-3">
                         { (result.length > 0 && result[4]?.data != '') && (
-                            <div className="h-[172px] flex flex-col gap-y-3">
+                            <div className="h-auto flex flex-col gap-y-3">
                                 <p className="text-4xl md:text-5xl font-semibold text-white"> { result[4].data } </p>
                                 <p className="text-base font-regular text-white/60"> { result[4].title } </p>
                             </div>
@@ -51,7 +51,7 @@ export default function WorkResults({ result = [] }){
                     </div>
                     <div className="col-span-4 md:col-span-3">
                         { (result.length > 0 && result[5]?.data != '') && (
-                            <div className="h-[172px] flex flex-col gap-y-3">
+                            <div className="h-auto flex flex-col gap-y-3">
                                 <p className="text-4xl md:text-5xl font-semibold text-white"> { result[5].data } </p>
                                 <p className="text-base font-regular text-white/60"> { result[5].title } </p>
                             </div>
