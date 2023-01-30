@@ -205,10 +205,10 @@ export default function Page({ params }) {
                             <div className="col-span-12">
                                 <img src="/img/lavori/marco-baldassa-logo-structure.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
-                            <div className="col-span-6 h-auto">
+                            <div className="col-span-12 lg:col-span-6 h-auto">
                                 <img src="/img/lavori/marco-baldassa-branding-1-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
-                            <div className="col-span-6 h-auto">
+                            <div className="col-span-12 lg:col-span-6 h-auto">
                                 <img src="/img/lavori/marco-baldassa-branding-1-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
@@ -217,10 +217,10 @@ export default function Page({ params }) {
                             <div className="col-span-12">
                                 <img src="/img/lavori/marco-baldassa-branding-3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
-                            <div className="col-span-6 h-auto">
+                            <div className="col-span-12 lg:col-span-6 h-auto">
                                 <img src="/img/lavori/marco-baldassa-branding-2-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
-                            <div className="col-span-6 h-auto">
+                            <div className="col-span-12 lg:col-span-6 h-auto">
                                 <img src="/img/lavori/marco-baldassa-branding-2-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>

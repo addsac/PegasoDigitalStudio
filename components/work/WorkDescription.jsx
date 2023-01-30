@@ -5,7 +5,7 @@ export default function WorkDescription({ title = '', description = [], href = '
   return (
     <div className="w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
         <div className="col-span-12 lg:col-span-6 mb-10">
-            <p className="text-4xl lg:text-[48px] tracking-tighter text-white leading-[130%] lg:leading-[130%] -mt-[6px]">
+            <p className="text-3xl lg:text-[48px] tracking-tighter text-white leading-[130%] lg:leading-[130%] -mt-[6px]">
                 <Balancer>
                     { title }
                 </Balancer>
