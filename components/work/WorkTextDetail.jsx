@@ -1,7 +1,7 @@
 import Text1 from './../text/Text1'
 import Title3 from './../text/Title3'
 
-export default function WorkTextDetail({ subtitle = 'RESULTS',  title = 'A Sharp Turn in the Opposite Direction', description = [
+export default function WorkTextDetail({ subtitle = 'RESULTS',  title = 'A Sharp Turn in the Opposite Direction', titleSize = '', description = [
     'In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.',
     'In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'
 ] }){
@@ -10,13 +10,17 @@ export default function WorkTextDetail({ subtitle = 'RESULTS',  title = 'A Sharp
             <div className="hidden lg:block col-span-2"></div> {/* margin */}
             <div className="col-span-12 lg:col-span-8">
                 <div className="flex flex-col gap-y-12">
-                    <div className="flex flex-col gap-y-5">
-                        <Text1 
-                            text={ subtitle }
-                            color="white"
-                            opacity={60}
-                        />
-                        <h5 className="max-w-[800px] text-3xl md:text-6xl text-white font-semibold tracking-tight leading-[120%] md:leading-[120%]">
+                    <div className="flex flex-col gap-y-6">
+                        {subtitle != '' && (
+                            <Text1 
+                                text={ subtitle }
+                                color="white"
+                                opacity={60}
+                            />
+                        )}
+                        <h5 
+                            className={`max-w-[800px] text-3xl ${titleSize == 'sm' ? 'md:text-5xl' : 'md:text-6xl'} text-white font-semibold tracking-tight leading-[120%] md:leading-[130%]`}
+                        >
                             { title }
                         </h5>
                     </div>
