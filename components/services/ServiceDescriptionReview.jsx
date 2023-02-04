@@ -22,7 +22,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
             }, 100)
         }
         else if(n == 3){
-            el.src = "/img/services/social-media/video-recensione-daniele-pietrucci.mp4"
+            el.src = "/img/services/social-media/video-recensione-marta.mp4"
             setTimeout(() => {
                 el.play()
             }, 100)
@@ -135,7 +135,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                     <div className="flex justify-between gap-x-12">
                         <div onClick={() => openModal(3)} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden" style={{ marginTop: '-80px' }}>
                             <Image 
-                                src="/img/services/social-media/placeholder-review-social-1.png" 
+                                src="/img/services/social-media/placeholder-review-social-3.png" 
                                 alt="" 
                                 width={600}
                                 height={600}
