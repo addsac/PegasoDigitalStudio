@@ -11,14 +11,14 @@ export default function ServiceClientsSlider({ id }) {
         {
             name: 'Sara Caponigro',
             description: 'Medico di famiglia',
-            photo: 'caponigro.jpg',
+            photo: 'caponigro-clerici.jpeg',
             href: 'https://www.instagram.com/dott.ssa_saracaponigro/',
             social: 'instagram'
         },
         {
             name: 'Sara Caponigro',
             description: 'Medico di famiglia',
-            photo: 'caponigro-clerici.jpeg',
+            photo: 'caponigro.jpg',
             href: 'https://www.tiktok.com/@dottsaracaponigrommg',
             social: 'tiktok'
         },
