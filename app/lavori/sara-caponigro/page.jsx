@@ -111,15 +111,7 @@ export default function Page({ params }) {
                             <div className="w-full bg-white py-20 lg:py-40 grid grid-cols-12 gap-x-6">
                                 <div className="col-span-1 lg:col-span-2"></div>
                                 <div className="col-span-10 lg:col-span-8">
-                                    <video
-                                        className="h-auto w-full bg-slate-200 rounded-[13px]"
-                                        autoPlay
-                                        loop
-                                        muted
-                                        playsInline
-                                    >
-                                        <source src="/img/lavori/sara-caponigro/1.jpg" type="video/mp4" />
-                                    </video>
+                                    <img src="/img/lavori/sara-caponigro/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
                                 </div>
                                 <div className="col-span-1 lg:col-span-2"></div>
                             </div>
