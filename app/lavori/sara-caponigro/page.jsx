@@ -109,7 +109,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full">
-                                <img src="/img/lavori/marco-baldassa3.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/4.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/5.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/6.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/7.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
