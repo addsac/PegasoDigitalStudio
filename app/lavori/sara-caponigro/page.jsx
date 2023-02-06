@@ -111,7 +111,7 @@ export default function Page({ params }) {
                             <div className="w-full bg-white grid grid-cols-12 gap-x-6">
                                 <div className="col-span-1 lg:col-span-2"></div>
                                 <div className="col-span-10 lg:col-span-8">
-                                    <img src="/img/lavori/sara-caponigro/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                    <img src="/img/lavori/sara-caponigro/4.jpg" alt="" className="h-auto w-full bg-slate-200" />
                                 </div>
                                 <div className="col-span-1 lg:col-span-2"></div>
                             </div>
@@ -130,7 +130,7 @@ export default function Page({ params }) {
                             <div className="w-full bg-white grid grid-cols-12 gap-x-6">
                                 <div className="col-span-1 lg:col-span-2"></div>
                                 <div className="col-span-10 lg:col-span-8">
-                                    <img src="/img/lavori/sara-caponigro/2.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                    <img src="/img/lavori/sara-caponigro/3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                                 </div>
                                 <div className="col-span-1 lg:col-span-2"></div>
                             </div>
@@ -152,7 +152,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/sara-caponigro/3.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -172,12 +172,10 @@ export default function Page({ params }) {
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/sara-caponigro/4.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/sara-caponigro/2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
-
-                    {/*  */}
 
                     <WorkTextDetail 
                         subtitle={'Risultati'}
