@@ -108,7 +108,7 @@ export default function Page({ params }) {
                     </div> */}
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full bg-white grid grid-cols-12 gap-x-6">
+                            <div className="w-full bg-white grid grid-cols-12 gap-x-6 py-24">
                                 <div className="col-span-1 lg:col-span-2"></div>
                                 <div className="col-span-10 lg:col-span-8">
                                     <img src="/img/lavori/sara-caponigro/4.jpg" alt="" className="h-auto w-full bg-slate-200" />
@@ -128,11 +128,11 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full bg-white grid grid-cols-12 gap-x-6">
-                                <div className="col-span-1 lg:col-span-2"></div>
-                                <div className="col-span-10 lg:col-span-8">
+                                <div className="col-span-1"></div>
+                                <div className="col-span-10">
                                     <img src="/img/lavori/sara-caponigro/3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                                 </div>
-                                <div className="col-span-1 lg:col-span-2"></div>
+                                <div className="col-span-1"></div>
                             </div>
                         </div>
                     </div>
@@ -149,10 +149,14 @@ export default function Page({ params }) {
                         ]}
                     />
 
-                    <div className="w-full h-auto">
-                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="col-span-12">
-                                <img src="/img/lavori/sara-caponigro/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                    <div className="w-full h-auto bg-slate-900">
+                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                            <div className="w-full bg-white grid grid-cols-12 gap-x-6">
+                                <div className="col-span-1"></div>
+                                <div className="col-span-10">
+                                    <img src="/img/lavori/sara-caponigro/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                </div>
+                                <div className="col-span-1"></div>
                             </div>
                         </div>
                     </div>
@@ -169,10 +173,14 @@ export default function Page({ params }) {
                         ]}
                     />
 
-                    <div className="w-full h-auto">
-                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="col-span-12">
-                                <img src="/img/lavori/sara-caponigro/2.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                    <div className="w-full h-auto bg-slate-900">
+                        <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                            <div className="w-full bg-white grid grid-cols-12 gap-x-6">
+                                <div className="col-span-1"></div>
+                                <div className="col-span-10">
+                                    <img src="/img/lavori/sara-caponigro/2.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                </div>
+                                <div className="col-span-1"></div>
                             </div>
                         </div>
                     </div>
@@ -189,13 +197,13 @@ export default function Page({ params }) {
                         ]}
                     />
 
-                    <div className="w-full h-auto">
-                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
+                    {/* <div className="w-full h-auto">
+                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> gap-x-6 px-8 md:px-12 lg:px-16
                             <div className="col-span-12">
                                 <img src="/img/lavori/sara-caponigro/5.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <WorkTextDetail 
                         subtitle={''}
@@ -233,33 +241,23 @@ export default function Page({ params }) {
                     <WorkResults result={
                         [
                             {
-                                data: '28+',
-                                title: 'Progetti'
+                                data: '1.2+',
+                                title: 'Milioni vi views con un singolo reel'
                             },
                             {
-                                data: '7',
-                                title: 'Paesi degli utenti'
+                                data: '+5.000',
+                                title: 'Follower in 3 mesi'
                             },
                             {
-                                data: '3000+',
+                                data: '+3.180% Account raggiunti',
                                 title: 'Nuovi visitatori dei progetti'
                             },
                             {
-                                data: '100%',
-                                title: 'Best practice da analisi google'
-                            },
-                            {
-                                data: '100+',
-                                title: 'Foto caricate'
-                            },
-                            {
-                                data: '1000+',
-                                title: 'Utenti da ricerca organica'
-                            },
+                                data: '+1.347%',
+                                title: 'Account che hanno interagito'
+                            }
                         ]
                     } />
-
-                    {/*  */}
 
                     {/* <WorkCitation 
                         text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."
