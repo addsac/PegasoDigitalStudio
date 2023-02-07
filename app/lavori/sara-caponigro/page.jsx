@@ -241,16 +241,16 @@ export default function Page({ params }) {
                     <WorkResults result={
                         [
                             {
-                                data: '1.2+',
-                                title: 'Milioni vi views con un singolo reel'
+                                data: '1.2+ Milioni',
+                                title: 'Views con un singolo reel'
                             },
                             {
                                 data: '+5.000',
-                                title: 'Follower in 3 mesi'
+                                title: 'Followers in 3 mesi'
                             },
                             {
-                                data: '+3.180% Account raggiunti',
-                                title: 'Nuovi visitatori dei progetti'
+                                data: '+3.180%',
+                                title: 'Account raggiunti'
                             },
                             {
                                 data: '+1.347%',
