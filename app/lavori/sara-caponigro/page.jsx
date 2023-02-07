@@ -55,7 +55,7 @@ export default function Page({ params }) {
                     <div className="hidden lg:block col-span-2"></div> {/* margin */}
 
                     <div className="col-span-12 lg:col-span-8">
-                        <div className="mx-auto w-full max-w-[800px]">
+                        <div className="mx-auto w-full max-w-[1000px]">
                             <div className="w-full h-[1px] border border-t border-white/20"></div> {/* border */}
 
                             {/* titles */}
