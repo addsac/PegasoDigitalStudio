@@ -150,7 +150,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                             </div>
                             <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm">
                                 <div>
-                                    {/* Daniele P. &nbsp;—&nbsp; Nutrizionista */}
+                                    Marta Tosetto &nbsp;—&nbsp; Doula
                                 </div>
                             </div>
                         </div>
