@@ -29,7 +29,7 @@ export default function Page({ params }) {
                     <div className="hidden md:block col-span-2"></div> {/* margin */}
 
                     <div className="col-span-12 md:col-span-8 pt-8">
-                        <div className="mx-auto w-full max-w-[800px]">
+                        <div className="mx-auto w-full max-w-[1000px]">
                             <Text1
                                 text="Caso Studio" 
                                 id="text1-work-detail"
@@ -235,7 +235,7 @@ export default function Page({ params }) {
                     <WorkResults result={
                         [
                             {
-                                data: '1.2+ Milioni',
+                                data: '1,2+ Milioni',
                                 title: 'Views con un singolo reel'
                             },
                             {
