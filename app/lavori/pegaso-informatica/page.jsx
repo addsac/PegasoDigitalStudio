@@ -129,15 +129,15 @@ export default function Page({ params }) {
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full bg-white py-20 lg:py-40 grid grid-cols-12 gap-x-6">
                                 <div className="col-span-1 lg:col-span-2"></div>
-                                <div className="col-span-10 lg:col-span-8">
+                                <div className="col-span-10 lg:col-span-8 bg-red-500">
                                     <video
-                                        className="h-auto w-full bg-slate-200 rounded-[13px]"
+                                        className="h-auto w-full bg-slate-200 rounded-[13px] shadow"
                                         autoPlay
                                         loop
                                         muted
                                         playsInline
                                     >
-                                        <source src="/img/lavori/pegaso-informatica/video-desktop.mp4" type="video/mp4" />
+                                        <source src="/img/lavori/pegaso-informatica/video-desktop-2.mp4" type="video/mp4" />
                                     </video>
                                 </div>
                                 <div className="col-span-1 lg:col-span-2"></div>
@@ -209,16 +209,16 @@ export default function Page({ params }) {
                                 <img src="/img/lavori/pegaso-informatica/branding-1-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/pegaso-infomratica/branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/pegaso-infomratica/branding-3.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/branding-3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12 lg:col-span-6 h-auto">
-                                <img src="/img/lavori/pegaso-infomratica/branding-4-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/branding-4-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12 lg:col-span-6 h-auto">
-                                <img src="/img/lavori/pegaso-infomratica/branding-4-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/branding-4-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
