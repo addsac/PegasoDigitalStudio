@@ -125,19 +125,19 @@ export default function Page({ params }) {
                         ctaText="Apri il progetto live"
                         href="http://www.pegasoinformatica.com"
                     />
-                    <div className="w-full h-auto bg-slate-900">
+                    <div className="w-full h-auto">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full bg-white py-20 lg:py-40 grid grid-cols-12 gap-x-6">
+                            <div className="w-full bg-[#F0F0F0] py-20 lg:py-40 grid grid-cols-12 gap-x-6">
                                 <div className="col-span-1 lg:col-span-2"></div>
                                 <div className="col-span-10 lg:col-span-8">
                                     <video
-                                        className="h-auto w-full bg-slate-200 rounded-[13px] shadow"
+                                        className="h-auto w-full rounded-[13px] shadow"
                                         autoPlay
                                         loop
                                         muted
                                         playsInline
                                     >
-                                        <source src="/img/lavori/pegaso-informatica/video-desktop-2.mp4" type="video/mp4" />
+                                        <source src="/img/lavori/pegaso-informatica/video-desktop.mp4" type="video/mp4" />
                                     </video>
                                 </div>
                                 <div className="col-span-1 lg:col-span-2"></div>
