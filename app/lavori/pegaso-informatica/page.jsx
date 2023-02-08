@@ -160,7 +160,7 @@ export default function Page({ params }) {
                                 <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div> */}
                             <div className="col-span-12">
-                                <div className="flex flex-col bg-black">
+                                <div className="flex flex-col bg-[#F0F0F0]">
                                     <div className="h-20 lg:h-40"></div>
                                     <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                                         <video 
@@ -230,13 +230,16 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa7.jpg" alt="" className="h-auto w-full" />
+                                <img src="/img/lavori/pegaso-informatica/2.jpg" alt="" className="h-auto w-full" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa8.jpg" alt="" className="h-auto w-full" />
+                                <img src="/img/lavori/pegaso-informatica/2.jpg" alt="" className="h-auto w-full" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa6.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/3.jpg" alt="" className="h-auto w-full" />
+                            </div>
+                            <div className="col-span-12">
+                                <img src="/img/lavori/pegaso-informatica/4.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
