@@ -62,11 +62,12 @@ export default function Page({ params }) {
                             <div className="mt-6 md:mt-10 grid grid-cols-12 md:flex justify-between items-start gap-x-6 gap-y-10">
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Cliente </p>
-                                    <p className="opacity-60"> pegaso Informatica </p>
+                                    <p className="opacity-60"> Pegaso Informatica </p>
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Servizi </p>
-                                    <p className="opacity-60"> Design e Sviluppo </p>
+                                    <p className="opacity-60"> Design sito web </p>
+                                    <p className="opacity-60"> Sviluppo sito web </p>
                                     <p className="opacity-60"> UI/UX Design </p>
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
@@ -110,19 +111,19 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full">
-                                <img src="/img/lavori/marco-baldassa3.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
                     <WorkDescription 
-                        title="Marco Baldassa è un architetto e progettista di interni. Ha aperto il suo studio proprietario da più di dieci anni a Padova."
+                        title="..."
                         description={[
-                            'Il progetto aveva come finalità quella di posizionare i lavori dello studio, partendo dall\'identità caratteristica dei loro progetti tramite uno strumento digitale che riuscisse a raggiungere diversi tipi di clienti.',
-                            'È stato importante creare un\'identità grafica che non togliesse attenzione al cuore della comunicazione aziendale: i progetti dell\'architetto. Il sito è minimal, i colori sono naturali, quasi pastello e non c\'è elemento grafico che toglie gerarchia alla fotografia.',
-                            'Il ritmo è statico, proprio per dare all\'utilizzatore il modo di navigare secondo quanto vuole dare attenzione alle immagini, senza distrazioni creando un\'esperienza che si adatti a tutti i tipi di visitatori.'
+                            '...',
+                            '...',
+                            '...'
                         ]}
                         ctaText="Apri il progetto live"
-                        href="https://marcobaldassa.com"
+                        href="http://www.pegasoinformatica.com"
                     />
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
@@ -136,7 +137,7 @@ export default function Page({ params }) {
                                         muted
                                         playsInline
                                     >
-                                        <source src="/img/lavori/video-desktop-marco-baldassa.mp4" type="video/mp4" />
+                                        <source src="/img/lavori/pegaso-informatica/video-desktop.mp4" type="video/mp4" />
                                     </video>
                                 </div>
                                 <div className="col-span-1 lg:col-span-2"></div>
@@ -146,18 +147,18 @@ export default function Page({ params }) {
                     
                     <WorkTextDetail 
                         subtitle={'Obiettivo'}
-                        title={'Raccontare i progetti dello studio in un\'esperienza digitale senza interruzioni'}
+                        title={'...'}
                         description={[
-                            'L\'obiettivo che ha portato il cliente a voler costruire il portale del proprio studio è stato dalla necessità dei suoi potenziali clienti di avere un posto dove capire se l\'approccio era quello giusto per loro.',
-                            'Dovevamo costriure un\'esperienza digitale senza distrazioni, minimale, e dove il contenuto grafico del progetto era dato solamente dai loro lavori. Le immagini dovevano essere ottimizzate in automatico essendo la parte visiva principale, tutto gestito in autonomia dallo studio.'
+                            '...',
+                            '...'
                         ]}
                     />
                     
                     <div className="w-full h-auto">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="col-span-12">
+                            {/* <div className="col-span-12">
                                 <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
-                            </div>
+                            </div> */}
                             <div className="col-span-12">
                                 <div className="flex flex-col bg-white">
                                     <div className="h-20 lg:h-40"></div>
@@ -169,7 +170,7 @@ export default function Page({ params }) {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/lavori/marco-baldassa-mobile-1.mp4" type="video/mp4" />
+                                            <source src="/img/lavori/pegaso-informatica/video-mobile-1.mp4" type="video/mp4" />
                                         </video>
 
                                         <video 
@@ -179,7 +180,7 @@ export default function Page({ params }) {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/lavori/marco-baldassa-mobile-2.mp4" type="video/mp4" />
+                                            <source src="/img/lavori/pegaso-informatica/video-mobile-2.mp4" type="video/mp4" />
                                         </video>
 
                                         <video 
@@ -189,7 +190,7 @@ export default function Page({ params }) {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/lavori/marco-baldassa-mobile-3.mp4" type="video/mp4" />
+                                            <source src="/img/lavori/pegaso-informatica/video-mobile-3.mp4" type="video/mp4" />
                                         </video>
                                     </div>
                                     <div className="h-20 lg:h-40"></div>
@@ -201,26 +202,23 @@ export default function Page({ params }) {
                     <WorkTextDescription text="Logo, tipografia, colori" description="La richiesta del cliente è stata di creare una comunicazine visuale moderna ma che non distorga i progetti dello studio. Abbiamo progettato il nuovo stile con un approccio minimale e con colori neutri per non far mischiare nessuna tonalità colore con quelle delle immagini. Il font è un Avenir, e i colori principali sono un grigio argilla, un nero carbone e il bianco." />
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa-logo-structure.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                            <div className="col-span-12 lg:col-span-6 h-auto">
+                                <img src="/img/lavori/pegaso-informatica/branding-1-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12 lg:col-span-6 h-auto">
-                                <img src="/img/lavori/marco-baldassa-branding-1-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
-                            </div>
-                            <div className="col-span-12 lg:col-span-6 h-auto">
-                                <img src="/img/lavori/marco-baldassa-branding-1-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/branding-1-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa-branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-infomratica/branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/marco-baldassa-branding-3.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-infomratica/branding-3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12 lg:col-span-6 h-auto">
-                                <img src="/img/lavori/marco-baldassa-branding-2-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-infomratica/branding-4-left.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12 lg:col-span-6 h-auto">
-                                <img src="/img/lavori/marco-baldassa-branding-2-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-infomratica/branding-4-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
@@ -273,9 +271,9 @@ export default function Page({ params }) {
                     } />
 
                     <WorkCitation 
-                        text="Supporto e consulenza per la realizzazione del mio sito di architettura con un percorso di sviluppo condiviso che ha portato ad un eccellente risultato!"
-                        author="MARCO BALDASSA"
-                        authorTitle="ARCHITETTO E DESIGNER DI INTERNI"
+                        text="..."
+                        author="..."
+                        authorTitle="..."
                     />
 
                     {/* <WorkCitation 
