@@ -118,9 +118,9 @@ export default function Page({ params }) {
                     <WorkDescription 
                         title="Pegaso Informatica è un negozio di hardware, produttoe software e assistenza reti aziendali e pubbliche situato a Fontaniva (PD)."
                         description={[
-                            'L\'obbiettivo del progetto era quello di sviluppare un posizionamento online dell\'azienda e dei serivizi che offre. Era importante andare ad analizzare i vari servizi e prodotti offerti organizzandoli in modo che ogni tipo di visitatore trovasse ciò di cui ha bisogno.',
+                            'La finalità del progetto era quello di sviluppare un posizionamento online dell\'azienda e dei serivizi che offre. Era importante andare ad analizzare i vari servizi e prodotti offerti organizzandoli in modo che ogni tipo di visitatore trovasse ciò di cui ha bisogno.',
                             'Il design è chiaro e luminoso, per dare un senso di ordine e pulizia, andando a enfatizzar e la qualità e trasparenza dell\'azienda, i colori sono stati ottenuti dalle diverse tonalità del logo.',
-                            'Il risultato è un\'esperienza di navigazione veloce e che spinge gli utenti a contattare l\'azienda quando ne hanno più bisogno.'
+                            'Il risultato è un\'esperienza di navigazione veloce e che converte, spingendo gli utenti a contattare l\'azienda quando ne hanno più neecssità.'
                         ]}
                         ctaText="Apri il progetto live"
                         href="http://www.pegasoinformatica.com"
