@@ -116,11 +116,11 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     <WorkDescription 
-                        title="..."
+                        title="Pegaso Informatica è un negozio di hardware, produttoe software e assistenza reti aziendali e pubbliche situato a Fontaniva (PD)."
                         description={[
-                            '...',
-                            '...',
-                            '...'
+                            'L\'obbiettivo del progetto era quello di sviluppare un posizionamento online dell\'azienda e dei serivizi che offre. Era importante andare ad analizzare i vari servizi e prodotti offerti organizzandoli in modo che ogni tipo di visitatore trovasse ciò di cui ha bisogno.',
+                            'Il design è chiaro e luminoso, per dare un senso di ordine e pulizia, andando a enfatizzar e la qualità e trasparenza dell\'azienda, e i colori sono stati ottenuti dalle diverse tonalità del logo.',
+                            'Il risultato è un\'esperienza di navigazione veloce e che spinge gli utenti a contattare l\'azienda quando ne hanno più bisogno.'
                         ]}
                         ctaText="Apri il progetto live"
                         href="http://www.pegasoinformatica.com"
@@ -164,7 +164,7 @@ export default function Page({ params }) {
                                     <div className="h-20 lg:h-40"></div>
                                     <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                                         <video 
-                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] -mt-20 scale-[101%]"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px]"
                                             autoPlay
                                             loop
                                             muted
@@ -184,7 +184,7 @@ export default function Page({ params }) {
                                         </video>
 
                                         <video 
-                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] mt-20"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px]"
                                             autoPlay
                                             loop
                                             muted
@@ -244,7 +244,7 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     
-                    <WorkResults result={
+                    {/* <WorkResults result={
                         [
                             {
                                 data: '28+',
@@ -271,13 +271,13 @@ export default function Page({ params }) {
                                 title: 'Utenti da ricerca organica'
                             },
                         ]
-                    } />
+                    } /> */}
 
-                    <WorkCitation 
+                    {/* <WorkCitation 
                         text="..."
                         author="..."
                         authorTitle="..."
-                    />
+                    /> */}
 
                     {/* <WorkCitation 
                         text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."
