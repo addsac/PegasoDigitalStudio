@@ -129,7 +129,7 @@ export default function Page({ params }) {
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full bg-white py-20 lg:py-40 grid grid-cols-12 gap-x-6">
                                 <div className="col-span-1 lg:col-span-2"></div>
-                                <div className="col-span-10 lg:col-span-8 bg-red-500">
+                                <div className="col-span-10 lg:col-span-8">
                                     <video
                                         className="h-auto w-full bg-slate-200 rounded-[13px] shadow"
                                         autoPlay
@@ -160,7 +160,7 @@ export default function Page({ params }) {
                                 <img src="/img/lavori/marco-baldassa5.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div> */}
                             <div className="col-span-12">
-                                <div className="flex flex-col bg-white">
+                                <div className="flex flex-col bg-black">
                                     <div className="h-20 lg:h-40"></div>
                                     <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                                         <video 
