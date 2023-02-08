@@ -40,7 +40,7 @@ export default function Page({ params }) {
                             <div className="mt-8 md:mt-12">
                                 <Title3
                                     id="title3-work-detail" 
-                                    text="Pegaso Informatica – Il Negozio"
+                                    text="Il Negozio – Pegaso Informatica"
                                     gradient={true} 
                                 />
                             </div>
