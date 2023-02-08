@@ -164,7 +164,7 @@ export default function Page({ params }) {
                                     <div className="h-20 lg:h-40"></div>
                                     <div className="relative flex justify-evenly"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                                         <video 
-                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] -mt-20 scale-[101%]"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] shadow -mt-20 scale-[101%]"
                                             autoPlay
                                             loop
                                             muted
@@ -174,7 +174,7 @@ export default function Page({ params }) {
                                         </video>
 
                                         <video 
-                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px]"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] shadow"
                                             autoPlay
                                             loop
                                             muted
@@ -184,7 +184,7 @@ export default function Page({ params }) {
                                         </video>
 
                                         <video 
-                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] mt-20"
+                                            className="h-auto lg:h-[500px] w-1/4 lg:w-auto rounded-[13px] shadow mt-20"
                                             autoPlay
                                             loop
                                             muted
