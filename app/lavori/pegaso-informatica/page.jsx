@@ -230,7 +230,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12">
-                                <img src="/img/lavori/pegaso-informatica/2.jpg" alt="" className="h-auto w-full" />
+                                <img src="/img/lavori/pegaso-informatica/5.jpg" alt="" className="h-auto w-full" />
                             </div>
                             <div className="col-span-12">
                                 <img src="/img/lavori/pegaso-informatica/2.jpg" alt="" className="h-auto w-full" />
