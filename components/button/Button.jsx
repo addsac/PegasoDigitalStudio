@@ -134,7 +134,7 @@ export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 1
 export function PrimarySmDark({ styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
     return (
         <Link href={href}>
-            <button className="font-semibold px-5 py-1 bg-slate-900 hover:bg-slate-900/80 text-white rounded-full transition duration-200">
+            <button className="font-semibold px-5 py-[6px] bg-slate-900 hover:bg-slate-900/80 text-white rounded-full transition duration-200">
                 <div className="flex items-center">
                     {/* title of the component */}
                     {text}
@@ -155,7 +155,7 @@ export function PrimarySmWhite({ styleName = '', text = '', icon = false, opacit
         <Link href={href}>
             <button className={`
               bg-white hover:bg-white/60 text-slate-900 rounded-full transition duration-200
-                ${size == 'lg' ? 'font-medium tracking-tight px-5 py-2' : 'font-semibold px-5 py-1'}
+                ${size == 'lg' ? 'font-medium tracking-tight px-5 py-2' : 'font-semibold px-5 py-[6px]'}
             `}>
                 <div className="flex items-center">
                     {/* title of the component */}

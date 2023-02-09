@@ -68,7 +68,6 @@ export default function Page({ params }) {
                                     <p> Servizi </p>
                                     <p className="opacity-60"> Design sito web </p>
                                     <p className="opacity-60"> Sviluppo sito web </p>
-                                    <p className="opacity-60"> UI/UX Design </p>
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Settore </p>
