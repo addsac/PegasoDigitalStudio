@@ -136,7 +136,7 @@ export default function Page({ params }) {
                         {/* Article content */}
                         <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
                             <p>
-                                Storytelling è probabilmente una delle parole più inflazionate nel mondo della comunicazione nei nostri tempi, ma al di là del marketing della parola c'è una perchè che sta alla base del suo hype e in ogni prodotto digitale che comunica efficacemente.
+                                Storytelling è probabilmente una delle parole più inflazionate nel mondo della comunicazione nei nostri tempi, ma al di là del marketing della parola c'è una perché che sta alla base del suo hype e in ogni prodotto digitale che comunica efficacemente.
                             </p>
                             <h3>
                                 La nascita della necessità
