@@ -211,6 +211,9 @@ export default function Page({ params }) {
                                 <img src="/img/lavori/pegaso-informatica/branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
+                                <img src="/img/lavori/pegaso-informatica/branding-5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                            </div>
+                            <div className="col-span-12">
                                 <img src="/img/lavori/pegaso-informatica/branding-3.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12 lg:col-span-6 h-auto">
