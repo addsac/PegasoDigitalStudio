@@ -115,7 +115,7 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     <WorkDescription 
-                        title="Pegaso Informatica è un negozio di hardware, produttoe software e assistenza reti aziendali e pubbliche situato a Fontaniva (PD)."
+                        title="Pegaso Informatica è un negozio di hardware, produttore software e assistenza reti situato a Fontaniva (PD)."
                         description={[
                             'La finalità del progetto era quello di sviluppare un posizionamento online dell\'azienda e dei serivizi che offre. Era importante andare ad analizzare i vari servizi e prodotti offerti organizzandoli in modo che ogni tipo di visitatore trovasse ciò di cui ha bisogno.',
                             'Il design è chiaro e luminoso, per dare un senso di ordine e pulizia, andando a enfatizzare la qualità e trasparenza dell\'azienda, i colori sono stati ottenuti dalle diverse tonalità del logo.',
@@ -146,10 +146,10 @@ export default function Page({ params }) {
                     
                     <WorkTextDetail 
                         subtitle={'Obiettivo'}
-                        title={'...'}
+                        title={'Creare un posizionamento online coerente ai valori aziendali'}
                         description={[
-                            '...',
-                            '...'
+                            'La necessità di paritire con il redesign del nuovo sito web è divenuta chiara quando l\'azienda aveva sempre più richieste dai suoi clienti di avere un posto dove poterli contattare quando più ne avevano bisogno, oltre che comunicare le soluzioni tecnologiche e di assistenza che l\'azienda proprone.',
+                            'Abbiamo creato uno strumento per aiutare i clienti e potenziali tali a chiarire ogni dubbio sui loro servizi dandogli la possibilità di eentrare in contatto con pochi click.'
                         ]}
                     />
                     
@@ -198,7 +198,10 @@ export default function Page({ params }) {
                         </div>
                     </div>
 
-                    <WorkTextDescription text="Logo, tipografia, colori" description="La richiesta del cliente è stata di creare una comunicazine visuale moderna ma che non distorga i progetti dello studio. Abbiamo progettato il nuovo stile con un approccio minimale e con colori neutri per non far mischiare nessuna tonalità colore con quelle delle immagini. Il font è un Avenir, e i colori principali sono un grigio argilla, un nero carbone e il bianco." />
+                    <WorkTextDescription 
+                        text="Logo, tipografia, colori" 
+                        description="La richiesta del cliente è stata di creare una comunicazine visuale pulita e moderna, che comunichi chiaramente quello che i clienti potrebbero chiedersi quando valutano le soluzioni alle loro necessità. I colori principali sono presi dal logo già esistente della ditta, ricavando 3 colori equilibrati, tendenti al blu, aggiungendo poi una scala di grigio per creare gerarchia visiva e per i dettagli di layout. Il font è Inter, un font geometrico che si rifà all\'Helvetica." 
+                    />
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="col-span-12 lg:col-span-6 h-auto">
@@ -208,10 +211,10 @@ export default function Page({ params }) {
                                 <img src="/img/lavori/pegaso-informatica/branding-1-right.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/pegaso-informatica/branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/branding-5.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
-                                <img src="/img/lavori/pegaso-informatica/branding-5.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                <img src="/img/lavori/pegaso-informatica/branding-2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                             <div className="col-span-12">
                                 <img src="/img/lavori/pegaso-informatica/branding-3.jpg" alt="" className="h-auto w-full bg-slate-200" />
@@ -225,9 +228,8 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     <WorkTextDescription text="Design e pagine" description="
-                        Il risultato della ricerca ha creato un'esperienza pulita e chiara, le immagini hanno ampio spazio per la visibilità permettendone di essere al centro del tema.
-                        I colori neutri fanno in modo che a prescindere dai colori delle immagini, il layout non cambi il colore percepito.
-                        La navigazione è semplice e il layout è costante su tutte le pagine rendendo scorrevole l'esperienza dei progetti.
+                        Il layout è costante con l\'aiuto di un grid da 4 colonne visibile per rendere il posizionamento grafico degli elementi ordinato.
+                        Il risultato è quindi una fruizione dei contenuti veloce e chiara, aiutando il cliente a capire dove si trova ogni soluzione ai dubbi che potrebbe avere, che era l\'obbiettivo del progetto.
                     " />
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
@@ -275,11 +277,11 @@ export default function Page({ params }) {
                         ]
                     } /> */}
 
-                    {/* <WorkCitation 
+                    <WorkCitation 
                         text="..."
                         author="..."
                         authorTitle="..."
-                    /> */}
+                    />
 
                     {/* <WorkCitation 
                         text="We consider the Pact team as an extension of our digital team. Pact works side by side with our internal teams and has been a key partner, especially as we kick-off and test new initiatives."
