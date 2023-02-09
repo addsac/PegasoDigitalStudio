@@ -228,8 +228,8 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     <WorkTextDescription text="Design e pagine" description="
-                        Il layout è costante con l\'aiuto di un grid da 4 colonne visibile per rendere il posizionamento grafico degli elementi ordinato.
-                        Il risultato è quindi una fruizione dei contenuti veloce e chiara, aiutando il cliente a capire dove si trova ogni soluzione ai dubbi che potrebbe avere, che era l\'obbiettivo del progetto.
+                        Il layout è costante con l'aiuto di un grid da 4 colonne visibile per rendere il posizionamento grafico degli elementi ordinato.
+                        Il risultato è quindi una fruizione dei contenuti veloce e chiara, aiutando il cliente a capire dove si trova ogni soluzione ai dubbi che potrebbe avere, che era l'obbiettivo del progetto.
                     " />
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
