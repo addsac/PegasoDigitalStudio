@@ -11,6 +11,11 @@ const works = {
             title: 'Pegaso Informatica – Il Negozio',
             slug: '/lavori/pegaso-informatica',
         },
+        {
+            photo: '...',
+            title: 'Distribuzioni Beverage – Enomarket',
+            slug: '/lavori/enomarket',
+        },
 
         // Social
         {
