@@ -22,8 +22,8 @@ export default function WorkSliderSocialprofiles() {
     return (
         <div className="relative mx-auto w-full max-w-[1200px] flex justify-center gap-x-6">
             {arrayToLoop.map((item, index) => (
-                <Link target="_blank" href={item.href} id={'social-link-' + index}>
-                    <div className="group relative flex h-[300px] w-[200px] md:h-[450px] md:w-[300px] cursor-pointer flex-col items-center justify-center overflow-clip rounded-[19px] bg-slate-900">
+                <Link target="_blank" href={item.href} key={'social-link-' + index}>
+                    <div className="group relative flex h-[500px] w-[300px] cursor-pointer flex-col items-center justify-center overflow-clip rounded-[19px] bg-slate-900">
                         <Image
                             src={`/img/services/social-media/${item.photo}`}
                             alt=""

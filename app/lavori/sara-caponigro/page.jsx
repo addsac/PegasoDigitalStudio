@@ -238,7 +238,7 @@ export default function Page({ params }) {
                     <WorkResults result={
                         [
                             {
-                                data: '1,2+ Milioni',
+                                data: '+1,2 Milioni',
                                 title: 'Views con un singolo reel'
                             },
                             {
