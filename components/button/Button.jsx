@@ -133,7 +133,7 @@ export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 1
 }
 export function PrimarySmDark({ styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
     return (
-        <Link href={href}>
+        <Link href={href} className="group">
             <button className="font-semibold px-5 py-[6px] bg-slate-900 hover:bg-slate-900/80 text-white rounded-full transition duration-200">
                 <div className="flex items-center">
                     {/* title of the component */}
@@ -141,7 +141,7 @@ export function PrimarySmDark({ styleName = '', text = '', icon = false, opacity
 
                     {/* icon of the component */}
                     {icon == 'arrow' && (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2 transition ease-in-out delay-50 group-hover:translate-x-1">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     )}
@@ -152,7 +152,7 @@ export function PrimarySmDark({ styleName = '', text = '', icon = false, opacity
 }
 export function PrimarySmWhite({ styleName = '', text = '', icon = false, opacity = 100, href = '/', size = 'sm' }) {
     return (
-        <Link href={href}>
+        <Link href={href} className="group">
             <button className={`
               bg-white hover:bg-white/60 text-slate-900 rounded-full transition duration-200
                 ${size == 'lg' ? 'font-medium tracking-tight px-5 py-2' : 'font-semibold px-5 py-[6px]'}
@@ -163,7 +163,7 @@ export function PrimarySmWhite({ styleName = '', text = '', icon = false, opacit
 
                     {/* icon of the component */}
                     {icon == 'arrow' && (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2 transition ease-in-out delay-50 group-hover:translate-x-1">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     )}
