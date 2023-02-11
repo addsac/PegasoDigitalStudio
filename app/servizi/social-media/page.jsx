@@ -15,7 +15,7 @@ export default function Page(){
     const articles = articlesFromStore.data
 
     return (
-        <div className="bg-slate-900">
+        <div className=""> {/* bg-slate-900 */}
             <main>
                 <div className="relative h-[120vh] flex items-center justify-center">
                     <ServiceTitlesAnimation /> {/* client component for the ainmations */}

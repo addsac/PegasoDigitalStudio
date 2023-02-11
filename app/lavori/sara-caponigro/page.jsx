@@ -17,6 +17,8 @@ import WorkResults from '../../../components/work/WorkResults'
 import WorkVideo from '../../../components/work/WorkVideo'
 import WorkMobile4 from '../../../components/work/WorkMobile4'
 import WorkSliderSocialprofiles from '../../../components/work/WorkSliderSocialprofiles'
+import Image from 'next/image'
+import WorkSocialVideo from '../../../components/work/WorkSocialVideo'
 
 export default function Page({ params }) {
     return (
@@ -227,13 +229,7 @@ export default function Page({ params }) {
                         description="Grazie alla sua perseveranza e al suo altruismo e facendo della buona informazione una vera e propria missione, la Dottoressa Sara Caponigro oggi è riconosciuta come “Il Social-Medico che ti spiega il Medichese”"
                     />
 
-                    <div className="w-full h-auto">
-                        <div className="relative grid grid-cols-12 gap-6 px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="col-span-12">
-                                <img src="/img/lavori/sara-caponigro/7.jpg" alt="" className="h-auto w-full bg-slate-200" />
-                            </div>
-                        </div>
-                    </div>
+                    <WorkSocialVideo />
 
                     <WorkResults result={
                         [

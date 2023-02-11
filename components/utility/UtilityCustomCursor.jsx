@@ -34,6 +34,9 @@ export default function UtilityCustomCursor(){
             else if(e.target.classList.contains('text-cursor-trascina')){
                 el.innerText = 'Trascina'
             }
+            else if(e.target.classList.contains('text-cursor-apri-social')){
+                el.innerText = 'Vai al profilo'
+            }
         }
     }, [])
 
