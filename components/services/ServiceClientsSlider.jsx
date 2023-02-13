@@ -52,8 +52,8 @@ export default function ServiceClientsSlider({ id }) {
         },
         {
             name: 'FrancaViaRoma15',
-            description: 'Fashion',
-            photo: 'a.jpg',
+            description: 'Fashion ',
+            photo: 'franca-viaroma15.jpg',
             href: 'https://www.instagram.com/francaviaromaquindici/',
             social: 'instagram'
         },
