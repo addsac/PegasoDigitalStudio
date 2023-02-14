@@ -229,7 +229,12 @@ export default function Page({ params }) {
                         description="Grazie alla sua perseveranza e al suo altruismo e facendo della buona informazione una vera e propria missione, la Dottoressa Sara Caponigro oggi è riconosciuta come “Il Social-Medico che ti spiega il Medichese”"
                     />
 
-                    <WorkSocialVideo />
+                    <WorkSocialVideo
+                        srcPlaceholder='placeholder-review-social-2.png'
+                        srcVideo='video-recensione-sara-caponigro.mp4'
+                        name='Sara Caponigro'
+                        description='Medico di Famiglia'
+                    />
 
                     <WorkResults result={
                         [

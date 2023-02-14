@@ -5,12 +5,12 @@ import Image from 'next/image'
 import ModalVideo from '../ModalVideo'
 import { gsap } from 'gsap/all'
 
-export default function WorkSocialVideo() {
+export default function WorkSocialVideo({ srcPlaceholder = '', srcVideo = '', name = '', description = '' }) {
     const openModal = () => {
         // change the src of the video
         const el = document.getElementById('modal-video')
         
-        el.src = "/img/services/social-media/video-recensione-sara-caponigro.mp4"
+        el.src = `/img/services/social-media/${srcVideo}`
 
         setTimeout(() => {
             el.play()
@@ -37,7 +37,7 @@ export default function WorkSocialVideo() {
                             className="relative h-[500px] w-full overflow-hidden"
                         >
                             <Image
-                                src="/img/services/social-media/placeholder-review-social-2.png"
+                                src={`/img/services/social-media/${srcPlaceholder}`}
                                 alt=""
                                 width={600}
                                 height={600}
@@ -61,7 +61,7 @@ export default function WorkSocialVideo() {
                             </div>
                             <div className="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-slate-900 px-4 py-6 text-sm font-medium text-white">
                                 <div>
-                                    Daniele Pietrucci &nbsp;—&nbsp; Nutrizionista
+                                    { name } &nbsp;—&nbsp; { description }
                                 </div>
                             </div>
                         </div>
