@@ -10,7 +10,7 @@ export default function WorkSocialVideo() {
         // change the src of the video
         const el = document.getElementById('modal-video')
         
-        el.src = "/img/services/social-media/video-recensione-daniele-pietrucci.mp4"
+        el.src = "/img/services/social-media/video-recensione-sara-caponigro.mp4"
 
         setTimeout(() => {
             el.play()
@@ -37,7 +37,7 @@ export default function WorkSocialVideo() {
                             className="relative h-[500px] w-full overflow-hidden"
                         >
                             <Image
-                                src="/img/services/social-media/placeholder-review-social-1.png"
+                                src="/img/services/social-media/placeholder-review-social-2.png"
                                 alt=""
                                 width={600}
                                 height={600}

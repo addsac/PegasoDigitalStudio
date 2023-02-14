@@ -69,8 +69,8 @@ export default function Footer(){
                             <p className="font-normal opacity-50 mb-2 md:mb-4">
                                 Contatti
                             </p>
-                            <a href="mailto:info@pegasodisgitalstudio.com" className="hover:opacity-60 transition duration-300">
-                                info@pegasodisgitalstudio.com
+                            <a href="mailto:info@pegasodigitalstudio.com" className="hover:opacity-60 transition duration-300">
+                                info@pegasodigitalstudio.com
                             </a>
                             <a href="tel:0495917371" className="hover:opacity-60 transition duration-300">
                                 +39 049 591 7371
