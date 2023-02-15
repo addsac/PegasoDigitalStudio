@@ -7,11 +7,13 @@ export default function WorkTextcentral({ text = 'The Problem', description = 'T
             <div className="hidden md:block col-span-2"></div> {/* margin */}
             <div className="col-span-12 md:col-span-8 text-center">
                 <div className="flex flex-col gap-y-8">
-                    <Text1
-                        text={ text }
-                        color="white"
-                        opacity={60}
-                    />
+                    { text != '' && (
+                        <Text1
+                            text={ text }
+                            color="white"
+                            opacity={60}
+                        />
+                    )}
                     <Text2 
                         text={ description }
                         color="white"

@@ -121,9 +121,9 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     <WorkDescription 
-                        title="La Dottoressa Sara Caponigro è un Medico di Famiglia di Roma. Appassionata del suo lavoro, fa del suo meglio ogni giorno per aiutare le persone a risolvere i loro problemi di salute e informarle su varie questioni in ambito medico."
+                        title="La Dottoressa Sara Caponigro è un Medico di Famiglia di Roma che fa del suo meglio ogni giorno per aiutare le persone a risolvere i loro problemi di salute e informarle su questioni in ambito medico."
                         description={[
-                            'La svolta arriva nel periodo di pandemia Coronavirus quando, a causa delle restrizioni imposte a tutti, coglie l’opportunità offerta dai Social di restare in contatto con i suoi pazienti divulgando le sue conoscenze scientifiche e aiutando più persone possibili con i suoi consigli medici.',
+                            'La svolta arriva nel periodo di pandemia Coronavirus quando, a causa delle restrizioni imposte a tutti, coglie <b>l’opportunità offerta dai Social</b> di restare in contatto con i suoi pazienti divulgando le sue conoscenze scientifiche e aiutando più persone possibili con i suoi consigli medici.',
                             'Per questo motivo nel 2021 decide di iniziare a creare video divulgativi che condivide nella piattaforma più in voga del momento: TikTok.',
                             'Dopo aver ottenuto buoni risultati capisce le potenzialità che i Social Media hanno nel raggiungere moltissime persone e, spinta dalla possibilità di poter aiutare, decide di fare sul serio affidandosi a un’Agenzia di Comunicazione che potesse aiutarla a raggiungere più persone possibili con i suoi contenuti.'
                         ]}
@@ -152,12 +152,12 @@ export default function Page({ params }) {
                         ]}
                     />
 
-                    <div className="w-full h-auto bg-slate-900">
+                    <div className="w-full h-auto"> {/* bg-slate-900 */}
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full bg-white grid grid-cols-12 gap-x-6">
+                            <div className="w-full grid grid-cols-12 gap-x-6"> {/* bg-white */}
                                 <div className="col-span-1 lg:col-span-3"></div>
                                 <div className="col-span-10 lg:col-span-6">
-                                    <img src="/img/lavori/sara-caponigro/1.jpg" alt="" className="h-auto w-full bg-slate-200" />
+                                    <img src="/img/lavori/sara-caponigro/1.png" alt="" className="h-auto w-full" /> {/* bg-slate-200 */}
                                 </div>
                                 <div className="col-span-1 lg:col-span-3"></div>
                             </div>
@@ -167,10 +167,11 @@ export default function Page({ params }) {
                     <WorkTextDetail 
                         subtitle={''}
                         title={
-                            'Abbiamo analizzato i colori, scegliendo tonalità pastello estremamente delicate che infondono calma e serenità. I font utilizzati sono semplici e lineari per permettere una lettura rapida e scorrevole. Le caption rispettano una struttura precisa che ha come obiettivo l’interazione con la community. '
+                            'Abbiamo analizzato i colori, scegliendo tonalità pastello estremamente delicate che infondono calma e serenità.'
                         }
                         titleSize='sm'
                         description={[
+                            'I font utilizzati sono semplici e lineari per permettere una lettura rapida e scorrevole. Le caption rispettano una struttura precisa che ha come obiettivo l’interazione con la community.',
                             'Infine, abbiamo cominciato a pubblicare con costanza: 2 Reels + 1 Post in formato carosello a settimana e 4/5 stories al giorno.',
                             'Dopo un primo periodo in cui abbiamo capito come lavorare bene insieme e come valorizzare al massimo i contenuti, abbiamo iniziato la parte divertente e al tempo stesso più sfidante del nostro lavoro: sfruttare le leve per crescere velocemente su Instagram e concentrarci sul creare contenuti virali per ottenere la massima visibilità possibile in organico.'
                         ]}
@@ -178,7 +179,7 @@ export default function Page({ params }) {
 
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full bg-white grid grid-cols-12 gap-x-6">
+                            <div className="w-full bg-white grid grid-cols-12 gap-x-6 py-12">
                                 <div className="col-span-2"></div>
                                 <div className="col-span-8">
                                     <img src="/img/lavori/sara-caponigro/2.jpg" alt="" className="h-auto w-full bg-slate-200" />
@@ -191,12 +192,12 @@ export default function Page({ params }) {
                     <WorkTextDetail 
                         subtitle={'Risultati'}
                         title={
-                            'Fin dal primo contenuto pubblicato si è visto un grandissimo incremento dell’engagement: le persone infatti commentavano e interagivano sotto ai Post e ai Reels, facendo domande e raccontando le loro esperienze, e scrivevano messaggi di incoraggiamento e di gratitudine.'
+                            'Infatti già dopo il primo mese avevamo creato un Reel da 1,2 Milioni di visualizzazioni, per poi proseguire con altri Reels da: 53 mila, 47 mila, 105 mila views...'
                         }
                         titleSize='sm'
                         description={[
                             'La strada era quella giusta.',
-                            'Infatti già dopo il primo mese avevamo creato un Reel da 1,2 Milioni di visualizzazioni, per poi proseguire con altri Reels da: 53 mila, 47 mila, 105 mila views...'
+                            'Fin dal primo contenuto pubblicato si è visto un grandissimo incremento dell’engagement: le persone infatti commentavano e interagivano sotto ai Post e ai Reels, facendo domande e raccontando le loro esperienze, e scrivevano messaggi di incoraggiamento e di gratitudine.'
                         ]}
                     />
 
@@ -225,8 +226,8 @@ export default function Page({ params }) {
                     <WorkSliderSocialprofiles />
 
                     <WorkTextCentral 
-                        text="Il commento"
-                        description="Grazie alla sua perseveranza e al suo altruismo e facendo della buona informazione una vera e propria missione, la Dottoressa Sara Caponigro oggi è riconosciuta come “Il Social-Medico che ti spiega il Medichese”"
+                        text=""
+                        description="Facendo della buona informazione una vera e propria missione, la Dottoressa Sara Caponigro oggi è riconosciuta come “Il Social-Medico che ti spiega il Medichese”" /* Grazie alla sua perseveranza e al suo altruismo e f */
                     />
 
                     <WorkSocialVideo
