@@ -299,7 +299,7 @@ export default function Page({ params }) {
 
                 {/* Lavori articles */}
                 <BlogPreview
-                    title={['Lavori simili']}
+                    title={['Altri lavori']}
                     type="works"
                 />
 
