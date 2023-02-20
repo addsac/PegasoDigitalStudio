@@ -123,7 +123,7 @@ export default function Page({ params }) {
                     <WorkDescription 
                         title="La Dottoressa Sara Caponigro è un Medico di Famiglia di Roma che fa del suo meglio ogni giorno per aiutare le persone a risolvere i loro problemi di salute e informarle su questioni in ambito medico."
                         description={[
-                            'La svolta arriva nel periodo di pandemia Coronavirus quando, a causa delle restrizioni imposte a tutti, coglie <b>l’opportunità offerta dai Social</b> di restare in contatto con i suoi pazienti divulgando le sue conoscenze scientifiche e aiutando più persone possibili con i suoi consigli medici.',
+                            'La svolta arriva nel periodo di pandemia Coronavirus quando, a causa delle restrizioni imposte a tutti, coglie l’opportunità offerta dai Social di restare in contatto con i suoi pazienti divulgando le sue conoscenze scientifiche e aiutando più persone possibili con i suoi consigli medici.',
                             'Per questo motivo nel 2021 decide di iniziare a creare video divulgativi che condivide nella piattaforma più in voga del momento: TikTok.',
                             'Dopo aver ottenuto buoni risultati capisce le potenzialità che i Social Media hanno nel raggiungere moltissime persone e, spinta dalla possibilità di poter aiutare, decide di fare sul serio affidandosi a un’Agenzia di Comunicazione che potesse aiutarla a raggiungere più persone possibili con i suoi contenuti.'
                         ]}
@@ -154,7 +154,7 @@ export default function Page({ params }) {
 
                     <div className="w-full h-auto"> {/* bg-slate-900 */}
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full grid grid-cols-12 gap-x-6"> {/* bg-white */}
+                            <div className="w-full grid grid-cols-12 gap-x-6 bg-white"> {/* bg-white */}
                                 <div className="col-span-1 lg:col-span-3"></div>
                                 <div className="col-span-10 lg:col-span-6">
                                     <img src="/img/lavori/sara-caponigro/1.png" alt="" className="h-auto w-full" /> {/* bg-slate-200 */}
