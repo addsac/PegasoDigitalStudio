@@ -38,6 +38,9 @@ html, body {
 .title-2{
     @apply text-6xl md:text-8xl lg:text-[170px] font-semibold leading-[110%] tracking-tighter;
 }
+.title-2-footer{
+    @apply text-6xl md:text-8xl lg:text-[140px] font-semibold leading-[110%] tracking-tighter;
+}
 .title-3{
     @apply text-4xl md:text-7xl lg:text-8xl font-semibold leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tight lg:tracking-tight;
 }

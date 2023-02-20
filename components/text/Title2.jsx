@@ -1,9 +1,9 @@
-export default function Title2({ id, text = [], color, gradient = false, shadow = false }){
+export default function Title2({ id, text = [], color, gradient = false, shadow = false, footer = false }){
     return (
         <h2 
             id={id ? id : ''}
             className={`
-                title-2 
+                ${footer ? 'title-2-footer' : 'title-2'}
                 ${color && ('text-' + color)} 
                 ${shadow && 'drop-shadow-lg'}
                 ${gradient ? 'bg-gradient-radial-text' : ''}

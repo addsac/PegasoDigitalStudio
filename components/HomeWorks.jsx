@@ -6,8 +6,12 @@ import Button from './button/Button'
 import HomeWorksAnimation from './HomeWorksAnimation'
 import { gsap } from 'gsap/all'
 import Balancer from "react-wrap-balancer"
+import works from '../util/store/works'
 
 export default function HomeWorks() {
+
+    const worksArray = works.data
+
     const animatePhotoEnter = (number) => {
         gsap.to(`#title${number}-photo`, {
             y: 0,
@@ -62,7 +66,7 @@ export default function HomeWorks() {
                                     onMouseLeave={ () => animatePhotoLeave(1) }
                                 >
                                     <Image 
-                                        src="/blog-temporary-bg.jpg" 
+                                        src={worksArray[0].photo} 
                                         alt="" 
                                         width={500}
                                         height={500}
@@ -73,12 +77,12 @@ export default function HomeWorks() {
                                     {/* desktop */}
                                     <p id="title1-photo" className="font-semibold hidden md:block">
                                         <Balancer>
-                                            Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                            {worksArray[0].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[0].title.split('–')[1]} </span>
                                         </Balancer>
                                     </p>
                                     {/* mobile */}
                                     <p className="font-semibold text-sm md:hidden">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        {worksArray[0].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[0].title.split('–')[1]} </span>
                                     </p>
                                 </div>
                             </div>
@@ -102,7 +106,7 @@ export default function HomeWorks() {
                                     onMouseLeave={ () => animatePhotoLeave(2) }
                                 >
                                     <Image
-                                        src="/blog-temporary-bg.jpg"
+                                        src={worksArray[1].photo} 
                                         alt="" 
                                         width={500}
                                         height={500}
@@ -112,11 +116,11 @@ export default function HomeWorks() {
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title2-photo" className="font-semibold hidden md:block">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        {worksArray[1].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[1].title.split('–')[1]} </span>
                                     </p>
                                     {/* mobile */}
                                     <p className="font-semibold text-sm md:hidden">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        {worksArray[1].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[1].title.split('–')[1]} </span>
                                     </p>
                                 </div>
                             </div>
@@ -130,7 +134,7 @@ export default function HomeWorks() {
                                     onMouseLeave={ () => animatePhotoLeave(3) }
                                 >
                                     <Image
-                                        src="/blog-temporary-bg.jpg"
+                                        src={worksArray[2].photo} 
                                         alt="" 
                                         width={500}
                                         height={500}
@@ -141,10 +145,12 @@ export default function HomeWorks() {
                                     {/* desktop */}
                                     <p id="title3-photo" className="font-semibold hidden md:block">
                                         Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        {worksArray[2].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[2].title.split('–')[1]} </span>
                                     </p>
                                     {/* mobile */}
                                     <p className="font-semibold text-sm md:hidden">
                                         Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        {worksArray[2].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[2].title.split('–')[1]} </span>
                                     </p>
                                 </div>
                             </div>
