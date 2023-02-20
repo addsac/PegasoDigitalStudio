@@ -38,10 +38,10 @@ export default function BlogSwiper({ type, array }){
                         style={{ width: 'auto' }} 
                         key={ index }
                     >
-                        <Link href={item.slug ? '/blog/'+item.slug : '/blog/1'}>
+                        <Link href={type == 'works' ? item.slug : '/blog/'+item.slug }>
                             <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer hover:scale-[96%] transition duration-400">
                                 <Image
-                                    src={item.slug ? '/blog/'+item.slug+'.jpg' : '/blog-temporary-bg.jpg'}
+                                    src={type == 'works' ? item.photo : '/blog/'+item.slug+'.jpg'}
                                     alt=""
                                     width={500}
                                     height={500}
@@ -57,9 +57,11 @@ export default function BlogSwiper({ type, array }){
                                 
                                 {/* overlay and text */}
                                 <div className="w-full bg-white z-10 flex flex-col justify-end pt-6">
-                                    <p className="text-slate-900/60 tracking-tight mb-3">
-                                        { item.slug ? firstLetterUppercase(item.category) : 'Ecommerce' }
-                                    </p>
+                                    { type == 'articles' && (
+                                        <p className="text-slate-900/60 tracking-tight mb-3">
+                                            { item.slug ? firstLetterUppercase(item.category) : 'Ecommerce' }
+                                        </p>
+                                    )}
                                     {/* Text */}
                                     <p className="text-slate-900 text-xl md:text-2xl tracking-tight leading-[130%] group-hover:underline"> 
                                         <Balancer>

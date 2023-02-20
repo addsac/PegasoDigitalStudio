@@ -324,13 +324,13 @@ export default function Header({ color }) {
                                     >
                                         Social Media
                                     </Link>
-                                    <Link 
+                                    {/* <Link 
                                         href="/servizi/marketing" 
                                         onClick={() => closeMenuMobile() } 
                                         className="text-white hover:text-white/60 text-2xl tracking-tight pl-6"
                                     >
                                         Marketing
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                             <div className="block overflow-hidden mt-2">
@@ -625,11 +625,11 @@ export default function Header({ color }) {
                                     text="Social Media" 
                                     href="/servizi/social-media"
                                 />
-                                <Button 
+                                {/* <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                     text="Marketing" 
                                     href="/servizi/marketing"
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>

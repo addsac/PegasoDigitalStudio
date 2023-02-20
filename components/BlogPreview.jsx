@@ -4,7 +4,7 @@ import Text1 from './text/Text1'
 import Button from './button/Button'
 import BlogSwiper from './BlogSwiper'
 import BlogPreviewAnimation from './BlogPreviewAnimation'
-import { fetchBlogPosts } from '../util/contentfulBlogPosts'
+import works from '../util/store/works'
 
 // export const revalidate = 100; // revalidate every 100 seconds
 
@@ -13,8 +13,10 @@ import { fetchBlogPosts } from '../util/contentfulBlogPosts'
     return posts ? posts : null;
 } */
 
-export default async function BlogPreview({ title = '', description = '', type = 'articles', articles }) {
+export default async function BlogPreview({ title = '', description = '', type = 'articles', articles, href = '/blog' }) {
     // const posts = await getPosts();
+
+    const worksArray = works.data
 
     return (
         <>
@@ -65,7 +67,7 @@ export default async function BlogPreview({ title = '', description = '', type =
                     className="pb-24 md:pb-28 lg:pb-40 pt-24 relative"
                 >
                     {/* swiper */}
-                    <BlogSwiper type={type} array={ articles } />
+                    <BlogSwiper type={type} array={ type == 'works' ? worksArray : articles } />
                 </div>
 
                 <div
@@ -77,7 +79,7 @@ export default async function BlogPreview({ title = '', description = '', type =
                             id="blog-preview-wrapper"
                             styleName="primary-lg"
                             icon="arrow"
-                            href="/blog"
+                            href={ href }
                             text={ type == 'articles' ? 'Vedi tutti gli articoli' : (type == 'works' || type == 'service') ? 'Vedi tutti i lavori' : ''}
                         />
                     </div>

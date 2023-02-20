@@ -280,6 +280,7 @@ export default function Page({ params }) {
                 <BlogPreview
                     title={['Altri lavori']}
                     type="works"
+                    href="/lavori"
                 />
 
             </div>
