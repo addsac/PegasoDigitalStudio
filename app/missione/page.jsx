@@ -18,7 +18,7 @@ export default function Page() {
         >
             <MissionAnimation />
             
-            <div className="py-8 pb-24 md:pb-32 lg:pb-48">
+            <div className="py-8"> {/* pb-24 md:pb-32 lg:pb-48 */}
                 
                 <div id="text3-mission" className="text-center mb-16 md:mb-24">
                     <Cips 
