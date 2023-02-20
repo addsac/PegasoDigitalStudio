@@ -19,7 +19,7 @@ export default function WorkImageGrid3() {
                 </div>
                 <div className="col-span-12 w-full h-[250px] md:h-[400px] overflow-clip">
                     <Image
-                        src="/blog-temporary-bg.jpg" 
+                        src="/img/services/social-media/grid-3-2.jpg"
                         alt=""
                         width={500}
                         height={500}
