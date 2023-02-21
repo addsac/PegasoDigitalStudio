@@ -15,7 +15,7 @@ export default function Page(){
         <main className="py-8"> {/* pb-24 md:pb-32 lg:pb-48 */}
             <WorkTitles />
 
-            <div className="w-full flex flex-col gap-y-48 px-8 mt-48 mb-64">
+            <div className="w-full flex flex-col gap-y-48 px-8 mt-40 mb-64">
                 {/* <WorkSection
                     text='Siti corporate'
                 />
@@ -37,12 +37,12 @@ export default function Page(){
                 /> */}
 
                 <div className="mx-auto w-full max-w-[800px] grid grid-cols-12 gap-y-40">
-                    {works.map((index) => (
-                        <div className="group col-span-12 cursor-pointer hover:scale-[96%] transition duration-400" key={index}>
-                            <Link href="/lavori/1">
+                    {works.map((item, index) => (
+                        <div className="group col-span-12 cursor-pointer hover:scale-[98%] transition duration-400" key={index}>
+                            <Link href={item.slug}>
                                 <div className="w-full h-[500px] bg-white overflow-clip">
                                     <Image 
-                                        src="/blog-temporary-bg.jpg" 
+                                        src={item.photo}
                                         alt=""
                                         width={500}
                                         height={500}
@@ -51,8 +51,8 @@ export default function Page(){
                                 </div>
 
                                 <div className="flex items-center justify-between mt-6 text-left text-white font-semibold">
-                                    <p> Luxurious design experience </p>
-                                    <p className="font-regular text-sm opacity-60 mt-[6px]"> Aebele Interiors </p>
+                                    <p> {item.title.split('–')[0]} </p>
+                                    <p className="font-regular text-sm opacity-60 mt-[6px]"> {item.title.split('–')[1]} </p>
                                 </div>
                             </Link>
                         </div>

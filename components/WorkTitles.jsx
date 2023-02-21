@@ -15,6 +15,7 @@ export default function WorkTitles() {
                     <Title2
                         text={['I nostri lavori', 'Quello per cui esistiamo.']}
                         gradient={true}
+                        footer={true}
                     />
                 </div>
                 {/* <div

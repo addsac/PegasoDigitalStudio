@@ -6,7 +6,7 @@ import { gsap, ScrollToPlugin } from "gsap/all"
 export default function WorkFilters() {
     gsap.registerPlugin(ScrollToPlugin)
 
-    const [filters] = useState(['Siti web', 'Ecommerce', 'Branding', 'Marketing', 'Social Media'])
+    const [filters] = useState(['Siti web', 'Ecommerce', 'Branding', 'Social Media'])
     const [activeFilter, setActiveFilter] = useState(null)
 
     const handleClick = (value, index) => {
@@ -33,7 +33,7 @@ export default function WorkFilters() {
     return (
         <div
             id="filters-work" 
-            className="mx-auto max-w-full flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10 mt-16"
+            className="mx-auto max-w-full flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10 mt-24"
             style={{ opacity: 0, transform: 'translateY(80px)' }}
         >
             {filters.map((value, index) => (
