@@ -4,46 +4,46 @@ import Link from "next/link"
 import { useEffect, useRef } from "react"
 import gsap from "gsap/all"
 
-export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', onMouseEnter, size = '', weight = '', target = '' }) {
+export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', closeSubheader = false, onMouseEnter, size = '', weight = '', target = '' }) {
     // switch of the classes base on the props "style"
     if (styleName == 'link-white') {
         return (
             <div onMouseEnter={onMouseEnter}>
-                <LinkWhite styleName={styleName} text={text} icon={icon} href={href} size={size} weight={weight} />
+                <LinkWhite styleName={styleName} text={text} icon={icon} href={href} closeSubHeader={closeSubHeader} size={size} weight={weight} />
             </div>
         )
     } 
     else if (styleName == 'link-black') {
         return (
             <div onMouseEnter={onMouseEnter}>
-                <LinkBlack styleName={styleName} text={text} icon={icon} href={href} size={size} weight={weight} />
+                <LinkBlack styleName={styleName} text={text} icon={icon} href={href} closeSubHeader={closeSubHeader} size={size} weight={weight} />
             </div>
         )
     } 
     else if (styleName == 'primary-sm-white') {
         return <div onMouseEnter={onMouseEnter}>
-            <PrimarySmWhite styleName={styleName} text={text} icon={icon} href={href} size={size} />
+            <PrimarySmWhite styleName={styleName} text={text} icon={icon} href={href} closeSubHeader={closeSubHeader} size={size} />
         </div>
     } 
     else if (styleName == 'primary-sm-dark') {
         return <div onMouseEnter={onMouseEnter}>
-            <PrimarySmDark styleName={styleName} text={text} icon={icon} href={href} />
+            <PrimarySmDark styleName={styleName} text={text} icon={icon} href={href} closeSubHeader={closeSubHeader} />
         </div>
     } 
     else if (styleName == 'primary-lg') {
-        return <PrimaryLg id={id} styleName={styleName} text={text} icon={icon} href={href} />
+        return <PrimaryLg id={id} styleName={styleName} text={text} icon={icon} href={href} closeSubHeader={closeSubHeader} />
     } 
     else if (styleName == 'primary-lg-white') {
-        return <PrimaryLgWhite id={id} styleName={styleName} text={text} icon={icon} href={href} />
+        return <PrimaryLgWhite id={id} styleName={styleName} text={text} icon={icon} href={href} closeSubHeader={closeSubHeader} />
     } 
     else if(styleName == 'primary-lg-dark'){
-        return <PrimaryLgDark id={id} styleName={styleName} text={text} icon={icon} href={href} target={target} />
+        return <PrimaryLgDark id={id} styleName={styleName} text={text} icon={icon} href={href} closeSubHeader={closeSubHeader} target={target} />
     }
 }
 
-export function LinkWhite({ styleName = '', text = '', icon = false, href = '/', size, weight }) {
+export function LinkWhite({ styleName = '', text = '', icon = false, closeSubHeader, href = '/', size, weight }) {
     return (
-        <>
+        <div onClick={closeSubHeader ? () => closeSubHeader() : null}>
             { href == false ? (
                 <button className={`text-sm lg:text-base ${weight == 'light' ? 'font-normal' : 'font-medium'} flex items-center gap-x-2 text-white hover:opacity-50 cursor-default transition-all duration-200`}>
                     { icon == 'phone' && (
@@ -83,12 +83,12 @@ export function LinkWhite({ styleName = '', text = '', icon = false, href = '/',
                     </button>
                 </Link>
             )}
-        </>
+        </div>
     )
 }
-export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 100, href = '/', size, weight }) {
+export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 100, closeSubHeader, href = '/', size, weight }) {
     return (
-        <>
+        <div onClick={closeSubHeader ? () => closeSubHeader() : null}>
             { href == false ? (
                 <button className={`text-sm lg:text-base ${weight == 'light' ? 'font-normal' : 'font-medium'} flex items-center gap-x-2 text-slate-900 hover:opacity-50 cursor-default transition-all duration-200`}>
                     { icon == 'phone' && (
@@ -128,51 +128,55 @@ export function LinkBlack({ styleName = '', text = '', icon = false, opacity = 1
                     </button>
                 </Link>
             )}
-        </>
+        </div>
     )
 }
-export function PrimarySmDark({ styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
+export function PrimarySmDark({ styleName = '', text = '', icon = false, opacity = 100, closeSubHeader, href = '/' }) {
     return (
-        <Link href={href} className="group">
-            <button className="font-semibold px-5 py-[6px] bg-slate-900 hover:bg-slate-900/80 text-white rounded-full transition duration-200">
-                <div className="flex items-center">
-                    {/* title of the component */}
-                    {text}
+        <div onClick={closeSubHeader ? () => closeSubHeader() : null}>
+            <Link href={href} className="group">
+                <button className="font-semibold px-5 py-[6px] bg-slate-900 hover:bg-slate-900/80 text-white rounded-full transition duration-200">
+                    <div className="flex items-center">
+                        {/* title of the component */}
+                        {text}
 
-                    {/* icon of the component */}
-                    {icon == 'arrow' && (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2 transition ease-in-out delay-50 group-hover:translate-x-1">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                    )}
-                </div>
-            </button>
-        </Link>
+                        {/* icon of the component */}
+                        {icon == 'arrow' && (
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2 transition ease-in-out delay-50 group-hover:translate-x-1">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        )}
+                    </div>
+                </button>
+            </Link>
+        </div>
     )
 }
-export function PrimarySmWhite({ styleName = '', text = '', icon = false, opacity = 100, href = '/', size = 'sm' }) {
+export function PrimarySmWhite({ styleName = '', text = '', icon = false, opacity = 100, closeSubHeader, href = '/', size = 'sm' }) {
     return (
-        <Link href={href} className="group">
-            <button className={`
-              bg-white hover:bg-white/60 text-slate-900 rounded-full transition duration-200
-                ${size == 'lg' ? 'font-medium tracking-tight px-5 py-2' : 'font-semibold px-5 py-[6px]'}
-            `}>
-                <div className="flex items-center">
-                    {/* title of the component */}
-                    {text}
+        <div onClick={closeSubHeader ? () => closeSubHeader() : null}>
+            <Link href={href} className="group">
+                <button className={`
+                bg-white hover:bg-white/60 text-slate-900 rounded-full transition duration-200
+                    ${size == 'lg' ? 'font-medium tracking-tight px-5 py-2' : 'font-semibold px-5 py-[6px]'}
+                `}>
+                    <div className="flex items-center">
+                        {/* title of the component */}
+                        {text}
 
-                    {/* icon of the component */}
-                    {icon == 'arrow' && (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2 transition ease-in-out delay-50 group-hover:translate-x-1">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                    )}
-                </div>
-            </button>
-        </Link>
+                        {/* icon of the component */}
+                        {icon == 'arrow' && (
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2 transition ease-in-out delay-50 group-hover:translate-x-1">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        )}
+                    </div>
+                </button>
+            </Link>
+        </div>
     )
 }
-export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
+export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, opacity = 100, closeSubHeader, href = '/' }) {
     /**
      * Animations
      */
@@ -206,15 +210,40 @@ export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, op
     }
 
     return (
-        <Link href={ href }>
-            <div
-                className="group relative flex justify-center border border-slate-300 hover:border-white rounded-full z-[2] overflow-clip"
-            >
-                {/* ball */}
-                <div id={id + '-ball'} className="absolute w-[240px] h-[240px] rounded-full bg-slate-900 z-[1]"></div>
+        <div onClick={closeSubHeader ? () => closeSubHeader() : null}>
+            <Link href={ href }>
+                <div
+                    className="group relative flex justify-center border border-slate-300 hover:border-white rounded-full z-[2] overflow-clip"
+                >
+                    {/* ball */}
+                    <div id={id + '-ball'} className="absolute w-[240px] h-[240px] rounded-full bg-slate-900 z-[1]"></div>
+                    <button
+                        onMouseOver={ () => ballAnimationEnter() } 
+                        onMouseLeave={ () => ballAnimationLeave() } 
+                        className="flex justify-center items-center text-slate-900 tracking-[-1%] group-hover:text-white transition duration-400 z-[2] px-8 py-5"
+                    >
+                        {/* title of the component */}
+                        <div className="flex flex-col gap-y-6">
+                            {text}
+                        </div>
+
+                        {/* icon of the component */}
+                        {icon == 'arrow' && (
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-3">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        )}
+                    </button>
+                </div>
+            </Link>
+        </div>
+    )
+}
+export function PrimaryLgWhite({ id = '', styleName = '', text = '', icon = false, opacity = 100, closeSubHeader, href = '/' }) {
+    return (
+        <div onClick={closeSubHeader ? () => closeSubHeader() : null}>
+            <Link href={ href }>
                 <button
-                    onMouseOver={ () => ballAnimationEnter() } 
-                    onMouseLeave={ () => ballAnimationLeave() } 
                     className="flex justify-center items-center text-slate-900 tracking-[-1%] group-hover:text-white transition duration-400 z-[2] px-8 py-5"
                 >
                     {/* title of the component */}
@@ -224,56 +253,37 @@ export function PrimaryLg({ id = '', styleName = '', text = '', icon = false, op
 
                     {/* icon of the component */}
                     {icon == 'arrow' && (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-3">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                    )}
-                </button>
-            </div>
-        </Link>
-    )
-}
-export function PrimaryLgWhite({ id = '', styleName = '', text = '', icon = false, opacity = 100, href = '/' }) {
-    return (
-        <Link href={ href }>
-            <button
-                className="flex justify-center items-center text-slate-900 tracking-[-1%] group-hover:text-white transition duration-400 z-[2] px-8 py-5"
-            >
-                {/* title of the component */}
-                <div className="flex flex-col gap-y-6">
-                    {text}
-                </div>
-
-                {/* icon of the component */}
-                {icon == 'arrow' && (
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-3 transition ease-in-out delay-50 group-hover:translate-x-1">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                )}
-            </button>
-        </Link>
-    )
-}
-export function PrimaryLgDark({ id = '', styleName = '', text = '', icon = false, opacity = 100, href = '/', target = '' }){
-    return (
-        <Link href={ href } target={target}>
-            <div
-                className="group relative flex justify-center border border-white/40 hover:border-white text-white rounded-full z-[2] overflow-hidden transition duration-600"
-            >
-                <button
-                    className="flex justify-center items-center tracking-tight z-[2] px-8 py-5"
-                >
-                    {/* title of the component */}
-                    {text}
-
-                    {/* icon of the component */}
-                    {icon == 'arrow' && (
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-3 transition ease-in-out delay-50 group-hover:translate-x-1">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     )}
                 </button>
-            </div>
-        </Link>
+            </Link>
+        </div>
+    )
+}
+export function PrimaryLgDark({ id = '', styleName = '', text = '', icon = false, opacity = 100, closeSubHeader, href = '/', target = '' }){
+    return (
+        <div onClick={closeSubHeader ? () => closeSubHeader() : null}>
+            <Link href={ href } target={target}>
+                <div
+                    className="group relative flex justify-center border border-white/40 hover:border-white text-white rounded-full z-[2] overflow-hidden transition duration-600"
+                >
+                    <button
+                        className="flex justify-center items-center tracking-tight z-[2] px-8 py-5"
+                    >
+                        {/* title of the component */}
+                        {text}
+
+                        {/* icon of the component */}
+                        {icon == 'arrow' && (
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-3 transition ease-in-out delay-50 group-hover:translate-x-1">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        )}
+                    </button>
+                </div>
+            </Link>
+        </div>
     )
 }

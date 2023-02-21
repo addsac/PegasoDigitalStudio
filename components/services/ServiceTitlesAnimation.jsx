@@ -26,25 +26,27 @@ export default function ServiceTitlesAnimation({ id = '' }){
 
         /* setAnimations() */
 
-        gsap.to('#' + id + '-title2-service-title', {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            ease: 'circ.out',
-            delay: 0.2,
-        })
-        gsap.to('#' + id + '-text1-service-title', {
-            y: 0,
-            opacity: 0.8,
-            duration: 1,
-            ease: 'circ.out',
-            delay: 0.6,
-        })
-        gsap.to('#' + id + '-background-service', {
-            opacity: 0.35,
-            duration: 1.2,
-            delay: 1,
-        })
+        setTimeout(() => {
+            gsap.to('#' + id + '-title2-service-title', {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: 'circ.out',
+                delay: 0.2,
+            })
+            gsap.to('#' + id + '-text1-service-title', {
+                y: 0,
+                opacity: 0.8,
+                duration: 1,
+                ease: 'circ.out',
+                delay: 0.6,
+            })
+            gsap.to('#' + id + '-background-service', {
+                opacity: 0.35,
+                duration: 1.2,
+                delay: 1,
+            })
+        }, 200)
 
         /* gsap.to('#background-service', {
             scrollTrigger: {
