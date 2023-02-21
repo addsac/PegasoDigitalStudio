@@ -1,7 +1,7 @@
 import Title2 from '../text/Title2'
 import Text1 from '../text/Text1'
 
-export default function ServiceTitles({ title = '', description = [] }) {
+export default function ServiceTitles({ title = '', description = [], id = '' }) {
     return (
         <>        
             <div
@@ -11,16 +11,24 @@ export default function ServiceTitles({ title = '', description = [] }) {
                 {/* Title and description */}
                 <div className="mx-auto text-center px-8">
                     { title.length > 0 && (
-                        <Title2
-                            id="title2-service-title"
-                            text={ title }
-                            color="white"
-                            shadow={true}
-                        />
+                        <div
+                            id={id + '-title2-service-title'} 
+                            style={{ y: '100px', opacity: 0 }}
+                        >
+                            <Title2
+                                text={ title }
+                                color="white"
+                                shadow={true}
+                            />
+                        </div>
                     )}
 
                     { description.length > 0 && (
-                        <div id="text1-service-title" className="mx-auto mt-8 md:mt-10 max-w-[680px]">
+                        <div 
+                            id={id + '-text1-service-title'}
+                            className="mx-auto mt-8 md:mt-10 max-w-[680px]"
+                            style={{ y: '80px', opacity: 0 }}
+                        >
                             {description.map((text, index) => (
                                 <div key={index + '-subtitle'}>
                                     <Text1

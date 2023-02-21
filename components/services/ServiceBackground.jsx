@@ -1,9 +1,9 @@
 import Image from "next/image"
 
-export default function ServiceBackground(){
+export default function ServiceBackground({ id = '' }){
     return (
         <div
-            id="background-service" 
+            id={id + '-background-service'}
             style={{ opacity: 0 }}
         >
             <Image 

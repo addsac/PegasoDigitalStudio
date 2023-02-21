@@ -18,13 +18,15 @@ export default function Page(){
         <div className=""> {/* bg-slate-900 */}
             <main>
                 <div className="relative h-[120vh] flex items-center justify-center">
-                    <ServiceTitlesAnimation /> {/* client component for the ainmations */}
+                    <ServiceTitlesAnimation id="social" /> {/* client component for the ainmations */}
 
                     <ServiceBackground 
+                        id="social"
                         type="social-media"
                     />
 
                     <ServiceTitles
+                        id="social"
                         title={[ 'Social Media' ]} 
                         description={[
                             'Non sai come attirare potenziali clienti sui social? I tuoi contenuti non portano i risultati che vorresti? Non hai mai tempo da dedicare ai tuoi social?',

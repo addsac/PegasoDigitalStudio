@@ -3,11 +3,11 @@
 import { useEffect } from 'react'
 import { gsap, ScrollTrigger } from 'gsap/all'
 
-export default function ServiceTitlesAnimation(){
+export default function ServiceTitlesAnimation({ id = '' }){
     /**
      * Animations
      */
-    function setAnimations() {
+    /* function setAnimations() {
         gsap.set('#title2-service-title', {
             opacity: 0,
             y: '100px',
@@ -19,28 +19,28 @@ export default function ServiceTitlesAnimation(){
         gsap.set('#background-service', {
             opacity: 0,
         })
-    }
+    } */
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
 
-        setAnimations()
+        /* setAnimations() */
 
-        gsap.to('#title2-service-title', {
+        gsap.to('#' + id + '-title2-service-title', {
             y: 0,
             opacity: 1,
             duration: 1,
             ease: 'circ.out',
             delay: 0.2,
         })
-        gsap.to('#text1-service-title', {
+        gsap.to('#' + id + '-text1-service-title', {
             y: 0,
             opacity: 0.8,
             duration: 1,
             ease: 'circ.out',
             delay: 0.6,
         })
-        gsap.to('#background-service', {
+        gsap.to('#' + id + '-background-service', {
             opacity: 0.35,
             duration: 1.2,
             delay: 1,

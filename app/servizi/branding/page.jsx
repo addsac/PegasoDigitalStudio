@@ -20,13 +20,15 @@ export default function Page(){
         <div className="bg-slate-900">
             <main className="">
                 <div className="relative h-[120vh] flex items-center justify-center">
-                    <ServiceTitlesAnimation /> {/* client component for the animations */}
+                    <ServiceTitlesAnimation id="branding" /> {/* client component for the animations */}
 
                     <ServiceBackground 
+                        id="branding"
                         type="branding"
                     />
 
                     <ServiceTitles
+                        id="branding"
                         title={[ 'Branding' ]} 
                         description={[
                             'Progettiamo e sviluppiamo brand moderni basati su design, psicologia e storytelling per creare un legame con le persone e farsi ricordare.'

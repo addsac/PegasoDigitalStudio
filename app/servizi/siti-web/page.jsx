@@ -19,13 +19,15 @@ export default function Page(){
         <div className="bg-slate-900">
             <main>
                 <div className="relative h-[120vh] flex items-center justify-center">
-                    <ServiceTitlesAnimation /> {/* client component for the ainmations */}
+                    <ServiceTitlesAnimation id="siti-web" /> {/* client component for the ainmations */}
 
-                    <ServiceBackground 
+                    <ServiceBackground
+                        id="siti-web"
                         type="siti-web"
                     />
 
                     <ServiceTitles
+                        id="siti-web"
                         title={[ 'Siti Web' ]} 
                         description={ ['Progettiamo siti web che comunicano il valore della tua azienda e portano risultati tramite psicologia, storytelling e design.'] } 
                     />

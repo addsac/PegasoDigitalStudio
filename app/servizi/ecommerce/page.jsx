@@ -20,13 +20,15 @@ export default function Page(){
         <div className="bg-slate-900">
             <main>
                 <div className="relative h-[120vh] flex items-center justify-center">
-                    <ServiceTitlesAnimation /> {/* client component for the ainmations */}
+                    <ServiceTitlesAnimation id="ecommerce" /> {/* client component for the ainmations */}
                     
                     <ServiceBackground 
+                        id="ecommerce"
                         type="ecommerce"
                     />
 
                     <ServiceTitles
+                        id="ecommerce"
                         title={[ 'Ecommerce' ]} 
                         description={[ 'Progettiamo e sviluppiamo negozi digitali basati sull\'analisi dei dati, sulla psicologia e sul design, per far crescere i brand e farli scalare. , with an innovative launch of an iconic brand—using Frame.io to stay in sync while working remotely.' ]} 
                     />
