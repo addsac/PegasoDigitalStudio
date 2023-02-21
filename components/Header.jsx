@@ -609,25 +609,21 @@ export default function Header({ color }) {
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                     text="Siti Corporate" 
                                     href="/servizi/siti-web"
-                                    closeSubHeader={closeSubHeader()}
                                 />
                                 <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                     text="Ecommerce" 
                                     href="/servizi/ecommerce"
-                                    closeSubHeader={closeSubHeader()}
                                 />
                                 <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                     text="Branding" 
                                     href="/servizi/branding"
-                                    closeSubHeader={closeSubHeader()}
                                 />
                                 <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
                                     text="Social Media" 
                                     href="/servizi/social-media"
-                                    closeSubHeader={closeSubHeader()}
                                 />
                                 {/* <Button 
                                     styleName={color == 'dark' ? 'link-white' : 'link-black'}
