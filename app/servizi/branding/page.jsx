@@ -1,5 +1,3 @@
-'use client'
-
 import ServiceTitles from '../../../components/services/ServiceTitles'
 import ServiceTitlesAnimation from '../../../components/services/ServiceTitlesAnimation'
 import ServiceBackground from '../../../components/services/ServiceBackground'
