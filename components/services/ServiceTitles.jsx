@@ -13,7 +13,7 @@ export default function ServiceTitles({ title = '', description = [], id = '' })
                     { title.length > 0 && (
                         <div
                             id={id + '-title2-service-title'} 
-                            style={{ y: '100px', opacity: 0 }}
+                            style={{ transform: 'translateY(100px)', opacity: 0 }}
                         >
                             <Title2
                                 text={ title }
@@ -27,7 +27,7 @@ export default function ServiceTitles({ title = '', description = [], id = '' })
                         <div 
                             id={id + '-text1-service-title'}
                             className="mx-auto mt-8 md:mt-10 max-w-[680px]"
-                            style={{ y: '80px', opacity: 0 }}
+                            style={{ transform: 'translateY(80px)', opacity: 0 }}
                         >
                             {description.map((text, index) => (
                                 <div key={index + '-subtitle'}>
