@@ -72,7 +72,7 @@ export default function Page({ params }) {
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Settore </p>
-                                    <p className="opacity-60"> Architettura </p>
+                                    <p className="opacity-60"> Cosmetica </p>
                                 </div>
                                 <div className='col-span-6 flex flex-col gap-y-[6px] text-sm md:text-base text-white'>
                                     <p> Data </p>
@@ -116,7 +116,7 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     <WorkDescription 
-                        title="HEVOLUTA® è un Brand di Cosmetici che abbiamo seguito fin dalla nascita del progetto."
+                        title="HEVOLUTA® è un Brand di Cosmetici made in Italy."
                         description={[
                             'Ci siamo occupati di tutto quello che riguardava la presenza online del brand: dalla creazione e gestione dell\'Ecommerce e del Blog aziendale, fino alla gestione e sponsorizzazione del profilo aziendale Instagram, passando per posizionamento sui motori di ricerca (SEO) e gestione di campagne pubblicitarie, fatte per lo più sulle piattaforme Google (SEM), Facebook ed Instagram.'
                         ]}
