@@ -28,7 +28,11 @@ export default function Page() {
                     />
                 </div>
 
-                <div id="title1-mission" className="mx-auto max-w-[1400px] text-center mb-24 md:mb-48 px-8 md:px-16 lg:px-24">
+                <div
+                    id="title1-mission" 
+                    style={{ opacity: 0, transform: 'translateY(80px)' }} 
+                    className="mx-auto max-w-[1400px] text-center mb-24 md:mb-48 px-8 md:px-16 lg:px-24"
+                >
                     <h1 className='title-3 !leading-[120%] text-transparent bg-clip-text bg-gradient-to-b from-white to-sky-100/80'>
                         {/* Aiutiamo <br /> le persone <br /> a portare <br /> valore <br /> nel mondo */}
                         

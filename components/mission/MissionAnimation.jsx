@@ -16,7 +16,7 @@ export default function MissionAnimation(){
     }
         
     useEffect(() => {
-        setAnimations()
+        // setAnimations()
 
         /* gsap.to('#text3-mission', {
             y: 0,
