@@ -13,11 +13,11 @@ export default function WorkTitles() {
             <div className="mx-auto text-center max-w-[1000px] px-8 lg:px-0">
                 <div id="title2-work" style={{ opacity: 0, transform: 'translateY(100px)' }}>
                     <Title2
-                        text={['I nostri lavori']}
+                        text={['I nostri lavori', 'Quello per cui esistiamo.']}
                         gradient={true}
                     />
                 </div>
-                <div
+                {/* <div
                     id="text1-work" 
                     className="mx-auto max-w-[550px] mt-12 lg:mt-16"
                     style={{ opacity: 0, transform: 'translateY(80px)' }}
@@ -27,7 +27,7 @@ export default function WorkTitles() {
                         opacity={60}
                         color="white"
                     />
-                </div>
+                </div> */}
                 <WorkFilters />
             </div>
         </>

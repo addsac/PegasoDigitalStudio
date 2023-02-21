@@ -34,19 +34,19 @@ export default function WorkTitleAnimations() {
             ease: 'circ.out',
             delay: 0.2,
         })
-        gsap.to('#text1-work', {
+        /* gsap.to('#text1-work', {
             y: 0,
             opacity: 0.6,
             duration: 1,
             ease: 'circ.out',
             delay: 0.6,
-        })
+        }) */
         gsap.to('#filters-work', {
             y: 0,
             opacity: 1,
             duration: 1,
             ease: "circ.out",
-            delay: 1,
+            delay: 0.6, /* ,1 */
         })
     }, [])
 
