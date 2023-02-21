@@ -39,7 +39,7 @@ export default function WorkFilters() {
             {filters.map((value, index) => (
                 <button
                     key={index}
-                    onClick={ () => handleClick(value, index) }
+                    onClick={ () => { handleClick(value, index); setFilterWorks(value) } }
                     className={`${
                         activeFilter == index
                             ? 'bg-white text-slate-900 border-none'
