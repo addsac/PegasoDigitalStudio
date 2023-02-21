@@ -16,7 +16,7 @@ export default function ContactForm(){
     /**
      * Animations
      */
-    const setAnimations = () => {
+    /* const setAnimations = () => {
         gsap.set('#title2-contact', {
             opacity: 0,
             y: '80px',
@@ -30,13 +30,13 @@ export default function ContactForm(){
             opacity: 0,
             y: '80px',
         })
-    }
+    } */
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.registerPlugin(ScrollToPlugin);
 
-        setAnimations()
+        // setAnimations()
 
         if(pathname != '/contatti'){
             gsap.to('#title2-contact', {
@@ -305,6 +305,10 @@ export default function ContactForm(){
                         px-8 md:px-16 bg-gradient-radial-text
                         font-semibold lg:text-9xl md:text-8xl text-5xl leading-[120%] md:leading-[120%] lg:leading-[120%] tracking-tighter
                     `}
+                    style={{
+                        opacity: 0,
+                        transform: 'translateY(80px)'
+                    }}
                 >
                     <Balancer>
                         Hai un progetto da realizzare?
@@ -314,7 +318,13 @@ export default function ContactForm(){
 
             {/* Subtitle */}
             <div className="mt-12 md:mt-16 text-center">
-                <div className="px-16 md:px-0 max-w-[550px] mx-auto">
+                <div 
+                    style={{
+                        opacity: 0,
+                        transform: 'translateY(100%)'
+                    }} 
+                    className="px-16 md:px-0 max-w-[550px] mx-auto"
+                >
                     <Text1 
                         id="text1-contact"
                         text="Parlaci del tuo progetto e ti ricontatteremo appena possibile, non appena l&apos;avremo analizzato." 
@@ -325,7 +335,14 @@ export default function ContactForm(){
             </div>
 
             {/* Form */}
-            <div id="contact-form" className="mx-auto max-w-[730px] w-full mt-20 md:mt-24 px-8 md:px-0">
+            <div
+                id="contact-form" 
+                className="mx-auto max-w-[730px] w-full mt-20 md:mt-24 px-8 md:px-0"
+                style={{
+                    opacity: 0,
+                    transform: 'translateY(80px)'
+                }}
+            >
                 <div className="w-full">
                     {/* form submitted */}
                     <div

@@ -37,7 +37,7 @@ export default function ServiceProcess({ cipsText = '', text = '', description =
                 <div key={value + '-process-step'}>
                     <div className="p-[1px] bg-gradient-to-r from-slate-700 to-slate-900 rounded-xl" style={{ zIndex: 5 }}>
                         <div className="flex items-center gap-x-16 w-full lg:h-[400px] rounded-[calc(12px-1px)] bg-gradient-to-r from-slate-800 to-slate-900">
-                            <div className="hidden lg:block w-2/5 h-full relative rounded-l-xl">
+                            <div className="hidden w-2/5 h-full relative rounded-l-xl">
                                 {/* radial gradient image */}
                                 <div className="rounded-l-xl absolute h-full w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-900/80 to-slate-900"></div>
 
