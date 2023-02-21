@@ -10,7 +10,7 @@ export default function BlogTitles() {
 
             {/* Title and description */}
             <div className="mx-auto text-center max-w-[900px] px-8">
-                <div id="title2-blog" style={{ opacity: 0, y: '80px' }}>
+                <div id="title2-blog" style={{ opacity: 0, transform: 'translateY(80px)' }}>
                     <Title2
                         text={['Il Blog']}
                         color="slate-900"
@@ -20,7 +20,7 @@ export default function BlogTitles() {
                     id="text1-blog"
                     style={{
                         opacity: 0,
-                        y: '100%'
+                        transform: 'translateY(100)%'
                     }}
                     className="mx-auto max-w-[550px] mt-8 md:mt-12 lg:mt-16"
                 >
