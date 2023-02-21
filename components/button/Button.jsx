@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useEffect, useRef } from "react"
 import gsap from "gsap/all"
 
-export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', closeSubheader = false, onMouseEnter, size = '', weight = '', target = '' }) {
+export default function Button({ id = '', styleName = '', text = '', icon = false, href = '/', closeSubheader = null, onMouseEnter, size = '', weight = '', target = '' }) {
     // switch of the classes base on the props "style"
     if (styleName == 'link-white') {
         return (
