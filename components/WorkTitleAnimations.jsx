@@ -9,7 +9,7 @@ export default function WorkTitleAnimations() {
     /**
      * Animations
      */
-    function setAnimations() {
+    /* function setAnimations() {
         gsap.set('#title2-work', {
             opacity: 0,
             y: '100px',
@@ -22,10 +22,10 @@ export default function WorkTitleAnimations() {
             opacity: 0,
             y: '80px',
         })
-    }
+    } */
 
     useEffect(() => {
-        setAnimations()
+        // setAnimations()
 
         gsap.to('#title2-work', {
             y: 0,

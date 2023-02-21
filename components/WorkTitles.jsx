@@ -11,14 +11,18 @@ export default function WorkTitles() {
 
             {/* Title and description */}
             <div className="mx-auto text-center max-w-[1000px] px-8 lg:px-0">
-                <Title2
-                    id="title2-work"
-                    text={['I nostri lavori', '– quello per cui esistiamo']}
-                    gradient={true}
-                />
-                <div className="mx-auto max-w-[550px] mt-12 lg:mt-16">
+                <span id="title2-work" style={{ opacity: 0, y: 'translateY(100px)' }}>
+                    <Title2
+                        text={['I nostri lavori', '– quello per cui esistiamo']}
+                        gradient={true}
+                    />
+                </span>
+                <div
+                    id="text1-work" 
+                    className="mx-auto max-w-[550px] mt-12 lg:mt-16"
+                    style={{ opacity: 0, y: 'translateY(80px)' }}
+                >
                     <Text1
-                        id="text1-work"
                         text=""
                         opacity={60}
                         color="white"

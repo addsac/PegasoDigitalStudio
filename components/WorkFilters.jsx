@@ -31,7 +31,11 @@ export default function WorkFilters() {
     }
 
     return (
-        <div id="filters-work" className="mx-auto max-w-full flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10 mt-16">
+        <div
+            id="filters-work" 
+            className="mx-auto max-w-full flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10 mt-16"
+            style={{ opacity: 0, y: 'translateY(80px)' }}
+        >
             {filters.map((value, index) => (
                 <button
                     key={index}
