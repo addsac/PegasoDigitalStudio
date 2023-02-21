@@ -14,7 +14,7 @@ export default function Page(){
             <WorkTitles />
 
             <div className="w-full flex flex-col gap-y-48 mt-48 mb-64"> {/* px-8 */}
-                <WorkSection
+                {/* <WorkSection
                     text='Siti corporate'
                 />
 
@@ -32,7 +32,7 @@ export default function Page(){
 
                 <WorkSection
                     text='Social media'
-                />
+                /> */}
             </div>
 
             <div className="py-28 md:py-32 lg:py-48 bg-slate-900 border-t border-white/10">
