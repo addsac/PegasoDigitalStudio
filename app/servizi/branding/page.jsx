@@ -1,3 +1,5 @@
+'use client'
+
 import ServiceTitles from '../../../components/services/ServiceTitles'
 import ServiceTitlesAnimation from '../../../components/services/ServiceTitlesAnimation'
 import ServiceBackground from '../../../components/services/ServiceBackground'
@@ -20,7 +22,7 @@ export default function Page(){
         <div className="bg-slate-900">
             <main className="">
                 <div className="relative h-[120vh] flex items-center justify-center">
-                    <ServiceTitlesAnimation /> {/* client component for the ainmations */}
+                    <ServiceTitlesAnimation /> {/* client component for the animations */}
 
                     <ServiceBackground 
                         type="branding"

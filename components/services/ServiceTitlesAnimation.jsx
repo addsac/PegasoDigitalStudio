@@ -7,7 +7,7 @@ export default function ServiceTitlesAnimation(){
     /**
      * Animations
      */
-     function setAnimations() {
+    function setAnimations() {
         gsap.set('#title2-service-title', {
             opacity: 0,
             y: '100px',

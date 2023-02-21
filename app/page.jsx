@@ -45,10 +45,10 @@ export default function Page(){
       <div className="pt-48">
         <WorkDescription 
           /* title="Siamo uno studio digitale indipendente e progettiamo prodotti e servizi digitali che uniscono i brand ai loro utenti." */
-          title="Siamo Pegaso Digital Studio, uno studio digitale situato in Italia che collabora con aziende e professionisti raccontando le loro storie e coinvolgendo i loro clienti costruendo prodotti digitali."
+          title="Siamo uno studio digitale che collabora con aziende e professionisti costruendo prodotti ed esperienze digitali personalizate."
           description={[
-            'Abbiamo come missione quella di pensare, progettare e creare esperienze digitali che connettono le aziende ai loro clienti. E lo facciamo con un approccio basato su un design emozionale, comunicazioni basate sullo storytelling e psicologia applicata alla tecnologia.',
-            'I nostri valori sono semplici, amiamo fare le cose bene e lavorare con persone che cercano di rendere il mondo un posto migliore per se stessi e per gli altri. Siamo ispirati dalla bellezza, dalle possiblità delle nuove tecnologie e dal vedere i nostri progetti toccare le persone. Siamo semplicemente appassionati di quello che facciamo, tutto qui.',
+            'Abbiamo come missione quella di progettare esperienze digitali che connettono le aziende ai loro clienti. E lo facciamo con un approccio basato sul design emozionale, comunicazione basata sullo storytelling e psicologia.',
+            'Amiamo fare le cose bene e lavorare con persone che cercano di rendere il mondo un posto migliore per se stessi e per gli altri. Siamo ispirati dalla bellezza, dalle possiblità delle nuove tecnologie e dal vedere i nostri progetti toccare le persone. Siamo semplicemente appassionati di quello che facciamo, tutto qui.',
 
             // 'Designer, Storyteller, Sviluppatori e Marketer'
             // 'Il nostro team è composto da Designer, Sviluppatori, Storyteller e Marketer, lavorando all\'unisono per aiutare i nostri clienti a comunicare il proprio valore nel mondo.',
