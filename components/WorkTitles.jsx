@@ -29,7 +29,7 @@ export default function WorkTitles({ filterWorks }) {
                         color="white"
                     />
                 </div> */}
-                <WorkFilters filterWorks={filterWorks} />
+                <WorkFilters filterWorks={filterWorks()} />
             </div>
         </>
     )
