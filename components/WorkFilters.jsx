@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { gsap, ScrollToPlugin } from "gsap/all"
 
-export default function WorkFilters({ filterWorks }) {
+export default function WorkFilters() {
     gsap.registerPlugin(ScrollToPlugin)
 
     const [filters] = useState(['Siti web', 'Ecommerce', 'Branding', 'Social Media'])
@@ -15,8 +15,6 @@ export default function WorkFilters({ filterWorks }) {
             : setActiveFilter(null)
 
         goToArticles(value)
-
-        filterWorks(value)
     }
 
     const goToArticles = (value) => {

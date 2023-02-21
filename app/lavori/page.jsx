@@ -1,4 +1,5 @@
 import WorkTitles from "../../components/WorkTitles"
+import WorkFilters from './WorkFilters'
 import WorkSection from "../../components/WorkSection"
 import ContactForm from "../../components/ContactForm"
 import BlogPreview from "../../components/BlogPreview"
@@ -17,7 +18,9 @@ export default function Page(){
 
     return <div className="pt-[140px] md:pt-[240px]">
         <main className="py-8"> {/* pb-24 md:pb-32 lg:pb-48 */}
-            <WorkTitles filterWorks={filterWorks} />
+            <WorkTitles />
+
+            <WorkFilters />
 
             <div className="w-full flex flex-col gap-y-48 px-8 mt-40 mb-64">
                 {/* <WorkSection

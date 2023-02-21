@@ -1,9 +1,8 @@
 import WorkTitleAnimations from './WorkTitleAnimations'
 import Title2 from './text/Title2'
 import Text1 from './text/Text1'
-import WorkFilters from './WorkFilters'
 
-export default function WorkTitles({ filterWorks }) {
+export default function WorkTitles() {
 
     return (
         <>
@@ -29,7 +28,6 @@ export default function WorkTitles({ filterWorks }) {
                         color="white"
                     />
                 </div> */}
-                <WorkFilters filterWorks={filterWorks()} />
             </div>
         </>
     )
