@@ -10,14 +10,21 @@ export default function BlogTitles() {
 
             {/* Title and description */}
             <div className="mx-auto text-center max-w-[900px] px-8">
-                <Title2
-                    id="title2-blog"
-                    text={['Il Blog']}
-                    color="slate-900"
-                />
-                <div className="mx-auto max-w-[550px] mt-8 md:mt-12 lg:mt-16">
+                <div id="title2-blog" style={{ opacity: 0, y: '80px' }}>
+                    <Title2
+                        text={['Il Blog']}
+                        color="slate-900"
+                    />
+                </div>
+                <div
+                    id="text1-blog"
+                    style={{
+                        opacity: 0,
+                        y: '100%'
+                    }}
+                    className="mx-auto max-w-[550px] mt-8 md:mt-12 lg:mt-16"
+                >
                     <Text1
-                        id="text1-blog"
                         text="Find out more about our work on these leading design and technology platforms."
                         opacity={60}
                         color="slate-900"

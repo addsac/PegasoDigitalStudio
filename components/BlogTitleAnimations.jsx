@@ -26,6 +26,8 @@ export default function BlogTitleAnimations() {
     }
 
     useEffect(() => {
+        // setAnimations()
+
         gsap.to('#title2-blog', {
             y: 0,
             opacity: 1,
