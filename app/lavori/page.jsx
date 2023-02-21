@@ -1,5 +1,5 @@
 import WorkTitles from "../../components/WorkTitles"
-import WorkFilters from './WorkFilters'
+import WorkFilters from '../../components/WorkFilters'
 import WorkSection from "../../components/WorkSection"
 import ContactForm from "../../components/ContactForm"
 import BlogPreview from "../../components/BlogPreview"
