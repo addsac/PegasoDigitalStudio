@@ -3,7 +3,7 @@ import Title2 from './text/Title2'
 import Text1 from './text/Text1'
 import WorkFilters from './WorkFilters'
 
-export default function WorkTitles() {
+export default function WorkTitles({ filterWorks }) {
 
     return (
         <>
@@ -29,7 +29,7 @@ export default function WorkTitles() {
                         color="white"
                     />
                 </div> */}
-                <WorkFilters />
+                <WorkFilters filterWorks={filterWorks} />
             </div>
         </>
     )
