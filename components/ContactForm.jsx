@@ -319,17 +319,17 @@ export default function ContactForm(){
             {/* Subtitle */}
             <div className="mt-12 md:mt-16 text-center">
                 <div 
+                    id="text1-contact"
                     className="px-16 md:px-0 max-w-[550px] mx-auto"
+                    style={{
+                        opacity: 0,
+                        transform: 'translateY(100%)'
+                    }} 
                 >
                     <Text1 
-                        id="text1-contact"
                         text="Parlaci del tuo progetto e ti ricontatteremo appena possibile, non appena l&apos;avremo analizzato." 
                         color="white"
                         opacity="60"
-                        style={{
-                            opacity: 0,
-                            transform: 'translateY(100%)'
-                        }} 
                     />
                 </div>
             </div>
