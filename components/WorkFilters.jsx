@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { useState } from "react"
 import { gsap, ScrollToPlugin } from "gsap/all"
@@ -14,7 +14,7 @@ export default function WorkFilters() {
             ? setActiveFilter(index)
             : setActiveFilter(null)
 
-        goToArticles(value)
+            setWorkFilter(value)
     }
 
     const goToArticles = (value) => {
