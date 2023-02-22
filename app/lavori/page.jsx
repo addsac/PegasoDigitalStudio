@@ -9,7 +9,6 @@ import worksFromStore from "../../util/store/works"
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { AnimatePresence, Reorder } from "framer-motion"
 
 export default function Page(){
     const articles = articlesFromStore.data
@@ -80,34 +79,29 @@ export default function Page(){
                 /> */}
 
                 <div className="mx-auto w-full max-w-[800px] grid grid-cols-12 gap-y-40">
-                    <AnimatePresence>
-                        {activeWorks.map((item, index) => (
-                            <Reorder.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                className="group col-span-12 cursor-pointer hover:scale-[98%] transition duration-400" 
-                                key={index}
-                            >
-                                <Link href={item.slug}>
-                                    <div className="w-full h-[500px] bg-white overflow-clip">
-                                        <Image 
-                                            src={item.photo}
-                                            alt=""
-                                            width={500}
-                                            height={500}
-                                            className="link-for-mouse-animation text-cursor-vedi w-full h-full object-cover animation duration-200 group-hover:scale-105" 
-                                        />
-                                    </div>
+                    {activeWorks.map((item, index) => (
+                        <div
+                            className="group col-span-12 cursor-pointer hover:scale-[98%] transition duration-400" 
+                            key={index}
+                        >
+                            <Link href={item.slug}>
+                                <div className="w-full h-[500px] bg-white overflow-clip">
+                                    <Image 
+                                        src={item.photo}
+                                        alt=""
+                                        width={500}
+                                        height={500}
+                                        className="link-for-mouse-animation text-cursor-vedi w-full h-full object-cover animation duration-200 group-hover:scale-105" 
+                                    />
+                                </div>
 
-                                    <div className="flex items-center justify-between mt-6 text-left text-white font-semibold">
-                                        <p> {item.title.split('–')[0]} </p>
-                                        <p className="font-normal text-sm opacity-60 mt-[6px]"> {item.title.split('–')[1]} </p>
-                                    </div>
-                                </Link>
-                            </Reorder.div>
-                        ))}
-                    </AnimatePresence>
+                                <div className="flex items-center justify-between mt-6 text-left text-white font-semibold">
+                                    <p> {item.title.split('–')[0]} </p>
+                                    <p className="font-normal text-sm opacity-60 mt-[6px]"> {item.title.split('–')[1]} </p>
+                                </div>
+                            </Link>
+                        </div>
+                    ))}
                 </div>
 
             </div>
