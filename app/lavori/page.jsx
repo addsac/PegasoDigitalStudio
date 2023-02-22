@@ -1,10 +1,9 @@
 "use client"
 
 import WorkTitles from "../../components/WorkTitles"
-import WorkFilters from '../../components/WorkFilters'
-import WorkSection from "../../components/WorkSection"
+// import WorkSection from "../../components/WorkSection"
 import ContactForm from "../../components/ContactForm"
-import BlogPreview from "../../components/BlogPreview"
+// import BlogPreview from "../../components/BlogPreview"
 import articlesFromStore from "../../util/store/articles"
 import worksFromStore from "../../util/store/works"
 import Link from "next/link"
