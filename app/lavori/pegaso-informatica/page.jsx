@@ -288,9 +288,9 @@ export default function Page({ params }) {
                     } /> */}
 
                     <WorkCitation 
-                        text="..."
-                        author="..."
-                        authorTitle="..."
+                        text="Bravi, veloci e attenti alle richieste del cliente."
+                        author="Davide Merlo"
+                        authorTitle="Amministratore - Pegaso Informatica"
                     />
 
                     {/* <WorkCitation 
