@@ -30,14 +30,20 @@ export default function Page({ params }) {
 
                     <div className="col-span-12 md:col-span-8 pt-8">
                         <div className="mx-auto w-full max-w-[800px]">
-                            <Text1
-                                text="Caso Studio" 
-                                id="text1-work-detail"
-                                color="white" 
-                                opacity={60} 
-                            />
+                            <div id='text1-work-detail' style={{ opacity: 0, transform: 'translateY(80px)' }}>
+                                <Text1
+                                    text="Caso Studio" 
+                                    id="text1-work-detail"
+                                    color="white" 
+                                    opacity={60} 
+                                />
+                            </div>
 
-                            <div className="mt-8 md:mt-12">
+                            <div
+                                id="title3-work-detail" 
+                                style={{ opacity: 0, transform: 'translateY(100px)' }}
+                                className="mt-8 md:mt-12"
+                            >
                                 <Title3
                                     id="title3-work-detail" 
                                     text="Architettura – Marco Baldassa" 
@@ -51,7 +57,11 @@ export default function Page({ params }) {
                 </div>
 
                 {/* Description */}
-                <div id="statistics-work-detail" className="w-full grid grid-cols-12 px-8 md:px-12 lg:px-16 mt-24">
+                <div 
+                    id="statistics-work-detail"
+                    style={{opacity: 0, transform: 'translateY(80px)'}}
+                    className="w-full grid grid-cols-12 px-8 md:px-12 lg:px-16 mt-24"
+                >
                     <div className="hidden lg:block col-span-2"></div> {/* margin */}
 
                     <div className="col-span-12 lg:col-span-8">
