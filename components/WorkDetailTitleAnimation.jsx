@@ -10,18 +10,18 @@ export default function WorkDetailTitleAnimation(){
      * Animations
      */
     function setAnimations() {
-        gsap.set('#title3-work-detail', {
+        /* gsap.set('#title3-work-detail', {
             opacity: 0,
             y: '100px',
-        })
-        gsap.set('#text1-work-detail', {
+        }) */
+        /* gsap.set('#text1-work-detail', {
             opacity: 0,
             y: '80px',
-        })
-        gsap.set('#statistics-work-detail', {
+        }) */
+        /* gsap.set('#statistics-work-detail', {
             opacity: 0,
             y: '80px',
-        })
+        }) */
     }
 
     useEffect(() => {
