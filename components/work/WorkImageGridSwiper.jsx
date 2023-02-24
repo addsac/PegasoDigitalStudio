@@ -5,9 +5,7 @@ import "swiper/swiper.min.css"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode } from "swiper"
 
-export default function WorkImageGridSwiper({ type }){
-    const arrayToLoop = [800, 400, 700, 300]
-
+export default function WorkImageGridSwiper({ array }){
     return <div>
         <Swiper
             slidesPerView={"auto"}
@@ -21,17 +19,15 @@ export default function WorkImageGridSwiper({ type }){
                 <div className="md:w-16 h-full"></div>
             </SwiperSlide>
 
-            { arrayToLoop.map((value, index) => (
+            { array.map((value, index) => (
                 <SwiperSlide style={{ width: 'auto' }} key={ index }>
-                    <div style={{ width: value+'px' }} className={`relative overflow-clip flex flex-col items-center justify-center`}>
-                        <Image
-                            src="/blog-temporary-bg.jpg" 
-                            alt="" 
-                            width={500}
-                            height={500}
-                            className='link-for-mouse-animation text-cursor-trascina w-full h-[380px] md:h-[460px] object-cover' 
-                        />
-                    </div>
+                    <Image
+                        src={value} 
+                        alt="" 
+                        width={500}
+                        height={500}
+                        className='link-for-mouse-animation text-cursor-trascina w-auto h-[380px] md:h-[460px] object-cover' 
+                    />
                 </SwiperSlide>
             ))}
             

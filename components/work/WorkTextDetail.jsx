@@ -9,7 +9,7 @@ export default function WorkTextDetail({ subtitle = 'RESULTS',  title = 'A Sharp
         <div className="w-full grid grid-cols-12 gap-x-6 px-8 md:px-12 lg:px-16">
             <div className="hidden lg:block col-span-2"></div> {/* margin */}
             <div className="col-span-12 lg:col-span-8">
-                <div className="flex flex-col gap-y-12">
+                <div className="flex flex-col gap-y-16">
                     <div className="flex flex-col gap-y-6">
                         {subtitle != '' && (
                             <Text1 
@@ -24,7 +24,7 @@ export default function WorkTextDetail({ subtitle = 'RESULTS',  title = 'A Sharp
                             { title }
                         </h5>
                     </div>
-                    <div className="flex flex-col gap-y-5 !leading-[130%]">
+                    <div className="flex flex-col gap-y-8 !leading-[130%]">
                         {description.map((text, index) => (
                             <Text1 
                                 key={ index }
