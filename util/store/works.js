@@ -13,6 +13,12 @@ const works = {
             slug: '/lavori/pegaso-informatica',
             categories: ['website' ]
         },
+        {
+            photo: '/img/lavori/hevoluta/3.jpg',
+            title: 'Hevoluta – Brand di cosmetici',
+            slug: '/lavori/hevoluta',
+            categories: ['ecommerce, social' ]
+        },
         /* {
             photo: '...',
             title: 'Distribuzioni Beverage – Enomarket',

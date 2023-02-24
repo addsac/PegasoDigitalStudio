@@ -48,7 +48,7 @@ export default function Page({ params }) {
                             >
                                 <Title3
                                     id="title3-work-detail" 
-                                    text="HEVOLUTA® – Comsmesi" 
+                                    text="HEVOLUTA® – Cosmesi" 
                                     gradient={true} 
                                 />
                             </div>
@@ -173,7 +173,7 @@ export default function Page({ params }) {
                     
                     <WorkTextDetail 
                         subtitle={'Ecommerce e Blog'}
-                        title={'Abbiamo deciso di sfruttare la piattaforma WordPress, la quale era la più adatta a soddisfare le esigenze del progetto per raggiungere gli obiettivi prefissati.'}
+                        title={'Abbiamo deciso di sfruttare la piattaforma WordPress, la quale era la più adatta a soddisfare le esigenze del progetto per raggiungere gli obbiettivi prefissati.'}
                         description={[
                             'Abbiamo proceduto a sviluppare il Sito con un design minimal e pulito, che rispecchiasse il più possibile il brand e le sue caratteristiche (freschezza, armonia, purezza, vigore, forza).',
                             'Abbiamo integrato tutte le funzioni necessarie per gestire un ecommerce (come gestione degli ordini, spedizione, pre-order…) e inserito tutti i prodotti del brand con relative foto e descrizioni dei prodotti.',
