@@ -214,8 +214,8 @@ export default function Page({ params }) {
                     </div>
 
                     <WorkTextDetail 
-                        subtitle={'Social Media ed Email Marketing'}
-                        title={'Come arrivavano le persone a conoscere HEVOLUTA?'}
+                        subtitle={''}
+                        title={'Social Media ed Email Marketing?'}
                         description={[
                             'Attrarre nuovi Clienti è il modo più dispendioso e costoso di vendere, per questo motivo il passo successivo è stato coltivare la relazione con le persone che ci avevano conosciuto. Abbiamo quindi puntato sul curare e “nutrire” queste persone che ci avevano conosciuto.',
                             'Abbiamo creato una Newsletter che tenesse aggiornati gli iscritti portando valore, ad esempio avvisando alla pubblicazione di nuovi Articoli del Blog oppure inviando dei consigli sull’uso dei prodotti.',
