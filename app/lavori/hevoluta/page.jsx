@@ -161,12 +161,12 @@ export default function Page({ params }) {
                             [
                                 "/img/lavori/hevoluta/9.jpg",
                                 "/img/lavori/hevoluta/5.jpg",
-                                "/img/lavori/hevoluta/8.jpg",
                                 "/img/lavori/hevoluta/4.jpg",
-                                "/img/lavori/hevoluta/6.jpg",
-                                "/img/lavori/hevoluta/7.jpg",
-                                "/img/lavori/hevoluta/10.jpg",
+                                "/img/lavori/hevoluta/8.jpg",
                                 "/img/lavori/hevoluta/11.jpg",
+                                "/img/lavori/hevoluta/6.jpg",
+                                "/img/lavori/hevoluta/10.jpg",
+                                "/img/lavori/hevoluta/7.jpg",
                             ]
                         } 
                     />
