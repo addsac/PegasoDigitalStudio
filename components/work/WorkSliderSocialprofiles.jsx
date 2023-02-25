@@ -29,7 +29,7 @@ export default function WorkSliderSocialprofiles({ array }) {
                     <div key={'social-link-' + index}>
                         <Link target="_blank" href={item.href}>
                             <div 
-                                className={height == 'auto' ? 'h-auto' : 'h-[600px] lg:h-[500px]'  + ' group relative flex w-full lg:w-[300px] cursor-pointer flex-col items-center justify-center overflow-clip rounded-[19px] bg-slate-900'}
+                                className={item.height == 'auto' ? 'h-auto' : 'h-[600px] lg:h-[500px]'  + ' group relative flex w-full lg:w-[300px] cursor-pointer flex-col items-center justify-center overflow-clip rounded-[19px] bg-slate-900'}
                             >
                                 <Image
                                     src={`${item.photo}`}
