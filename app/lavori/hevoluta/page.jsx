@@ -16,7 +16,7 @@ import WorkTextDetail from '../../../components/work/WorkTextDetail'
 import WorkResults from '../../../components/work/WorkResults'
 import WorkVideo from '../../../components/work/WorkVideo'
 import WorkMobile4 from '../../../components/work/WorkMobile4'
-import WorkSliderSocialprofiles from '../../../components/work/WorkSliderSocialprofiles'
+import WorkSliderSocialprofile1 from '../../../components/work/WorkSliderSocialprofile1'
 import Image from 'next/image'
 
 export default function Page({ params }) {
@@ -241,7 +241,7 @@ export default function Page({ params }) {
                         description="Da questo problema però abbiamo visto l’opportunità (il “buco” nel mercato) e abbiamo deciso di coglierla lavorando sull’immagine di Biologa e Cosmetologa della sua fondatrice Moira Bonaldo, di questo però ne abbiamo parlato su un altro Caso Studio che puoi vedere qui." 
                     />
 
-                    <WorkSliderSocialprofiles array={[
+                    <WorkSliderSocialprofile1 array={[
                         { 
                             name: 'Hevoluta Instagram',
                             description: 'Brand di cosmetici',
