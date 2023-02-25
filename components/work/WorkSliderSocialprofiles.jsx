@@ -9,6 +9,7 @@ export default function WorkSliderSocialprofiles({ array }) {
             photo: '/img/services/social-media/caponigro-clerici.jpeg',
             href: 'https://www.instagram.com/dott.ssa_saracaponigro/',
             social: 'instagram',
+            height: ''
         },
         {
             name: 'Sara Caponigro',
@@ -16,6 +17,7 @@ export default function WorkSliderSocialprofiles({ array }) {
             photo: '/img/services/social-media/caponigro.jpg',
             href: 'https://www.tiktok.com/@dottsaracaponigrommg',
             social: 'tiktok',
+            height: ''
         },
     ]
 
