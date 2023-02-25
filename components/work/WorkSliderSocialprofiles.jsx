@@ -6,14 +6,14 @@ export default function WorkSliderSocialprofiles({ array }) {
         {
             name: 'Sara Caponigro',
             description: 'Medico di famiglia',
-            photo: 'caponigro-clerici.jpeg',
+            photo: '/img/services/social-media/caponigro-clerici.jpeg',
             href: 'https://www.instagram.com/dott.ssa_saracaponigro/',
             social: 'instagram',
         },
         {
             name: 'Sara Caponigro',
             description: 'Medico di famiglia',
-            photo: 'caponigro.jpg',
+            photo: '/img/services/social-media/caponigro.jpg',
             href: 'https://www.tiktok.com/@dottsaracaponigrommg',
             social: 'tiktok',
         },
@@ -28,7 +28,7 @@ export default function WorkSliderSocialprofiles({ array }) {
                         <Link target="_blank" href={item.href}>
                             <div className="group relative flex h-[600px] lg:h-[500px] w-full lg:w-[300px] cursor-pointer flex-col items-center justify-center overflow-clip rounded-[19px] bg-slate-900">
                                 <Image
-                                    src={`/img/services/social-media/${item.photo}`}
+                                    src={`${item.photo}`}
                                     alt=""
                                     width={200}
                                     height={350}

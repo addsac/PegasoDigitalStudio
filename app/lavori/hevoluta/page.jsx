@@ -245,7 +245,7 @@ export default function Page({ params }) {
                         { 
                             name: 'Hevoluta Instagram',
                             description: 'Brand di cosmetici',
-                            photo: 'placeholder-link-hevoluta.jpg',
+                            photo: '/img/lavori/hevoluta/placeholder-link-hevoluta.jpg',
                             href: 'https://www.instagram.com/hevoluta/',
                             social: 'instagram',
                         }
