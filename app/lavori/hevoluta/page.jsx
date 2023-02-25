@@ -248,7 +248,6 @@ export default function Page({ params }) {
                             photo: '/img/lavori/hevoluta/placeholder-link-hevoluta.jpg',
                             href: 'https://www.instagram.com/hevoluta/',
                             social: 'instagram',
-                            height: 'auto'
                         }
                     ]} />
 

@@ -11,7 +11,7 @@ export default function WorkSliderSocialprofile1({ array }) {
                         <Link target="_blank" href={item.href}>
                             <div className="group relative flex h-auto w-full lg:w-[300px] cursor-pointer flex-col items-center justify-center overflow-clip rounded-[19px] bg-slate-900">
                                 <Image
-                                    src={array}
+                                    src={item.photo}
                                     alt=""
                                     width={200}
                                     height={350}
