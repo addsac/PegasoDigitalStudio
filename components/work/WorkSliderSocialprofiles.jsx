@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function WorkSliderSocialprofiles() {
-    const arrayToLoop = [
+export default function WorkSliderSocialprofiles({ array }) {
+    const arrayToLoop = array ?? [
         {
             name: 'Sara Caponigro',
             description: 'Medico di famiglia',

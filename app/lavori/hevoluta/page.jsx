@@ -241,7 +241,15 @@ export default function Page({ params }) {
                         description="Da questo problema però abbiamo visto l’opportunità (il “buco” nel mercato) e abbiamo deciso di coglierla lavorando sull’immagine di Biologa e Cosmetologa della sua fondatrice Moira Bonaldo, di questo però ne abbiamo parlato su un altro Caso Studio che puoi vedere qui." 
                     />
 
-                    <WorkSliderSocialprofiles />
+                    <WorkSliderSocialprofiles array={[
+                        { 
+                            name: 'Hevoluta Instagram',
+                            description: 'Brand di cosmetici',
+                            photo: 'placeholder-link-hevoluta.jpg',
+                            href: 'https://www.instagram.com/hevoluta/',
+                            social: 'instagram',
+                        }
+                    ]} />
 
                     <WorkCitation 
                         text="Grazie alle Strategie che abbiamo scelto di intraprendere, HEVOLUTA oggi è un brand molto apprezzato e ben posizionato nella mente dei suoi Clienti, che risolve problemi veri e con una promessa precisa e forte."
