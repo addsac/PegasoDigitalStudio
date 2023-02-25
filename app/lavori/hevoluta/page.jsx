@@ -160,8 +160,8 @@ export default function Page({ params }) {
                         array={
                             [
                                 "/img/lavori/hevoluta/9.jpg",
-                                "/img/lavori/hevoluta/4.jpg",
                                 "/img/lavori/hevoluta/5.jpg",
+                                "/img/lavori/hevoluta/4.jpg",
                                 "/img/lavori/hevoluta/6.jpg",
                                 "/img/lavori/hevoluta/7.jpg",
                                 "/img/lavori/hevoluta/8.jpg",
@@ -215,7 +215,7 @@ export default function Page({ params }) {
 
                     <WorkTextDetail 
                         subtitle={''}
-                        title={'Social Media ed Email Marketing?'}
+                        title={'Social Media ed Email Marketing'}
                         description={[
                             'Attrarre nuovi Clienti è il modo più dispendioso e costoso di vendere, per questo motivo il passo successivo è stato coltivare la relazione con le persone che ci avevano conosciuto. Abbiamo quindi puntato sul curare e “nutrire” queste persone che ci avevano conosciuto.',
                             'Abbiamo creato una Newsletter che tenesse aggiornati gli iscritti portando valore, ad esempio avvisando alla pubblicazione di nuovi Articoli del Blog oppure inviando dei consigli sull’uso dei prodotti.',
@@ -226,7 +226,7 @@ export default function Page({ params }) {
                     <div className="w-full h-auto bg-red-200">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full h-[800x]">
-                                {/* <Image src="/img/lavori/hevoluta/1.jpg" width="800" height="800" alt="" className="h-auto w-full bg-slate-200" /> */}
+                                <Image src="/img/lavori/hevoluta/2.jpg" width="800" height="800" alt="" className="h-auto w-full bg-slate-200" />
                             </div>
                         </div>
                     </div>
