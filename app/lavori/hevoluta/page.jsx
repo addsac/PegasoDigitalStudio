@@ -161,10 +161,10 @@ export default function Page({ params }) {
                             [
                                 "/img/lavori/hevoluta/9.jpg",
                                 "/img/lavori/hevoluta/5.jpg",
+                                "/img/lavori/hevoluta/8.jpg",
                                 "/img/lavori/hevoluta/4.jpg",
                                 "/img/lavori/hevoluta/6.jpg",
                                 "/img/lavori/hevoluta/7.jpg",
-                                "/img/lavori/hevoluta/8.jpg",
                                 "/img/lavori/hevoluta/10.jpg",
                                 "/img/lavori/hevoluta/11.jpg",
                             ]
@@ -223,7 +223,7 @@ export default function Page({ params }) {
                         ]}
                     />
 
-                    <div className="w-full h-auto bg-red-200">
+                    <div className="w-full h-auto">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full h-[800x]">
                                 <Image src="/img/lavori/hevoluta/2.jpg" width="800" height="800" alt="" className="h-auto w-full bg-slate-200" />
