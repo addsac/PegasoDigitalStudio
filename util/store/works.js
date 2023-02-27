@@ -15,7 +15,7 @@ const works = {
         },
         {
             photo: '/img/lavori/hevoluta/3.jpg',
-            title: 'Hevoluta – Brand di Cosmesi',
+            title: 'HEVOLUTA – Brand di Cosmesi',
             slug: '/lavori/hevoluta',
             categories: ['ecommerce, social' ]
         },
