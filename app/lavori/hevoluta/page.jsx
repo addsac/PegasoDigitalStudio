@@ -183,8 +183,12 @@ export default function Page({ params }) {
                     
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full">
-                                <Image src="/img/lavori/hevoluta/12.jpg" width="1200" height="1200" alt="" className="h-auto w-full bg-slate-200" />
+                            <div className="w-full grid grid-cols-12 gap-x-6">
+                                <div className="col-span-2"></div>
+                                <div className="col-span-8">
+                                    <Image src="/img/lavori/hevoluta/12.jpg" width="1200" height="1200" quality={100} alt="" className="h-auto w-full bg-slate-200" />
+                                </div>
+                                <div className="col-span-2"></div>
                             </div>
                         </div>
                     </div>
@@ -210,7 +214,7 @@ export default function Page({ params }) {
                             <div className="w-full grid grid-cols-12 gap-x-6">
                                 <div className="col-span-2"></div>
                                 <div className="col-span-8">
-                                    <Image src="/img/lavori/hevoluta/1.jpg" width="1200" height="1200" alt="" className="h-auto w-full bg-slate-200" />
+                                    <Image src="/img/lavori/hevoluta/1.jpg" width="1200" height="1200" quality={100} alt="" className="h-auto w-full bg-slate-200" />
                                 </div>
                                 <div className="col-span-2"></div>
                             </div>
@@ -229,8 +233,12 @@ export default function Page({ params }) {
 
                     <div className="w-full h-auto">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="w-full h-[800x]">
-                                <Image src="/img/lavori/hevoluta/2.jpg" width="800" height="800" alt="" className="h-auto w-full bg-slate-200" />
+                            <div className="w-full grid grid-cols-12 gap-x-6">
+                                <div className="col-span-2"></div>
+                                <div className="col-span-8">
+                                    <Image src="/img/lavori/hevoluta/2.jpg" width="1200" height="1200" quality={100} alt="" className="h-auto w-full bg-slate-200" />
+                                </div>
+                                <div className="col-span-2"></div>
                             </div>
                         </div>
                     </div>
