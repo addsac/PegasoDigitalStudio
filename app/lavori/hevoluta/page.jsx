@@ -128,7 +128,7 @@ export default function Page({ params }) {
                         </div>
                     </div>
                     <WorkDescription 
-                        title="HEVOLUTA® è un Brand di Cosmesi Made in Italy nato con lo scopo di unire bellezza, benessere e salute in un unico prodotto."
+                        title="HEVOLUTA® è un Brand di Cosmesi Made in Italy nato dalla visione di concepire bellezza, benessere e salute unite fra loro."
                         description={[
                             'Ci siamo occupati di tutto quello che riguardava la presenza online del brand: dalla creazione e gestione dell\'Ecommerce e del Blog aziendale, fino alla gestione e sponsorizzazione del profilo aziendale Instagram, passando per posizionamento sui motori di ricerca (SEO) e gestione di campagne pubblicitarie, fatte per lo più sulle piattaforme Google (SEM), Facebook ed Instagram.'
                         ]}
