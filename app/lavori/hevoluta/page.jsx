@@ -210,7 +210,7 @@ export default function Page({ params }) {
                             <div className="w-full grid grid-cols-12 gap-x-6">
                                 <div className="col-span-2"></div>
                                 <div className="col-span-8">
-                                    <Image src="/img/lavori/hevoluta/1.jpg" width="800" height="800" alt="" className="h-auto w-full bg-slate-200" />
+                                    <Image src="/img/lavori/hevoluta/1.jpg" width="1200" height="1200" alt="" className="h-auto w-full bg-slate-200" />
                                 </div>
                                 <div className="col-span-2"></div>
                             </div>
