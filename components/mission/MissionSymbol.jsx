@@ -11,7 +11,7 @@ export default function MissionSymbol() {
             <div className="relative overflow-hidden">
                 <Title2 
                     id="title2-mission-symbol"
-                    text={ [ 'Il Simbolo' ] }
+                    text={ [ 'Perchè Pegaso?' ] }
                     color="white"
                 />
             </div>
@@ -22,7 +22,7 @@ export default function MissionSymbol() {
                     <div className="max-w-[550px] mx-auto">
                         <Text1 
                             id="text1-mission-symbol"
-                            text="Pegaso è una creatura leggendaria simbolo di creatività, ispirazion e saggezza" 
+                            text="Pegaso è una creatura leggendaria simbolo di creatività, ispirazione e saggezza" 
                             opacity={60}
                             color="white"
                         />

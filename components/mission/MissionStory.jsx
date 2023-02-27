@@ -22,7 +22,7 @@ export default function MissionStory() {
                             <div className="max-w-[660px] mx-auto">
                                 <Text1
                                     id="text1-mission-story"
-                                    text="Siamo designer, sviluppatori, storyteller e marketers lavorando all'unisono per craere lavori che durano nel tempo."
+                                    text="Siamo designer, sviluppatori, storyteller e marketers che lavorano all'unisono per craere lavori che durano nel tempo."
                                     color="white"
                                     opacity={60}
                                 />
