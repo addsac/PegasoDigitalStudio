@@ -266,7 +266,7 @@ export default function Page({ params }) {
                     <WorkCitation 
                         text="Grazie alle Strategie che abbiamo scelto di intraprendere, HEVOLUTA oggi è un brand molto apprezzato e ben posizionato nella mente dei suoi Clienti, che risolve problemi veri e con una promessa precisa e forte."
                         author="Massimo Citton"
-                        authorTitle="Responsabile Social Media"
+                        authorTitle="Online Strategist"
                     />
 
                     {/* <div className="w-full h-auto bg-slate-900">

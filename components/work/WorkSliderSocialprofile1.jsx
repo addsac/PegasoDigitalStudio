@@ -15,7 +15,7 @@ export default function WorkSliderSocialprofile1({ array }) {
                                     alt=""
                                     width={200}
                                     height={350}
-                                    className="link-for-mouse-animation text-cursor-apri-social animation h-full w-full bg-slate-900 object-cover opacity-80 duration-200 group-hover:scale-105"
+                                    className="link-for-mouse-animation text-cursor-apri-social animation h-full w-full bg-slate-900 object-cover opacity-90 duration-200 group-hover:scale-105"
                                 />
 
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900 p-4 flex items-center justiyf-between gap-x-6">
