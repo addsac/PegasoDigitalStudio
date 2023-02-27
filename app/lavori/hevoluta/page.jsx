@@ -207,7 +207,7 @@ export default function Page({ params }) {
 
                     <div className="w-full h-auto bg-slate-900">
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
-                            <div className="grid grid-cols-12 gap-x-6">
+                            <div className="w-full grid grid-cols-12 gap-x-6">
                                 <div className="col-span-2"></div>
                                 <div className="col-span-8">
                                     <Image src="/img/lavori/hevoluta/1.jpg" width="800" height="800" alt="" className="h-auto w-full bg-slate-200" />
@@ -247,8 +247,8 @@ export default function Page({ params }) {
 
                     <WorkSliderSocialprofile1 array={[
                         { 
-                            name: 'Hevoluta Instagram',
-                            description: 'Brand di cosmetici',
+                            name: 'HEVOLUTA',
+                            description: 'Brand di Cosmesi',
                             photo: '/img/lavori/hevoluta/placeholder-link-hevoluta.jpg',
                             href: 'https://www.instagram.com/hevoluta/',
                             social: 'instagram',
