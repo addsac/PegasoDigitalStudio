@@ -7,7 +7,7 @@ export default function ServiceBackground({ id = '' }){
             style={{ opacity: 0 }}
         >
             <Image 
-                src="/car-bg.png" 
+                src="/img/lavori/pegaso-informatica/1_dark.jpg" 
                 alt="" 
                 width={1200}
                 height={1200}

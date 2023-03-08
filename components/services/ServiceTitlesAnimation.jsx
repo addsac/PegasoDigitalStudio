@@ -42,7 +42,7 @@ export default function ServiceTitlesAnimation({ id = '' }){
                 delay: 0.6,
             })
             gsap.to('#' + id + '-background-service', {
-                opacity: 0.35,
+                opacity: 0.24,
                 duration: 1.2,
                 delay: 1,
             })

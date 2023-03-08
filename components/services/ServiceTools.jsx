@@ -10,8 +10,8 @@ export default function ServiceTools() {
             <div className="text-center">
                 <Cips text='Tecnologie' />
             </div>
-            <h2 className="title-4 bg-gradient-radial-text my-10 text-center">
-                Crafting premium digital <br /> products based on the best <br /> technology in the industry
+            <h2 className="title-4 bg-gradient-radial-text my-10 text-center mx-auto max-w-[730px]">
+                Usiamo solo i migliori strumenti per sviluppare progetti digitali efficaci.
             </h2>
         </div>
 

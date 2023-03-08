@@ -26,13 +26,13 @@ export default function ServiceImageFull({ path = '' }) {
     return (
         <div
             id="service-wrapper-image-full"
-            className="h-screen w-screen"
+            className="h-auto w-screen"
         >
             <Image
                 src={path == '' ? '/blog-temporary-bg.jpg' : path}
                 id="service-image-full"
                 alt=""
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
                 width={1000}
                 height={1000}
             />

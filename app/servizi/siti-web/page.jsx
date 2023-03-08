@@ -16,7 +16,7 @@ export default function Page(){
     const articles = articlesFromStore.data
 
     return (
-        <div className="bg-slate-900">
+        <div>
             <main>
                 <div className="relative h-[120vh] flex items-center justify-center">
                     <ServiceTitlesAnimation id="siti-web" /> {/* client component for the ainmations */}
@@ -39,45 +39,100 @@ export default function Page(){
                     <div id="wrapper-gains" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
-                                'Non solo il logo.',
-                                'Progetta tutta',
-                                'la comunicazione.'
+                                'Un sito web',
+                                'che comunica il',
+                                'tuo valore.'
                             ]}
-                            description='In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'
+                            // text of desctiprion to sell website building service
+                            description='Un sito web ben progettato è un investimento che ti permette di raggiungere nuovi clienti e di aumentare le vendite della tua azienda.'
                             cipsText="I Benefici"
                             id="gains"
                         />
-                        <ServiceImage3 id="gains" />
+                        <ServiceImage3 
+                            id="gains" 
+                            data1={{
+                                title: 'Aumenta la visibilità',
+                                description: 'Rendere facile alle persone di trovare la tua azienda online è fondamentale per aumentare la visibilità, con un sito web puoi farlo.',
+                                icon: 'beaker'
+                            }}
+                            data2={{
+                                title: 'Raggiungi nuovi clienti',
+                                description: 'Un buon posizionamento online garantisce una visibilità maggiore e un aumento delle persone che conosceranno la tua azienda.',
+                                icon: 'users'
+                            }}
+                            data3={{
+                                title: 'Aumenta le vendite',
+                                description: 'Più persone conoscono la tua azienda, più vendite potrai fare. Un sito web può essere un ottimo strumento per garantirti ciò.',
+                                icon: 'growth'
+                            }}
+                        />
                     </div>
 
                     <ServiceImageFull
-                        path="/img/services/branding/branding-photo.png" 
+                        path="/img/lavori/marco-baldassa5.jpg" 
                     />
 
                     <div id="wrapper-problem" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
-                                'Non solo il logo.',
-                                'Progetta tutta',
-                                'la comunicazione.'
+                                'Un progetto digitale è opportunità, non un limite tecnico.',
                             ]}
-                            description='In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'
-                            cipsText="Il Problema"
-                            id="problem"
+                            description="Il nostro approccio è quello di creare un siti web che siano un vero e proprio punto di riferimento per i tuoi clienti, che li aiuti a trovare ciò che stanno cercando, mettendo al centro l'esperienza dei ogni utente."
+                            cipsText="Un Opportunità"
+                            id="opportunity"
                         />
-                        <ServiceImage3 id="problem" />
+                        <ServiceImage3
+                            id="opportunity" 
+                            data1={{
+                                title: 'Storytelling',
+                                description: 'Basiamo il nostro lavoro sul storytelling, che vuol dire pensare la tecnologia come esperienza, per riuscire a portare il visitatore da uno stato mentale all\'altro, cumicando efficacemente.',
+                                icon: 'film'
+                            }}
+                            data2={{
+                                title: 'Psicologia',
+                                description: 'La psicologia ci permette di capire come le persone reagiscono agli stimoli che gli si presentino. Questo ci permette di progettare esperienza che le rispettino e soddisfino le loro necessità.',
+                                icon: 'psicology'
+                            }}
+                            data3={{
+                                title: 'Emozioni',
+                                description: 'Le emozioni sono il motore che spinge le persone, il cuore pulsante di ogni esperienza. Progettiamo siti web che siano in grado di coinvolgere e trasmettere emozioni ai visitatori e farsi ricordare.',
+                                icon: 'emotions'
+                            }}
+                        />
                     </div>
 
                     <ServiceTools />
 
-                    <ServiceProcess 
-                        text={[
-                            'A Sharp Turn in the Opposite Direction'
-                        ]}
-                        description='In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'
-                        cipsText="Il Processo"
-                        id="process"
-                    />
+                    <div className="relative">
+                        <ServiceProcess 
+                            text={[
+                                'Il nostro processo di lavoro è sistematico e personalizzato.',
+                            ]}
+                            description="Partiamo con il capire le esigenze del cliente e la sua visione, per poi creare un piano d'azione che sia in linea con i suoi obiettivi. Progettiamo l'esperienza tramite storytelling e psicologia, per poi sviluppare."
+                            cipsText="Il Processo"
+                            data1={{
+                                title: 'Meeting e Strategia',
+                                description: 'Ogni nuovo progetto inizia con un incontro con il cliente, per capire le sue esigenze e la sua visione. Di fondamentale importanza è capire chi è il target e quali sono gli scopi del lavoro, per poi creare un piano d’azione che sia in linea con i suoi obiettivi.',
+                                icon: ''
+                            }}
+                            data2={{
+                                title: 'Design e prototipazione',
+                                description: 'Il processo di design è il cuore di ogni progetto, è quello che permette di creare un’esperienza unica per ogni tipo di utente. Basiamo il nostro lavoro su storytelling e psicologia per sviluppare un design che sia in linea con la strategia del progetto e che sia efficace.',
+                                icon: ''
+                            }}
+                            data3={{
+                                title: 'Sviluppo',
+                                description: 'Il processo di sviluppo è la parte più tecnica, ed è quello che permette di trasformare il design in un prodotto pronto ad essere condiviso. Utilizziamo le tecnologie più moderne per creare siti web che siano veloci, sicuri e che siano ottimizzati per ogni motore di ricerca.',
+                                icon: ''
+                            }}
+                            data4={{
+                                title: 'Testing',
+                                description: 'Il processo di testing è fondamentale per garantire che il prodotto sia funzionale e che rispetti i canoni di qualità che cerchiamo. Una volta che il sito web è pronto, lo testiamo e ci assicuriamo che il suo funzionamento sia garantito.',
+                                icon: ''
+                            }}
+                            id="process"
+                        />
+                    </div>
         
                     <ServiceCitationSlider />
 
