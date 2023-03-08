@@ -85,7 +85,7 @@ export default function Page(){
                             key={index}
                         >
                             <Link href={item.slug}>
-                                <div className="w-full h-[500px] bg-white overflow-clip">
+                                <div className="w-full h-[250px] lg:h-[500px] bg-white overflow-clip">
                                     <Image 
                                         src={item.photo}
                                         alt=""
