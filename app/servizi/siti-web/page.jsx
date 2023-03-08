@@ -39,9 +39,9 @@ export default function Page(){
                     <div id="wrapper-gains" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
-                                'Un sito web',
-                                'che comunica il',
-                                'tuo valore.'
+                                'Comunica il tuo', 
+                                'valore con il',
+                                'mondo intero',
                             ]}
                             // text of desctiprion to sell website building service
                             description='Un sito web ben progettato è un investimento che ti permette di raggiungere nuovi clienti e di aumentare le vendite della tua azienda.'
@@ -134,10 +134,25 @@ export default function Page(){
                         />
                     </div>
         
-                    <ServiceCitationSlider />
+                    <ServiceCitationSlider
+                        data={[
+                            {
+                                citation: '',
+                                title: 'Marco Baldassa',
+                                subtitle: 'Architetto',
+                                photo: ''
+                            },
+                            {
+                                citation: '',
+                                title: 'Davide Merlo',
+                                subtitle: 'Esperto reti e sicurezza',
+                                photo: ''
+                            },
+                        ]}
+                    />
 
                     <WorkCitation 
-                        text="Pensare all’origine dell’azienda, ai suoi scopi e mettendo i suoi clienti al centro di ogni azione, permette di creare un brand che si faccia ricordare e si connetta con le persone."
+                        text="Quando si progetta un'esperienza partendo dalla sua necessità si riesce a raccontarne la sua storia, creerà una connessione con le persone che permette lo scambio di valori."
                         author="LEONARDO CITTON"
                         authorTitle="Designer in Pegaso Digital Studio"
                     />

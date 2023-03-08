@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Cips from '../utility/Cips'
 
-export default function ServiceCitationSlider() {
+export default function ServiceCitationSlider({ data }) {
   return (
     <div className="mx-auto w-full max-w-[1440px] grid grid-cols-12 px-8">
         {/*
