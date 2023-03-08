@@ -92,7 +92,7 @@ export default function Page(){
                         <ServiceGrid8 id="caracteristic" />
                     </div>
 
-                    <ServiceCitationSlider />
+                    {/* <ServiceCitationSlider /> */}
 
                     <WorkCitation 
                         text="Pensare all’origine dell’azienda, ai suoi scopi e mettendo i suoi clienti al centro di ogni azione, permette di creare un brand che si faccia ricordare e si connetta con le persone."
