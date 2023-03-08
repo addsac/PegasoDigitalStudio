@@ -134,25 +134,19 @@ export default function Page(){
                         />
                     </div>
         
-                    <ServiceCitationSlider
-                        data={[
+                    {/* <ServiceCitationSlider
+                        data={
                             {
-                                citation: '',
-                                title: 'Marco Baldassa',
-                                subtitle: 'Architetto',
-                                photo: ''
-                            },
-                            {
-                                citation: '',
-                                title: 'Davide Merlo',
-                                subtitle: 'Esperto reti e sicurezza',
-                                photo: ''
-                            },
-                        ]}
-                    />
+                                citation: 'Supporto e consulenza per la realizzazione del mio sito di architettura con un percorso di sviluppo condiviso che ha portato ad un eccellente risultato.',
+                                author: 'Marco Baldassa',
+                                title: 'Architetto',
+                                photo: '/img/lavori/marco-baldassa3.jpg'
+                            }
+                        }
+                    /> */}
 
                     <WorkCitation 
-                        text="Quando si progetta un'esperienza partendo dalla sua necessità si riesce a raccontarne la sua storia, creerà una connessione con le persone che permette lo scambio di valori."
+                        text="Quando si progetta un'esperienza partendo dalla sua necessità si riesce a raccontarne la sua storia, e questa creerà una connessione con le persone che permette lo scambio di valori."
                         author="LEONARDO CITTON"
                         authorTitle="Designer in Pegaso Digital Studio"
                     />
