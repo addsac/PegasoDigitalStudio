@@ -18,7 +18,7 @@ export default function ServiceBackground({ id = '', type = '' }){
 
             {type == 'branding' && (
                 <Image
-                    src="/img/servizi/branding/placeholder.jpg"
+                    src="/img/services/branding/placeholder.jpg"
                     alt=""
                     width={1200}
                     height={1200}
