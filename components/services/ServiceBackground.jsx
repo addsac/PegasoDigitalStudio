@@ -18,7 +18,7 @@ export default function ServiceBackground({ id = '', type = '' }){
 
             {type == 'branding' && (
                 <Image
-                    src="/img/lavori/marco-baldassa-logo-structure.jpg"
+                    src="/img/servizi/branding/placeholder.jpg"
                     alt=""
                     width={1200}
                     height={1200}
