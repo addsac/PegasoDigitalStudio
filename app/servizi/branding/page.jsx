@@ -12,9 +12,11 @@ import WorkCitation from '../../../components/work/WorkCitation'
 import BlogPreview from '../../../components/BlogPreview'
 import ContactForm from '../../../components/ContactForm'
 import articlesFromStore from '../../../util/store/articles'
+import worksFromStore from '../../../util/store/works'
 
 export default function Page(){
     const articles = articlesFromStore.data
+    const works = worksFromStore.data
 
     return (
         <div>
@@ -56,30 +58,30 @@ export default function Page(){
                                 {
                                     title: 'Logo, Tipografia, Colori',
                                     description: 'Progettiamo loghi, stuudiamo il font giusto per la personalità del brand e definiamo i colori che lo caratterizzeranno basati sulla psicologia.',
-                                    photo: ''
+                                    photo: '/img/services/branding/1-grid4.jpg'
                                 },
                                 {
                                     title: 'Brand Strategy',
                                     description: 'Definiamo la strategia del brand e il suo posizionamento. Questo ci permette di creare un brand che si connetta con le persone e si faccia ricordare.',
-                                    photo: ''
+                                    photo: '/img/services/branding/2-grid4.jpg'
                                 },
                                 {
                                     title: 'Brand Story',
                                     description: 'Definiamo la storia del brand e la sua cultura aziendale. Una comunicazione efficace di un brand trasmette dei valori umani che riescano a essere riconosciuti dalle persone.',
-                                    photo: ''
+                                    photo: '/img/services/branding/3-grid4.jpg'
                                 },
                                 {
                                     title: 'Guida di Stile',
                                     description: 'Definiamo la guida di stile del brand, che comprende la tipografia, i colori, le immagini e i mockup che lo caratterizzeranno.',
-                                    photo: ''
+                                    photo: '/img/services/branding/4-grid4.jpg'
                                 },
                             ]}
                         />
                     </div>
 
-                    <ServiceImageFull
+                    {/* <ServiceImageFull
                         path="/img/services/branding/branding-photo.png" 
-                    />
+                    /> */}
 
                     <div id="wrapper-why" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
@@ -166,7 +168,7 @@ export default function Page(){
 
                 <BlogPreview
                     title={['Lavori']}
-                    type="service"
+                    type="works"
                 />
 
                 <div className="py-28 md:py-32 lg:py-48 bg-slate-900">

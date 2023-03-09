@@ -9,14 +9,14 @@ export default function ServiceImage4({ id, array = [] }) {
 
         { array.map((item, index) => (
             <div key={'service-image-4-'+index} className="col-span-12 md:col-span-6 lg:col-span-3 flex flex-col mb-12">
-                <div className="w-full h-[250px] overflow-hidden relative">
+                <div className="w-full h-auto overflow-hidden relative bg-black">
                     {/* <div className="absolute h-full w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-900/80 to-slate-900"></div> */}
                     <Image 
                         src={item.photo != '' ? item.photo : '/blog-temporary-bg.jpg' }
                         alt="" 
                         width={500}
                         height={500}
-                        className="w-full h-full object-cover" 
+                        className="w-full h-full object-cover opacity-80" 
                     />
                 </div>
                 <p className="text-xl text-white font-medium mt-8 lg:mt-10"> 

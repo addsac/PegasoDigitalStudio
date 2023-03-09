@@ -157,7 +157,7 @@ export default function Page(){
 
                 <BlogPreview
                     title={['Lavori']}
-                    type="service"
+                    type="works"
                 />
 
                 <div className="py-28 md:py-32 lg:py-48 bg-slate-900">
