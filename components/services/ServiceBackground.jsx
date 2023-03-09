@@ -1,18 +1,30 @@
 import Image from "next/image"
 
-export default function ServiceBackground({ id = '' }){
+export default function ServiceBackground({ id = '', type = '' }){
     return (
         <div
             id={id + '-background-service'}
             style={{ opacity: 0 }}
         >
-            <Image 
-                src="/img/lavori/pegaso-informatica/1_dark.jpg" 
-                alt="" 
-                width={1200}
-                height={1200}
-                className="absolute bottom-0 w-full h-full object-cover" 
-            />
+            {type == 'siti-web' && (
+                <Image 
+                    src="/img/lavori/pegaso-informatica/1_dark.jpg" 
+                    alt="" 
+                    width={1200}
+                    height={1200}
+                    className="absolute bottom-0 w-full h-full object-cover" 
+                />
+            )}
+
+            {type == 'branding' && (
+                <Image
+                    src="/img/lavori/marco-baldassa-logo-structure.jpg"
+                    alt=""
+                    width={1200}
+                    height={1200}
+                    className="absolute bottom-0 w-full h-full object-cover"
+                />
+            )}
 
             {/* Gradient on bottom of the page */}
             <div 

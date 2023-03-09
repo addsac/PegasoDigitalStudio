@@ -68,15 +68,20 @@ export default function ServiceGrid8({ id = '' }) {
                             <div className="absolute bottom-0 flex items-end w-full h-full bg-gradient-to-b from-transparent to-slate-900 p-6">
                                 <div className="flex flex-col">
                                     <p className="text-lg text-white font-medium"> 
-                                        { value == 1 && ('Le Origini')}
-                                        { value == 2 && ('Il Perchè')}
-                                        { value == 3 && ('Il Conflitto')}
+                                        { value == 1 && ('La Storia')}
+                                        { value == 2 && ('Il Cambiamento')}
+                                        { value == 3 && ('I Valori')}
                                         { value == 4 && ('Le Origini')}
                                         { value == 5 && ('Il Perchè')}
                                         { value == 6 && ('Il Conflitto')}
                                     </p>
                                     <p id={`paragraph-${value}`} className="paragraph-service-grid-8 text-sm text-white/60 pr-10">
-                                        Marketing managers can choose frames directly from the videographer’s shoot, review the editor’s cut, and approve motion graphics changes to turn around social posts in just a few hours.
+                                        { value == 1 && ('La storia di un brand è il motivo in cui è nato e come è evoluto nel tempo. È il modo in cui ha deciso di affrontare i suoi problemi li vuoel superare.')}
+                                        { value == 2 && ('Il cambiamento è il punto in cui il personaggio principale del brand si rende conto che deve cambiare e che deve agire per raggiungere il suo obiettivo.')}
+                                        { value == 3 && ('I valori di un brand sono il punto di forza che lo rende unico. È il motivo per cui i clienti dovrebbero scegliere il tuo brand invece di un altro.')}
+                                        { value == 4 && ("Le origini di un brand sono il punto di partenza per la sua storia. Creare un'emozione e legarla all'identità del brand è fondamentale per costruire un rapporto di fiducia duraturo.")}
+                                        { value == 5 && ("Il perchè di un brand è il motivo per cui esiste. È la sua ragione d'essere. È il motivo per cui i clienti dovrebbero scegliere il tuo brand invece di un altro e gli da la possiblità di rispecchiarsi con esso, sentirsi compreso.")}
+                                        { value == 6 && ('Il conflitto in storytelling è il punto di rottura che porta il personaggio principale a cambiare. È il momento in cui il personaggio si rende conto che deve cambiare e che deve agire per raggiungere il suo obiettivo.')}
                                     </p>
                                 </div>
                             </div>
@@ -116,7 +121,9 @@ export default function ServiceGrid8({ id = '' }) {
                                     { value == 3 && ('Il Cambiamento')}
                                 </p>
                                 <p id={`paragraph-${value}`} className="paragraph-service-grid-8 text-sm text-white/60 pr-10">
-                                    Marketing managers can choose frames directly from the videographer’s shoot, review the editor’s cut, and approve motion graphics changes to turn around social posts in just a few hours.
+                                    { value == 1 && ('La storia di un brand è il motivo in cui è nato e come è evoluto nel tempo. È il modo in cui ha deciso di affrontare i suoi problemi li vuoel superare.')}
+                                    { value == 2 && ('Il cambiamento è il punto in cui il personaggio principale del brand si rende conto che deve cambiare e che deve agire per raggiungere il suo obiettivo.')}
+                                    { value == 3 && ('I valori di un brand sono il punto di forza che lo rende unico. È il motivo per cui i clienti dovrebbero scegliere il tuo brand invece di un altro.')}
                                 </p>
                             </div>
                         </div>
@@ -161,7 +168,9 @@ export default function ServiceGrid8({ id = '' }) {
                                     { value == 6 && ('Il Conflitto')}
                                 </p>
                                 <p id={`paragraph-${value}`} className="paragraph-service-grid-8 text-sm text-white/60 pr-10">
-                                    Directors can work with their whole pre-pro team simultaneously on one platform; reviewing wardrobe JPGs, storyboard PDFs, set design files, and location scouting videos.
+                                    { value == 4 && ("Le origini di un brand sono il punto di partenza per la sua storia. Creare un'emozione e legarla all'identità del brand è fondamentale per costruire un rapporto di fiducia duraturo.")}
+                                    { value == 5 && ("Il perchè di un brand è il motivo per cui esiste. È la sua ragione d'essere. È il motivo per cui i clienti dovrebbero scegliere il tuo brand invece di un altro e gli da la possiblità di rispecchiarsi con esso, sentirsi compreso.")}
+                                    { value == 6 && ('Il conflitto in storytelling è il punto di rottura che porta il personaggio principale a cambiare. È il momento in cui il personaggio si rende conto che deve cambiare e che deve agire per raggiungere il suo obiettivo.')}
                                 </p>
                             </div>
                         </div>

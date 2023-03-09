@@ -108,6 +108,7 @@ export default function Page(){
                             text={[
                                 'Il nostro processo di lavoro è sistematico e personalizzato.',
                             ]}
+                            type='siti-web'
                             description="Partiamo con il capire le esigenze del cliente e la sua visione, per poi creare un piano d'azione che sia in linea con i suoi obiettivi. Progettiamo l'esperienza tramite storytelling e psicologia, per poi sviluppare."
                             cipsText="Il Processo"
                             data1={{
