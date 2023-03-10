@@ -28,7 +28,7 @@ export default async function BlogPreview({ title = '', description = '', type =
             >
                 {/* Title and description */}
                 {type != 'service' && (
-                    <div className="mx-auto max-w-[1300px] text-center px-8">
+                    <div className="max-w-[1300px] px-8">
                         { title != '' && (
                             <Title2
                                 id="title2-blog-preview"
@@ -38,7 +38,7 @@ export default async function BlogPreview({ title = '', description = '', type =
                         )}
 
                         { description != '' && (
-                            <div className="mx-auto max-w-[550px] mt-8 md:mt-12 lg:mt-16">
+                            <div className="max-w-[550px] mt-8 md:mt-12 lg:mt-16">
                                 <Text1
                                     id="text1-blog-preview"
                                     text={ description }
