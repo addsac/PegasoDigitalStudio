@@ -34,6 +34,13 @@ export default function ServiceImage3({ id, data1 = {}, data2 = {}, data3 = {} }
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.75 9.25V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H9.25"></path>
                     </svg>
                 ) :
+                data1?.icon == 'target' ? (
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" className="w-6 h-6 text-white">
+                        <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                        <circle cx="12" cy="12" r="4.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                        <circle cx="12" cy="12" r="1.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                    </svg>
+                ) :
                 (
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-white">
                         <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clipRule="evenodd" />

@@ -26,6 +26,16 @@ export default function ServiceBackground({ id = '', type = '' }){
                 />
             )}
 
+            {type == 'ecommerce' && (
+                <Image
+                    src="/img/services/ecommerce/placeholder.jpg"
+                    alt=""
+                    width={1200}
+                    height={1200}
+                    className="absolute bottom-0 w-full h-full object-cover"
+                />
+            )}
+
             {/* Gradient on bottom of the page */}
             <div 
                 className="absolute bottom-0 w-full h-[120px]" 

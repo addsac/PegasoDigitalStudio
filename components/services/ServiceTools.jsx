@@ -11,7 +11,7 @@ export default function ServiceTools() {
                 <Cips text='Tecnologie' />
             </div>
             <h2 className="title-4 bg-gradient-radial-text my-10 text-center mx-auto max-w-[730px]">
-                Usiamo solo i migliori strumenti per sviluppare progetti digitali efficaci.
+                Usiamo solo i migliori strumenti per sviluppare i nostri progetti digitali.
             </h2>
         </div>
 

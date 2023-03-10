@@ -12,11 +12,9 @@ import WorkCitation from '../../../components/work/WorkCitation'
 import BlogPreview from '../../../components/BlogPreview'
 import ContactForm from '../../../components/ContactForm'
 import articlesFromStore from '../../../util/store/articles'
-import worksFromStore from '../../../util/store/works'
 
 export default function Page(){
     const articles = articlesFromStore.data
-    const works = worksFromStore.data
 
     return (
         <div>
