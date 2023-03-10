@@ -32,11 +32,10 @@ export default function BlogSwiper({ type, array }){
                 </SwiperSlide>
             )} */}
 
-            { arrayToLoop.map((item, index) => (
-                <>
+            { arrayToLoop.map((item) => (
+                <div key={ Math.floor(Math.random() * 6) }>
                     <SwiperSlide 
                         style={{ width: 'auto' }} 
-                        key={ index }
                     >
                         <Link href={type == 'works' ? item.slug : '/blog/'+item.slug }>
                             <div className="group w-[300px] md:w-[400px] relative overflow-clip flex flex-col items-center justify-center cursor-pointer hover:scale-[96%] transition duration-400">
@@ -72,7 +71,7 @@ export default function BlogSwiper({ type, array }){
                             </div>
                         </Link>
                     </SwiperSlide>
-                </>
+                </div>
             ))}
 
             {/* <SwiperSlide style={{ width: 'auto' }}>

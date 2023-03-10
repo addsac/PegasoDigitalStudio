@@ -5,22 +5,22 @@ import Image from "next/image";
 import gsap from "gsap/all";
 
 export default function ServiceGrid8({ id = '' }) {
-    const toggleSquare = (n) => {
-        const el = document.getElementById('paragraph-'+n)
+    const toggleSquare = (n, mobile = false) => {
+        const el = document.getElementById(`${mobile ? 'mobile-' : ''}paragraph-`+n)
 
         if(el.style.opacity == 0){
-            openParagraphAnimation(n)
+            openParagraphAnimation(n, mobile)
         }
         else{
-            closeParagraphAnimation(n)
+            closeParagraphAnimation(n, mobile)
         }
     }
 
-    const openParagraphAnimation = (n) => {
-        document.getElementById('button-icon-'+n).classList.add('rotate-45')
-        document.getElementById('paragraph-'+n).classList.add('mt-3')
+    const openParagraphAnimation = (n, mobile) => {
+        document.getElementById(`${mobile ? 'mobile-' : ''}button-icon-`+n).classList.add('rotate-45')
+        document.getElementById(`${mobile ? 'mobile-' : ''}paragraph-`+n).classList.add('mt-3')
         
-        gsap.to('#paragraph-'+n, {
+        gsap.to(`#${mobile ? 'mobile-' : ''}paragraph-`+n, {
             height: 'auto',
             opacity: 1,
             duration: 0.4,
@@ -28,11 +28,11 @@ export default function ServiceGrid8({ id = '' }) {
         })
     }
     
-    const closeParagraphAnimation = (n) => {
-        document.getElementById('button-icon-'+n).classList.remove('rotate-45')
-        document.getElementById('paragraph-'+n).classList.remove('mt-3')
+    const closeParagraphAnimation = (n, mobile) => {
+        document.getElementById(`${mobile ? 'mobile-' : ''}button-icon-`+n).classList.remove('rotate-45')
+        document.getElementById(`${mobile ? 'mobile-' : ''}paragraph-`+n).classList.remove('mt-3')
 
-        gsap.to('#paragraph-'+n, {
+        gsap.to(`#${mobile ? 'mobile-' : ''}paragraph-`+n, {
             height: 0,
             opacity: 0,
             duration: 0.4,
@@ -56,10 +56,10 @@ export default function ServiceGrid8({ id = '' }) {
                         <div 
                             key={'c-'+value} 
                             className="group relative col-span-12 w-full h-[240px] aspect-square rounded-[19px] overflow-hidden cursor-pointer"
-                            onClick={() => toggleSquare(value) }
+                            onClick={() => toggleSquare(value, true) }
                         >
                             <Image
-                                src="/blog-temporary-bg.jpg" 
+                                src={`/img/services/branding/${value}-grid6.jpg`} 
                                 alt=""
                                 width={300}
                                 height={300}
@@ -75,7 +75,7 @@ export default function ServiceGrid8({ id = '' }) {
                                         { value == 5 && ('Il Perchè')}
                                         { value == 6 && ('Il Conflitto')}
                                     </p>
-                                    <p id={`paragraph-${value}`} className="paragraph-service-grid-8 text-sm text-white/60 pr-10">
+                                    <p id={`mobile-paragraph-${value}`} className="paragraph-service-grid-8 text-sm text-white/60 pr-10">
                                         { value == 1 && ('La storia di un brand è il motivo in cui è nato e come è evoluto nel tempo. È il modo in cui ha deciso di affrontare i suoi problemi li vuoel superare.')}
                                         { value == 2 && ('Il cambiamento è il punto in cui il personaggio principale del brand si rende conto che deve cambiare e che deve agire per raggiungere il suo obiettivo.')}
                                         { value == 3 && ('I valori di un brand sono il punto di forza che lo rende unico. È il motivo per cui i clienti dovrebbero scegliere il tuo brand invece di un altro.')}
@@ -85,7 +85,7 @@ export default function ServiceGrid8({ id = '' }) {
                                     </p>
                                 </div>
                             </div>
-                            <button id={`button-icon-${value}`} className="flex items-center justify-center absolute right-6 bottom-6 h-6 w-6 text-white group-hover:text-slate-900 font-semibold border-2 border-white/40 group-hover:bg-white group-hover:border-white rounded-full transition duration-300">
+                            <button id={`mobile-button-icon-${value}`} className="flex items-center justify-center absolute right-6 bottom-6 h-6 w-6 text-white group-hover:text-slate-900 font-semibold border-2 border-white/40 group-hover:bg-white group-hover:border-white rounded-full transition duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
                                 </svg>
@@ -107,7 +107,7 @@ export default function ServiceGrid8({ id = '' }) {
                         onClick={() => toggleSquare(value) }
                     >
                         <Image
-                            src="/blog-temporary-bg.jpg" 
+                            src={`/img/services/branding/${value}-grid6.jpg`}
                             alt=""
                             width={300}
                             height={300}
@@ -154,7 +154,7 @@ export default function ServiceGrid8({ id = '' }) {
                         onClick={() => toggleSquare(value) }
                     >
                         <Image
-                            src="/blog-temporary-bg.jpg" 
+                            src={`/img/services/branding/${value}-grid6.jpg`}
                             alt=""
                             width={300}
                             height={300}
