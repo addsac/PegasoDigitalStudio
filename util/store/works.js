@@ -2,7 +2,7 @@ const works = {
     data: [
         // Website
         {
-            photo: '/img/lavori/copertine/marcobaldassa.jpg',
+            photo: '/img/lavori/copertine/marcobaldassa_vertical.jpg',
             title: 'Marco Baldassa – Architettura',
             slug: '/lavori/marco-baldassa',
             categories: ['website', 'branding' ]
