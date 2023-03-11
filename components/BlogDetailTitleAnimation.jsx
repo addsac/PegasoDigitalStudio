@@ -25,7 +25,7 @@ export default function BlogDetailTitleAnimation(){
     }
 
     useEffect(() => {
-        setAnimations()
+        // setAnimations()
 
         gsap.to('#text1-blog-detail', {
             y: 0,

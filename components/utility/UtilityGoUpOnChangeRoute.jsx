@@ -1,14 +1,22 @@
 'use client'
 
+import { useRouter } from "next/navigation"
 import { useEffect } from "react"
-import { usePathname } from "next/navigation"
 
 export default function UtilityGoUpOnChangeRoute() {
-    const pathname = usePathname()
+    const router = useRouter()
 
     useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [pathname])
+        const handleRouteChange = () => {
+            window.scrollTo(0, 0)
+        }
+
+        router.events.on('routeChangeStart', handleRouteChange)
+
+        return () => {
+            router.events.off('routeChangeStart', handleRouteChange)
+        }
+    }, [])
 
     return null
 }

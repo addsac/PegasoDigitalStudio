@@ -48,23 +48,34 @@ export default function Page({ params }) {
                     <div className="hidden md:block col-span-2"></div> {/* margin */}
 
                     <div className="col-span-12 md:col-span-8 pt-8">
-                        <Text1 
-                            text="Social media" 
-                            id="text1-blog-detail"
-                            color="white" 
-                            opacity={60} 
-                        />
+                        <div 
+                            id="text1-blog-detail" 
+                            style={{ opacity: 0, transform: 'translateY(80px)' }}
+                        >
+                            <Text1 
+                                text="Social media" 
+                                color="white" 
+                                opacity={60} 
+                            />
+                        </div>
 
-                        <div className="mt-8 md:mt-10">
+                        <div 
+                            id="title3-blog-detail" 
+                            style={{ opacity: 0, transform: 'translateY(100px)' }} 
+                            className="mt-8 md:mt-10"
+                        >
                             <Title3 
-                                id="title3-blog-detail" 
                                 text="4 cose da fare prima di iniziare ad utilizzare i Social"
                                 color="white"
                                 gradient={ true }
                             />
                         </div>
 
-                        <div id="author-blog-detail" className="flex items-center gap-x-6 mt-12 md:mt-20">
+                        <div 
+                            id="author-blog-detail"
+                            style={{ opacity: 0, transform: 'translateY(80px)' }}
+                            className="flex items-center gap-x-6 mt-12 md:mt-20"
+                        >
                             <div className="flex items-center gap-x-6 text-sm md:text-base">
                                 <div className="w-12 h-12 aspect-square rounded-full bg-white"></div>
                                 <a 
