@@ -8,7 +8,7 @@ const works = {
             categories: ['website', 'branding' ]
         },
         {
-            photo: '/img/lavori/work-placeholder-pegaso-informatica.jpg',
+            photo: '/img/lavori/copertine/pegasoinformatica_vertical.jpg',
             title: 'Pegaso Informatica – Il Negozio',
             slug: '/lavori/pegaso-informatica',
             categories: ['website' ]
