@@ -72,7 +72,7 @@ export default function HomeServices(){
                             </div>
                         </Link>
 
-                        <div className="flex gap-x-24 gap-y-20 md:gap-y-0">
+                        {/* <div className="flex gap-x-24 gap-y-20 md:gap-y-0">
                             <Link href="/servizi/marketing" className="group flex flex-col gap-y-6 md:gap-y-8">
                                 <Text2
                                     text="Marketing"
@@ -87,7 +87,7 @@ export default function HomeServices(){
                                     <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="hidden md:block md:col-span-2"></div>
                     <div className="hidden md:flex md:col-span-3 flex-col gap-y-20 md:gap-y-24 lg:gap-y-32">
@@ -185,7 +185,7 @@ export default function HomeServices(){
                             </div>
                         </Link>
 
-                        <Link href="/servizi/marketing" className="order-4 group flex flex-col gap-y-6 md:gap-y-8">
+                        {/* <Link href="/servizi/marketing" className="order-4 group flex flex-col gap-y-6 md:gap-y-8">
                             <Text2
                                 text="Marketing"
                                 color="white"
@@ -198,7 +198,7 @@ export default function HomeServices(){
                             <div>
                                 <div className="text-white text-sm md:text-base lg:text-lg underline group-hover:opacity-60"> Scopri di più </div>
                             </div>
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* <div className="flex flex-col gap-y-20 md:gap-y-24 lg:gap-y-32">
