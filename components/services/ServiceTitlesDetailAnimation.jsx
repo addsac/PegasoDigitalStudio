@@ -31,7 +31,6 @@ export default function ServiceTitlesDetailAnimation({ id }) {
             scrollTrigger: {
                 trigger: `#wrapper-${id}`,
                 start: 'top 300',
-                markers: true,
             },
             y: 0,
             opacity: 1,
