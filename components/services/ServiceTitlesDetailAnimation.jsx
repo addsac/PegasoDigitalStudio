@@ -30,7 +30,8 @@ export default function ServiceTitlesDetailAnimation({ id }) {
         gsap.to(`#subtitle-${id}`, {
             scrollTrigger: {
                 trigger: `#wrapper-${id}`,
-                start: 'top 200',
+                start: 'top 300',
+                markers: true,
             },
             y: 0,
             opacity: 1,
@@ -42,7 +43,7 @@ export default function ServiceTitlesDetailAnimation({ id }) {
         gsap.to(`#description-${id}`, {
             scrollTrigger: {
                 trigger: `#wrapper-${id}`,
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,
@@ -54,7 +55,7 @@ export default function ServiceTitlesDetailAnimation({ id }) {
         gsap.to(`#photo-${id}`, {
             scrollTrigger: {
                 trigger: `#wrapper-${id}`,
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,

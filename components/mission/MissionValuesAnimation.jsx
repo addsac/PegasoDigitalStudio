@@ -23,7 +23,7 @@ export default function MissionValuesAnimation(){
         gsap.to('#title2-mission-values', {
             scrollTrigger: {
                 trigger: '#mission-values-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,
@@ -35,7 +35,7 @@ export default function MissionValuesAnimation(){
         gsap.to('#text1-mission-values', {
             scrollTrigger: {
                 trigger: '#mission-values-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 0.6,
@@ -47,7 +47,7 @@ export default function MissionValuesAnimation(){
         gsap.to('#mission-values-detail--wrapper', {
             scrollTrigger: {
                 trigger: '#mission-values-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,

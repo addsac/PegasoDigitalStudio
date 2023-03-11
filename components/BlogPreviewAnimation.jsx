@@ -27,7 +27,7 @@ export default function BlogPreviewAnimation() {
         gsap.to('#title2-blog-preview', {
             scrollTrigger: {
                 trigger: '#blog-preview-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,
@@ -40,7 +40,7 @@ export default function BlogPreviewAnimation() {
         gsap.to('#text1-blog-preview', {
             scrollTrigger: {
                 trigger: '#blog-preview-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 0.6,
@@ -52,7 +52,7 @@ export default function BlogPreviewAnimation() {
         gsap.to('#blog-preview--swiper-container', {
             scrollTrigger: {
                 trigger: '#blog-preview-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,

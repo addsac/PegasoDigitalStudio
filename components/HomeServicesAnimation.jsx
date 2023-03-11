@@ -24,7 +24,7 @@ export default function HomeServicesAnimation() {
         gsap.to('#title2-services', {
             scrollTrigger: {
                 trigger: '#services-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,
@@ -37,7 +37,7 @@ export default function HomeServicesAnimation() {
         gsap.to('#text1-services', {
             scrollTrigger: {
                 trigger: '#services-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 0.6,
@@ -49,7 +49,7 @@ export default function HomeServicesAnimation() {
         gsap.to('#services-detail--wrapper', {
             scrollTrigger: {
                 trigger: '#services-wrapper',
-                start: 'top 200',
+                start: 'top 300',
             },
             y: 0,
             opacity: 1,
