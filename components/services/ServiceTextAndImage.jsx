@@ -1,6 +1,6 @@
 export default function ServiceTextAndImage({ title = '', description = [], align = 'img-left' }) {
     return (
-        <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-center items-center px-8 md:px-12 lg:px-16">
+        <div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row justify-center items-center px-8 md:px-12 lg:px-16">
                 {/* photo */}
                 { align == 'img-left' ? (
                     <div className="order-2 md:order-1 w-full md:w-1/2 mt-8 md:mt-0">
@@ -20,12 +20,12 @@ export default function ServiceTextAndImage({ title = '', description = [], alig
 
                 {/* text */}
                 <div className={`order-1 ${align == 'img-left' ? 'md:order-2' : ''} w-full md:w-1/2 ${align == 'img-left' ? 'md:pl-24 lg:pl-32' : 'md:pr-24 lg:pr-32'}`}>
-                    <p style={{ zIndex: 5 }} className="text-3xl md:text-[40px] leading-[130%] font-medium tracking-tighter text-white mb-8 md:mb-10">
+                    <p style={{ zIndex: 5 }} className="title-4 text-white mb-8 md:mb-10">
                         { title }
                     </p>
                     
                     { description.map((text, index) => (
-                        <div key={index + '-description'} className="text-base leading-[150%] text-white/60 tracking-tight">
+                        <div key={index + '-description'} className="text-3 text-white/60 tracking-tight">
                             <p className="mb-6">
                                 { text }
                             </p>
