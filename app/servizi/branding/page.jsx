@@ -84,7 +84,7 @@ export default function Page(){
                     <div id="wrapper-why" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
-                                'Comunica efficaemtente',
+                                'Comunica efficacemente',
                                 'e fatti ricordare.'
                             ]}
                             description='Avere una comunicazione chiara e coerente è la chiave per creare un legame forte con le persone e farsi ricordare. Un brand che si connetta con le persone è un brand vivo e che si distingue dalla concorrenza.'

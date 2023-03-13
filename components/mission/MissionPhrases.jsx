@@ -34,7 +34,7 @@ export default function MissionPhrases() {
                     <p className="text-white tracking-tighter text-2xl md:text-[42px] leading-[140%]">
                         <Balancer>
                             Abbiamo fondato lo studio digitale Pegaso esattamente per dare un modo alle aziende di avere un partner fidato che riesca 
-                            a condividere efficaemente il loro valore, aiutando pesrone rendendo la tecnologia un bene prezioso.
+                            a condividere efficacemente il loro valore, aiutando pesrone rendendo la tecnologia un bene prezioso.
                         </Balancer>
                     </p>
                 </div>

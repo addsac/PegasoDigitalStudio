@@ -42,7 +42,7 @@ export default async function BlogPreview({ title = '', description = '', type =
                                 <Text1
                                     id="text1-blog-preview"
                                     text={ description }
-
+                                    opacity="0.8"
                                     color="slate-900"
                                 />
                             </div>
