@@ -42,7 +42,7 @@ export default function ContactForm(){
             gsap.to('#title2-contact', {
                 scrollTrigger: {
                     trigger: "#contact-wrapper",
-                    start: 'top 300',
+                    start: 'top 200',
                 },
                 y: 0,
                 opacity: 1,
@@ -55,7 +55,7 @@ export default function ContactForm(){
             gsap.to('#text1-contact', {
                 scrollTrigger: {
                     trigger: "#contact-wrapper",
-                    start: 'top 300',
+                    start: 'top 200',
                 },
                 y: 0,
                 opacity: 0.6,
@@ -67,7 +67,7 @@ export default function ContactForm(){
             gsap.to('#contact-form', {
                 scrollTrigger: {
                     trigger: "#contact-wrapper",
-                    start: 'top 300',
+                    start: 'top 200',
                 },
                 y: 0,
                 opacity: 1,
