@@ -38,7 +38,6 @@ export default function Page({ params }) {
                                     text="Caso Studio" 
                                     id=""
                                     color="white" 
-                                    opacity={60} 
                                 />
                             </div>
 

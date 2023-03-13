@@ -55,7 +55,6 @@ export default function Page({ params }) {
                             <Text1 
                                 text="Social media" 
                                 color="white" 
-                                opacity={60} 
                             />
                         </div>
 

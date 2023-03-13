@@ -329,7 +329,6 @@ export default function ContactForm(){
                     <Text1 
                         text="Parlaci del tuo progetto e ti ricontatteremo appena possibile, non appena l&apos;avremo analizzato." 
                         color="white"
-                        opacity="60"
                     />
                 </div>
             </div>
