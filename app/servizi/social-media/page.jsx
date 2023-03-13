@@ -89,7 +89,6 @@ export default function Page(){
                                 'Profili Social',
                                 'che seguiamo:'
                             ]}
-                            description='In a YouGov poll conducted weeks after the Tour was launched, 59% of Britons said they believed the Parthenon Marbles (part of the Tour) belonged in Greece, a sharp turn in the opposite direction.'
                             cipsText="I nostri Clienti"
                             id="clients"
                         />
@@ -116,7 +115,7 @@ export default function Page(){
 
                 <BlogPreview 
                     title={['Il Blog']}
-                    description="Take a look on our latest articles to find some  inspiration for your project and more."
+                    description="Qui puoi trovare alcuni degli articoli del nostro blog per rimanere aggiornato sulle nostre novità."
                     articles={ articles }
                 />
             </main>

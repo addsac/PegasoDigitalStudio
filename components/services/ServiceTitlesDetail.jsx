@@ -30,9 +30,11 @@ export default function ServiceTitlesDetail({ text = [], description = '', cipsT
                             ))}
                         </div>
 
-                        <p id={'description-' + id} className="mx-auto max-w-[640px] text-3 text-white/60 tracking-tight px-8">
-                            { description }
-                        </p>
+                        {description != '' && (    
+                            <p id={'description-' + id} className="mx-auto max-w-[640px] text-3 text-white/60 tracking-tight px-8">
+                                { description }
+                            </p>
+                        )}
                     </div>
                 </div>
                 <div className="hidden lg:block col-span-3"></div> {/* margin */}

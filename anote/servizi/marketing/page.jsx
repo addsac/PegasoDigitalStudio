@@ -41,7 +41,7 @@ export default function Page(){
 
                 <BlogPreview 
                     title={['Il Blog']}
-                    description="Take a look on our latest articles to find some  inspiration for your project and more."
+                    description="Qui puoi trovare alcuni degli articoli del nostro blog per rimanere aggiornato sulle nostre novità."
                     articles={ articles }
                 />
             </main>
