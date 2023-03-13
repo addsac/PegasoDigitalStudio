@@ -86,7 +86,7 @@ export default function Page(){
 
       <BlogPreview 
         title={['Il Blog']}
-        description="Qui puoi troviare alcuni degli articoli del nostro blog per rimanere aggiornato sulle nostre novità."
+        description="Qui puoi trovare alcuni degli articoli del nostro blog per rimanere aggiornato sulle nostre novità."
         articles={ articles }
       />
     </main>

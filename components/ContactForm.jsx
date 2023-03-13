@@ -49,7 +49,6 @@ export default function ContactForm(){
                 // rotate: 0,
                 duration: 1,
                 ease: "circ.out",
-                delay: 0.2,  
             })
     
             gsap.to('#text1-contact', {
@@ -61,7 +60,7 @@ export default function ContactForm(){
                 opacity: 0.6,
                 duration: 1,
                 ease: "circ.out",
-                delay: 0.6,
+                delay: 0.4,
             })
     
             gsap.to('#contact-form', {
@@ -73,7 +72,7 @@ export default function ContactForm(){
                 opacity: 1,
                 duration: 1,
                 ease: "circ.out",
-                delay: 1,
+                delay: 0.8,
             })
         }
         else{
@@ -82,8 +81,7 @@ export default function ContactForm(){
                 opacity: 1,
                 // rotate: 0,
                 duration: 1,
-                ease: "circ.out",
-                delay: 0.2,  
+                ease: "circ.out", 
             })
     
             gsap.to('#text1-contact', {
@@ -91,7 +89,7 @@ export default function ContactForm(){
                 opacity: 0.6,
                 duration: 1,
                 ease: "circ.out",
-                delay: 0.6,
+                delay: 0.4,
             })
     
             gsap.to('#contact-form', {
@@ -99,7 +97,7 @@ export default function ContactForm(){
                 opacity: 1,
                 duration: 1,
                 ease: "circ.out",
-                delay: 1,
+                delay: 0.8,
             })
         }
     }, [pathname])

@@ -25,7 +25,7 @@ export default function BlogTitles() {
                     className="mx-auto max-w-[550px] mt-8 md:mt-12 lg:mt-16"
                 >
                     <Text1
-                        text="Find out more about our work on these leading design and technology platforms."
+                        text="Qui puoi trovare alcuni degli articoli del nostro blog per rimanere aggiornato sulle nostre novità."
                         color="slate-900"
                     />
                 </div>
