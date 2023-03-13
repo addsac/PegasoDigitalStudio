@@ -4,8 +4,8 @@ export default function Title2({ id, text = [], color, gradient = false, shadow 
             id={id ? id : ''}
             className={`
                 ${footer ? 'title-2-footer' : 'title-2'}
-                ${color && ('text-' + color)} 
-                ${shadow && 'drop-shadow-lg'}
+                ${color ? ('text-' + color) : ''} 
+                ${shadow ?  'drop-shadow-lg' : ''}
                 ${gradient ? 'bg-gradient-radial-text' : ''}
             `}
         >
