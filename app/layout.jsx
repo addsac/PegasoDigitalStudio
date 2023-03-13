@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 // import HandleColorBackground from '../components/HandleColorBackground'
 import HeaderWrapper from '../components/HeaderWrapper'
 import UtilityCustomCursor from '../components/utility/UtilityCustomCursor'
-import UtilityGoUpOnChangeRoute from '../components/utility/UtilityGoUpOnChangeRoute'
+import UtilityGoUpOnChangeRoute from '../components/utility/UtilityGoUpOnChangeRoute.jsx'
 import UtilityCookie from '../components/utility/UtilityCookie'
 import ExperienceBackground from "../components/ExperienceBackground"
 import Footer from "../components/Footer"
