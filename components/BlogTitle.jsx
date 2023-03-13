@@ -26,7 +26,6 @@ export default function BlogTitles() {
                 >
                     <Text1
                         text="Find out more about our work on these leading design and technology platforms."
-                        opacity={60}
                         color="slate-900"
                     />
                 </div>
