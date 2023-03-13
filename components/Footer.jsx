@@ -30,10 +30,10 @@ export default function Footer(){
                             <div className="hidden md:block">
                                 Leggi la storia da cui è partito tutto.
                                 <br className="hidden md:block" /> 
-                                Quello in cui crediamo e cerchiamo di ottere.
+                                Quello in cui crediamo e lavoriamo per realizzare.
                             </div>
                             <div className="md:hidden">
-                                Leggi la storia da cui è partito tutto. Quello in cui crediamo e cerchiamo di ottere.
+                                Leggi la storia da cui è partito tutto. Quello in cui crediamo e cerchiamo lavoriamo per realizzare.
                             </div>
                         </div>
                         <Button 
@@ -142,26 +142,22 @@ export default function Footer(){
                             <p className="font-normal opacity-50 mb-2 md:mb-4">
                                 Servizi
                             </p>
-                            <Link href="/">
+                            <Link href="/serivizi/siti-web">
                                 <button className="hover:opacity-60 transition duration-300">
                                     Siti Corporate
                                 </button>
                             </Link>
-                            <Link href="/">
+                            <Link href="/servizi/ecommerce">
                                 <button className="hover:opacity-60 transition duration-300">
                                     Ecommerce
                                 </button>
                             </Link>
-                            <Link href="/">
+                            <Link href="/servizi/branding">
                                 <button className="hover:opacity-60 transition duration-300">
                                     Branding
                                 </button>
                             </Link>
-                            <Link href="/">
-                                <button className="hover:opacity-60 transition duration-300">
-                                    Marketing
-                                </button>
-                            </Link><Link href="/">
+                            <Link href="/servizi/social-media">
                                 <button className="hover:opacity-60 transition duration-300">
                                     Social Media
                                 </button>
