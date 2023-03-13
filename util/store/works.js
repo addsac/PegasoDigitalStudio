@@ -14,7 +14,7 @@ const works = {
             categories: ['website' ]
         },
         {
-            photo: '/img/lavori/hevoluta/3.jpg',
+            photo: '/img/lavori/copertine/hevoluta_vertical.jpg',
             title: 'HEVOLUTA – Brand di Cosmesi',
             slug: '/lavori/hevoluta',
             categories: ['ecommerce, social' ]
@@ -27,7 +27,7 @@ const works = {
 
         // Social
         {
-            photo: '/img/lavori/work-placeholder-sara-caponigro.jpg',
+            photo: '/img/lavori/copertine/caponigro_vertical.jpg',
             title: 'Sara Caponigro – Medico di Famiglia',
             slug: '/lavori/sara-caponigro',
             categories: ['social' ]

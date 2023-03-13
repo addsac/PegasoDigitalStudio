@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         {/* Utility */}
         {/* <HandleColorBackground /> */}
         <UtilityCustomCursor />
-        <UtilityGoUpOnChangeRoute />
+        {/* <UtilityGoUpOnChangeRoute /> */}
         <UtilityCookie />
         
         { children }

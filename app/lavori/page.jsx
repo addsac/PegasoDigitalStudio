@@ -87,7 +87,7 @@ export default function Page(){
                             <Link href={item.slug}>
                                 <div className="w-full h-[250px] lg:h-[500px] bg-white overflow-clip">
                                     <Image 
-                                        src={item.photo}
+                                        src={item.photo.replace('vertical', 'horizontal')}
                                         alt=""
                                         width={500}
                                         height={500}

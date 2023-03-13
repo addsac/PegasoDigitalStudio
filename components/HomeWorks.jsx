@@ -144,12 +144,10 @@ export default function HomeWorks() {
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title3-photo" className="font-semibold hidden md:block">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
                                         {worksArray[2].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[2].title.split('–')[1]} </span>
                                     </p>
                                     {/* mobile */}
                                     <p className="font-semibold text-sm md:hidden">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
                                         {worksArray[2].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[2].title.split('–')[1]} </span>
                                     </p>
                                 </div>
@@ -164,7 +162,7 @@ export default function HomeWorks() {
                                     onMouseLeave={ () => animatePhotoLeave(4) }
                                 >
                                     <Image 
-                                        src="/blog-temporary-bg.jpg" 
+                                        src={worksArray[3].photo}
                                         alt="" 
                                         width={500}
                                         height={500}
@@ -174,11 +172,11 @@ export default function HomeWorks() {
                                 <div className="relative overflow-hidden mt-5">
                                     {/* desktop */}
                                     <p id="title4-photo" className="font-semibold hidden md:block">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        {worksArray[3].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[3].title.split('–')[1]} </span>
                                     </p>
                                     {/* mobile */}
                                     <p className="font-semibold text-sm md:hidden">
-                                        Aebele Interiors — <span className="opacity-50">Luxurious design experience</span>
+                                        {worksArray[3].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[3].title.split('–')[1]} </span>
                                     </p>
                                 </div>
                             </div>
