@@ -42,7 +42,7 @@ export default function Page(){
                     <ServiceTextAndImage
                         title="Per chi è questo servizio?"
                         description={[
-                            'Se sei un’Azienda o un Professionista che vuole comunicare online per crearsi un’immagine, costruirsi una reputazione, mostrare l’unicità dei suoi prodotti/servizi e attrarre nuovi Clienti, possiamo fare al caso tuo!',
+                            <Fragment>Se sei un’<span class='text-marked'>Azienda</span> o un Professionista che vuole comunicare online per crearsi un’<span class='text-marked'>immagine</span>, costruirsi una <span class='text-marked'>reputazione</span>, mostrare l’unicità dei suoi prodotti/servizi e <span class='text-marked'>attrarre nuovi Clienti</span>, possiamo fare al caso tuo!</Fragment>,
                             'I Social, però, richiedono costanza e impegno, senza questi ingredienti non è possibile ottenere grandi risultati. Se non sei disposto a dedicare una parte del tuo tempo allora questo servizio probabilmente non fa per te.',
                             'Questo servizio è pensato infatti, SOLO per chi vuole realmente raggiungere i propri obiettivi ed è disposto ad investire il suo tempo e i suoi sforzi.'
                         ]}
