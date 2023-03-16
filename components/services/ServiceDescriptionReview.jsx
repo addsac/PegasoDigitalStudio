@@ -28,7 +28,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
             }, 100)
         }
         else if(n == 4){
-            el.src = "/img/services/social-media/video-recensione-marta_.mp4"
+            el.src = "/img/services/social-media/video-recensione-chiara-moretti.mp4"
             setTimeout(() => {
                 el.play()
             }, 100)
@@ -161,7 +161,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                             </div>
                         </div>
 
-                        <div onClick={() => openModal(4)} className="mt-32 relative w-full h-[300px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
+                        <div onClick={() => openModal(4)} className="mt-12 relative w-full h-[300px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
                             <div className="absolute bottom-0 left-0 -ml-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
 
                             <Image 
