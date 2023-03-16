@@ -10,6 +10,7 @@ import BlogPreview from '../../../components/BlogPreview'
 import ContactForm from '../../../components/ContactForm'
 import ServiceTitlesAnimation from '../../../components/services/ServiceTitlesAnimation'
 import articlesFromStore from '../../../util/store/articles'
+import { Fragment } from 'react'
 
 export default function Page(){
     const articles = articlesFromStore.data
@@ -29,7 +30,7 @@ export default function Page(){
                         id="social"
                         title={[ 'Social Media' ]} 
                         description={[
-                            'Non sai come attirare potenziali clienti sui social? I tuoi contenuti non portano i risultati che vorresti? Non hai mai tempo da dedicare ai tuoi social?',
+                            <Fragment>Non sai come attirare <b>potenziali clienti</b> sui social? I tuoi contenuti non portano i risultati che vorresti? Non hai mai tempo da dedicare ai tuoi social?</Fragment>,
                             'Se stai cercando qualcuno che si occupi della tua presenza social e che ti aiuti a costruire una comunicazione online efficace, allora sei nel posto giusto!'
                         ]} 
                     />
@@ -106,7 +107,7 @@ export default function Page(){
 
                 <BlogPreview
                     title={['Lavori']}
-                    type="service"
+                    type="works"
                 />
 
                 <div className="py-28 md:py-32 lg:py-48 bg-slate-900">
