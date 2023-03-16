@@ -36,7 +36,7 @@ export default function ServiceTitlesAnimation({ id = '' }){
             })
             gsap.to('#' + id + '-text1-service-title', {
                 y: 0,
-                opacity: 0.8,
+                opacity: 1,
                 duration: 1,
                 ease: 'circ.out',
                 delay: 0.6,
