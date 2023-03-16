@@ -30,7 +30,7 @@ export default function Page(){
                         id="social"
                         title={[ 'Social Media' ]} 
                         description={[
-                            <Fragment>Non sai come attirare <span className='text-white opacity-100'>potenziali clienti</span> sui social? I tuoi contenuti non portano i risultati che vorresti? Non hai mai tempo da dedicare ai tuoi social?</Fragment>,
+                            <Fragment>Non sai come attirare <span className='!text-white !opacity-100'>potenziali clienti</span> sui social? I tuoi contenuti non portano i risultati che vorresti? Non hai mai tempo da dedicare ai tuoi social?</Fragment>,
                             'Se stai cercando qualcuno che si occupi della tua presenza social e che ti aiuti a costruire una comunicazione online efficace, allora sei nel posto giusto!'
                         ]} 
                     />
