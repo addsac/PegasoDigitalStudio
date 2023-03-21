@@ -30,8 +30,9 @@ export default function Page(){
                         id="social"
                         title={[ 'Social Media' ]} 
                         description={[
-                            'Non sai come attirare potenziali clienti sui social? I tuoi contenuti non portano i risultati che vorresti? Non hai mai tempo da dedicare ai tuoi social?',
-                            'Se stai cercando qualcuno che si occupi della tua presenza social e che ti aiuti a costruire una comunicazione online efficace, allora sei nel posto giusto!'
+                            /* 'Non sai come attirare potenziali clienti sui social? I tuoi contenuti non portano i risultati che vorresti? Non hai mai tempo da dedicare ai tuoi social?',
+                            'Se stai cercando qualcuno che si occupi della tua presenza social e che ti aiuti a costruire una comunicazione online efficace, allora sei nel posto giusto!', */
+                            'Molto più di una semplice Gestione dei profili Social…'
                         ]} 
                     />
                 </div>
@@ -42,21 +43,23 @@ export default function Page(){
                     <ServiceTextAndImage
                         title="Per chi è questo servizio?"
                         description={[
-                            <Fragment>Se sei un’<span class='text-marked'>Azienda</span> o un Professionista che vuole comunicare online per crearsi un’<span class='text-marked'>immagine</span>, costruirsi una <span class='text-marked'>reputazione</span>, mostrare l’unicità dei suoi prodotti/servizi e <span class='text-marked'>attrarre nuovi Clienti</span>, possiamo fare al caso tuo!</Fragment>,
-                            'I Social, però, richiedono costanza e impegno, senza questi ingredienti non è possibile ottenere grandi risultati. Se non sei disposto a dedicare una parte del tuo tempo allora questo servizio probabilmente non fa per te.',
-                            'Questo servizio è pensato infatti, SOLO per chi vuole realmente raggiungere i propri obiettivi ed è disposto ad investire il suo tempo e i suoi sforzi.'
+                            <Fragment>Sei un <span class='text-marked'>Professionista</span> o un'<span class='text-marked'>Azienda</span> che si occupa della <span class='text-marked'>Salute</span> e del <span class='text-marked'>Benessere</span> delle persone e vuoi <span class='text-marked'>divulgare</span> informazioni e consigli che credi possano <span class='text-marked'>aiutare</span> ed essere <span class='text-marked'>utili</span> per molte persone?</Fragment>,
+                            <Fragment>Vuoi ottenere i <span class='text-marked'>benefici</span> derivanti da una buona <span class='text-marked'>notorietà</span> e da un preciso posizionamento <span class='text-marked'>delegando parte del lavoro</span> (riguardante la tua presenza sui Social Media) per <span class='text-marked'>guadagnare tempo</span> e dedicarlo ad altro? </Fragment>,
+                            <Fragment>Potresti allora aver bisogno del nostro aiuto per raggiungere nella maniera migliore e più veloce i tuoi obiettivi!</Fragment>
                         ]}
                         align='img-left'
                     />
 
                     <ServiceTextAndImage
-                        title="Quali benefici otterrai?"
+                        title="Quali benefici otterrai lavorando con noi?"
                         description={[
-                            'Grazie ai Social potrai parlare con le persone ancora prima che diventino tuoi Clienti, questa è un’opportunità unica!',
+                            <Fragment>I <span class='text-marked'>benefici</span> derivanti da una buona <span class='text-marked'>notorietà</span> sui Social e dalla creazione di una <span class='text-marked'>community</span> appassionata sono <span class='text-marked'>innumerevoli</span> e, anzi, soltanto la nostra immaginazione può limitare ciò che si può ottenere e realizzare.</Fragment>,
+                            <Fragment>Affidarti a qualcuno di esperto può farti <span class='text-marked'>risparmiare tempo e denaro</span> perché sfrutterai l’esperienza e le conoscenze di professionisti che ti aiuteranno a raggiungere i tuoi obiettivi nel minor tempo possibile, <span class='text-marked'>delegando quella parte del lavoro più tecnica</span> in modo da avere più tempo per cose più importanti.</Fragment>,
+                            /* 'Grazie ai Social potrai parlare con le persone ancora prima che diventino tuoi Clienti, questa è un’opportunità unica!',
                             'Potrai finalmente far risaltare la tua Azienda e i suoi punti di forza, costruendo una strategia che ti permetta di raggiungere i risultati sperati.',
                             'I tuoi contenuti saranno mirati per ottenere più visibilità e in grado di intrattenere, convertire e fidelizzare i tuoi Clienti.',
                             'Il tuo profilo diventerà un profilo di impatto, chiaro, unico e ordinato, creato per attrarre nuovi Clienti.',
-                            'Non dovrai più sperare in un passaparola incerto e non misurabile, ma potrai basare le tue valutazioni su risultati (dati) certi e misurabili.'
+                            'Non dovrai più sperare in un passaparola incerto e non misurabile, ma potrai basare le tue valutazioni su risultati (dati) certi e misurabili.' */
                         ]}
                         align='img-right'
                     />
@@ -64,31 +67,33 @@ export default function Page(){
                     <ServiceTextAndImage
                         title="Perché dovresti affidarti a noi?"
                         description={[
-                            'Non improvvisiamo il nostro lavoro, ma sviluppiamo un vero e proprio piano di azione che possa valorizzare il tuo lavoro.',
+                            <Fragment><span class='text-marked'>Diamo valore alla persona</span> che sei, alla tua <span class='text-marked'>personalità</span>, ai tuoi <span class='text-marked'>valori</span> e a <span class='text-marked'>ciò in cui credi</span>. Inoltre, <span class='text-marked'>non ti sostituiamo</span> mai completamente nella scelta e <span class='text-marked'>nell’elaborazione degli argomenti</span> di cui trattare, perché siamo convinti che solo chi è del settore e ci lavora dentro sia in grado di parlare di questi argomenti.</Fragment>,
+                            <Fragment>Sviluppiamo un vero e proprio piano di <span class='text-marked'>azione personalizzato</span> che ti consentirà di <span class='text-marked'>raggiungere i risultati</span> prefissati nel minor tempo possibile, in maniera solida e sostenibile. </Fragment>,
+                            <Fragment>Facciamo tutto questo per <span class='text-marked'>adattare la Comunicazione</span> del tuo (Personal) Brand <span class='text-marked'>alla tua persona</span> e per fare in modo di <span class='text-marked'>non trovarsi mai a dover fare cose che non si sentono proprie.</span></Fragment>
+                            /* 'Non improvvisiamo il nostro lavoro, ma sviluppiamo un vero e proprio piano di azione che possa valorizzare il tuo lavoro.',
                             'Uniamo la creatività e la professionalità per raggiungere veri risultati.',
-                            'E potremmo aggiungere moltissime altre cose, ma ci piace far parlare i risultati, da qui si capisce la nostra passione e dedizione.'
+                            'E potremmo aggiungere moltissime altre cose, ma ci piace far parlare i risultati, da qui si capisce la nostra passione e dedizione.' */
                         ]}
                         align='img-left'
                     />
 
                     <ServiceDescriptionReview 
                         text={[
-                            'Pensi che i Social siano solo un costo aggiuntivo?'
+                            'Cosa dice chi ha già ottenuto risultati?'
                         ]}
                         description={[
-                            'Un\'agenzia di Comunicazione che ti aiuti ad acquisire nuovi Clienti non è un costo, ma un investimento per far crescere il tuo business.',
-                            'Affidarti a qualcuno di esperto può farti risparmiare tempo e denaro perché sfrutterai l’esperienza e le conoscenze di professionisti che ti aiuteranno a raggiungere i tuoi obiettivi nel minor tempo possibile.',
-                            'Se pensi che i Social siano solo soldi buttati guarda i video dei risultati che hanno ottenuto chi ha deciso di affidarsi a noi.'
+                            <Fragment>Un’<span class='text-marked'>Agenzia di Comunicazione</span> che ti aiuti a raggiungere i <span class='text-marked'>risultati</span> desiderati è un <span class='text-marked'>investimento</span> per far crescere il tuo business.</Fragment>,
+                            <Fragment>Ecco perché i nostri Clienti sono felici ed entusiasti dei risultati che stiamo raggiungendo insieme.</Fragment>,
+                            <Fragment>Questi sono alcuni di loro che hanno qualcosa da dirti:</Fragment>
                         ]}
-                        cipsText="Il Processo"
+                        cipsText=""
                         id="description-with-review"
                     />
 
                     <div id="wrapper-clients" className="flex flex-col gap-y-20 md:gap-y-32">
                         <ServiceTitlesDetail
                             text={[
-                                'Profili Social',
-                                'che seguiamo:'
+                                'Professionisti e Aziende con cui collaboriamo:',
                             ]}
                             cipsText="I nostri Clienti"
                             id="clients"
@@ -99,8 +104,8 @@ export default function Page(){
 
                     <WorkCitation 
                         text="I tuoi obiettivi diventano anche i nostri"
-                        author="MASSIMO CITTON"
-                        authorTitle="Digital marketer in Pegaso Digital Studio"
+                        author="CHIARA COGO"
+                        authorTitle="Social Media Strategist"
                     />
                 </div>
                 {/* End content */}
