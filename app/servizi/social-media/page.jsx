@@ -18,7 +18,7 @@ export default function Page(){
     return (
         <div className=""> {/* bg-slate-900 */}
             <main>
-                <div className="relative h-[120vh] flex items-center justify-center">
+                <div className="relative h-[80vh] lg:h-[120vh] flex items-center justify-center">
                     <ServiceTitlesAnimation id="social" /> {/* client component for the ainmations */}
 
                     <ServiceBackground 
@@ -115,7 +115,7 @@ export default function Page(){
                     type="works"
                 />
 
-                <div className="py-28 md:py-32 lg:py-48 bg-slate-900">
+                <div className="py-28 md:py-32 lg:py-48">
                     <ContactForm />
                 </div>
 

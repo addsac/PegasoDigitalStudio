@@ -106,7 +106,7 @@ export default function Page(){
 
             </div>
 
-            <div className="py-28 md:py-32 lg:py-48 bg-slate-900 border-t border-white/10">
+            <div className="py-28 md:py-32 lg:py-48 border-t border-white/10">
                 <ContactForm />
             </div>
 

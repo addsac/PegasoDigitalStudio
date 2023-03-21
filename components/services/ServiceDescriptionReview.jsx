@@ -182,7 +182,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                             </div>
                             <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm">
                                 <div>
-                                    Chiara Moretti &nbsp;—&nbsp; Medico Nutrizionista
+                                    Chiara Moretti &nbsp;—&nbsp; Nutrizionista
                                 </div>
                             </div>
                         </div>

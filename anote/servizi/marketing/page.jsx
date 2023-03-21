@@ -35,7 +35,7 @@ export default function Page(){
                     type="service"
                 />
 
-                <div className="py-28 md:py-32 lg:py-48 bg-slate-900">
+                <div className="py-28 md:py-32 lg:py-48">
                     <ContactForm />
                 </div>
 
