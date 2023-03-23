@@ -50,13 +50,13 @@ export default function ServiceClientsSlider({ id }) {
             href: 'https://www.instagram.com/chiaramoretti_nutrizionista/',
             social: 'instagram'
         },
-        {
+        /* {
             name: 'FrancaViaRoma15',
             description: 'Fashion ',
             photo: 'franca-viaroma15.jpg',
             href: 'https://www.instagram.com/francaviaromaquindici/',
             social: 'instagram'
-        },
+        }, */
     ]
 
     return (
