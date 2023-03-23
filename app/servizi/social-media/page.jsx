@@ -47,7 +47,7 @@ export default function Page(){
                             <Fragment>Vuoi ottenere i <span class='text-marked'>benefici</span> derivanti da una buona <span class='text-marked'>notorietà</span> e da un preciso posizionamento <span class='text-marked'>delegando parte del lavoro</span> per <span class='text-marked'>guadagnare tempo</span> e dedicarlo ad altro? </Fragment>,
                             <Fragment>Potresti allora aver bisogno del nostro aiuto per raggiungere nella maniera migliore e più veloce i tuoi obiettivi!</Fragment>
                         ]}
-                        img={'/img/services/social-media/2.jpeg'}
+                        img={'/img/services/social-media/1.jpeg'}
                         align='img-left'
                     />
 
