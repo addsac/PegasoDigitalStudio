@@ -1,10 +1,18 @@
-export default function ServiceTextAndImage({ title = '', description = [], align = 'img-left' }) {
+import Image from "next/image";
+
+export default function ServiceTextAndImage({ title = '', description = [], img = '', align = 'img-left' }) {
     return (
         <div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row justify-center items-center px-8 md:px-12 lg:px-16">
                 {/* photo */}
                 { align == 'img-left' ? (
                     <div className="order-2 md:order-1 w-full md:w-1/2 mt-8 md:mt-0">
-                        <div className="bg-white h-[350px] md:h-[500px] lg:h-[700px] rounded-[19px] w-full"></div>  
+                        <Image
+                            src={img}
+                            alt="Social media services image"
+                            width={800}
+                            height={800}
+                            className="h-auto rounded-[19px] w-full"
+                        />
                     </div>
                 ) : (<></>)}
 
@@ -45,7 +53,13 @@ export default function ServiceTextAndImage({ title = '', description = [], alig
                 {/* photo */}
                 { align == 'img-right' ? (
                     <div className="order-2 ${align == 'img-left' ? 'md:order-1' : ''} w-full md:w-1/2 mt-8 md:mt-0">
-                        <div className="bg-white h-[350px] md:h-[500px] lg:h-[700px] rounded-[19px] w-full"></div>  
+                        <Image
+                            src={img}
+                            alt="Social media services image"
+                            width={800}
+                            height={800}
+                            className="h-auto rounded-[19px] w-full"
+                        />
                     </div>
                 ) : (<></>)}
         </div>

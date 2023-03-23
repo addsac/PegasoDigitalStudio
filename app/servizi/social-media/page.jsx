@@ -44,9 +44,10 @@ export default function Page(){
                         title="Per chi è questo servizio?"
                         description={[
                             <Fragment>Sei un <span class='text-marked'>Professionista</span> o un'<span class='text-marked'>Azienda</span> che si occupa della <span class='text-marked'>Salute</span> e del <span class='text-marked'>Benessere</span> delle persone e vuoi <span class='text-marked'>divulgare</span> informazioni e consigli che credi possano <span class='text-marked'>aiutare</span> ed essere <span class='text-marked'>utili</span> per molte persone?</Fragment>,
-                            <Fragment>Vuoi ottenere i <span class='text-marked'>benefici</span> derivanti da una buona <span class='text-marked'>notorietà</span> e da un preciso posizionamento <span class='text-marked'>delegando parte del lavoro</span> (riguardante la tua presenza sui Social Media) per <span class='text-marked'>guadagnare tempo</span> e dedicarlo ad altro? </Fragment>,
+                            <Fragment>Vuoi ottenere i <span class='text-marked'>benefici</span> derivanti da una buona <span class='text-marked'>notorietà</span> e da un preciso posizionamento <span class='text-marked'>delegando parte del lavoro</span> per <span class='text-marked'>guadagnare tempo</span> e dedicarlo ad altro? </Fragment>,
                             <Fragment>Potresti allora aver bisogno del nostro aiuto per raggiungere nella maniera migliore e più veloce i tuoi obiettivi!</Fragment>
                         ]}
+                        img={'/img/services/social-media/2.jpeg'}
                         align='img-left'
                     />
 
@@ -61,6 +62,7 @@ export default function Page(){
                             'Il tuo profilo diventerà un profilo di impatto, chiaro, unico e ordinato, creato per attrarre nuovi Clienti.',
                             'Non dovrai più sperare in un passaparola incerto e non misurabile, ma potrai basare le tue valutazioni su risultati (dati) certi e misurabili.' */
                         ]}
+                        img={'/img/services/social-media/2.jpeg'}
                         align='img-right'
                     />
 
@@ -69,11 +71,12 @@ export default function Page(){
                         description={[
                             <Fragment><span class='text-marked'>Diamo valore alla persona</span> che sei, alla tua <span class='text-marked'>personalità</span>, ai tuoi <span class='text-marked'>valori</span> e a <span class='text-marked'>ciò in cui credi</span>. Inoltre, <span class='text-marked'>non ti sostituiamo</span> mai completamente nella scelta e <span class='text-marked'>nell’elaborazione degli argomenti</span> di cui trattare, perché siamo convinti che solo chi è del settore e ci lavora dentro sia in grado di parlare di questi argomenti.</Fragment>,
                             <Fragment>Sviluppiamo un vero e proprio piano di <span class='text-marked'>azione personalizzato</span> che ti consentirà di <span class='text-marked'>raggiungere i risultati</span> prefissati nel minor tempo possibile, in maniera solida e sostenibile. </Fragment>,
-                            <Fragment>Facciamo tutto questo per <span class='text-marked'>adattare la Comunicazione</span> del tuo (Personal) Brand <span class='text-marked'>alla tua persona</span> e per fare in modo di <span class='text-marked'>non trovarsi mai a dover fare cose che non si sentono proprie.</span></Fragment>
+                            <Fragment>Facciamo tutto questo per <span class='text-marked'>adattare la Comunicazione alla tua persona</span> e per fare in modo di <span class='text-marked'>non trovarsi mai a dover fare cose che non si sentono proprie.</span></Fragment>
                             /* 'Non improvvisiamo il nostro lavoro, ma sviluppiamo un vero e proprio piano di azione che possa valorizzare il tuo lavoro.',
                             'Uniamo la creatività e la professionalità per raggiungere veri risultati.',
                             'E potremmo aggiungere moltissime altre cose, ma ci piace far parlare i risultati, da qui si capisce la nostra passione e dedizione.' */
                         ]}
+                        img={'/img/services/social-media/2.jpeg'}
                         align='img-left'
                     />
 
