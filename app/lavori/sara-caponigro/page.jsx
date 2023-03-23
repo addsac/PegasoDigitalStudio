@@ -190,7 +190,7 @@ export default function Page({ params }) {
                         <div className="relative flex px-8 md:px-12 lg:px-16"> {/* gap-x-6 px-8 md:px-12 lg:px-16 */}
                             <div className="w-full bg-white grid grid-cols-12 gap-x-6 py-12">
                                 <div className="col-span-2"></div>
-                                <div className="col-span-8">
+                                <div className="col-span-12 lg:col-span-8">
                                     <img src="/img/lavori/sara-caponigro/2.jpg" alt="" className="h-auto w-full bg-slate-200" />
                                 </div>
                                 <div className="col-span-2"></div>
