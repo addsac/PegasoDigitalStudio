@@ -48,7 +48,7 @@ export default function Page(){
           title="Siamo uno studio digitale che collabora con aziende e professionisti costruendo prodotti ed esperienze digitali personalizate."
           description={[
             'Abbiamo come missione quella di progettare esperienze digitali che connettono le aziende ai loro clienti. E lo facciamo con un approccio basato sul design emozionale, comunicazione basata sullo storytelling e psicologia.',
-            'Amiamo fare le cose bene e lavorare con persone che cercano di rendere il mondo un posto migliore per se stessi e per gli altri. Siamo ispirati dalla bellezza, dalle possiblità delle nuove tecnologie e dal vedere i nostri progetti toccare le persone. Siamo semplicemente appassionati di quello che facciamo, tutto qui.',
+            // 'Amiamo fare le cose bene e lavorare con persone che cercano di rendere il mondo un posto migliore per se stessi e per gli altri. Siamo ispirati dalla bellezza, dalle possiblità delle nuove tecnologie e dal vedere i nostri progetti toccare le persone. Siamo semplicemente appassionati di quello che facciamo, tutto qui.',
 
             // 'Designer, Storyteller, Sviluppatori e Marketer'
             // 'Il nostro team è composto da Designer, Sviluppatori, Storyteller e Marketer, lavorando all\'unisono per aiutare i nostri clienti a comunicare il proprio valore nel mondo.',

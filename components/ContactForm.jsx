@@ -730,7 +730,7 @@ export default function ContactForm(){
                         </Balancer>
                     </p>
 
-                    <div className="w-full flex justify-center gap-x-8 md:gap-x-32 mt-24">
+                    <div className="w-full flex justify-center gap-x-12 md:gap-x-32 mt-24">
                         <div className="flex flex-col gap-y-6 text-white">
                             <p className="text-lg">
                                 <Balancer>
@@ -760,7 +760,7 @@ export default function ContactForm(){
 
                     <div
                         id={pathname === '/contatti' ? 'blog-preview-wrapper' : ''}
-                        className="w-full flex justify-center gap-x-8 md:gap-x-32 mt-24"
+                        className="w-full flex justify-center gap-x-12 md:gap-x-32 mt-24"
                     >
                         <div className="flex flex-col gap-y-6 text-white">
                             <p className="text-lg">
