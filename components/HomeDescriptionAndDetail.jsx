@@ -21,7 +21,7 @@ export default function HomeDescriptionAndDetail(){
                     {/* <p className="text-white font-medium text-4xl lg:text-6xl tracking-tight">
                         Ali
                     </p> */}
-                    <p className="text-white/50 text-sm md:text-base lg:text-lg leading-[170%]">
+                    <p className="text-white/50 text-base lg:text-lg leading-[170%]">
                         <Balancer>
                             <span className="text-white font-medium">Il corpo del cavallo</span> simboleggia il collegamento con il mondo reale, 
                             la concretezza e la forza. Questo ci ricorda di stare umani in un mondo che sta diventando sempre più digitale 
@@ -39,7 +39,7 @@ export default function HomeDescriptionAndDetail(){
                     {/* <p className="text-white font-medium text-4xl lg:text-6xl tracking-tight">
                         Cavallo
                     </p> */}
-                    <p className="text-white/50 text-sm md:text-base lg:text-lg leading-[170%]">
+                    <p className="text-white/50 text-base lg:text-lg leading-[170%]">
                         <Balancer>
                             <span className="text-white font-medium">Le ali di un uccello</span> simboleggiano l’ispirazione, la creatività e 
                             l’ambizione. Ci ricordano di ricercare continuamente l’innovazione e di aspirare alle più alte vette della realizzazione, 
