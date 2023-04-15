@@ -3,11 +3,11 @@ import MissionPhrases from '../../components/mission/MissionPhrases'
 import MissionSymbol from '../../components/mission/MissionSymbol'
 import MissionSwiper from '../../components/mission/MissionSwiper'
 import MissionStory from '../../components/mission/MissionStory'
-import MissionPhotoGradient from '../../components/mission/MissionPhotoGradient'
-import ServiceCitationSlider from '../../components/services/ServiceCitationSlider'
-import MissionValues from '../../components/mission/MissionValues'
+// import MissionPhotoGradient from '../../components/mission/MissionPhotoGradient'
+// import ServiceCitationSlider from '../../components/services/ServiceCitationSlider'
+// import MissionValues from '../../components/mission/MissionValues'
 import WorkImageMargin from '../../components/work/WorkImageMargin'
-import Cips from '../../components/utility/Cips'
+// import Cips from '../../components/utility/Cips'
 import Balancer from "react-wrap-balancer"
 
 export default function Page() {
@@ -20,13 +20,13 @@ export default function Page() {
             
             <div className="py-8"> {/* pb-24 md:pb-32 lg:pb-48 */}
                 
-                <div id="text3-mission" className="text-center mb-16 md:mb-24">
+                {/* <div id="text3-mission" className="text-center mb-16 md:mb-24">
                     <Cips 
                         text="La Nostra Storia"
                         color="white"
                         opacity={60}
                     />
-                </div>
+                </div> */}
 
                 <div
                     id="title1-mission" 
@@ -67,9 +67,9 @@ export default function Page() {
                 <div className="my-32 md:my-48 lg:my-64">
                     <MissionSwiper
                         photos={[
-                            '/img/symbol/symbol-2.jpg',
+                            '/img/symbol/symbol-7.jpg',
                             '/img/symbol/symbol-3.jpg',
-                            '/img/symbol/symbol-5.jpg',
+                            '/img/symbol/symbol-6.jpg',
                         ]}
                     />
                 </div>
