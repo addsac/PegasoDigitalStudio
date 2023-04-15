@@ -48,8 +48,8 @@ export default function Page(){
           title="Benvenuto nel nostro studio digitale, dove la creatività, l'innovazione e la strategia convergono per produrre prodotti digitali che covertono e coinvolgono le persone."
           description={[
             'Siamo designer, sviluppatori e digital marketers, appassionati di quello che creiamo. Non siamo solo concentrati sull\'estetica - ma ci impegniamo anche a garantire che i nostri prodotti digitali siano funzionali, facili da usare e che portino risultati tangibili ai nostri clienti.',
-            'Quando lavori con noi, non sei solo un altro cliente - sei un partner. Ci prendiamo il tempo di capire le tue sfide e obiettivi unici, così da poter personalizzare i nostri servizi per soddisfare le tue esigenze specifiche.',
-            'Lavoriamo in stretta collaborazione con i nostri clienti, tenendoli coinvolti durante tutto il processo di creazione del prodotto, dalla fase di ideazione fino alla fase di lancio. Il nostro team di esperti è sempre a disposizione per fornirti un esperienza senza compromessi.'
+            'Quando lavori con noi, non sei solo un altro cliente - sei un partner. Ci prendiamo il tempo di capire le tue sfide e i tuoi obiettivi, così da poter personalizzare i nostri servizi per soddisfare le tue esigenze specifiche.',
+            'Lavoriamo in stretta collaborazione con i nostri clienti, tenendoli coinvolti durante tutto il processo di creazione del prodotto, dalla fase di ideazione fino alla fase di lancio. Il nostro team di esperti è sempre a disposizione per fornirti un\'esperienza senza compromessi.'
           ]}
           href="/missione"
           ctaText="Vedi la Missione"
