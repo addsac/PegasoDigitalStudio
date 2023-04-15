@@ -62,7 +62,7 @@ export default function Page(){
                             'Il tuo profilo diventerà un profilo di impatto, chiaro, unico e ordinato, creato per attrarre nuovi Clienti.',
                             'Non dovrai più sperare in un passaparola incerto e non misurabile, ma potrai basare le tue valutazioni su risultati (dati) certi e misurabili.' */
                         ]}
-                        img={'/img/services/social-media/2.jpeg'}
+                        img={'/img/services/social-media/2.jpg'}
                         align='img-right'
                     />
 
@@ -76,7 +76,7 @@ export default function Page(){
                             'Uniamo la creatività e la professionalità per raggiungere veri risultati.',
                             'E potremmo aggiungere moltissime altre cose, ma ci piace far parlare i risultati, da qui si capisce la nostra passione e dedizione.' */
                         ]}
-                        img={'/img/services/social-media/3.jpeg'}
+                        img={'/img/services/social-media/3.jpg'}
                         align='img-left'
                     />
 
