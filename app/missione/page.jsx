@@ -72,11 +72,11 @@ export default function Page() {
                     <WorkImageMargin />
                 </div>
 
-                <MissionValues />
+                {/* <MissionValues /> */}
 
-                <div className="mt-32 md:mt-32 lg:mt-64">
+                {/* <div className="mt-32 md:mt-32 lg:mt-64">
                     <MissionPhotoGradient />
-                </div>
+                </div> */}
 
             </div>
         </div>

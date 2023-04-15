@@ -42,7 +42,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> Le Origini </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Tutto è partito dalla passione per la creazione e progettazione di esperienze digitale di due fratelli, Massimo e Leonardo. Molto presto, lavorando con agenzie e professionisti esterni capimmo che c&apos;era un problema, quello che l&apos;agenzia creava era molto difficilmente quello che lazienda voleva comunicare. Per questo abbiamo cerato il nostro studio con l&apos;obbiettivo di creare prodotti digitali che esprimono esattamente quello di cui un&apos;azienda ha bisogno di comunicare.
+                                    Tutto è partito dalla passione per la creazione e progettazione di esperienze digitale di due fratelli, Massimo e Leonardo. Molto presto, lavorando con agenzie e professionisti esterni capimmo che c&apos;era un problema: quello che l&apos;agenzia creava era difficilmente quello che l&apos;azienda voleva comunicare. Per questo abbiamo creato il nostro Studio con l&apos;obiettivo di creare prodotti digitali che esprimessero esattamente quello di cui un&apos;azienda ha bisogno di comunicare.
                                 </Balancer>
                             </p>
                         </div>
@@ -54,7 +54,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> Il Percorso </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Per essere sicuri di comunicare per raggiungere le persone e portare un cambiamento, abbiamo scoperto le qualità dello storytelling e della psicologia prestata al Design digitale. Questo ci ha portato ha sviluppare modi di lavorare strettamente personali e mirati. Quello che cercavamo mentre eravamo noi i clienti di qualche professionista.
+                                    Per essere sicuri di comunicare per raggiungere le persone e portare un cambiamento, abbiamo scoperto le qualità dello storytelling e della psicologia prestata al design. Questo ci ha portato a sviluppare modi di lavorare strettamente mirati e coinvolgenti. Quello che cercavamo mentre eravamo noi i clienti di qualche professionista.
                                 </Balancer>
                             </p>
                         </div>
@@ -76,7 +76,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> La Visione </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Ogni progetto digitale ha come missione quella di comunicare con le persone, suscitare emozioni e portare un cambiamento reale in positivo alle persone. Questo è possibile solo quando l&apos;esperienza è reale e sentita, per questo cerchiamo di realizzare ogni nostro progetto tramite un&apos;equilibrio yin-yang tra estetica e funzionalità.
+                                    Ogni progetto digitale ha come missione quella di comunicare con le persone, suscitare emozioni e portare un cambiamento reale in positivo alle persone. Questo è possibile solo quando l&apos;esperienza è reale e sentita, per questo cerchiamo di realizzare ogni nostro progetto tramite un equilibrio yin-yang tra estetica e funzionalità.
                                 </Balancer>
                             </p>
                         </div>
@@ -88,7 +88,7 @@ export default function MissionStory() {
                             <p className="text-white font-medium text-5xl lg:text-6xl tracking-tight whitespace-nowrap"> I Principi </p>
                             <p className="lg:text-lg font-regular text-white/60 mt-7"> 
                                 <Balancer>
-                                    Lavoriamo per le persone. L&apos;esteica funziona, ma solo se legata ad un&apos;approccio basato sulla comprensione della persona finale che andrà ad usare il prodotto. Lavoriamo in modo etico, funzionale all&apos;obbiettivo e vogliamo che i nostri clienti facciano lo stesso con noi. Pensiamo che solo così ogni lavoro rispetterà veramente i valori che cerchiamo di impersonare.
+                                    Lavoriamo per le persone. L&apos;estetica funziona, ma solo se legata ad un approccio basato sulla comprensione della persona finale che andrà ad usare il prodotto. Lavoriamo in modo funzionale all&apos;obiettivo. Pensiamo che solo così ogni lavoro rispetterà veramente i valori che cerchiamo di impersonare.
                                 </Balancer>
                             </p>
                         </div>
