@@ -9,8 +9,8 @@ export default function ServiceTextAndImage({ title = '', description = [], img 
                         <Image
                             src={img}
                             alt="Social media services image"
-                            width={800}
-                            height={800}
+                            width={1200}
+                            height={1200}
                             className="h-auto rounded-[19px] w-full"
                         />
                     </div>
@@ -56,8 +56,8 @@ export default function ServiceTextAndImage({ title = '', description = [], img 
                         <Image
                             src={img}
                             alt="Social media services image"
-                            width={800}
-                            height={800}
+                            width={1200}
+                            height={1200}
                             className="h-auto rounded-[19px] w-full"
                         />
                     </div>
