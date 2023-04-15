@@ -113,7 +113,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Creiamo e gestiamo le pagine Social di aziende e professionisti per aiutarli a comunicare online. 
+                                    Ci occupiamo della presenza e della comunicazione online e del tuo brand personale o di quello della tua azienda.
                                 </Balancer>
                             </p>
                             <div>
@@ -132,7 +132,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                    Sviluppiamo siti web aziendali per comunicare il valore dell&apos;azienda permettendole di raggiungere i suoi clienti.
                                 </Balancer>
                             </p>
                             <div>
@@ -147,7 +147,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                    Sviluppiamo tutto quello che c&apos;è dietro a un brand moderno, come logo, guide di stile e strategie di comunicazione. 
                                 </Balancer>
                             </p>
                             <div>
@@ -162,7 +162,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                    Progettiamo negozi digitali ottimizzati per vendere e rendere l&apos;esperienza d&apos;acquisto di un prodotto senza compromessi.
                                 </Balancer>
                             </p>
                             <div>
@@ -177,7 +177,7 @@ export default function HomeServices(){
                             />
                             <p className="w-2/3 md:w-full text-white text-sm md:text-base lg:text-lg text-left opacity-50 leading-[170%]">
                                 <Balancer>
-                                    Setting and upholding high goals and standards that stretch the boundaries of what you perceive to be possible.
+                                    Ci occupiamo della presenza e della comunicazione online e del tuo brand personale o di quello della tua azienda.
                                 </Balancer>
                             </p>
                             <div>

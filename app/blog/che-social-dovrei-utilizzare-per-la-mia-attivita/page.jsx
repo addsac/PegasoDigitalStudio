@@ -95,7 +95,7 @@ export default function Page({ params }) {
                     <div className="col-span-12 md:col-span-6">
 
                         {/* Sharing icons */}
-                        <div className="mx-auto max-w-[800px] w-full flex items-center gap-x-4 mb-20">
+                        {/* <div className="mx-auto max-w-[800px] w-full flex items-center gap-x-4 mb-20">
                             <p className='text-white mr-2'> Condividi: </p>
                             <a href="" className="opacity-60 hover:opacity-100">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="white" strokeWidth={2} stroke="none" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +131,7 @@ export default function Page({ params }) {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                                 </svg>
                             </a>
-                        </div>
+                        </div> */}
                         
                         {/* Article content */}
                         <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
@@ -178,7 +178,7 @@ export default function Page({ params }) {
                         </div>
 
                         <div className="cursor-default text-center gap-y-4 mx-auto max-w-[800px] w-full rounded-xl border border-slate-700 bg-[#ffffff04] backdrop-blur text-white p-6 py-10 mt-40">
-                            <p className="text-xl font-medium tracking-tight"> Vuoi iniziare un nuovo progtto? </p>
+                            <p className="text-xl font-medium tracking-tight"> Hai in mente un progetto? </p>
                             <p className="opacity-50 tracking-tight mt-4 mb-6"> Puoi contattarci qui, ti aiuteremo a capire come renderlo realtà. </p>
                             <Link href="/contatti">
                                 <button className="bg-white rounded-full px-8 py-3 text-slate-900 font-semibold tracking-tight hover:bg-white/60 transition duration-200">

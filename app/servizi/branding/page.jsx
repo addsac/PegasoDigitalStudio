@@ -19,7 +19,7 @@ export default function Page(){
     return (
         <div>
             <main className="">
-                <div className="relative h-[120vh] flex items-center justify-center">
+                <div className="relative h-[80vh] lg:h-[120vh] flex items-center justify-center">
                     <ServiceTitlesAnimation id="branding" /> {/* client component for the animations */}
 
                     <ServiceBackground 

@@ -42,7 +42,7 @@ export default function ContactForm(){
             gsap.to('#title2-contact', {
                 scrollTrigger: {
                     trigger: "#contact-wrapper",
-                    start: 'top 200',
+                    start: 'top 500',
                 },
                 y: 0,
                 opacity: 1,
@@ -54,7 +54,7 @@ export default function ContactForm(){
             gsap.to('#text1-contact', {
                 scrollTrigger: {
                     trigger: "#contact-wrapper",
-                    start: 'top 200',
+                    start: 'top 500',
                 },
                 y: 0,
                 opacity: 0.6,
@@ -66,7 +66,7 @@ export default function ContactForm(){
             gsap.to('#contact-form', {
                 scrollTrigger: {
                     trigger: "#contact-wrapper",
-                    start: 'top 200',
+                    start: 'top 500',
                 },
                 y: 0,
                 opacity: 1,
@@ -325,7 +325,7 @@ export default function ContactForm(){
                     }} 
                 >
                     <Text1 
-                        text="Parlaci del tuo progetto e ti ricontatteremo appena possibile, non appena l&apos;avremo analizzato." 
+                        text="Se hai un progetto da realizzare, compila il form sottostante e ti ricontattremo." 
                         color="white"
                     />
                 </div>
@@ -537,7 +537,7 @@ export default function ContactForm(){
                                 ref={ activeMarketingQuestion2 }
                                 onChange={() => checkActiveButton() }
                                 placeholder="?"
-                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none" 
                             />
                         )} */}
 
@@ -547,7 +547,7 @@ export default function ContactForm(){
                                 ref={ activeMarketingQuestion3 }
                                 onChange={() => checkActiveButton() }
                                 placeholder="?"
-                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none" 
                             />
                         )} */}
 
@@ -590,7 +590,7 @@ export default function ContactForm(){
                                 ref={ activeSocialMediaQuestion1 }
                                 onChange={() => checkActiveButton() }
                                 placeholder="Hai già un profilo su queste piattaforme? Se si, scrivi il tuo nome utente."
-                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none" 
                             />
                         )}
 
@@ -600,7 +600,7 @@ export default function ContactForm(){
                                 ref={ activeSocialMediaQuestion2 }
                                 onChange={() => checkActiveButton() }
                                 placeholder="Hai mai collaborato con qualcuno a riguardo? Se si, perchè avete concluso la collaborazione?"
-                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none" 
                             />
                         )}
 
@@ -610,7 +610,7 @@ export default function ContactForm(){
                                 ref={ activeSocialMediaQuestion3 }
                                 onChange={() => checkActiveButton() }
                                 placeholder="Che risultati vorresti ottenere lavorando con noi?"
-                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none" 
                             />
                         )}
                         
@@ -621,7 +621,7 @@ export default function ContactForm(){
                             type="text"
                             name="name"
                             placeholder="Il tuo nome"
-                            className="py-4 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
+                            className="py-4 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
                         />
 
                         {/* Input email */}
@@ -631,7 +631,7 @@ export default function ContactForm(){
                             type="email"
                             name="email"
                             placeholder="La tua email"
-                            className="py-4 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
+                            className="py-4 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
                         />
 
                         {/* Input telefono */}
@@ -641,7 +641,7 @@ export default function ContactForm(){
                             type="tel"
                             name="phone"
                             placeholder="Il tuo telefono"
-                            className="py-4 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
+                            className="py-4 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none autofill:!bg-white" 
                         />
 
                         {/* SITI WEB - ECOMMERCE - BRANDING */}
@@ -653,7 +653,7 @@ export default function ContactForm(){
                                 ref={ activeProject }
                                 onChange={() => checkActiveButton() }
                                 placeholder="Parlaci del tuo progetto"
-                                className="py-6 text-xl md:text-2xl placeholder:opacity-40 w-full border-b border-slate-300 outline-none" 
+                                className="py-6 text-xl md:text-2xl placeholder:opacity-50 w-full border-b border-slate-300 outline-none" 
                             />
                         )}
 
@@ -712,7 +712,7 @@ export default function ContactForm(){
                             </div>
                             <p className="mx-auto text-center text-xs opacity-50 w-full md:w-[280px]">
                                 <Balancer>
-                                    Sending the message you accept our Privacy Policy and Terms of Service.
+                                    Invia la richiesta e accetti la nostra Privacy Policy e i Termini di Servizio.
                                 </Balancer>
                             </p>
                         </div>
@@ -734,7 +734,7 @@ export default function ContactForm(){
                         <div className="flex flex-col gap-y-6 text-white">
                             <p className="text-lg">
                                 <Balancer>
-                                    Scopi dei progetti
+                                    Scopo del progetto
                                 </Balancer>
                             </p>
                             <p className="text-sm opacity-60">
@@ -770,7 +770,7 @@ export default function ContactForm(){
                             </p>
                             <p className="text-sm opacity-60">
                                 <Balancer>
-                                    Non abbiamo un tipo preferito di clienti fino a quando questi siano onesti e voglia davvero migliorare la loro comunicazione digitale.
+                                    Non abbiamo una tipologia preferita di clienti fino a quando questi vogliano davvero migliorare la loro comunicazione digitale.
                                 </Balancer>
                             </p>
                         </div>

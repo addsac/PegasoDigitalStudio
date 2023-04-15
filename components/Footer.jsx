@@ -18,7 +18,7 @@ export default function Footer(){
                     <div className="flex flex-col items-start gap-y-8 md:gap-y-10 lg:gap-y-14 w-full">
                         <div className="-ml-[8px] md:-ml-[12px] lg:-ml-[18px]">
                             <Title2
-                                text={ [ 'La nostra', 'Missione' ] } 
+                                text={ [ 'La nostra', 'Mission' ] } 
                                 gradient={ true }
                                 footer={ true }
                             />
@@ -39,7 +39,7 @@ export default function Footer(){
                         <Button 
                             styleName="primary-lg-dark"
                             href="/missione"
-                            text="Vedi la missione"
+                            text="Vedi la mission"
                             icon="arrow"
                         />
                     </div>
@@ -168,8 +168,8 @@ export default function Footer(){
                         <div className="grid grid-cols-12 gap-x-6 gap-y-20">
                             <div className="col-span-12 lg:col-span-10">
                                 <Balancer>
-                                    <p className="w-2/3 xl:w-1/2 opacity-60 text-white text-sm">
-                                        Pegaso S.a.s. di Citton Vittorio & C. | Sede legale: via Borgo Treviso 56 - Cittadella (PD) 35013 | P.Iva e C.F.: 05392800289 | Numero REA 464273
+                                    <p className="w-full md:w-2/3 xl:w-1/2 opacity-60 text-white text-sm">
+                                        Pegaso S.a.s. di Citton Vittorio & C. | Sede legale: Via Borgo Treviso, 56 - Cittadella (PD) 35013 | P.Iva e C.F.: 05392800289 | Numero REA: 464273
                                     </p>
                                 </Balancer>
                             </div>

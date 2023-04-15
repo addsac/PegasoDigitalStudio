@@ -52,7 +52,7 @@ export default function Page(){
             'Lavoriamo in stretta collaborazione con i nostri clienti, tenendoli coinvolti durante tutto il processo di creazione del prodotto, dalla fase di ideazione fino alla fase di lancio. Il nostro team di esperti è sempre a disposizione per fornirti un\'esperienza senza compromessi.'
           ]}
           href="/missione"
-          ctaText="Vedi la Missione"
+          ctaText="Vedi la Mission"
         />
         <div className="w-full h-16 md:h-24"></div>
       </div>

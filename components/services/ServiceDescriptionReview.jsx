@@ -92,8 +92,8 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
             {/* step of the process */}
             <div className="mt-12 md:mt-0 col-span-12 lg:col-span-6 flex flex-col">
                 <div className="w-full flex flex-col">
-                    <div className="flex justify-between gap-x-12">
-                        <div onClick={() => openModal(1)} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden">
+                    <div className="flex justify-between gap-x-8 lg:gap-x-12">
+                        <div onClick={() => openModal(1)} className="relative w-full h-[240px] lg:h-[370px] xl:h-[440px] overflow-hidden">
                             <Image 
                                 src="/img/services/social-media/placeholder-review-social-2.png" 
                                 alt="" 
@@ -108,14 +108,14 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                                     </svg>
                                 </div>
                             </div>
-                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm">
+                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm leading-[150%]">
                                 <div>
                                     Sara Caponigro &nbsp;—&nbsp; Medico di famiglia
                                 </div>
                             </div>
                         </div>
                         
-                        <div onClick={() => openModal(2)} className="mt-32 relative w-full h-[300px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
+                        <div onClick={() => openModal(2)} className="mt-32 relative w-full h-[240px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
                             <div className="absolute bottom-0 left-0 -ml-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
 
                             <Image 
@@ -132,7 +132,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                                     </svg>
                                 </div>
                             </div>
-                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm">
+                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm leading-[150%]">
                                 <div>
                                     Daniele Pietrucci &nbsp;—&nbsp; Nutrizionista
                                 </div>
@@ -141,7 +141,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                     </div>
 
                     <div className="flex justify-between gap-x-12">
-                        <div onClick={() => openModal(3)} className="relative w-full h-[300px] lg:h-[370px] xl:h-[440px] overflow-hidden" style={{ marginTop: '-80px' }}>
+                        <div onClick={() => openModal(3)} className="relative w-full h-[240px] lg:h-[370px] xl:h-[440px] overflow-hidden" style={{ marginTop: '-80px' }}>
                             <Image 
                                 src="/img/services/social-media/placeholder-review-social-4.png" 
                                 alt="" 
@@ -156,14 +156,14 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                                     </svg>
                                 </div>
                             </div>
-                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm">
+                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm leading-[150%]">
                                 <div>
                                     Chiara Moretti &nbsp;—&nbsp; Nutrizionista
                                 </div>
                             </div>
                         </div>
 
-                        <div onClick={() => openModal(4)} className="mt-12 relative w-full h-[300px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
+                        <div onClick={() => openModal(4)} className="mt-12 relative w-full h-[240px] lg:h-[370px] xl:h-[440px]  overflow-hidden">
                             <div className="absolute bottom-0 left-0 -ml-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
 
                             <Image 
@@ -180,7 +180,7 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                                     </svg>
                                 </div>
                             </div>
-                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm">
+                            <div className="absolute bottom-0 w-full flex items-center justify-between px-4 py-6 text-white bg-gradient-to-t from-slate-900 font-medium text-sm leading-[150%]">
                                 <div>
                                     Marta Tosetto &nbsp;—&nbsp; Doula
                                 </div>

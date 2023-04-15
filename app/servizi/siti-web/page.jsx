@@ -18,7 +18,7 @@ export default function Page(){
     return (
         <div>
             <main>
-                <div className="relative h-[120vh] flex items-center justify-center">
+                <div className="relative h-[80vh] lg:h-[120vh] flex items-center justify-center">
                     <ServiceTitlesAnimation id="siti-web" /> {/* client component for the ainmations */}
 
                     <ServiceBackground

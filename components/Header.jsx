@@ -346,15 +346,17 @@ export default function Header({ color }) {
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
-                                    > Missione </p>
+                                    > Mission </p>
                                 </Link>
                             </div>
                             <div className="block overflow-hidden mt-2">
-                                <Link href="/missione" onClick={() => closeMenuMobile() }>
+                                <Link href="/blog" onClick={() => closeMenuMobile() }>
                                     <p
                                         style={{ transform: 'translateY(-100%)', opacity: 0 }}
                                         className="link-menu-mobile text-white hover:text-white/60 text-4xl tracking-tight font-medium"
-                                    > Blog </p>
+                                    > 
+                                        Blog 
+                                    </p>
                                 </Link>
                             </div>
 

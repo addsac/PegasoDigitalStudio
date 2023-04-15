@@ -40,7 +40,7 @@ export default function ServiceClientsSlider({ id }) {
             name: 'Moira Bonaldo',
             description: 'Biologa Cosmetologa',
             photo: 'moirabonaldo.jpg',
-            href: 'https://www.tiktok.com/@moirabonaldohevolutacosm',
+            href: 'https://www.tiktok.com/@moirabonaldocosmetologa',
             social: 'tiktok'
         },
         {

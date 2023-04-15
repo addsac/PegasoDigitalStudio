@@ -201,7 +201,7 @@ export default function Page({ params }) {
                     <WorkTextDetail 
                         subtitle={'Risultati'}
                         title={
-                            'Infatti già dopo il primo mese avevamo creato un Reel da 1,2 Milioni di visualizzazioni, per poi proseguire con altri Reels da: 53 mila, 47 mila, 105 mila views...'
+                            'Infatti già dopo il primo mese avevamo creato un Reel da 1,2 Milioni di visualizzazioni, per poi proseguire con altri Reels da: 2,1 milioni, 1.1 milioni, 438 mila views...'
                         }
                         titleSize='sm'
                         description={[
@@ -215,7 +215,7 @@ export default function Page({ params }) {
                     <WorkTextDetail 
                         subtitle={''}
                         title={
-                            'In soli 3 mesi avevamo ottenuto un aumento di più di 5.000 nuovi followers, passando da 2.411 a 7.650 followers.'
+                            'In soli 4 mesi avevamo ottenuto un aumento di più di 15.000 nuovi followers, passando da circa 2.500 a più di 18.000 followers.'
                         }
                         titleSize='sm'
                         description={[
@@ -249,11 +249,11 @@ export default function Page({ params }) {
                     <WorkResults result={
                         [
                             {
-                                data: '1,2 Milioni',
+                                data: '2,1 Milioni',
                                 title: 'Views con un singolo Reel'
                             },
                             {
-                                data: '+5.000',
+                                data: '18.000',
                                 title: 'Followers in 3 mesi'
                             },
                             {

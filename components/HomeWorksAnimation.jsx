@@ -19,14 +19,14 @@ export default function HomeWorksAnimation() {
         gsap.to('#title1-works', {
             scrollTrigger: {
                 trigger: '#works-wrapper',
-                start: 'top 300',
+                start: 'top 500',
             },
             y: 0,
             opacity: 1,
             rotate: 0,
             duration: 0.6,
             ease: 'circ.out',
-            delay: 0.3,
+            delay: 0.1,
         })
 
         /**

@@ -1,6 +1,6 @@
 import Cips from '../utility/Cips'
-
 import ServiceTitlesDetailAnimation from './ServiceTitlesDetailAnimation'
+import Balancer from 'react-wrap-balancer'
 
 export default function ServiceTitlesDetail({ text = [], description = '', cipsText, id = '' }){
     return (
@@ -18,16 +18,18 @@ export default function ServiceTitlesDetail({ text = [], description = '', cipsT
                         <Cips text={cipsText} />
 
                         <div id={'subtitle-' + id} className="title-4 bg-gradient-radial-text my-10">
-                            {text.map((value, index) => (
-                                <p key={index + '-subtitle-' + id}>
-                                    <span>
-                                        { value }
-                                    </span>
-                                    {index != text.length - 1 && (
-                                        <br />
-                                    )}
-                                </p>
-                            ))}
+                            <Balancer>
+                                {text.map((value, index) => (
+                                    <p key={index + '-subtitle-' + id}>
+                                        <span>
+                                            { value }
+                                        </span>
+                                        {index != text.length - 1 && (
+                                            <br />
+                                        )}
+                                    </p>
+                                ))}
+                            </Balancer>
                         </div>
 
                         {description != '' && (    
