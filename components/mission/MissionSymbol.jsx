@@ -9,10 +9,10 @@ export default function MissionSymbol() {
     <div className="w-full max-w-[1500px] mx-auto flex flex-col gap-y-32">
 
         <div className="text-center">
-            <div className="relative overflow-hidden">
+            <div className="relative">
                 <Title2 
                     id="title2-mission-symbol"
-                    text={ [ 'Perchè Pegaso?' ] }
+                    text={ [ 'Perché', 'Pegaso?' ] }
                     color="white"
                 />
             </div>
@@ -34,7 +34,7 @@ export default function MissionSymbol() {
         </div>
 
         {/* 3D model */}
-        <div className="w-[730px] h-[730px] mx-auto bg-white/40 flex items-center justify-center overflow-clip">
+        <div className="max-w-full w-[730px] h-[730px] mx-auto flex items-center justify-center overflow-clip p-8">
             <Image 
                 src="/img/symbol/symbol-1.jpg"
                 alt="pegaso simbolo - Pegaso Digital Studio"

@@ -21,7 +21,7 @@ export default function MissionSwiper({ type, photos = [1, 2, 3] }){
 
             { photos.map((value, index) => (
                 <SwiperSlide style={{ width: 'auto' }} key={ index }>
-                    <div className={`relative w-[500px] overflow-clip flex flex-col items-center justify-center`}>
+                    <div className={`relative min-w-[500px] overflow-clip flex flex-col items-center justify-center`}>
                         <Image 
                             src={value}
                             alt="pegaso simbolo - Pegaso Digital Studio"

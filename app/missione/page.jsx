@@ -55,7 +55,9 @@ export default function Page() {
                 </div>
 
                 <div className="my-32 md:my-48 lg:my-64">
-                    <MissionSwiper />
+                    <WorkImageMargin 
+                        photo={'/img/symbol/horizontal-1.jpg'}
+                    />
                 </div>
 
                 <div className="my-32 md:my-48 lg:my-64">
@@ -67,16 +69,18 @@ export default function Page() {
                         photos={[
                             '/img/symbol/symbol-2.jpg',
                             '/img/symbol/symbol-3.jpg',
-                            '/img/symbol/symbol-4.jpg',
+                            '/img/symbol/symbol-5.jpg',
                         ]}
                     />
                 </div>
 
                 <MissionStory />
 
-                <div className="my-32 md:my-48 lg:my-64">
-                    <WorkImageMargin />
-                </div>
+                {/* <div className="my-32 md:my-48">
+                    <WorkImageMargin 
+                        photo={'/img/symbol/horizontal-2.jpg'}
+                    />
+                </div> */}
 
                 {/* <MissionValues /> */}
 
