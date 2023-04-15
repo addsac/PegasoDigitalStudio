@@ -23,7 +23,7 @@ export default function MissionStoryAnimation(){
         gsap.to('#title2-mission-story', {
             scrollTrigger: {
                 trigger: '#mission-story-wrapper',
-                start: 'top 300',
+                start: 'top 500',
             },
             y: 0,
             opacity: 1,
@@ -35,7 +35,7 @@ export default function MissionStoryAnimation(){
         gsap.to('#text1-mission-story', {
             scrollTrigger: {
                 trigger: '#mission-story-wrapper',
-                start: 'top 300',
+                start: 'top 500',
             },
             y: 0,
             opacity: 0.6,
@@ -47,7 +47,7 @@ export default function MissionStoryAnimation(){
         gsap.to('#mission-story-detail--wrapper', {
             scrollTrigger: {
                 trigger: '#mission-story-wrapper',
-                start: 'top 300',
+                start: 'top 500',
             },
             y: 0,
             opacity: 1,
