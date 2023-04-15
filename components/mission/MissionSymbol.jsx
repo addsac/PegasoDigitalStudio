@@ -2,6 +2,7 @@ import Title2 from "../text/Title2"
 import Text1 from "../text/Text1"
 import Text2 from "../text/Text2"
 import HomeDescriptionAndDetail from '../HomeDescriptionAndDetail'
+import Image from "next/image"
 
 export default function MissionSymbol() {
   return (
@@ -33,8 +34,14 @@ export default function MissionSymbol() {
         </div>
 
         {/* 3D model */}
-        <div className="w-[730px] h-[730px] mx-auto bg-white/40 flex items-center justify-center">
-            <p> 3D Model + Logo specifics </p>
+        <div className="w-[730px] h-[730px] mx-auto bg-white/40 flex items-center justify-center overflow-clip">
+            <Image 
+                src="/img/symbol/symbol-1.jpg"
+                alt="pegaso simbolo - Pegaso Digital Studio"
+                width={800}
+                height={800}
+                className="h-full w-full object-cover"
+            />
         </div>
 
         {/* Symbol specifics */}

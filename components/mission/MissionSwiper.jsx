@@ -5,9 +5,7 @@ import "swiper/swiper.min.css"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode } from "swiper"
 
-export default function MissionSwiper({ type }){
-    const arrayToLoop = [1000, 700, 600]
-
+export default function MissionSwiper({ type, photos = [1, 2, 3] }){
     return <div>
         <Swiper
             slidesPerView={"auto"}
@@ -21,15 +19,15 @@ export default function MissionSwiper({ type }){
                 <div className="md:w-16 h-full"></div>
             </SwiperSlide>
 
-            { arrayToLoop.map((value, index) => (
+            { photos.map((value, index) => (
                 <SwiperSlide style={{ width: 'auto' }} key={ index }>
-                    <div style={{ width: value+'px' }} className={`relative overflow-clip flex flex-col items-center justify-center`}>
+                    <div className={`relative w-[500px] overflow-clip flex flex-col items-center justify-center`}>
                         <Image 
-                            src="/blog-temporary-bg.jpg" 
-                            alt="" 
-                            width={500}
-                            height={500}
-                            className='link-for-mouse-animation text-cursor-trascina w-full h-[460px] md:h-[600px] object-cover' 
+                            src={value}
+                            alt="pegaso simbolo - Pegaso Digital Studio"
+                            width={800}
+                            height={800}
+                            className="link-for-mouse-animation text-cursor-trascina w-full h-[460px] md:h-[600px] object-cover"
                         />
                     </div>
                 </SwiperSlide>
