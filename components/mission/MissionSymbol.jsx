@@ -12,7 +12,7 @@ export default function MissionSymbol() {
             <div className="relative">
                 <Title2 
                     id="title2-mission-symbol"
-                    text={ [ 'Perché', 'Pegaso?' ] }
+                    text={ [ 'Perché Pegaso?' ] }
                     color="white"
                 />
             </div>
