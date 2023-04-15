@@ -22,7 +22,7 @@ export default function Page() {
                 
                 <div id="text3-mission" className="text-center mb-16 md:mb-24">
                     <Cips 
-                        text="La Missione"
+                        text="La Nostra Storia"
                         color="white"
                         opacity={60}
                     />
@@ -45,7 +45,7 @@ export default function Page() {
                         {/* Siamo qui per aiutare brand e professionisti a condividere il loro lavoro e comunicare il loro valore nel mondo, progettando e costruendo prodotti e servizi digitali che durano nel tempo. */}
 
                         <Balancer>
-                            La nostra missione è permettere alle aziende di raggiungere i propri clienti e portare valore nel mondo attraverso la progettazione e creazione di prodotti digitali di qualità e che durino nel tempo
+                            Abbiamo l'esperienza, la creatività e la passione per aiutarti a raggiungere i tuoi obiettivi.
                         </Balancer>
                     </h1>
                 </div>
