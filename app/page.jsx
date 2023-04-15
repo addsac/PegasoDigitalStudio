@@ -45,14 +45,11 @@ export default function Page(){
       <div className="pt-48">
         <WorkDescription 
           /* title="Siamo uno studio digitale indipendente e progettiamo prodotti e servizi digitali che uniscono i brand ai loro utenti." */
-          title="Siamo uno studio digitale che collabora con aziende e professionisti costruendo prodotti ed esperienze digitali personalizate."
+          title="Benvenuto nel nostro studio digitale, dove la creatività, l'innovazione e la strategia convergono per produrre prodotti digitali che covertono e coinvolgono le persone."
           description={[
-            'Abbiamo come missione quella di progettare esperienze digitali che connettono le aziende ai loro clienti. E lo facciamo con un approccio basato sul design emozionale, comunicazione basata sullo storytelling e psicologia.',
-            // 'Amiamo fare le cose bene e lavorare con persone che cercano di rendere il mondo un posto migliore per se stessi e per gli altri. Siamo ispirati dalla bellezza, dalle possiblità delle nuove tecnologie e dal vedere i nostri progetti toccare le persone. Siamo semplicemente appassionati di quello che facciamo, tutto qui.',
-
-            // 'Designer, Storyteller, Sviluppatori e Marketer'
-            // 'Il nostro team è composto da Designer, Sviluppatori, Storyteller e Marketer, lavorando all\'unisono per aiutare i nostri clienti a comunicare il proprio valore nel mondo.',
-            // 'Ogni progetto è un\'oportunità per innovare con un\'approccio basato sullo storytelling, sulle emozioni, e sulla psicologia prestati al servizio del design.',
+            'Siamo designer, sviluppatori e digital marketers, appassionati di quello che creiamo. Non siamo solo concentrati sull\'estetica - ma ci impegniamo anche a garantire che i nostri prodotti digitali siano funzionali, facili da usare e che portino risultati tangibili ai nostri clienti.',
+            'Quando lavori con noi, non sei solo un altro cliente - sei un partner. Ci prendiamo il tempo di capire le tue sfide e obiettivi unici, così da poter personalizzare i nostri servizi per soddisfare le tue esigenze specifiche.',
+            'Lavoriamo in stretta collaborazione con i nostri clienti, tenendoli coinvolti durante tutto il processo di creazione del prodotto, dalla fase di ideazione fino alla fase di lancio. Il nostro team di esperti è sempre a disposizione per fornirti un esperienza senza compromessi.'
           ]}
           href="/missione"
           ctaText="Vedi la Missione"
