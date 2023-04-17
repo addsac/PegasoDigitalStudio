@@ -164,7 +164,7 @@ export default function Page({ params }) {
                                 Se vuoi approfondire nel dettaglio questo caso studio esserti utile:
                             </p>
                             <div>
-                                <a href="/lavori/1">
+                                <a href="/lavori/hevoluta">
                                     HEVOLUTA - Brand di Cosmesi.
                                 </a>
                             </div>
