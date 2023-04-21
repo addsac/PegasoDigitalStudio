@@ -4,6 +4,8 @@ import mail from '@sendgrid/mail'
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async function(req, res) {
+    console.log(1)
+
     await NextCors(req, res, {
         // Options
         methods: ['GET', 'POST'], // 'HEAD', 'PUT', 'PATCH', 'DELETE'
@@ -142,12 +144,14 @@ export default async function(req, res) {
     }
 
     const data = {
-        to: 'info@pegasodigitalstudio.com',
+        to: 'leocitton@gmail.com',
         from: 'pegasodigitalstudio@gmail.com',
         subject: `New message from ${name} - ${email}`,
         text: fullText,
         html: fullText.replace(/\r\n/g, '<br />'),
     }
+
+    console.log(2)
 
     await mail.send(data)
         .catch((err) => console.log(err.response.body))
