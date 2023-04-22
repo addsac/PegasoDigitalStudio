@@ -13,10 +13,19 @@ import works from '../util/store/works'
     return posts ? posts : null;
 } */
 
-export default async function BlogPreview({ title = '', description = '', type = 'articles', articles, href = '/blog' }) {
+export default async function BlogPreview({ title = '', description = '', type = 'articles', articles, href = '/blog', page = '' }) {
     // const posts = await getPosts();
 
     const worksArray = works.data
+
+    // reordering the array base on the page
+    if (page == 'social') {
+        for (let i = 0; i < worksArray.length; i++) {
+            if (worksArray[i].categories.includes('social')) {
+                worksArray.unshift(worksArray.splice(i, 1)[0])
+            }
+        }        
+    }
 
     return (
         <>

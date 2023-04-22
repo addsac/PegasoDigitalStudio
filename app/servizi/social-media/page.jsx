@@ -18,7 +18,7 @@ export default function Page(){
     return (
         <div className=""> {/* bg-slate-900 */}
             <main>
-                <div className="relative h-[80vh] lg:h-[120vh] flex items-center justify-center">
+                <div className="relative pt-64 pb-16 lg:pt-0 lg:pb-0 lg:h-[120vh] flex items-center justify-center">
                     <ServiceTitlesAnimation id="social" /> {/* client component for the ainmations */}
 
                     <ServiceBackground 
@@ -127,6 +127,7 @@ export default function Page(){
                     title={['Il Blog']}
                     description="Qui puoi trovare alcuni degli articoli del nostro blog per rimanere aggiornato sulle nostre novità."
                     articles={ articles }
+                    page="social"
                 />
             </main>
         </div>

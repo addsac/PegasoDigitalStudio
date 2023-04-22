@@ -33,7 +33,7 @@ export default function Footer(){
                                 Quello in cui crediamo e lavoriamo per realizzare.
                             </div>
                             <div className="md:hidden">
-                                Leggi la storia da cui è partito tutto. Quello in cui crediamo e cerchiamo lavoriamo per realizzare.
+                                Leggi la storia da cui è partito tutto. Quello in cui crediamo e lavoriamo per realizzare.
                             </div>
                         </div>
                         <Button 
