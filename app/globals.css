@@ -56,6 +56,9 @@ html, body {
 .text-3{
     @apply text-base md:text-lg tracking-[-1%];
 }
+.text-3-social{
+    @apply text-xl md:text-xl tracking-[-1%];
+}
 .text-marked{
     @apply text-white font-semibold opacity-100;
 }

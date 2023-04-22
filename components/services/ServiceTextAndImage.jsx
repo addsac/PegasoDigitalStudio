@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ServiceTextAndImage({ title = '', description = [], img = '', align = 'img-left' }) {
+export default function ServiceTextAndImage({ title = '', description = [], img = '', align = 'img-left', social = false }) {
     return (
         <div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row justify-center items-center px-8 md:px-12 lg:px-16">
                 {/* photo */}
@@ -33,7 +33,13 @@ export default function ServiceTextAndImage({ title = '', description = [], img 
                     </p>
                     
                     { description.map((text, index) => (
-                        <div key={index + '-description'} className="text-3 text-white/60 tracking-tight">
+                        <div 
+                            key={index + '-description'} 
+                            className={`
+                                text-white/60 tracking-tight
+                                ${social ? 'text-3-social' : 'text-3'}
+                            `}
+                        >
                             <p className="mb-6">
                                 { text }
                             </p>

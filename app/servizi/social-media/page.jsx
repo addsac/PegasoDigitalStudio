@@ -49,6 +49,7 @@ export default function Page(){
                         ]}
                         img={'/img/services/social-media/1.jpg'}
                         align='img-left'
+                        social={true}
                     />
 
                     <ServiceTextAndImage
