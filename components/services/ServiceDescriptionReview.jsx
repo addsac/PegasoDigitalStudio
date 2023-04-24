@@ -10,25 +10,25 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
         // change the src of the video
         const el = document.getElementById('modal-video')
         if(n == 1){
-            el.src = "/img/services/social-media/video-recensione-sara-caponigro.mp4"
+            el.src = "/img/services/social-media/video-recensione-sara-caponigro2.mp4"
             setTimeout(() => {
                 el.play()
             }, 100)
         }
         else if(n == 2){
-            el.src = "/img/services/social-media/video-recensione-daniele-pietrucci.mp4"
+            el.src = "/img/services/social-media/video-recensione-daniele-pietrucci2.mp4"
             setTimeout(() => {
                 el.play()
             }, 100)
         }
         else if(n == 3){
-            el.src = "/img/services/social-media/video-recensione-chiara-moretti.mp4"
+            el.src = "/img/services/social-media/video-recensione-chiara-moretti2.mp4"
             setTimeout(() => {
                 el.play()
             }, 100)
         }
         else if(n == 4){
-            el.src = "/img/services/social-media/video-recensione-marta_.mp4"
+            el.src = "/img/services/social-media/video-recensione-marta_2.mp4"
             setTimeout(() => {
                 el.play()
             }, 100)
