@@ -142,11 +142,13 @@ export default async function(req, res) {
     }
 
     const data = {
-        to: 'leocitton@gmail.com',
+        to: 'info@pegasodigitalstudio.com',
         from: 'pegasodigitalstudio@gmail.com',
+        cc: ['citton.massimo6@gmail.com', 'leocitton@gmail.com'],
         subject: `New message from ${name} - ${email}`,
         text: fullText,
         html: fullText.replace(/\r\n/g, '<br />'),
+
     }
 
     await mail.send(data)
