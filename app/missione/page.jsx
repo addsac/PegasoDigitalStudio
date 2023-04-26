@@ -71,6 +71,7 @@ export default function Page() {
                             '/img/symbol/symbol-2a.jpg',
                             '/img/symbol/symbol-3a.jpg',
                             '/img/symbol/symbol-4a.jpg',
+                            '/img/symbol/symbol-5.jpg',
                         ]}
                     />
                 </div>
