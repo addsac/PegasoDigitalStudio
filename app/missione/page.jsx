@@ -67,11 +67,12 @@ export default function Page() {
                 <div className="my-32 md:my-48 lg:my-64">
                     <MissionSwiper
                         photos={[
+                            '/img/symbol/symbol-3a.jpg',
+                            '/img/symbol/symbol-6.jpg',
                             '/img/symbol/symbol-1a.jpg',
                             '/img/symbol/symbol-2a.jpg',
-                            '/img/symbol/symbol-3a.jpg',
-                            '/img/symbol/symbol-4a.jpg',
                             '/img/symbol/symbol-5.jpg',
+                            '/img/symbol/symbol-4a.jpg',
                         ]}
                     />
                 </div>
