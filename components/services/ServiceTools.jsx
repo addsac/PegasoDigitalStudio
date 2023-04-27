@@ -28,7 +28,7 @@ export default function ServiceTools() {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-x-3 lg:gap-x-0">
                 <div className="w-28 h-12 md:h-16 flex items-center justify-center">
                     <Image id="img-tools-4-front" src="/img/services/siti-web/icons/logo-vue.svg" alt="vue" width={100} height={24} className="h-2/3 w-auto opacity-50" />
                 </div>
@@ -40,7 +40,7 @@ export default function ServiceTools() {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-x-3 lg:gap-x-0">
                 <div className="w-28 h-12 md:h-16 flex items-center justify-center">
                     <Image id="img-tools-7-front" src="/img/services/siti-web/icons/logo-aws.svg" alt="aws" width={100} height={24} className="h-2/3 w-auto opacity-50" />
                 </div>
@@ -52,7 +52,7 @@ export default function ServiceTools() {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-x-3 lg:gap-x-0">
                 <div className="w-28 h-12 md:h-16 flex items-center justify-center">
                     <Image id="img-tools-10-front" src="/img/services/siti-web/icons/logo-tailwind.svg" alt="tailwind" width={100} height={24} className="h-full w-auto opacity-50" />
                 </div>

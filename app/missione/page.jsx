@@ -69,8 +69,8 @@ export default function Page() {
                         photos={[
                             '/img/symbol/symbol-3a.jpg',
                             '/img/symbol/symbol-2a.jpg',
-                            '/img/symbol/symbol-5.jpg',
                             '/img/symbol/symbol-1a.jpg',
+                            '/img/symbol/symbol-5.jpg',
                             '/img/symbol/symbol-4a.jpg',
                         ]}
                     />
