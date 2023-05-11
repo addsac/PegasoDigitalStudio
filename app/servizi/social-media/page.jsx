@@ -65,6 +65,7 @@ export default function Page(){
                         ]}
                         img={'/img/services/social-media/2.jpg'}
                         align='img-right'
+                        social={true}
                     />
 
                     <ServiceTextAndImage
@@ -79,6 +80,7 @@ export default function Page(){
                         ]}
                         img={'/img/services/social-media/3.jpg'}
                         align='img-left'
+                        social={true}
                     />
 
                     <ServiceDescriptionReview 
