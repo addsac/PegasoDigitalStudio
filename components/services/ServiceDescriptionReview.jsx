@@ -5,7 +5,7 @@ import Cips from "../utility/Cips"
 import ModalVideo from "../ModalVideo"
 import { gsap } from "gsap/all"
 
-export default function ServiceDescriptionReview({ cipsText = '', text = '', description = [], id = '' }) {
+export default function ServiceDescriptionReview({ cipsText = '', text = '', description = [], id = '', social = false }) {
     const openModal = (n = 1) => {
         // change the src of the video
         const el = document.getElementById('modal-video')
@@ -70,7 +70,13 @@ export default function ServiceDescriptionReview({ cipsText = '', text = '', des
                     <div className="absolute opacity-80 bottom-1/2 left-1/2 -ml-[50px] -mb-[50px] h-[100px] w-[100px] blur-[100px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-purple-400 to-purple-800"></div>
                 </div>
 
-                <div id={'description-' + id} className="text-3 text-white/60 tracking-tight">
+                <div 
+                    id={'description-' + id} 
+                    className={`
+                        ${social ? 'text-3-social' : 'text-3'}
+                        text-white/60 tracking-tight
+                    `}
+                >
                     { description.length > 0 && (
                         description.map((value, index) => (
                             <div key={index + '-description-with-review-' + id}>

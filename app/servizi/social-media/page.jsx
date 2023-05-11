@@ -94,6 +94,7 @@ export default function Page(){
                         ]}
                         cipsText=""
                         id="description-with-review"
+                        social={true}
                     />
 
                     <div id="wrapper-clients" className="flex flex-col gap-y-20 md:gap-y-32">
