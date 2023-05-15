@@ -7,6 +7,7 @@ import UtilityGoUpOnChangeRoute from '../components/utility/UtilityGoUpOnChangeR
 import UtilityCookie from '../components/utility/UtilityCookie'
 import ExperienceBackground from "../components/ExperienceBackground"
 import Footer from "../components/Footer"
+import Script from 'next/script'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,6 +19,28 @@ export default function RootLayout({ children }) {
     <html lang="it" className={`${inter.variable} font-sans`}>
 
       <head />
+
+      {/* Clarity */}
+      <Script id="claritya" strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "gugoq3zeit");
+      `}} />
+
+      {/* Google analitycs */}
+      <Script id="analitycsa" strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0EF7ZBFTH"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-F0EF7ZBFTH');
+        </script>
+      `}} />
       
       <body className="bg-slate-900">
 
