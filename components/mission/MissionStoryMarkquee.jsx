@@ -9,9 +9,9 @@ export default function MissionStoryMarkquee() {
             gradientWidth={0}
             speed={100}
         >
-            <h4 className="title-1 text-white mr-16">
+            <p className="title-1 text-white mr-16 overflow-y-hidden">
                 Designer – Sviluppatori – Storyteller – Marketer – 
-            </h4>
+            </p>
         </Marquee>
     )
 }
