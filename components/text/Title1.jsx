@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from "react";
+import { useEffect } from "react"
 import { gsap } from 'gsap/all'
 
 export default function Title1({ id = '', text = [], color, opacity, center }){
