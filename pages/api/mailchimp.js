@@ -1,3 +1,5 @@
+import mail from '@sendgrid/mail'
+
 var Mailchimp = require('mailchimp-api-v3')
 
 export default function handler(req, res) {
@@ -60,8 +62,36 @@ export default function handler(req, res) {
             /* return result */
             res.status(200).json({ results })
         })
-        .catch(function (err) {
+        .catch(async function (err) {
             console.log(err)
+
+            // sending the email to alert the error
+            mail.setApiKey(process.env.SENDGRID_API_KEY)
+
+            let fullText = `
+                EMAIL: ${email},\n
+                USERNAME: ${username},\n
+                RAGSOC: ${rag_soc},\n
+                DATAREG: ${data_reg},\n
+                ABBON: ${abbonato},\n
+                CODDITTA: ${codice_ditta},\n
+                PHONE: ${phone},\n
+                SCADABB: ${scadenza_abbonamento},\n
+                DATAINS: ${data_ins},\n
+            `
+            
+            const data = {
+                to: 'citton.massimo6@gmail.com',
+                from: 'pegasodigitalstudio@gmail.com',
+                cc: ['info@pegasodigitalstudio.com'],
+                subject: `Errore mailchimp api - ${username} - ${email}`,
+                text: fullText,
+                html: fullText.replace(/\r\n/g, '<br />'),
+            }
+
+            await mail.send(data)
+                .catch((err) => console.log(err.response.body))
+
             /* return error */
             res.status(500).json({ error: err })
         })
