@@ -13,7 +13,7 @@ import articlesFromStore from "../util/store/articles"
 export default function Page(){
   const articles = articlesFromStore.data
 
-  return <>
+  return <> 
 
     {/* <ExperienceLoading progress={ 16 } /> */}
 
