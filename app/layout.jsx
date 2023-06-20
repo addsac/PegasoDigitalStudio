@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter } from '@next/font/google'
+import { Inter } from "next/font/google"
 // import HandleColorBackground from '../components/HandleColorBackground'
 import HeaderWrapper from '../components/HeaderWrapper'
 import UtilityCustomCursor from '../components/utility/UtilityCustomCursor'
