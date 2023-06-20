@@ -3,7 +3,7 @@ import mail from '@sendgrid/mail'
 var Mailchimp = require('mailchimp-api-v3')
 
 export default async function handler(req, res) {
-    const {
+    let {
         api_key,
         list_id,
         email,
