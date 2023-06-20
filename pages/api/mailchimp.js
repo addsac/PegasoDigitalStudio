@@ -65,6 +65,8 @@ export default async function handler(req, res) {
             PHONE: ${phone},\n
             SCADABB: ${scadenza_abbonamento},\n
             DATAINS: ${data_ins},\n
+            -
+            Motivo di error: ${error.join(', ')}
         `
         
         const data = {
@@ -121,6 +123,8 @@ export default async function handler(req, res) {
                 PHONE: ${phone},\n
                 SCADABB: ${scadenza_abbonamento},\n
                 DATAINS: ${data_ins},\n
+            -
+            Motivo di error: ${err}
             `
             
             const data = {
