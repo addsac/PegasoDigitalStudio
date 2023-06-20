@@ -42,9 +42,9 @@ export default async function handler(req, res) {
         // res.status(500).json({ error: 'Data inserimento is empty' })
         error.push('Data inserimento is empty')
     }
-    if(!abbonato) {
+    if(!abbonato || abbonato.trim() == '') {
         // res.status(500).json({ error: 'Abbonato is empty' })
-        error.push('Abbonato is empty')
+        abbonato = 'No'
     }
     if(abbonato.trim() != 'Si' && abbonato.trim() != 'No') {
         // res.status(500).json({ error: 'Abbonato is not valid' })

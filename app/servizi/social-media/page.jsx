@@ -63,7 +63,7 @@ export default function Page(){
                             'Il tuo profilo diventerà un profilo di impatto, chiaro, unico e ordinato, creato per attrarre nuovi Clienti.',
                             'Non dovrai più sperare in un passaparola incerto e non misurabile, ma potrai basare le tue valutazioni su risultati (dati) certi e misurabili.' */
                         ]}
-                        img={'/img/services/social-media/2.jpg'}
+                        img={'/img/services/social-media/4.jpg'}
                         align='img-right'
                         social={true}
                     />
