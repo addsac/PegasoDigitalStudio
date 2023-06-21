@@ -41,7 +41,7 @@ export default async function handler(req, res) {
     if(!data_ins || data_ins.trim() == '') {
         // res.status(500).json({ error: 'Data inserimento is empty' })
         error.push('Data inserimento is empty')
-    } */
+    }
     if(!abbonato || abbonato.trim() == '') {
         // res.status(500).json({ error: 'Abbonato is empty' })
         abbonato = 'No'
@@ -49,7 +49,7 @@ export default async function handler(req, res) {
     if(abbonato.trim() != 'Si' && abbonato.trim() != 'No') {
         // res.status(500).json({ error: 'Abbonato is not valid' })
         error.push('Abbonato is not valid')
-    }
+    } */
 
     if(error.length > 0) {
         // sending the email to alert the error
