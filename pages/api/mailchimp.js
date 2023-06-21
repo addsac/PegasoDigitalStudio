@@ -26,7 +26,7 @@ export default async function handler(req, res) {
         // res.status(500).json({ error: 'Email is empty' })
         error.push('Email is empty')
     }
-    if(!username || username.trim() == '') {
+    /* if(!username || username.trim() == '') {
         // res.status(500).json({ error: 'Username is empty' })
         error.push('Username is empty')
     }
@@ -41,7 +41,7 @@ export default async function handler(req, res) {
     if(!data_ins || data_ins.trim() == '') {
         // res.status(500).json({ error: 'Data inserimento is empty' })
         error.push('Data inserimento is empty')
-    }
+    } */
     if(!abbonato || abbonato.trim() == '') {
         // res.status(500).json({ error: 'Abbonato is empty' })
         abbonato = 'No'
