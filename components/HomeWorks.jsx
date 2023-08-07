@@ -7,6 +7,7 @@ import HomeWorksAnimation from './HomeWorksAnimation'
 import { gsap } from 'gsap/all'
 import Balancer from "react-wrap-balancer"
 import works from '../util/store/works'
+import Link from 'next/link'
 
 export default function HomeWorks() {
 
@@ -59,7 +60,10 @@ export default function HomeWorks() {
                     <div className="col-span-12 mt-16 md:mt-24">
                         <div className="w-full grid grid-cols-12 gap-x-6 gap-y-16 lg:gap-y-0">
                             {/* work 1 */}
-                            <div className="group col-span-12 lg:col-span-5 hover:scale-[98%] transition duration-400">
+                            <Link 
+                                href={worksArray[0].slug} 
+                                className="group col-span-12 lg:col-span-5 hover:scale-[98%] transition duration-400"
+                            >
                                 <div
                                     className="h-[400px] lg:h-[650px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(1) }
@@ -85,7 +89,7 @@ export default function HomeWorks() {
                                         {worksArray[0].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[0].title.split('–')[1]} </span>
                                     </p>
                                 </div>
-                            </div>
+                            </Link>
                             <div className="hidden lg:block col-span-2"></div>
                             <div className="hidden lg:block col-span-4">
                                 <div className="mb-16">
@@ -99,7 +103,10 @@ export default function HomeWorks() {
 
                             {/* work 2 */}
                             <div className="hidden lg:block col-span-7"></div>
-                            <div className="group col-span-12 lg:col-span-4 lg:-mt-40 hover:scale-[98%] transition duration-400">
+                            <Link 
+                                href={worksArray[1].slug} 
+                                className="group col-span-12 lg:col-span-4 lg:-mt-40 hover:scale-[98%] transition duration-400"
+                            >
                                 <div
                                     className="h-[350px] lg:h-[550px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(2) }
@@ -123,11 +130,14 @@ export default function HomeWorks() {
                                         {worksArray[1].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[1].title.split('–')[1]} </span>
                                     </p>
                                 </div>
-                            </div>
+                            </Link>
 
                             {/* work 3 */}
                             <div className="hidden lg:block col-span-3"></div>
-                            <div className="group col-span-12 lg:col-span-5 2xl:col-span-4 lg:mt-32 hover:scale-[98%] transition duration-400">
+                            <Link 
+                                href={worksArray[2].slug} 
+                                className="group col-span-12 lg:col-span-5 2xl:col-span-4 lg:mt-32 hover:scale-[98%] transition duration-400"
+                            >
                                 <div
                                     className="h-[400px] lg:h-[650px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(3) }
@@ -151,11 +161,14 @@ export default function HomeWorks() {
                                         {worksArray[2].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[2].title.split('–')[1]} </span>
                                     </p>
                                 </div>
-                            </div>
+                            </Link>
                             <div className="hidden lg:block col-span-3"></div>
 
                             {/* work 4 */}
-                            <div className="group col-span-12 lg:col-span-4 2xl:col-span-3 lg:mt-32 hover:scale-[98%] transition duration-400">
+                            <Link 
+                                href={worksArray[3].slug} 
+                                className="group col-span-12 lg:col-span-4 2xl:col-span-3 lg:mt-32 hover:scale-[98%] transition duration-400"
+                            >
                                 <div
                                     className="h-[350px] lg:h-[550px] cursor-pointer overflow-clip"
                                     onMouseEnter={ () => animatePhotoEnter(4) }
@@ -179,7 +192,7 @@ export default function HomeWorks() {
                                         {worksArray[3].title.split('–')[0]}  –  <span className="opacity-50"> {worksArray[3].title.split('–')[1]} </span>
                                     </p>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
 
