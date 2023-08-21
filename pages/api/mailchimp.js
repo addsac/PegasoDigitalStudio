@@ -15,6 +15,17 @@ export default async function handler(req, res) {
         phone,
         scadenza_abbonamento,
         data_ins,
+
+        // onboarding
+        primo_rapp,
+        onb_rapportini,
+        onb_interventi,
+        scaricata_app,
+        onb_rapp_gg,
+        onb_doc,
+        onb_contratti,
+        onb_customers,
+        mese_gratis,
     } = req.query
 
     var mailchimp = new Mailchimp(api_key)
@@ -87,21 +98,68 @@ export default async function handler(req, res) {
         return
     }
 
+    // Sending the email
+    
+    const payload = {
+        email_address: email,
+        status: 'subscribed',
+        merge_fields: {}
+    };
+    
+    if (typeof username !== 'undefined') {
+        payload.merge_fields.USERNAME = username;
+    }
+    if (typeof rag_soc !== 'undefined') {
+        payload.merge_fields.RAGSOC = rag_soc;
+    }
+    if (typeof data_reg !== 'undefined') {
+        payload.merge_fields.DATAREG = data_reg;
+    }
+    if (typeof abbonato !== 'undefined') {
+        payload.merge_fields.ABBON = abbonato;
+    }
+    if (typeof codice_ditta !== 'undefined') {
+        payload.merge_fields.CODDITTA = codice_ditta;
+    }
+    if (typeof phone !== 'undefined') {
+        payload.merge_fields.PHONE = phone;
+    }
+    if (typeof scadenza_abbonamento !== 'undefined') {
+        payload.merge_fields.SCADABB = scadenza_abbonamento;
+    }
+    if (typeof data_ins !== 'undefined') {
+        payload.merge_fields.DATAINS = data_ins;
+    }
+    if (typeof primo_rapp !== 'undefined') {
+        payload.merge_fields.PRIMORAPP = primo_rapp;
+    }
+    if (typeof onb_rapportini !== 'undefined') {
+        payload.merge_fields.ONBRAPP = onb_rapportini;
+    }
+    if (typeof onb_interventi !== 'undefined') {
+        payload.merge_fields.ONBINT = onb_interventi;
+    }
+    if (typeof scaricata_app !== 'undefined') {
+        payload.merge_fields.DWNLAPP = scaricata_app;
+    }
+    if (typeof onb_rapp_gg !== 'undefined') {
+        payload.merge_fields.ONBRAPPGG = onb_rapp_gg;
+    }
+    if (typeof onb_doc !== 'undefined') {
+        payload.merge_fields.ONBDOC = onb_doc;
+    }
+    if (typeof onb_contratti !== 'undefined') {
+        payload.merge_fields.ONBCONTR = onb_contratti;
+    }
+    if (typeof onb_customers !== 'undefined') {
+        payload.merge_fields.ONBCMERS = onb_customers;
+    }
+    if (typeof mese_gratis !== 'undefined') {
+        payload.merge_fields.MESEGRATIS = mese_gratis;
+    }
+    
     mailchimp
-        .put(`/lists/${list_id}/members/${email}`, {
-            email_address: email,
-            status: 'subscribed',
-            merge_fields: {
-                USERNAME: username,
-                RAGSOC: rag_soc,
-                DATAREG: data_reg,
-                ABBON: abbonato,
-                CODDITTA: codice_ditta,
-                PHONE: phone,
-                SCADABB: scadenza_abbonamento,
-                DATAINS: data_ins,
-            },
-        })
+        .put(`/lists/${list_id}/members/${email}`, payload)
         .then(function (results) {
             console.log(results)
             /* return result */
