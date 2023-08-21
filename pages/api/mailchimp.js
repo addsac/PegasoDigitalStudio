@@ -106,55 +106,55 @@ export default async function handler(req, res) {
         merge_fields: {}
     };
     
-    if (typeof username !== 'undefined') {
+    if (typeof username != 'undefined') {
         payload.merge_fields.USERNAME = username;
     }
-    if (typeof rag_soc !== 'undefined') {
+    if (typeof rag_soc != 'undefined') {
         payload.merge_fields.RAGSOC = rag_soc;
     }
-    if (typeof data_reg !== 'undefined') {
+    if (typeof data_reg != 'undefined') {
         payload.merge_fields.DATAREG = data_reg;
     }
-    if (typeof abbonato !== 'undefined') {
+    if (typeof abbonato != 'undefined') {
         payload.merge_fields.ABBON = abbonato;
     }
-    if (typeof codice_ditta !== 'undefined') {
+    if (typeof codice_ditta != 'undefined') {
         payload.merge_fields.CODDITTA = codice_ditta;
     }
-    if (typeof phone !== 'undefined') {
+    if (typeof phone != 'undefined') {
         payload.merge_fields.PHONE = phone;
     }
-    if (typeof scadenza_abbonamento !== 'undefined') {
+    if (typeof scadenza_abbonamento != 'undefined') {
         payload.merge_fields.SCADABB = scadenza_abbonamento;
     }
-    if (typeof data_ins !== 'undefined') {
+    if (typeof data_ins != 'undefined') {
         payload.merge_fields.DATAINS = data_ins;
     }
-    if (typeof primo_rapp !== 'undefined') {
+    if (typeof primo_rapp != 'undefined') {
         payload.merge_fields.PRIMORAPP = primo_rapp;
     }
-    if (typeof onb_rapportini !== 'undefined') {
+    if (typeof onb_rapportini != 'undefined') {
         payload.merge_fields.ONBRAPP = onb_rapportini;
     }
-    if (typeof onb_interventi !== 'undefined') {
+    if (typeof onb_interventi != 'undefined') {
         payload.merge_fields.ONBINT = onb_interventi;
     }
-    if (typeof scaricata_app !== 'undefined') {
+    if (typeof scaricata_app != 'undefined') {
         payload.merge_fields.DWNLAPP = scaricata_app;
     }
-    if (typeof onb_rapp_gg !== 'undefined') {
+    if (typeof onb_rapp_gg != 'undefined') {
         payload.merge_fields.ONBRAPPGG = onb_rapp_gg;
     }
-    if (typeof onb_doc !== 'undefined') {
+    if (typeof onb_doc != 'undefined') {
         payload.merge_fields.ONBDOC = onb_doc;
     }
-    if (typeof onb_contratti !== 'undefined') {
+    if (typeof onb_contratti != 'undefined') {
         payload.merge_fields.ONBCONTR = onb_contratti;
     }
-    if (typeof onb_customers !== 'undefined') {
+    if (typeof onb_customers != 'undefined') {
         payload.merge_fields.ONBCMERS = onb_customers;
     }
-    if (typeof mese_gratis !== 'undefined') {
+    if (typeof mese_gratis != 'undefined') {
         payload.merge_fields.MESEGRATIS = mese_gratis;
     }
     
