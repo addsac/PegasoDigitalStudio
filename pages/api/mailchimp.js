@@ -16,6 +16,9 @@ export default async function handler(req, res) {
         scadenza_abbonamento,
         data_ins,
 
+        // subscribe
+        tipo_abbonamento,
+
         // onboarding
         primo_rapp,
         onb_rapportini,
@@ -75,6 +78,7 @@ export default async function handler(req, res) {
             CODDITTA: ${codice_ditta},\n
             PHONE: ${phone},\n
             SCADABB: ${scadenza_abbonamento},\n
+            TIPOABB: ${tipo_abbonamento},\n
             DATAINS: ${data_ins},\n
             -
             Motivo di error: ${error.join(', ')}
@@ -126,6 +130,9 @@ export default async function handler(req, res) {
     }
     if (typeof scadenza_abbonamento != 'undefined') {
         payload.merge_fields.SCADABB = scadenza_abbonamento;
+    }
+    if (typeof tipo_abbonamento != 'undefined') {
+        payload.merge_fields.TIPOABB = tipo_abbonamento;
     }
     if (typeof data_ins != 'undefined') {
         payload.merge_fields.DATAINS = data_ins;
@@ -180,6 +187,7 @@ export default async function handler(req, res) {
                 CODDITTA: ${codice_ditta},\n
                 PHONE: ${phone},\n
                 SCADABB: ${scadenza_abbonamento},\n
+                TIPOABB: ${tipo_abbonamento},\n
                 DATAINS: ${data_ins},\n
             -
             Motivo di error: ${err}
