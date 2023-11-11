@@ -78,7 +78,7 @@ export default function Page(){
                             'Uniamo la creatività e la professionalità per raggiungere veri risultati.',
                             'E potremmo aggiungere moltissime altre cose, ma ci piace far parlare i risultati, da qui si capisce la nostra passione e dedizione.' */
                         ]}
-                        img={'/img/services/social-media/3.jpg'}
+                        img={'/img/services/social-media/5.jpg'}
                         align='img-left'
                         social={true}
                     />

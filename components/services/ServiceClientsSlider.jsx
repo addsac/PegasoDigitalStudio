@@ -23,6 +23,20 @@ export default function ServiceClientsSlider({ id }) {
             social: 'tiktok'
         },
         {
+            name: 'Edoardo Banchi',
+            description: 'Biologo Nutrizionista',
+            photo: 'banchi.jpg',
+            href: 'https://www.instagram.com/dr.edoardobanchi_nutrizionista',
+            social: 'instagram'
+        },
+        {
+            name: 'Mariagrazia Croccia',
+            description: 'Medico Estetico',
+            photo: 'croccia.jpg',
+            href: 'https://www.instagram.com/doc_mg_croccia',
+            social: 'instagram'
+        },
+        {
             name: 'Daniele Pietrucci',
             description: 'Biologo Nutrizionista',
             photo: 'pietrucci.jpg',
@@ -50,6 +64,13 @@ export default function ServiceClientsSlider({ id }) {
             href: 'https://www.instagram.com/chiaramoretti_nutrizionista/',
             social: 'instagram'
         },
+        /* {
+            name: 'Serena Missori',
+            description: 'Endocrinologa Diabetologa',
+            photo: 'missori.jpg',
+            href: 'https://www.instagram.com/dott.serenamissori',
+            social: 'instagram'
+        }, */
         /* {
             name: 'FrancaViaRoma15',
             description: 'Fashion ',
