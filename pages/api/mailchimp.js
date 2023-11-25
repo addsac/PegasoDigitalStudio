@@ -102,110 +102,227 @@ export default async function handler(req, res) {
         return
     }
 
-    // Sending the email
-    
-    const payload = {
-        email_address: email,
-        status: 'subscribed',
-        merge_fields: {}
-    };
-    
-    if (typeof username != 'undefined') {
-        payload.merge_fields.USERNAME = username;
-    }
-    if (typeof rag_soc != 'undefined') {
-        payload.merge_fields.RAGSOC = rag_soc;
-    }
-    if (typeof data_reg != 'undefined') {
-        payload.merge_fields.DATAREG = data_reg;
-    }
-    if (typeof abbonato != 'undefined') {
-        payload.merge_fields.ABBON = abbonato;
-    }
-    if (typeof codice_ditta != 'undefined') {
-        payload.merge_fields.CODDITTA = codice_ditta;
-    }
-    if (typeof phone != 'undefined') {
-        payload.merge_fields.PHONE = phone;
-    }
-    if (typeof scadenza_abbonamento != 'undefined') {
-        payload.merge_fields.SCADABB = scadenza_abbonamento;
-    }
-    if (typeof tipo_abbonamento != 'undefined') {
-        payload.merge_fields.TIPOABB = tipo_abbonamento;
-    }
-    if (typeof data_ins != 'undefined') {
-        payload.merge_fields.DATAINS = data_ins;
-    }
-    if (typeof primo_rapp != 'undefined') {
-        payload.merge_fields.PRIMORAPP = primo_rapp;
-    }
-    if (typeof onb_rapportini != 'undefined') {
-        payload.merge_fields.ONBRAPP = onb_rapportini;
-    }
-    if (typeof onb_interventi != 'undefined') {
-        payload.merge_fields.ONBINT = onb_interventi;
-    }
-    if (typeof scaricata_app != 'undefined') {
-        payload.merge_fields.DWNLAPP = scaricata_app;
-    }
-    if (typeof onb_rapp_gg != 'undefined') {
-        payload.merge_fields.ONBRAPPGG = onb_rapp_gg;
-    }
-    if (typeof onb_doc != 'undefined') {
-        payload.merge_fields.ONBDOC = onb_doc;
-    }
-    if (typeof onb_contratti != 'undefined') {
-        payload.merge_fields.ONBCONTR = onb_contratti;
-    }
-    if (typeof onb_customers != 'undefined') {
-        payload.merge_fields.ONBCMERS = onb_customers;
-    }
-    if (typeof mese_gratis != 'undefined') {
-        payload.merge_fields.MESEGRATIS = mese_gratis;
-    }
-    
-    mailchimp
-        .put(`/lists/${list_id}/members/${email}`, payload)
-        .then(function (results) {
-            console.log(results)
-            /* return result */
-            res.status(200).json({ results })
-        })
-        .catch(async function (err) {
-            console.log(err)
+    // control if email is not single but is a list with , as separator
+    let emailList = email.split(',')
+    // trim the results
+    emailList.forEach((item, index) => {
+        emailList[index] = item.trim()
+    })
 
-            // sending the email to alert the error
-            mail.setApiKey(process.env.SENDGRID_API_KEY)
-
-            let fullText = `
-                EMAIL: ${email},\n
-                USERNAME: ${username},\n
-                RAGSOC: ${rag_soc},\n
-                DATAREG: ${data_reg},\n
-                ABBON: ${abbonato},\n
-                CODDITTA: ${codice_ditta},\n
-                PHONE: ${phone},\n
-                SCADABB: ${scadenza_abbonamento},\n
-                TIPOABB: ${tipo_abbonamento},\n
-                DATAINS: ${data_ins},\n
-            -
-            Motivo di error: ${err}
-            `
+    if(emailList.length > 1) {
+        for(let i = 0; i < emailList.length; i++) {
+            // Sending the email
+            const payload = {
+                email_address: emailList[i],
+                status: 'subscribed',
+                merge_fields: {}
+            };
             
-            const data = {
-                to: 'citton.massimo6@gmail.com',
-                from: 'pegasodigitalstudio@gmail.com',
-                cc: ['info@pegasodigitalstudio.com'],
-                subject: `Errore mailchimp api - ${username} - ${email}`,
-                text: fullText,
-                html: fullText.replace(/\r\n/g, '<br />'),
+            if (typeof username != 'undefined') {
+                payload.merge_fields.USERNAME = username;
             }
+            if (typeof rag_soc != 'undefined') {
+                payload.merge_fields.RAGSOC = rag_soc;
+            }
+            if (typeof data_reg != 'undefined') {
+                payload.merge_fields.DATAREG = data_reg;
+            }
+            if (typeof abbonato != 'undefined') {
+                payload.merge_fields.ABBON = abbonato;
+            }
+            if (typeof codice_ditta != 'undefined') {
+                payload.merge_fields.CODDITTA = codice_ditta;
+            }
+            if (typeof phone != 'undefined') {
+                payload.merge_fields.PHONE = phone;
+            }
+            if (typeof scadenza_abbonamento != 'undefined') {
+                payload.merge_fields.SCADABB = scadenza_abbonamento;
+            }
+            if (typeof tipo_abbonamento != 'undefined') {
+                payload.merge_fields.TIPOABB = tipo_abbonamento;
+            }
+            if (typeof data_ins != 'undefined') {
+                payload.merge_fields.DATAINS = data_ins;
+            }
+            if (typeof primo_rapp != 'undefined') {
+                payload.merge_fields.PRIMORAPP = primo_rapp;
+            }
+            if (typeof onb_rapportini != 'undefined') {
+                payload.merge_fields.ONBRAPP = onb_rapportini;
+            }
+            if (typeof onb_interventi != 'undefined') {
+                payload.merge_fields.ONBINT = onb_interventi;
+            }
+            if (typeof scaricata_app != 'undefined') {
+                payload.merge_fields.DWNLAPP = scaricata_app;
+            }
+            if (typeof onb_rapp_gg != 'undefined') {
+                payload.merge_fields.ONBRAPPGG = onb_rapp_gg;
+            }
+            if (typeof onb_doc != 'undefined') {
+                payload.merge_fields.ONBDOC = onb_doc;
+            }
+            if (typeof onb_contratti != 'undefined') {
+                payload.merge_fields.ONBCONTR = onb_contratti;
+            }
+            if (typeof onb_customers != 'undefined') {
+                payload.merge_fields.ONBCMERS = onb_customers;
+            }
+            if (typeof mese_gratis != 'undefined') {
+                payload.merge_fields.MESEGRATIS = mese_gratis;
+            }
+            
+            mailchimp
+                .put(`/lists/${list_id}/members/${emailList[i]}`, payload)
+                .then(function (results) {
+                    console.log(results)
+                    /* return result */
+                    res.status(200).json({ results })
+                })
+                .catch(async function (err) {
+                    console.log(err)
 
-            await mail.send(data)
-                .catch((err) => console.log(err.response.body))
+                    // sending the email to alert the error
+                    mail.setApiKey(process.env.SENDGRID_API_KEY)
 
-            /* return error */
-            res.status(500).json({ error: err })
-        })
+                    let fullText = `
+                        EMAIL: ${emailList[i]},\n
+                        USERNAME: ${username},\n
+                        RAGSOC: ${rag_soc},\n
+                        DATAREG: ${data_reg},\n
+                        ABBON: ${abbonato},\n
+                        CODDITTA: ${codice_ditta},\n
+                        PHONE: ${phone},\n
+                        SCADABB: ${scadenza_abbonamento},\n
+                        TIPOABB: ${tipo_abbonamento},\n
+                        DATAINS: ${data_ins},\n
+                    -
+                    Motivo di error: ${err}
+                    `
+                    
+                    const data = {
+                        to: 'citton.massimo6@gmail.com',
+                        from: 'pegasodigitalstudio@gmail.com',
+                        cc: ['info@pegasodigitalstudio.com'],
+                        subject: `Errore mailchimp api - ${username} - ${emailList[i]}`,
+                        text: fullText,
+                        html: fullText.replace(/\r\n/g, '<br />'),
+                    }
+
+                    await mail.send(data)
+                        .catch((err) => console.log(err.response.body))
+
+                    /* return error */
+                    res.status(500).json({ error: err })
+                })
+        }
+    }
+    else{
+        // Sending the email
+        const payload = {
+            email_address: email,
+            status: 'subscribed',
+            merge_fields: {}
+        };
+        
+        if (typeof username != 'undefined') {
+            payload.merge_fields.USERNAME = username;
+        }
+        if (typeof rag_soc != 'undefined') {
+            payload.merge_fields.RAGSOC = rag_soc;
+        }
+        if (typeof data_reg != 'undefined') {
+            payload.merge_fields.DATAREG = data_reg;
+        }
+        if (typeof abbonato != 'undefined') {
+            payload.merge_fields.ABBON = abbonato;
+        }
+        if (typeof codice_ditta != 'undefined') {
+            payload.merge_fields.CODDITTA = codice_ditta;
+        }
+        if (typeof phone != 'undefined') {
+            payload.merge_fields.PHONE = phone;
+        }
+        if (typeof scadenza_abbonamento != 'undefined') {
+            payload.merge_fields.SCADABB = scadenza_abbonamento;
+        }
+        if (typeof tipo_abbonamento != 'undefined') {
+            payload.merge_fields.TIPOABB = tipo_abbonamento;
+        }
+        if (typeof data_ins != 'undefined') {
+            payload.merge_fields.DATAINS = data_ins;
+        }
+        if (typeof primo_rapp != 'undefined') {
+            payload.merge_fields.PRIMORAPP = primo_rapp;
+        }
+        if (typeof onb_rapportini != 'undefined') {
+            payload.merge_fields.ONBRAPP = onb_rapportini;
+        }
+        if (typeof onb_interventi != 'undefined') {
+            payload.merge_fields.ONBINT = onb_interventi;
+        }
+        if (typeof scaricata_app != 'undefined') {
+            payload.merge_fields.DWNLAPP = scaricata_app;
+        }
+        if (typeof onb_rapp_gg != 'undefined') {
+            payload.merge_fields.ONBRAPPGG = onb_rapp_gg;
+        }
+        if (typeof onb_doc != 'undefined') {
+            payload.merge_fields.ONBDOC = onb_doc;
+        }
+        if (typeof onb_contratti != 'undefined') {
+            payload.merge_fields.ONBCONTR = onb_contratti;
+        }
+        if (typeof onb_customers != 'undefined') {
+            payload.merge_fields.ONBCMERS = onb_customers;
+        }
+        if (typeof mese_gratis != 'undefined') {
+            payload.merge_fields.MESEGRATIS = mese_gratis;
+        }
+        
+        mailchimp
+            .put(`/lists/${list_id}/members/${email}`, payload)
+            .then(function (results) {
+                console.log(results)
+                /* return result */
+                res.status(200).json({ results })
+            })
+            .catch(async function (err) {
+                console.log(err)
+
+                // sending the email to alert the error
+                mail.setApiKey(process.env.SENDGRID_API_KEY)
+
+                let fullText = `
+                    EMAIL: ${email},\n
+                    USERNAME: ${username},\n
+                    RAGSOC: ${rag_soc},\n
+                    DATAREG: ${data_reg},\n
+                    ABBON: ${abbonato},\n
+                    CODDITTA: ${codice_ditta},\n
+                    PHONE: ${phone},\n
+                    SCADABB: ${scadenza_abbonamento},\n
+                    TIPOABB: ${tipo_abbonamento},\n
+                    DATAINS: ${data_ins},\n
+                -
+                Motivo di error: ${err}
+                `
+                
+                const data = {
+                    to: 'citton.massimo6@gmail.com',
+                    from: 'pegasodigitalstudio@gmail.com',
+                    cc: ['info@pegasodigitalstudio.com'],
+                    subject: `Errore mailchimp api - ${username} - ${email}`,
+                    text: fullText,
+                    html: fullText.replace(/\r\n/g, '<br />'),
+                }
+
+                await mail.send(data)
+                    .catch((err) => console.log(err.response.body))
+
+                /* return error */
+                res.status(500).json({ error: err })
+            })
+    }
 }
