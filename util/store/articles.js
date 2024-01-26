@@ -20,6 +20,12 @@ const articles = {
         },
         {
             category: 'social media',
+            title: 'Intelligenza artificiale applicata ai social: come sfruttarla',
+            slug: 'intelligenza-artificiale-applicata-ai-social-come-sfruttarla',
+            data: '26 Gennaio 2024'
+        },
+        {
+            category: 'social media',
             title: 'Come sfruttare al meglio i Social per la tua attività',
             slug: 'come-sfruttare-al-meglio-i-social-per-la-tua-attivita',
             data: '18 Gennaio 2023',
