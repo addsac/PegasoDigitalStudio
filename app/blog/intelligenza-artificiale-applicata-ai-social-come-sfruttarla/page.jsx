@@ -7,12 +7,6 @@ import BlogDetailTitleAnimation from '../../../components/BlogDetailTitleAnimati
 export default function Page({ params }) {
     const articles = [
         {
-            category: 'social media',
-            title: 'Intelligenza artificiale applicata ai social: come sfruttarla',
-            slug: 'intelligenza-artificiale-applicata-ai-social-come-sfruttarla',
-            data: '26 Gennaio 2024'
-        },
-        {
             category: 'design',
             title: 'Come creare esperienze digitali memorabili',
             slug: 'come-creare-esperienze-digitali-memorabili',
@@ -41,7 +35,13 @@ export default function Page({ params }) {
             title: '4 cose da fare prima di iniziare ad utilizzare i Social',
             slug: '4-cose-da-fare-prima-di-iniziare-ad-utilizzare-i-social',
             data: '24 Gennaio 2023'
-        }
+        },
+        {
+            category: 'social media',
+            title: 'Intelligenza artificiale applicata ai social: come sfruttarla',
+            slug: 'intelligenza-artificiale-applicata-ai-social-come-sfruttarla',
+            data: '26 Gennaio 2024'
+        },
     ]
 
     return (
@@ -70,7 +70,7 @@ export default function Page({ params }) {
                             className="mt-8 md:mt-10"
                         >
                             <Title3 
-                                text="4 cose da fare prima di iniziare ad utilizzare i Social"
+                                text="Intelligenza artificiale applicata ai social: come sfruttarla"
                                 color="white"
                                 gradient={ true }
                             />
@@ -93,7 +93,7 @@ export default function Page({ params }) {
                                 </a> 
                             </div>
                             <div className="h-[64px] w-[1px] bg-white/20"></div>
-                            <div className="text-sm lg:text-base text-white/60"> 24 Gennaio 2023 </div>
+                            <div className="text-sm lg:text-base text-white/60"> 26 Gennaio 2024 </div>
                         </div>
                     </div>
 
@@ -102,7 +102,7 @@ export default function Page({ params }) {
 
                 {/* Image */}
                 <div className="w-full h-auto mt-20 md:mt-28 lg:mt-32">
-                    <img src="/blog/4-cose-da-fare-prima-di-iniziare-ad-utilizzare-i-social.jpg" alt="Foto di Anna Shvets" className="h-full w-full object-cover" />
+                    <img src="/blog/intelligenza-artificiale-applicata-ai-social-come-sfruttarla.jpg" alt="Foto di Anna Shvets" className="h-full w-full object-cover" />
                 </div>
 
                 {/* Article content */}
@@ -151,134 +151,71 @@ export default function Page({ params }) {
                         
                         {/* Article content */}
                         <div className="blog mx-auto max-w-[800px] text-white flex flex-col gap-y-12">
-                            <h3>
-                                1. Analizzare il tuo target
-                            </h3>
                             <p>
-                                Chiediti sempre chi è il tuo target e qual è il suo bisogno e una volta capito dovrai solo soddisfarlo. 
-                                Per farlo dovrai analizzare: genere, età, area geografica, lavoro, reddito, interessi, hobby. 
+                                L'uso dell'Intelligenza Artificiale, in particolare di ChatGPT, sta rivoluzionando il modo in cui i professionisti, le aziende, gli influencer e gli appassionati dei social media gestiscono e creano i loro contenuti. 
                             </p>
                             <p>
-                                Analizzare il tuo TARGET però è troppo generale, dovrai quindi trovare la tua nicchia cioè un argomento specifico, 
-                                perchè restare sul generico non ti permette di differenziarti. 
+                                Ma come può ChatGPT essere un prezioso alleato per risparmiare tempo, generare idee innovative e creare testi accattivanti per i tuoi contenuti?
                             </p>
                             <p>
-                                Queste domande possono aiutarti:
-                                <ul className='list-disc'>
-                                    <li>
-                                        Qual è l’immagine del tuo cliente tipo?
-                                    </li>
-                                    <li>
-                                        A quali problemi/bisogni vuoi rispondere con i tuoi prodotti/servizi?
-                                    </li>
-                                    <li>
-                                        Quali clienti otterranno benefici dai tuoi prodotti?
-                                    </li>
-                                    <li>
-                                        Ci sono nicchie di mercato a cui puoi far riferimento?
-                                    </li>
-                                </ul>
+                                Noi stessi ci avvaliamo dell’uso di questi strumenti per trovare idee innovative, argomenti interessanti, titoli efficaci per i nostri contenuti, scrivere testi e descrizioni ma anche per correggere newsletter e articoli.
                             </p>
-                            <br />
-                            <h3>
-                                2. Definire gli obiettivi
-                            </h3>
-                            <p>
-                                Chiediti sempre chi è il tuo target e qual è il suo bisogno e una volta capito dovrai solo soddisfarlo. 
-                                Per farlo dovrai analizzare: genere, età, area geografica, lavoro, reddito, interessi, hobby. 
-                            </p>
-                            <br />
-                            <h4>
-                                BRAND AWARENESS 
-                            </h4>
-                            <p>
-                                Creare e rafforzare la notorietà del tuo brand. Rendere il tuo brand riconoscibile. 
-                                Incrementare la brand awareness e contribuire allo sviluppo di una brand image positiva, fa aumentare le probabilità che il tuo brand venga considerato.
-                            </p>
-                            <br />
-                            <h4>
-                                LOYALTY
-                            </h4>
-                            <p>
-                                Migliorare il legame ed il coinvolgimento con il pubblico, la fiducia e di conseguenza le interazioni che i tuoi clienti hanno con la tua pagina, creare interesse e curiosità. 
-                                Questo è uno degli obiettivi più difficili. 
-                            </p>
-                            <br />
-                            <h4>
-                                ONLINE REPUTATION
-                            </h4>
-                            <p>
-                                Come vuoi che il tuo brand venga visto e percepito. La reputazione si costruisce piano piano. 
-                            </p>
-                            <br />
-                            <h4>
-                                SALES
-                            </h4>
-                            <p>
-                                Aumentare le vendite è sicuramente l’obiettivo di tutti. E per far ciò il tuo pubblico va prima educato, con gli obiettivi precedentemente elencati.    
-                            </p>
-                            <br />
                             
-                            <h3>
-                                3. Fai un’indagine di mercato
-                            </h3>
-                            <p>
-                                La cosa fondamentale arrivati a questo punto, dopo aver trovato la propria nicchia di mercato, è analizzare i tuoi competitors e come si comunicano. 
-                                Non focalizzarti solo su chi fa “peggio” rispetto a te, cerca di imparare dai “migliori”, ovviamente senza copiare.
-                            </p>
-                            <p>
-                                Cosa fanno gli altri? Come lo fanno? Come si pubblicizzano? Perchè lo fanno? 
-                            </p>
                             <br />
-                            <h3>
-                                4. Ottimizzare il tuo profilo
-                            </h3>
+
                             <p>
-                                Dopo questi 3 steps avrai più chiaro il tuo brand, i tuoi obiettivi e i tuoi competitors. 
+                                ChatGPT può esserti utile per:
                             </p>
-                            <p>
-                                Comincia ad ottimizzare il tuo profilo partendo dall’immagine profilo e dalla Bio. 
-                            </p>
-                            <br />
                             <h4>
-                                IMMAGINE PROFILO 
+                                1. Velocizzare la Creazione di Contenuti:
                             </h4>
                             <p>
-                                L’immagine profilo deve rispecchiare chi sei o il tuo brand, se hai un profilo personale metterai una foto di te stesso magari in cui si vede bene il tuo viso, se hai un profilo aziendale metterai il tuo logo.
+                                Con le sue capacità di generazione di testo basate su IA, può aiutarti a produrre rapidamente una varietà di contenuti.
                             </p>
+                            <p>
+                                Devi scrivere una scaletta da seguire quando registri un tuo Reel? Oppure un testo da inserire in un carosello? 
+                            </p>
+                            <p>
+                                Puoi decidere se far scrivere in autonomia il testo a ChatGPT oppure fornirgli tu un testo già pronto. Nel secondo caso chiedigli di aiutarti a sistemarlo rendendolo interessante e coinvolgente. Il testo deve includere un titolo accattivante all’inizio e una domanda alla fine per coinvolgere la community nei commenti. 
+                            </p>
+
                             <br />
+
                             <h4>
-                                NOME UTENTE
+                                2. Generare Idee e Tematiche nuove:
                             </h4>
                             <p>
-                                Inserisci il tuo nome o del tuo brand e subito dopo la nicchia di riferimento.
-                                Per esempio: se sei un Interior Designer metterai “Mario Rossi Interior Designer” in modo tale che le persone ti possano trovare anche solo digitando la parola “Interior Designer”.
+                                Trovare nuove idee può essere una sfida, soprattutto quando si cerca di mantenere i contenuti creativi e coinvolgenti. 
                             </p>
+                            <p>
+                                ChatGPT può assistere nella brainstorming di tematiche, suggerire argomenti di tendenza e persino proporre formati di contenuto innovativi. Questo non solo aiuta a mantenere i canali social aggiornati ma anche a sperimentare con nuovi stili e formati in base ai trend dei momento. 
+                            </p>
+                            <p>
+                                Per farti suggerire delle tematiche interessanti da trattare nel tuo profilo prima devi raccontargli chi sei e di che cosa ti occupi. 
+                            </p>
+                            <p>
+                                Solo dopo puoi chiedergli se ti aiuta a trovare per esempio 10 idee nuove per creare dei contenuti innovativi su Instgaram. 
+                            </p>
+
                             <br />
+
                             <h4>
-                                BIO
+                                3. Generare immagini per i tuoi Post
                             </h4>
                             <p>
-                                Nella 1° riga devi scrivere chi sei e cosa fai in modo chiaro e semplice.
+                                Con ChatGPT-4, la versione premium, hai l'opportunità di creare immagini totalmente inedite, che non troverai da nessuna parte su internet. La piattaforma utilizza la tua descrizione per generare un'immagine basata sui parametri forniti.
                             </p>
                             <p>
-                                Nella 2° riga dovresti spiegare alle persone perchè dovrebbero seguirti, il vantaggio per chi inizia a seguirti, il problema che risolvi. 
+                                Queste foto potrai utilizzarle per i tuoi post carosello. 
                             </p>
-                            <p>
-                                Nella 3° riga dei traguardi che hai raggiunto o una call to action (invito all’azione).
-                            </p>
+
                             <br />
-                            <h4>
-                                CONSIGLI per la tua Bio: 
-                            </h4>
-                            <p>    
-                                Usa delle emoticon che abbiano a che fare con il tuo settore, ricordati di inserirle sempre all’inizio delle frasi, per rendere più facile la lettura;
-                                inserisci 1 o 2 hashtag magari verso la fine.
-                            </p>
-                            <br />
-                            <p>
-                                Ora sei pronto per cominciare! Buon lavoro e buona fortuna!
-                            </p>
+
+                            <img
+                                src="/blog/chatgpt-social.jpg"
+                                alt="ChatGPT"
+                                className="w-full h-auto"
+                            />
                         </div>
 
                         <div className="cursor-default text-center gap-y-4 mx-auto max-w-[800px] w-full rounded-xl border border-slate-700 bg-[#ffffff04] backdrop-blur text-white p-6 py-10 mt-40">

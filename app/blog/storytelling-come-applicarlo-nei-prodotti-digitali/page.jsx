@@ -7,6 +7,12 @@ import BlogDetailTitleAnimation from '../../../components/BlogDetailTitleAnimati
 export default function Page({ params }) {
     const articles = [
         {
+            category: 'social media',
+            title: 'Intelligenza artificiale applicata ai social: come sfruttarla',
+            slug: 'intelligenza-artificiale-applicata-ai-social-come-sfruttarla',
+            data: '26 Gennaio 2024'
+        },
+        {
             category: 'design',
             title: 'Come creare esperienze digitali memorabili',
             slug: 'come-creare-esperienze-digitali-memorabili',
