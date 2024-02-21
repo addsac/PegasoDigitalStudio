@@ -58,6 +58,7 @@ export default function ModalVideo() {
                         playsInline={true}
                         webkitplaysinline="true"
                         className="h-full w-auto rounded-[24px]"
+                        lazyload="true"
                     ></video>
                 </div>
             </div>
