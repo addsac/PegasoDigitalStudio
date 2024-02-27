@@ -77,7 +77,7 @@ export default function Page(){
                             text={[
                                 'Un progetto digitale è opportunità, non un limite tecnico.',
                             ]}
-                            description="Il nostro approccio è quello di creare un siti web che siano un vero e proprio punto di riferimento per i tuoi clienti, che li aiuti a trovare ciò che stanno cercando, mettendo al centro l'esperienza dei ogni utente."
+                            description="Il nostro approccio è quello di creare un siti web che siano un vero e proprio punto di riferimento per i tuoi clienti, che li aiuti a trovare ciò che stanno cercando, mettendo al centro l'esperienza di ogni utente."
                             cipsText="Un Opportunità"
                             id="opportunity"
                         />
