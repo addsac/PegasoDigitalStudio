@@ -52,13 +52,14 @@ export default function ModalVideo() {
 
                     <video
                         id="modal-video"
-                        src="/img/services/social-media/video-recensione-daniele-pietrucci.mp4"
+                        src="/img/services/social-media/video-recensione-daniele-pietrucci2.mp4"
                         preload="auto"
                         controls={true}
                         playsInline={true}
                         webkitplaysinline="true"
                         className="h-full w-auto rounded-[24px]"
                         lazyload="true"
+                        loading="lazy"
                     ></video>
                 </div>
             </div>
