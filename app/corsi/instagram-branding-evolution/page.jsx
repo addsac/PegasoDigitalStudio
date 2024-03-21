@@ -994,7 +994,7 @@ export default function Page(){
           Domande frequenti
         </p>
 
-        <div className="mx-auto w-full max-w-[900px] flex flex-col mt-10">
+        <div className="mx-auto w-full max-w-[900px] flex flex-col gap-4 mt-10">
             <button 
               onClick={() => setFaq1(!faq1)}
               className={`flex flex-col rounded-xl transition-colors duration-75 p-6 ${faq1 && 'bg-slate-800'}`}
