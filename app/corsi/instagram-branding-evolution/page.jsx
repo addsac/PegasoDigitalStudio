@@ -93,8 +93,8 @@ export default function Page(){
             priority={true}
             className="absolute h-full w-full object-cove opacity-70"
           />
-          <button className="z-10 w-28 h-28 rounded-full bg-gradient-to-b from-gray-700 to-gray-800 border-2 border-gray-500 text-white flex justify-center items-center group-hover:scale-105 transition shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-14 h-14 ml-1.5">
+          <button className="z-10 w-20 h-20 lg:w-28 lg:h-28 rounded-full bg-gradient-to-b from-gray-700 to-gray-800 border-2 border-gray-500 text-white flex justify-center items-center group-hover:scale-105 transition shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 lg:w-14 lg:h-14 ml-1.5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
             </svg>
           </button>
@@ -997,7 +997,7 @@ export default function Page(){
         <div className="mx-auto w-full max-w-[900px] flex flex-col mt-10">
             <button 
               onClick={() => setFaq1(!faq1)}
-              className="flex flex-col rounded-xl hover:bg-slate-800 transition-colors duration-75 p-6"
+              className={`flex flex-col rounded-xl transition-colors duration-75 p-6 ${faq1 && 'bg-slate-800'}`}
             >
               <div className="w-full flex items-start justify-between gap-6">
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
@@ -1023,7 +1023,7 @@ export default function Page(){
             </button>
             <button 
               onClick={() => setFaq2(!faq2)}
-              className="flex flex-col rounded-xl hover:bg-slate-800 transition-colors duration-75 p-6"
+              className={`flex flex-col rounded-xl transition-colors duration-75 p-6 ${faq2 && 'bg-slate-800'}`}
             >
               <div className="w-full flex items-start justify-between gap-6">
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
@@ -1049,7 +1049,7 @@ export default function Page(){
             </button>
             <button 
               onClick={() => setFaq3(!faq3)}
-              className="flex flex-col rounded-xl hover:bg-slate-800 transition-colors duration-75 p-6"
+              className={`flex flex-col rounded-xl transition-colors duration-75 p-6 ${faq3 && 'bg-slate-800'}`}
             >
               <div className="w-full flex items-start justify-between gap-6">
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
@@ -1075,7 +1075,7 @@ export default function Page(){
             </button>
             <button 
               onClick={() => setFaq4(!faq4)}
-              className="flex flex-col rounded-xl hover:bg-slate-800 transition-colors duration-75 p-6"
+              className={`flex flex-col rounded-xl transition-colors duration-75 p-6 ${faq4 && 'bg-slate-800'}`}
             >
               <div className="w-full flex items-start justify-between gap-6">
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
@@ -1101,7 +1101,7 @@ export default function Page(){
             </button>
             <button 
               onClick={() => setFaq5(!faq5)}
-              className="flex flex-col rounded-xl hover:bg-slate-800 transition-colors duration-75 p-6"
+              className={`flex flex-col rounded-xl transition-colors duration-75 p-6 ${faq5 && 'bg-slate-800'}`}
             >
               <div className="w-full flex items-start justify-between gap-6">
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
