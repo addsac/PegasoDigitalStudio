@@ -142,7 +142,7 @@ export default function Footer(){
                             <p className="font-normal opacity-50 mb-2 md:mb-4">
                                 Servizi
                             </p>
-                            <Link href="/serivizi/siti-web">
+                            <Link href="/servizi/siti-web">
                                 <button className="hover:opacity-60 transition duration-300">
                                     Siti Corporate
                                 </button>
