@@ -851,7 +851,7 @@ export default function Page(){
         <div className="w-full lg:pr-8">
           <p className="text-4 font-medium text-white drop-shadow-lg !leading-[170%]">
             <Balancer>
-              Ciao, sono Chiara! Sono una <span className="colored-text-inline">Social Media Strategist</span> esperta di <span className="colored-text-inline">Branding</span> e <span className="colored-text-inline">Community</span>.
+              Ciao, sono Chiara! Sono una <span className="colored-text-inline">Social Media Strategist</span> esperta di <span className="colored-text-inline">Branding</span> e <span className="colored-text-inline">Community.</span>
               <br />
               Io e la mia azienda <span className="colored-text-inline">Pegaso Digital Studio</span> abbiamo aiutato Professionisti e Aziende a costruirsi un brand di successo e a vendere i loro prodotti e servizi grazie al potere delle <span className="colored-text-inline">Community</span> e dei <span className="colored-text-inline">Social</span>
               <br />
@@ -867,7 +867,7 @@ export default function Page(){
               Crediamo fermamente che ogni persona abbia una <span className="colored-text-inline">storia</span> da raccontare, un <span className="colored-text-inline">valore</span> da condividere, un <span className="colored-text-inline">potenziale</span> pronto per essere scoperto e valorizzato.
               <br />
               <br />
-              Instagram Branding Evolution è nato dalla volontà di rendere questi potenti mezzi (i Social) sfruttabili da chiunque ed è diventato col tempo un <span className="colored-text-inline">percorso</span> completo che ti guiderà passo dopo passo verso la <span className="colored-text-inline">realizzazione dei tuoi obiettivi e desideri</span>.
+              Instagram Branding Evolution è nato dalla volontà di rendere questi potenti mezzi (i Social) sfruttabili da chiunque ed è diventato col tempo un <span className="colored-text-inline">percorso</span> completo che ti guiderà passo dopo passo verso la <span className="colored-text-inline">realizzazione dei tuoi obiettivi e desideri.</span>
               <br />
               <br />
               Se sei pronto a fare il <span className="colored-text-inline">salto di qualità</span>, questo è il tuo <span className="colored-text-inline">punto di partenza</span>. 
@@ -965,9 +965,6 @@ export default function Page(){
             <p className="text-center text-2xl font-medium text-white trackng-tight">
               Bonus:
             </p>
-            <p className="text-center text-sm text-white trackng-tight mt-1">
-              We offer a simple, one-payment.
-            </p>
             <div className="flex flex-col gap-2 mt-8">
               <p className="text-sm text-white text-center font-medium p-4 rounded bg-white/20">
                 Consulenza di 1 ora con Chiara
@@ -1006,7 +1003,7 @@ export default function Page(){
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
                   Ti piacerebbe sviluppare il tuo Personal Brand su Instagram ma non hai tempo da dedicarci?
                 </p>
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq1 ? 'transform rotate-180' : '') + ' transition'}>
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq1 ? 'transform rotate-180' : '') + ' transition shrink-0'}>
                   <path stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.25 10.75L12 14.25L8.75 10.75"></path>
                 </svg>
               </div>
@@ -1032,7 +1029,7 @@ export default function Page(){
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
                   Il corso è adatto anche a chi si approccia per la prima volta al mondo dei Social?
                 </p>
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq2 ? 'transform rotate-180' : '') + ' transition'}>
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq2 ? 'transform rotate-180' : '') + ' transition shrink-0'}>
                   <path stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.25 10.75L12 14.25L8.75 10.75"></path>
                 </svg>
               </div>
@@ -1058,7 +1055,7 @@ export default function Page(){
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
                   Verranno aggiornati i contenuti del corso per rimanere al passo con le nuove funzionalità e novità di Instagram?
                 </p>
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq3 ? 'transform rotate-180' : '') + ' transition'}>
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq3 ? 'transform rotate-180' : '') + ' transition shrink-0'}>
                   <path stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.25 10.75L12 14.25L8.75 10.75"></path>
                 </svg>
               </div>
@@ -1084,7 +1081,7 @@ export default function Page(){
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
                   Se finito il Corso ho dubbi od ostacoli che non riesco a superare cosa posso fare?
                 </p>
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq4 ? 'transform rotate-180' : '') + ' transition'}>
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq4 ? 'transform rotate-180' : '') + ' transition shrink-0'}>
                   <path stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.25 10.75L12 14.25L8.75 10.75"></path>
                 </svg>
               </div>
@@ -1110,7 +1107,7 @@ export default function Page(){
                 <p className="text-[18px] md:text-[22px] text-left tracking-tight !font-medium text-white">
                   Per quanto tempo avrò accesso al Corso?
                 </p>
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq5 ? 'transform rotate-180' : '') + ' transition'}>
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24" className={(faq5 ? 'transform rotate-180' : '') + ' transition shrink-0'}>
                   <path stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.25 10.75L12 14.25L8.75 10.75"></path>
                 </svg>
               </div>
