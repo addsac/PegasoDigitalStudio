@@ -6,7 +6,7 @@ import { useState } from "react"
 import Image from "next/image"
 
 export default function Page(){
-  const [faq1, setFaq1] = useState(false)
+  const [faq1, setFaq1] = useState(true)
   const [faq2, setFaq2] = useState(false)
   const [faq3, setFaq3] = useState(false)
   const [faq4, setFaq4] = useState(false)
@@ -207,11 +207,11 @@ export default function Page(){
           Perché scegliere questo corso?
         </p>
 
-        <p className="max-w-[1200px] text-white opacity-80 drop-shadow-lg text-xl lg:text-[28px] !font-normal !leading-[170%] text-left mt-16 px-0 lg:px-8">
+        <p className="max-w-[1200px] text-white opacity-80 drop-shadow-lg text-xl lg:text-[28px] !font-normal !leading-[150%] lg:!leading-[170%] text-left mt-16 px-0 lg:px-8">
           Dopo aver completato il Corso, diventerai un vero esperto di Instagram, capace di costruire
           una community autentica che ti adora e di trasformare i tuoi followers in clienti fedeli.
         </p>
-        <p className="max-w-[1200px] text-white opacity-80 drop-shadow-lg text-xl lg:text-[28px] !font-normal !leading-[170%] text-left mt-8 px-0 lg:px-8">
+        <p className="max-w-[1200px] text-white opacity-80 drop-shadow-lg text-xl lg:text-[28px] !font-normal !leading-[150%] lg:!leading-[170%] text-left mt-8 px-0 lg:px-8">
           Sarai in grado di creare contenuti che risuonano profondamente con i tuoi followers,
           aumentare significativamente le interazioni e avere richieste per i tuoi prodotti e servizi.
         </p>
@@ -892,8 +892,8 @@ export default function Page(){
         <p className="text-center title-4 bg-gradient-radial-text mt-5">
           Prezzo
         </p>
-        <p className="text-white opacity-80 drop-shadow-lg text-3 font-medium !leading-[170%] text-center text-center mt-5">
-          Paga una volta, accesso per tutta la vita
+        <p className="text-white opacity-80 drop-shadow-lg text-3 font-medium !leading-[170%] text-center mt-5">
+          Paga una volta, accesso per sempre
         </p>
 
         <div className="flex flex-col lg:flex-row items-center justify-center mx-auto gap-6 mt-24">
@@ -991,7 +991,7 @@ export default function Page(){
         </div>
 
         <p className="text-center title-4 bg-gradient-radial-text mt-5">
-          Domande e risposte frequenti
+          Domande frequenti
         </p>
 
         <div className="mx-auto w-full max-w-[900px] flex flex-col mt-10">
