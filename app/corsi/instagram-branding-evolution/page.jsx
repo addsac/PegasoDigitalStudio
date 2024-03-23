@@ -255,7 +255,7 @@ export default function Page(){
               Aumentare le interazioni
             </p>
             <p className="mt-2 text-sm font-normal text-white/60 !leading-[180%]">
-              costruendo un rapporto genuino con i tuoi followers
+              like, commenti e risposte alle storie, sono le basi per costruire ponti autentici con chi ti segue
             </p>
           </div>
 
@@ -288,10 +288,10 @@ export default function Page(){
               5
             </p>
             <p  className="text-base text-white font-medium mt-8">
-              Trovare tematiche
+              Trovare tematiche originali
             </p>
             <p className="mt-2 text-sm font-normal text-white/60 !leading-[180%]">
-              originali per i tuoi contenuti
+              aiutandoti a creare contenuti di qualità che attireranno l'attenzione e stimoleranno le interazioni
             </p>
           </div>
 
@@ -315,7 +315,7 @@ export default function Page(){
               Ottimizzare la SEO
             </p>
             <p className="mt-2 text-sm font-normal text-white/60 !leading-[180%]">
-              che dal 2024 è fondamentale
+              che nel 2024 è fondamentale, raggiungendo un pubblico più ampio e morato rafforzando la tua autorità nel settore
             </p>
           </div>
 
@@ -376,9 +376,9 @@ export default function Page(){
                     Introduzione
                   </p>
                 </div>
-                <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+                {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                   Modulo 1
-                </span>
+                </span> */}
               </div>
 
               <AnimatePresence>
@@ -396,9 +396,9 @@ export default function Page(){
                         <p className="text-left text-base !font-normal text-white">
                           01 &nbsp;–&nbsp; Introduzione e Strumenti utili
                         </p>
-                        <p className="inline-flex text-sm font-normal px-3 py-1 lg:ml-5 rounded-full bg-purple-600 text-white">
+                        {/* <p className="inline-flex text-sm font-normal px-3 py-1 lg:ml-5 rounded-full bg-purple-600 text-white">
                           Preview gratis
-                        </p>
+                        </p> */}
                       </button>
                     </div>
                   </motion.div>
@@ -420,9 +420,9 @@ export default function Page(){
                     Strategia di Comunicazione per un Branding di successo
                   </p>
                 </div>
-                <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+                {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                   Modulo 2
-                </span>
+                </span> */}
               </div>
 
               <AnimatePresence>
@@ -435,29 +435,22 @@ export default function Page(){
                   >
                     <div className="h-px w-full bg-slate-700 my-5"></div>
 
-                    {/* Introduzione: L'importanza della Strategia iniziale
-                        Definizione dell'identità del Brand
-                        Analisi del target e scelta della nicchia
-                        Differenziazione rispetto ai concorrenti
-                        Coerenza del Brand: palette colori, font e tone of voice
-                        Conclusioni e prossimi passi */}
-
                     <div className="flex flex-col">
                       <button className="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
                           02 &nbsp;–&nbsp; Introduzione: L'importanza della Strategia iniziale
                         </p>
-                        <p className="inline-flex text-sm font-normal px-3 py-1 lg:ml-5 rounded-full bg-purple-600 text-white">
+                        {/* <p className="inline-flex text-sm font-normal px-3 py-1 lg:ml-5 rounded-full bg-purple-600 text-white">
                           Preview gratis
-                        </p>
+                        </p> */}
                       </button>
                       <button className="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
                           03 &nbsp;–&nbsp; Definizione dell'identità del Brand
                         </p>
-                        <p className="inline-flex text-sm font-normal px-3 py-1 lg:ml-5 rounded-full bg-purple-600 text-white">
+                        {/* <p className="inline-flex text-sm font-normal px-3 py-1 lg:ml-5 rounded-full bg-purple-600 text-white">
                           Preview gratis
-                        </p>
+                        </p> */}
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
@@ -499,9 +492,9 @@ export default function Page(){
                     Ottimizzazione del Profilo
                   </p>
                 </div>
-                <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+                {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                   Modulo 3
-                </span>
+                </span> */}
               </div>
 
               <AnimatePresence>
@@ -550,9 +543,9 @@ export default function Page(){
                   Contenuti per creare e fidelizzare la tua Community
                 </p>
               </div>
-              <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+              {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                 Modulo 4
-              </span>
+              </span> */}
             </div>
 
             <AnimatePresence>
@@ -641,9 +634,9 @@ export default function Page(){
                     SEO Instagram
                   </p>
                 </div>
-                <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+                {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                   Modulo 5
-                </span>
+                </span> */}
               </div>
 
               <AnimatePresence>
@@ -683,9 +676,9 @@ export default function Page(){
                     Storie: Il miglior mezzo per fidelizzare e vendere
                   </p>
                 </div>
-                <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+                {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                   Modulo 6
-                </span>
+                </span> */}
               </div>
 
               <AnimatePresence>
@@ -716,37 +709,42 @@ export default function Page(){
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          26 &nbsp;–&nbsp; Storie che colpiscono: ideazione e produzione
+                          26 &nbsp;–&nbsp; Esempi di storytelling
                         </p>
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          27 &nbsp;–&nbsp; Come catturare l’attenzione
+                          27 &nbsp;–&nbsp; Storie che colpiscono: ideazione e produzione
                         </p>
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          28 &nbsp;–&nbsp; Come usare Stickers, Sondaggi, Box domande… per aumentare le views delle tue Storie
+                          28 &nbsp;–&nbsp; Come catturare l’attenzione
                         </p>
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          29 &nbsp;–&nbsp; Vendere con le Storie: Strategie di Promozione
+                          29 &nbsp;–&nbsp; Come usare Stickers, Sondaggi, Box domande… per aumentare le views delle tue Storie
                         </p>
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          30 &nbsp;–&nbsp; Algoritmo delle Storie
+                          30 &nbsp;–&nbsp; Vendere con le Storie: Strategie di Promozione
                         </p>
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          31 &nbsp;–&nbsp; Analisi dei dati e Andamento
+                          31 &nbsp;–&nbsp; Algoritmo delle Storie
                         </p>
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          32 &nbsp;–&nbsp; Errori comuni: ATTENZIONE a non commetterli nelle tue Storie
+                          32 &nbsp;–&nbsp; Analisi dei dati e Andamento
+                        </p>
+                      </button>
+                      <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
+                        <p className="text-left text-base !font-normal text-white">
+                          33 &nbsp;–&nbsp; Errori comuni: ATTENZIONE a non commetterli nelle tue Storie
                         </p>
                       </button>
                     </div>
@@ -766,12 +764,12 @@ export default function Page(){
                     <path stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.25 10.75L12 14.25L8.75 10.75"></path>
                   </svg>
                   <p className="text-base lg:text-lg font-medium text-white">
-                    Sponsorizzate: come e quando farle
+                    Sponsorizzate
                   </p>
                 </div>
-                <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+                {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                   Modulo 7
-                </span>
+                </span> */}
               </div>
 
               <AnimatePresence>
@@ -787,12 +785,17 @@ export default function Page(){
                     <div className="flex flex-col">
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          33 &nbsp;–&nbsp; Come si sceglie il contenuto da sponsorizzare?
+                          34 &nbsp;–&nbsp; Come e quando farle
                         </p>
                       </button>
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          34 &nbsp;–&nbsp; Andiamo nella pratica
+                          35 &nbsp;–&nbsp; Come si sceglie il contenuto da sponsorizzare?
+                        </p>
+                      </button>
+                      <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
+                        <p className="text-left text-base !font-normal text-white">
+                          36 &nbsp;–&nbsp; Andiamo nella pratica
                         </p>
                       </button>
                     </div>
@@ -815,9 +818,9 @@ export default function Page(){
                     Conclusioni e prossimi passi
                   </p>
                 </div>
-                <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
+                {/* <span className="text-white text-sm !font-normal border border-white/30 rounded-full px-4 py-2 whitespace-nowrap">
                   Modulo 8
-                </span>
+                </span> */}
               </div>
 
               <AnimatePresence>
@@ -833,7 +836,7 @@ export default function Page(){
                     <div className="flex flex-col">
                       <button className="flex items-center justify-between gap-5 rounded-lg hover:bg-white/10 p-2 px-3 transition-colors">
                         <p className="text-left text-base !font-normal text-white">
-                          35 &nbsp;–&nbsp; Conclusione – cosa fare ora
+                          37 &nbsp;–&nbsp; Conclusione – cosa fare ora
                         </p>
                       </button>
                     </div>
@@ -845,8 +848,14 @@ export default function Page(){
       </div>
 
       {/* - CHI SIAMO */}
-      <div className="w-full flex flex-col lg:flex-row gap-16 items-center justify-center px-8 md:px-12 lg:px-16">
-        <div className="w-full aspect-video bg-white rounded-2xl" />
+      <div className="w-full flex flex-col lg:flex-row gap-24 items-center justify-center px-8 md:px-12 lg:px-16">
+        <Image 
+          src="/img/corsi/chiara-profilo.jpg"
+          alt=""
+          width={1200}
+          height={1200}
+          className="w-full h-auto bg-white rounded-2xl"   
+        />
 
         <div className="w-full lg:pr-8">
           <p className="text-4 font-medium text-white drop-shadow-lg !leading-[170%]">
