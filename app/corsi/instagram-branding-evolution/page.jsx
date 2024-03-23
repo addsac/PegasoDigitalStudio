@@ -126,7 +126,7 @@ export default function Page(){
           Testimonianze
         </p>
         <p className="text-white opacity-80 drop-shadow-lg text-3 font-medium !leading-[170%] text-center mt-5">
-          Ecco cosa dice che ha già completato il corso:
+          Ecco cosa dice chi ha già completato il corso:
         </p>
         <div className="grid grid-cols-12 gap-4 w-full mt-20">
           {[
