@@ -970,18 +970,18 @@ export default function Page(){
                 </p>
               </div>
           </div>
-          <div className="w-full lg:w-auto bg-purple-500 rounded-2xl p-8 px-10 pb-10">
-            <p className="text-center text-2xl font-medium text-white trackng-tight">
-              Bonus:
+          <div className="w-full lg:w-auto bg-white rounded-2xl p-8 px-10 pb-10">
+            <p className="text-center text-2xl font-semibold text-gray-900 trackng-tight">
+              Bonus &nbsp;🎁
             </p>
-            <div className="flex flex-col gap-2 mt-8">
-              <p className="text-sm text-white text-center font-medium p-4 rounded bg-white/20">
+            <div className="flex flex-col gap-2 mt-7">
+              <p className="text-sm text-gray-900 text-center font-medium p-4 rounded-md bg-gray-200">
                 Consulenza di 1 ora con Chiara
               </p>
-              <p className="text-sm text-white text-center font-medium p-4 rounded bg-white/20">
+              <p className="text-sm text-gray-900 text-center font-medium p-4 rounded-md bg-gray-200">
                 Aggiornamenti futuri inclusi
               </p>
-              <p className="text-sm text-white text-center font-medium p-4 rounded bg-white/20">
+              <p className="text-sm text-gray-900 text-center font-medium p-4 rounded-md bg-gray-200">
                 Nuove lezioni sulle Novità di Instagram
               </p>
             </div>
