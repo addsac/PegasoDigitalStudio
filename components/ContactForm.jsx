@@ -122,7 +122,7 @@ export default function ContactForm(){
 
     // Marketing
     const [marketingQuestion1] = useState([
-        'Si, attualmente sto investendo in campagne pubblivitarie online.', 
+        'Si, attualmente sto investendo in campagne pubblicitarie online.', 
         'Si, ho già investito in campagne pubblicitarie online ma ora non ne ho di attive.', 
         'No, non ho mai investito in campagne pubblicitarie online.', 
         'Altro'
