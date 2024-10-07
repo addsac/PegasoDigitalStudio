@@ -918,9 +918,14 @@ export default function Page(){
 
         <div className="flex flex-col lg:flex-row items-center justify-center mx-auto gap-6 mt-24">
           <div className="border border-slate-700 bg-[#ffffff0f] backdrop-blur-sm rounded-2xl w-full lg:w-[400px] p-8 flex flex-col">
-              <p className="text-[48px] text-white font-semibold text-center tracking-tight">
-                €500
-              </p>
+              <div className="flex items-center justify-center gap-x-3">
+                  <p className="text-[44px] lg:text-[48px] text-white font-medium text-center tracking-tight line-through">
+                    €500
+                  </p>
+                  <p className="text-[32px] text-red-500 font-medium text-center tracking-tight mt-3">
+                    €297
+                  </p>
+              </div>
               <p className="text-center text-base opacity-60 font-medium text-white trackng-tight">
                 Tutto incluso
               </p>
