@@ -1,6 +1,15 @@
-import mail from '@sendgrid/mail'
+import nodemailer from 'nodemailer';
 
 var Mailchimp = require('mailchimp-api-v3')
+
+// Configurazione del transporter per Gmail
+const transporter = nodemailer.createTransporter({
+    service: 'gmail',
+    auth: {
+        user: process.env.GMAIL_USER, // Il tuo indirizzo Gmail
+        pass: process.env.GMAIL_APP_PASSWORD, // La tua App Password
+    },
+});
 
 export default async function handler(req, res) {
     let {
@@ -67,8 +76,6 @@ export default async function handler(req, res) {
 
     if(error.length > 0) {
         // sending the email to alert the error
-        mail.setApiKey(process.env.SENDGRID_API_KEY)
-
         let fullText = `
             EMAIL: ${email},\n
             USERNAME: ${username},\n
@@ -84,17 +91,18 @@ export default async function handler(req, res) {
             Motivo di error: ${error.join(', ')}
         `
         
-        const data = {
+        const mailOptions = {
+            from: 'Pegaso Digital Studio - Mailchimp Error',
             to: 'citton.massimo6@gmail.com',
-            from: 'pegasodigitalstudio@gmail.com',
             cc: ['info@pegasodigitalstudio.com'],
             subject: `Errore mailchimp api - ${username} - ${email}`,
-            text: fullText,
+            text: fullText.replace(/\n/g, '\n'),
             html: fullText.replace(/\r\n/g, '<br />'),
+            replyTo: email || 'info@pegasodigitalstudio.com',
         }
 
-        await mail.send(data)
-            .catch((err) => console.log(err.response.body))
+        await transporter.sendMail(mailOptions)
+            .catch((err) => console.log('Error sending email:', err))
 
         /* return error */
         res.status(500).json({ error: error.join(', ') })
@@ -184,8 +192,6 @@ export default async function handler(req, res) {
                     console.log(err)
 
                     // sending the email to alert the error
-                    mail.setApiKey(process.env.SENDGRID_API_KEY)
-
                     let fullText = `
                         EMAIL: ${emailList[i]},\n
                         USERNAME: ${username},\n
@@ -197,21 +203,22 @@ export default async function handler(req, res) {
                         SCADABB: ${scadenza_abbonamento},\n
                         TIPOABB: ${tipo_abbonamento},\n
                         DATAINS: ${data_ins},\n
-                    -
-                    Motivo di error: ${err}
+                        -
+                        Motivo di error: ${err}
                     `
                     
-                    const data = {
+                    const mailOptions = {
+                        from: 'Pegaso Digital Studio - Mailchimp Error',
                         to: 'citton.massimo6@gmail.com',
-                        from: 'pegasodigitalstudio@gmail.com',
                         cc: ['info@pegasodigitalstudio.com'],
                         subject: `Errore mailchimp api - ${username} - ${emailList[i]}`,
-                        text: fullText,
+                        text: fullText.replace(/\n/g, '\n'),
                         html: fullText.replace(/\r\n/g, '<br />'),
+                        replyTo: emailList[i] || 'info@pegasodigitalstudio.com',
                     }
 
-                    await mail.send(data)
-                        .catch((err) => console.log(err.response.body))
+                    await transporter.sendMail(mailOptions)
+                        .catch((err) => console.log('Error sending email:', err))
 
                     /* return error */
                     res.status(500).json({ error: err })
@@ -292,8 +299,6 @@ export default async function handler(req, res) {
                 console.log(err)
 
                 // sending the email to alert the error
-                mail.setApiKey(process.env.SENDGRID_API_KEY)
-
                 let fullText = `
                     EMAIL: ${email},\n
                     USERNAME: ${username},\n
@@ -309,17 +314,18 @@ export default async function handler(req, res) {
                 Motivo di error: ${err}
                 `
                 
-                const data = {
+                const mailOptions = {
+                    from: 'Pegaso Digital Studio - Mailchimp Error',
                     to: 'citton.massimo6@gmail.com',
-                    from: 'pegasodigitalstudio@gmail.com',
                     cc: ['info@pegasodigitalstudio.com'],
                     subject: `Errore mailchimp api - ${username} - ${email}`,
-                    text: fullText,
+                    text: fullText.replace(/\n/g, '\n'),
                     html: fullText.replace(/\r\n/g, '<br />'),
+                    replyTo: email || 'info@pegasodigitalstudio.com',
                 }
 
-                await mail.send(data)
-                    .catch((err) => console.log(err.response.body))
+                await transporter.sendMail(mailOptions)
+                    .catch((err) => console.log('Error sending email:', err))
 
                 /* return error */
                 res.status(500).json({ error: err })

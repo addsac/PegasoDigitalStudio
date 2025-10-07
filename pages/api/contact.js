@@ -1,7 +1,14 @@
 import NextCors from 'nextjs-cors';
-import mail from '@sendgrid/mail'
+import nodemailer from 'nodemailer';
 
-mail.setApiKey(process.env.SENDGRID_API_KEY)
+// Configurazione del transporter per Gmail
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.GMAIL_USER, // Il tuo indirizzo Gmail
+        pass: process.env.GMAIL_APP_PASSWORD, // La tua App Password
+    },
+});
 
 export default async function(req, res) {
     await NextCors(req, res, {
@@ -30,16 +37,17 @@ export default async function(req, res) {
                 messaggio: ${message} <br />
             `
 
-            const data = {
+            const mailOptions = {
+                from: 'Pegaso Digital Studio - Richiesta Cliente',
                 to: 'paolo@pegasoinformatica.com',
-                from: 'pegasodigitalstudio@gmail.com',
                 subject: `Nuovo messaggio di ${name} - ${email}`,
-                text: fullText,
+                text: fullText.replace(/<br \/>/g, '\n'),
                 html: fullText.replace(/\r\n/g, '<br />'),
+                replyTo: email,
             }
 
-            await mail.send(data)
-                .catch((err) => console.log(err.response.body))
+            await transporter.sendMail(mailOptions)
+                .catch((err) => console.log('Error sending email:', err))
         }
         if(interest == 2){
             fullText = `
@@ -49,16 +57,17 @@ export default async function(req, res) {
                 messaggio: ${message} <br />
             `
 
-            const data = {
+            const mailOptions = {
+                from: 'Pegaso Digital Studio - Richiesta Cliente',
                 to: 'davide@pegasoinformatica.com',
-                from: 'pegasodigitalstudio@gmail.com',
                 subject: `Nuovo messaggio di ${name} - ${email}`,
-                text: fullText,
+                text: fullText.replace(/<br \/>/g, '\n'),
                 html: fullText.replace(/\r\n/g, '<br />'),
+                replyTo: email,
             }
 
-            await mail.send(data)
-                .catch((err) => console.log(err.response.body))
+            await transporter.sendMail(mailOptions)
+                .catch((err) => console.log('Error sending email:', err))
         }
         if(interest == 3){
             fullText = `
@@ -68,16 +77,17 @@ export default async function(req, res) {
                 messaggio: ${message} <br />
             `
 
-            const data = {
+            const mailOptions = {
+                from: 'Pegaso Digital Studio - Richiesta Cliente',
                 to: 'info@pegasodigitalstudio.com',
-                from: 'pegasodigitalstudio@gmail.com',
                 subject: `Nuovo messaggio di ${name} - ${email}`,
-                text: fullText,
+                text: fullText.replace(/<br \/>/g, '\n'),
                 html: fullText.replace(/\r\n/g, '<br />'),
+                replyTo: email,
             }
 
-            await mail.send(data)
-                .catch((err) => console.log(err.response.body))
+            await transporter.sendMail(mailOptions)
+                .catch((err) => console.log('Error sending email:', err))
         }
 
         return res.status(200).json({ status: 'OK' })
@@ -141,18 +151,18 @@ export default async function(req, res) {
         `
     }
 
-    const data = {
+    const mailOptions = {
+        from: 'Pegaso Digital Studio - Richiesta Cliente',
         to: 'info@pegasodigitalstudio.com',
-        from: 'pegasodigitalstudio@gmail.com',
         cc: ['citton.massimo6@gmail.com', 'leocitton@gmail.com'],
         subject: `New message from ${name} - ${email}`,
-        text: fullText,
+        text: fullText.replace(/<br \/>/g, '\n'),
         html: fullText.replace(/\r\n/g, '<br />'),
-
+        replyTo: email,
     }
 
-    await mail.send(data)
-        .catch((err) => console.log(err.response.body))
+    await transporter.sendMail(mailOptions)
+        .catch((err) => console.log('Error sending email:', err))
 
     res.status(200).json({ status: 'OK' })
 }
