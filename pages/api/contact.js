@@ -40,7 +40,6 @@ export default async function(req, res) {
             const mailOptions = {
                 from: 'Pegaso Digital Studio - Richiesta Cliente',
                 to: 'paolo@pegasoinformatica.com',
-                cc: 'leocitton@gmail.com',
                 subject: `Nuovo messaggio di ${name} - ${email}`,
                 text: fullText.replace(/<br \/>/g, '\n'),
                 html: fullText.replace(/\r\n/g, '<br />'),
@@ -65,7 +64,6 @@ export default async function(req, res) {
             const mailOptions = {
                 from: 'Pegaso Digital Studio - Richiesta Cliente',
                 to: 'paolo@pegasoinformatica.com',
-                cc: 'leocitton@gmail.com',
                 subject: `Nuovo messaggio di ${name} - ${email}`,
                 text: fullText.replace(/<br \/>/g, '\n'),
                 html: fullText.replace(/\r\n/g, '<br />'),
@@ -90,7 +88,6 @@ export default async function(req, res) {
             const mailOptions = {
                 from: 'Pegaso Digital Studio - Richiesta Cliente',
                 to: 'davide@pegasoinformatica.com',
-                cc: 'leocitton@gmail.com',
                 subject: `Nuovo messaggio di ${name} - ${email}`,
                 text: fullText.replace(/<br \/>/g, '\n'),
                 html: fullText.replace(/\r\n/g, '<br />'),
