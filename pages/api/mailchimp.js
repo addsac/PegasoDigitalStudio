@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 var Mailchimp = require('mailchimp-api-v3')
 
 // Configurazione del transporter per Gmail
-const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransporter({
     service: 'gmail',
     auth: {
         user: process.env.GMAIL_USER, // Il tuo indirizzo Gmail

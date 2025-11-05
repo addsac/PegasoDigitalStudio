@@ -161,8 +161,10 @@ export default async function(req, res) {
         replyTo: email,
     }
 
-    await transporter.sendMail(mailOptions)
-        .catch((err) => console.log('Error sending email:', err))
-
-    res.status(200).json({ status: 'OK' })
+    try {
+        await transporter.sendMail(mailOptions)
+        res.status(200).json({ status: 'OK' })
+    } catch (err) {
+        res.status(500).json({ status: 'ERROR', message: err.message })
+    }
 }
