@@ -46,12 +46,40 @@ export default async function(req, res) {
                 replyTo: email,
             }
 
-            await transporter.sendMail(mailOptions)
-                .catch((err) => console.log('Error sending email:', err))
+            try {
+                await transporter.sendMail(mailOptions)
+            } catch (err) {
+                console.log('Error sending email:', err)
+                return res.status(500).json({ status: 'ERROR', message: err.message })
+            }
         }
         if(interest == 2){
             fullText = `
                 interesse: Reti e sicurezza <br />
+                nome: ${name} <br />
+                email: ${email} <br />
+                messaggio: ${message} <br />
+            `
+
+            const mailOptions = {
+                from: 'Pegaso Digital Studio - Richiesta Cliente',
+                to: 'paolo@pegasoinformatica.com',
+                subject: `Nuovo messaggio di ${name} - ${email}`,
+                text: fullText.replace(/<br \/>/g, '\n'),
+                html: fullText.replace(/\r\n/g, '<br />'),
+                replyTo: email,
+            }
+
+            try {
+                await transporter.sendMail(mailOptions)
+            } catch (err) {
+                console.log('Error sending email:', err)
+                return res.status(500).json({ status: 'ERROR', message: err.message })
+            }
+        }
+        if(interest == 3){
+            fullText = `
+                interesse: Software <br />
                 nome: ${name} <br />
                 email: ${email} <br />
                 messaggio: ${message} <br />
@@ -66,28 +94,12 @@ export default async function(req, res) {
                 replyTo: email,
             }
 
-            await transporter.sendMail(mailOptions)
-                .catch((err) => console.log('Error sending email:', err))
-        }
-        if(interest == 3){
-            fullText = `
-                interesse: Software <br />
-                nome: ${name} <br />
-                email: ${email} <br />
-                messaggio: ${message} <br />
-            `
-
-            const mailOptions = {
-                from: 'Pegaso Digital Studio - Richiesta Cliente',
-                to: 'info@pegasodigitalstudio.com',
-                subject: `Nuovo messaggio di ${name} - ${email}`,
-                text: fullText.replace(/<br \/>/g, '\n'),
-                html: fullText.replace(/\r\n/g, '<br />'),
-                replyTo: email,
+            try {
+                await transporter.sendMail(mailOptions)
+            } catch (err) {
+                console.log('Error sending email:', err)
+                return res.status(500).json({ status: 'ERROR', message: err.message })
             }
-
-            await transporter.sendMail(mailOptions)
-                .catch((err) => console.log('Error sending email:', err))
         }
 
         return res.status(200).json({ status: 'OK' })
@@ -161,10 +173,8 @@ export default async function(req, res) {
         replyTo: email,
     }
 
-    try {
-        await transporter.sendMail(mailOptions)
-        res.status(200).json({ status: 'OK' })
-    } catch (err) {
-        res.status(500).json({ status: 'ERROR', message: err.message })
-    }
+    await transporter.sendMail(mailOptions)
+        .catch((err) => console.log('Error sending email:', err))
+
+    res.status(200).json({ status: 'OK' })
 }
